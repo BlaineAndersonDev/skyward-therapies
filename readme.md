@@ -10,20 +10,20 @@
 
   | Technology | Description | CRAE + Heroku | CRAE + DB | CRAE + Dotenv |
   | --- | --- | --- | --- | --- |
-  | <center>---</center> | <center>---</center> | <center>[Github]()</center> | <center>[Github]()</center> | <center>[Github]()</center> |
-  | <center>[Homebrew](https://brew.sh/)</center> | <center>"The missing package manager for macOS (or Linux)"</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[Atom](https://atom.io/)</center> | <center>Coding Text Editor</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[Node](https://nodejs.org/en/)</center> | <center>JS Command Line Interface</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[Yarn](https://github.com/yarnpkg/yarn)</center> | <center>Alternative Package Manager (Replaces NPM)</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[ReactJS](https://reactjs.org/)</center> | <center>Dynamic Front-End View</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[Create-React-App](https://github.com/facebook/create-react-app)</center> | <center>"Zero" Configuration ReactJS Setup</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[Express](https://expressjs.com/)</center> | <center>Back-End Api Routing</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[Nodemon](https://nodemon.io/)</center> | <center>Automatic Server Restart</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[React-Router-Dom](https://github.com/ReactTraining/react-router#readme)</center> | <center>Front-End 'Router'</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[Babel 7](https://babeljs.io/)</center> | <center>ES6 Conversion to ES5 for Browser Compatibly</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[PostgreSQL](https://www.postgresql.org/)</center> | <center>SQL Database</center> | | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[Knex](https://knexjs.org/)</center> | <center>SQL Query Builder</center> | | <center>:white_check_mark:</center> | <center>:white_check_mark:</center> |
-  | <center>[Dotenv](https://github.com/motdotla/dotenv#readme)</center> | <center>Allows Use of Environment Variable</center> | | | <center>:white_check_mark:</center> |
+  | --- | --- | [Github]() | [Github]() | [Github]() |
+  | [Homebrew](https://brew.sh/) | "The missing package manager for macOS (or Linux)" | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [Atom](https://atom.io/) | Coding Text Editor | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [Node](https://nodejs.org/en/) | JS Command Line Interface | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [Yarn](https://github.com/yarnpkg/yarn) | Alternative Package Manager (Replaces NPM) | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [ReactJS](https://reactjs.org/) | Dynamic Front-End View | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [Create-React-App](https://github.com/facebook/create-react-app) | "Zero" Configuration ReactJS Setup | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [Express](https://expressjs.com/) | Back-End Api Routing | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [Nodemon](https://nodemon.io/) | Automatic Server Restart | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [React-Router-Dom](https://github.com/ReactTraining/react-router#readme) | Front-End 'Router' | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [Babel 7](https://babeljs.io/) | ES6 Conversion to ES5 for Browser Compatibly | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [PostgreSQL](https://www.postgresql.org/) | SQL Database | | :white_check_mark: | :white_check_mark: |
+  | [Knex](https://knexjs.org/) | SQL Query Builder | | :white_check_mark: | :white_check_mark: |
+  | [Dotenv](https://github.com/motdotla/dotenv#readme) | Allows Use of Environment Variable | | | :white_check_mark: |
 
 # CRAE + Heroku
   * **Step 1:** Basic Installations & Directory Setup.
