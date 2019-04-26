@@ -96,7 +96,7 @@
 
   * ##### **_>>> Check your progress <<<_**
     * Now that you've finished, your directories should look similar to this:
-      * ![001](client/public/images/001_directory_seetup.png?raw=true)
+      * ![001](client/public/images/001_directory_setup.png?raw=true)
 
 
 
