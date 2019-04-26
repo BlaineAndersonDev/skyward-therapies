@@ -32,7 +32,7 @@
   * **Step 4:** Deployment to Heroku.
   * **Step 5:** Celebration.
 
-
+## Basic Installations & Directory Setup:
 ### Basic Installations:
   * Before we can begin, make sure you have these technologies installed.
   * We will add additional technologies in our project later as 'Dependencies'.
@@ -94,28 +94,30 @@
   * Now that we've laid the groundwork for our Project, we will need to make some changes & add some new files to the "Root" (*server*) & *client* directories.
   * From here on, we will refer to our "Root" directory as our "*Server*".
 
-  * ##### **_>>> Check your progress <<<_**
+  * **_>>> Check your progress <<<_**
     * Now that you've finished, your directories should look similar to this:
-      * ![001](client/public/images/001_directory_setup.png?raw=true)
+    ![001](client/public/images/001_directory_setup.png?raw=true)
 
 
 
 
+
+
+## Server (Root Directory) Updates.
+### SectionHead:
+  * ###### SubSectionHead:
+  * ###### SubSectionHead:
+  * ###### SubSectionHead:
+  * **_>>> Check your progress <<<_**
 
 ### SectionHead:
   * ###### SubSectionHead:
   * ###### SubSectionHead:
   * ###### SubSectionHead:
-  * ##### **_>>> Check your progress <<<_**
+  * **_>>> Check your progress <<<_**
 
 ### SectionHead:
   * ###### SubSectionHead:
   * ###### SubSectionHead:
   * ###### SubSectionHead:
-  * ##### **_>>> Check your progress <<<_**
-
-### SectionHead:
-  * ###### SubSectionHead:
-  * ###### SubSectionHead:
-  * ###### SubSectionHead:
-  * ##### **_>>> Check your progress <<<_**
+  * **_>>> Check your progress <<<_**
