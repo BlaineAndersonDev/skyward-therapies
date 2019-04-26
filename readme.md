@@ -31,8 +31,8 @@
   * **Step 4:** Deployment to Heroku.
   * **Step 5:** Celebration.
 
-  > *This tutorial focues on building a basic CRAE App & deploying it to Heroku. If you are looking for my related tutorials [CRAE + DB](), [CRAE + Dotenv]() or another tutorial please check [here]() or select a Github Repository below.*
-  
+  > *This tutorial focues on building a basic CRAE App & deploying it to Heroku. If you are looking for my related tutorials [CRAE + DB](), [CRAE + Dotenv]() or another tutorial please check [here]().*
+
 ## Basic Installations & Directory Setup:
 ### Basic Installations:
   * Before we can begin, make sure you have these technologies installed.
