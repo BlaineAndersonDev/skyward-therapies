@@ -1,8 +1,9 @@
 # CRAE + Heroku
   * **Create-React-App + Express + Deployment to Heroku.**
-  * This guide was built in April 2019.
-  * Author: [Blaine Anderson](https://github.com/BlaineAndersonDev)
+  * [Live Site Example](https://crae-heroku.herokuapp.com/)
+  * This guide was built in April 2019 by [Blaine Anderson](https://github.com/BlaineAndersonDev).
   * This App serves as a starting point with instruction for aspiring developers using the CRAE stack (create-react-app-express) & is prepared upon completion to be deployed to Heroku.
+  <!-- * Blaine Anderson's [Portfolio](http://www.blaineandersondev.com/) -->
 
 > This instructional tutorial assumes you have a minimal understanding of Javascript, React JSX, Express Routing & Heroku. If not, then let's try anyway! Coding is all about learning!
 
