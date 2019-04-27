@@ -1,5 +1,5 @@
 # CRAE + Heroku
-  * ###### Create-React-App + Express + Deployment to Heroku.
+  * **Create-React-App + Express + Deployment to Heroku.**
   * This guide was built in April 2019.
   * Author: [Blaine Anderson](https://github.com/BlaineAndersonDev)
   * This App serves as a starting point with instruction for aspiring developers using the CRAE stack (create-react-app-express) & is prepared upon completion to be deployed to Heroku.
@@ -9,6 +9,7 @@
   | Technology | Description | CRAE + Heroku | CRAE + Nav + Foot | CRAE + Axios | CRAE + Db | CRAE + Dotenv | CRAE + Cloudinary | CRAE + Auth0 |
   | --- | --- | --- | --- | --- | --- | --- | --- | --- |
   | --- | --- | [Github](https://github.com/BlaineAndersonDev/crae-heroku#crae--heroku) | Github | Github | Github | Github | Github | Github |
+  | --- | --- | [Live Example](https://crae-heroku.herokuapp.com/) | Live Example | Live Example | Live Example | Live Example | Live Example | Live Example |
   | [Homebrew](https://brew.sh/) | "The missing package manager for macOS (or Linux)" | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Atom](https://atom.io/) | Coding Text Editor | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Node](https://nodejs.org/en/) | JS Command Line Interface | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
@@ -581,10 +582,21 @@
   * I hope you enjoyed what has been a hell of a journey for me (which really means I did SO MUCH READING)!
   * Also consider checking out some of my other guides if your interested, otherwise I wish you a great day! :wave:
 
+## Credits!
+  * Original guides I used to learn (though some are outdated and I had to make due):
+    * [Dave Ceddia: Deploy React and Express to Heroku](https://daveceddia.com/deploy-react-express-app-heroku/)
+    * [John Contreras: Running Create React App and Express (CRAE) on Heroku](https://originmaster.com/running-create-react-app-and-express-crae-on-heroku-c39a39fe7851)
+    * [Ashish Nandan Singh: How to deploy a React app with an Express server on Heroku](https://medium.freecodecamp.org/how-to-deploy-a-react-app-with-an-express-server-on-heroku-32244fe5a250)
+  * A compiled list of Github Markdown safe Emoji's (Copy and Paste even!) :smile:
+    * [rxaviers gist](https://gist.github.com/rxaviers/7360908)
 
-## Planned Tutorial Series:
-  > *Note: Each guide presumes you've completed the one above it. I.E. you should have completed CRAE+Heroku before beginning CRAE+DB.*
 
+## :floppy_disk: ---===> Continue Learning? <===--- :floppy_disk:
+  * If your interested in continuing to make this App even better, why not check out the next Guide in the series?
+    * *The next guide focuses on creating a simplistic, useful & persistant Navigtion Bar, as well as a Footer that actually stays where it should!*
+    * [CRAE+Nav+Foot]( )
+
+  <!--
   | Guide | Description |
   | --- | --- |
   | [CRAE+Heroku](https://github.com/BlaineAndersonDev/crae-heroku#crae--heroku) | A detailed guide to building a basic [Create-React-App](https://github.com/facebook/create-react-app) + [Express](https://expressjs.com/) App and deploy it to [Heroku](https://www.heroku.com/). The First Guide In The Series. |
@@ -593,4 +605,4 @@
   | CRAE+DB | A continuation guide to incorporate a fully fleshed [PostgreSQL](https://www.postgresql.org/) Database & [Knex](https://knexjs.org/) SQL Query Builder into your App. |
   | CRAE+Dotenv | A guide to implementing [Dotenv](https://github.com/motdotla/dotenv#readme) into your App. |
   | CRAE+Cloudinary | This guide allows you to store images in a third party app called [Cloudinary](https://cloudinary.com/). |
-  | CRAE+Auth0 | A guide to help implement secure sessions, logins and user information retrieval using [Auth0](https://auth0.com/). |
+  | CRAE+Auth0 | A guide to help implement secure sessions, logins and user information retrieval using [Auth0](https://auth0.com/). | -->
