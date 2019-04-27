@@ -33,7 +33,7 @@
 
   > *This tutorial focues on building a basic CRAE App & deploying it to Heroku. If you are looking for my related tutorials [CRAE + DB](), [CRAE + Dotenv]() or another tutorial please check [here]().*
 
-## Basic Installations & Directory Setup:
+## **Step 1:** Basic Installations & Directory Setup
 ### Basic Installations:
   * Before we can begin, make sure you have these technologies installed.
   * We will add additional technologies in our project later as 'Dependencies'.
@@ -60,6 +60,7 @@
     +-- server.js
     +-- package.json
     +-- .gitignore
+    +-- .babelrc
     +-- readme.md
     +-- client (Directory)
         +-- package.json
@@ -84,6 +85,9 @@
   * Create a file called ".gitignore":
     * This file will tell 'git' what files to save in commits as well as what to send to Heroku.
     * `touch .gitignore`
+  * Create a file called ".babelrc":
+    * This file will hold the presets for Babel that allow ES5 to ES6 conversions to take place.
+    * `touch .babelrc`
   * Make your root directory a git repository:
     * This allows you to control the entire App from your root (or server) directory.
     * This also prevents create-react-app from creating its own git automatically (which is more of a headache than an actual problem).
@@ -99,26 +103,167 @@
     * Now that you've finished, your directories should look similar to this:
     * ![001](client/public/images/001_directory_setup.png?raw=true)
 
+## **Step 2:** Server Updates
+  * For updates to the *server* we will need to:
+    * Install dependencies.
+    * Update *package.json*, .*babelrc*, *server.js*.
 
+### Install dependencies:
+  * Navigate to your *Server* directory in your terminal
+  * Add all our dependencies:
+    * `yarn add express @babel/core @babel/cli @babel/node @babel/preset-env`
+      * Express:
+      * Babel Core:
+      * Babel Cli:
+      * Babel Node:
+      * Babel Preset Env:
+  * Then add our single development dependency:
+    * `yarn add --dev concurrently`
+      * Concurrently:
 
+### Update package.json:
+  * Open the *Server*'s package.json with Atom
+  * We need to alter the "main" file located towards the top.
+    * Change `index.js` to `server.js`.
+  * Now we will add scripts (These allow us to start the server from our terminal).
+    ```
+    "scripts": {
+      "dev": "concurrently -n Client,Server -c cyan,magenta \"cd client && PORT=3000 yarn start\" \"PORT=3001 yarn start\"",
+      "start": "babel-node server.js",
+      "heroku-postbuild": "cd client && yarn && yarn run build"
+    }
+    ```
+    * "dev": Uses concurrently to simultaneously run our Client and Server in a single command. Concurrently also supports naming & coloring our terminal, read more [here](https://github.com/kimmobrunfeldt/concurrently#usage).
+    * "start": Once we deploy to Heroku, this command will start our server. (For development, we should be using the "dev" script.)
+    * "heroku-postbuild": Prior to our Heroku Dyno being started, this will run our "build" script in our create-react-app. That allows our *server* to display static pages. For more information read [here](_____).
+  * At this point, your package.json should look similar to this:
+  ```
+  {
+    "name": "crae-heroku",
+    "version": "1.0.0",
+    "main": "server.js",
+    "license": "MIT",
+    "dependencies": {
+      "@babel/cli": "^7.4.4",
+      "@babel/core": "^7.4.4",
+      "@babel/node": "^7.2.2",
+      "@babel/preset-env": "^7.4.4",
+      "express": "^4.16.4"
+    },
+    "devDependencies": {
+      "concurrently": "^4.1.0"
+    },
+    "scripts": {
+      "dev": "concurrently -n Client,Server -c cyan,magenta \"cd client && PORT=3000 yarn start\" \"PORT=3001 yarn start\"",
+      "start": "babel-node server.js",
+      "heroku-postbuild": "cd client && yarn && yarn run build"
+    }
+  }
+  ```
 
+### Update .babelrc:
+  * Open the *Server*'s .babelrc with Atom
+  * Copy & paste in this single object:
+  ```
+  {
+    "presets": ["@babel/preset-env"]
+  }
+  ```
+  * This tells Babel to use a preset of options to alter ES5 to ES6 and should work for almost all your javascript conversion needs. Unless you're extremely needy, in which case read more [here](https://babeljs.io/docs/en/).
 
+### Update .gitignore:
+  * Open the *Server*'s .gitignore with Atom
+  * Copy & paste in this code:
+  ```
+  # dependencies
+  /node_modules
+  /.pnp
+  .pnp.js
 
-## Server (Root Directory) Updates.
-### SectionHead:
-  * ###### SubSectionHead:
-  * ###### SubSectionHead:
-  * ###### SubSectionHead:
+  # testing
+  /coverage
+
+  # production
+  /build
+
+  # misc
+  .DS_Store
+  .env.local
+  .env.development.local
+  .env.test.local
+  .env.production.local
+
+  npm-debug.log*
+  yarn-debug.log*
+  yarn-error.log*
+  ```
+  * These selections tell git to 'ignore' anything listed from being committed to Github or Heroku. This is important for security reasons or to hide secret variables when using third-party packages.
+  * *While this file is not required for this tutorial, it is conventional to include a .gitigore with all projects being stored on a remote server. I.E. Github.*
+
+### Update server.js:
+  * Lastly for server updates, open the *Server*'s server.js with Atom
+  * Copy & paste in this code:
+  ```
+  // Express is what allows our backend to receieve 'HTTP calls' from other sources, specifically our frontend.
+  // https://expressjs.com/
+  import express from 'express';
+  // Path allows our Server to find build files stored in our frontend.
+  // https://nodejs.org/api/path.html
+  import path from 'path';
+
+  // We create our "App" using express.
+  const app = express();
+  // Allows the Server to take requests on the given `port`. When no port is provided, it will default to 3001.
+  const port = process.env.PORT || 3001;
+
+  // This line tells our app to use files in the Client's 'build' folder when rendering static pages (production pages).
+  app.use(express.static(path.join(__dirname, 'client/build')));
+
+  // All API endpoints (routes) should begin with '/api'.
+  // Loading 'localhost:3001/api/example' will direct you to this '/api/example' route.
+  app.get('/api/messages', (req, res) => {
+    // Here we create a variable named 'helloWorld' that holds an object.
+    const helloWorld = [
+      {id: 1, message: 'Hello World!'},
+      {id: 2, message: 'This is pretty cool.'},
+      {id: 3, message: 'You got this working!'},
+      {id: 4, message: 'Amazing job!'}
+    ]
+    // We return the object in JSON to the calling point (Our browser).
+    res.json(helloWorld)
+  });
+
+  // Loading 'localhost:3001/api/' will direct you to this root '/api' route.
+  app.get('/api', (req, res) => {
+    const message = 'This is the root API route!';
+    res.json(message)
+  });
+
+  // This is a catchall route to prevent the user from dealing with errors from visiting routes that do not exist. It sends a 404 (Not Found) Status as well as a message.
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+  });
+
+  // Prompt text on termial view to show API is ready to go.
+  app.listen(port);
+  console.log(`Server listening on ${port}`);
+
+  // Exports the `Express App` to be used elsewhere in the project.
+  module.exports = app;
+  ```
+  * Every line in this code has a comment about it for posterity. Make sure to take some time and read over them to understand more about what your doing.
+  * Want a file with no comments? Too bad! Remove them manually! :smiling_imp:
+
   * **_>>> Check your progress <<<_**
+    * Let go ahead and start both our *server* & our *client* using a single command:
+    * Navigate to your *Server* directory in your terminal & use:
+      * `yarn dev`
+  * Checking on our *Client*:
+    * This should automatically load your React *client*, which will navigate you to the standardly generated React page, located at [localhost:3000](http://localhost:3000/).
+    * ![002](client/public/images/002_react_homepage.png?raw=true)
+  * Checking on our *Server*:
+    * In your browser, navigate to [localhost:3001/api/messages](http://localhost:3001/api/messages)
+    * Here you should see some basic data displayed, like so:
+    * ![003](client/public/images/003_server_homepage.png?raw=true)
 
-### SectionHead:
-  * ###### SubSectionHead:
-  * ###### SubSectionHead:
-  * ###### SubSectionHead:
-  * **_>>> Check your progress <<<_**
-
-### SectionHead:
-  * ###### SubSectionHead:
-  * ###### SubSectionHead:
-  * ###### SubSectionHead:
-  * **_>>> Check your progress <<<_**
+### Great work! Both your *Server* & *Client* are working perfectly:
