@@ -1,8 +1,8 @@
-# CRAE + Nav + Foot
+# CRAE + Nav + Foot (*Guide #2*)
   * **Create-React-App + A Persistent Navigation Bar + A Stationary Footer**
   * [Live Site Example](https://crae-nav-foot.herokuapp.com/)
   * This guide was built in April 2019 by [Blaine Anderson](https://github.com/BlaineAndersonDev).
-  * *This App is the __2nd__ in a series. Please make sure you're using the App previously built in this guide:*
+  * *This Guide is the __2nd__ in a series. Please make sure you're using the App previously built in this guide:*
     * Guide 1: [crae-heroku](https://github.com/BlaineAndersonDev/crae-heroku#crae--heroku)
   <!-- * Blaine Anderson's [Portfolio](http://www.blaineandersondev.com/) -->
 
