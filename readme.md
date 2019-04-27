@@ -177,6 +177,7 @@
   ```
   # dependencies
   /node_modules
+  /client/node_modules
   /.pnp
   .pnp.js
 
@@ -265,4 +266,175 @@
     * In your browser, navigate to [localhost:3001/api/messages](http://localhost:3001/api/messages)
     * Here you should see some basic data displayed, like so:
     * ![003](client/public/images/003_server.png?raw=true)
-    * Great work! Both your *Server* & *Client* are working perfectly:
+    * Great work! Both your *Server* & *Client* are working perfectly!
+
+
+## **Step 3:** Client Updates
+  * For updates to the *client* we will need to:
+    * Add a proxy.
+    * Install dependencies.
+    * Update *package.json*, .*index.js*, *App.js*, *App.css*.
+
+### Install dependencies:
+
+
+
+
+
+
+
+### Client Updates:
+  * For updates to the *client* we will need to: remove git, add a front-end router, update our index.js file & add a proxy.
+
+  * ###### Client - Removing Git:
+    * For our project, git will be hosted in our *project root* so we will need to remove the automatically generated repository from our *client*:
+    * Navigate to your *client* directory in your terminal and enter:
+      * `rm -rf .git`
+      * *Note: `rm -rf` is a dangerous command to use without understanding its consequences. In this example, we are removing the automatically created git directory that is installed (called .git) so we can initialize git in another directory.*
+
+  * ###### Client - Adding a front-end router:
+    * First we will need to add a basic [react-router-dom](https://reacttraining.com/react-router/) (router) to the frontend, allowing us to effectively navigate through all the [React Components](https://reactjs.org/docs/react-component.html) we might need.
+      * Navigate to your *client* directory in your terminal.
+      * Install react-router-dom using yarn:
+        * `yarn add react-router-dom`
+    * Once the installation is finished, we will update index.js.
+
+  * ###### Client - Updating index.js in *client*:
+    * Navigate to your *client* directory in your terminal & open index.js with Atom.
+      * `atom index.js`
+    * Paste in the following code over the original code:
+    ```
+    // We import React here in order to use it.
+    import React from 'react';
+    // This allows us to render and alter content dynamically on the DOM (https://reactjs.org/docs/react-dom.html)
+    import { render } from 'react-dom';
+    // This allows us to create a front-end 'Router', to allow the user to navigate throughout our components without having to reload the page each time (https://reacttraining.com/react-router/web/api/BrowserRouter)
+    import { BrowserRouter } from 'react-router-dom';
+    // This imports our actual App in order to display it to our browser.
+    import App from './App.js';
+
+    // 'render' is what allows the App to be displayed. It's held inside of a 'Router' (BrowserRouter) so in the future we can implement additional route options. The entire thing is rendered at the element 'id' via HTML.
+    render((
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+    ), document.getElementById('root'));
+    ```
+
+  * ###### Client - Adding a proxy:
+    * A proxy allows our frontend to communicate with our backend in order to retrieve data & information.
+    * Navigate to your *client* directory in your terminal & open package.json with Atom.
+    * Add the line `"proxy": "http://localhost:3001"` or copy and paste in the code below:
+    ```
+    {
+      "name": "client",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-scripts": "2.1.8"
+      },
+      "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+      },
+      "proxy": "http://localhost:3001",
+      "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+      ]
+    }
+    ```
+    * *My example code removes the `eslintConfig` section of `package.json`.*
+    * *Note: While the port does not have to be 3001, it's conventional that the client runs on port 3000 and the server on port 3001. Do not change the port from 3001 unless you understand what your doing.*
+
+  * ###### Client - Updating App.js:
+    * Now we will update our App.js with code that allows communication between frontend and backend.
+    * Navigate to your *client* directory in your terminal & open App.js with Atom.
+      * `atom App.js`
+    * Paste in the following code (overwriting is fine):
+    ```
+    // Import React and allow it to extend Components.
+    import React, { Component } from 'react';
+    // Import the css file.
+    import './App.css';
+
+    // Create the Class 'App' and allow it to be called as a component from other parts of the client. I.E. index.js.
+    class App extends Component {
+      // State maintains variables until the browser is refreshed
+      state = {
+        messages: [],
+        toggleButtonOn: true
+      }
+
+      // componentDidMount runs functions or HTTP calls prior to the page loading in the browser.
+      async componentDidMount() {
+      };
+
+      // This function is created using ES6 syntax and uses async/await functionality.
+      // getInfoFromApi makes a fetch request to `https://localhost:3001/example`, and receieves a "rawResponse" (Stringified JSON).
+      getInfoFromApi = async () => {
+        // The "rawResponse" is returned to the variable "convertedResponse" after the JSON is converted back into an object.
+        const convertedResponse = await fetch('/example')
+        .then(rawResponse => {
+            return rawResponse.json()
+        });
+        // convertedResponse is then set as the current 'state' of 'messages' for use elsewhere in our App. We are also setting another state to false to indicate that a specific button was pressed.
+        await this.setState({
+          messages: convertedResponse,
+          toggleButtonOn: false
+        })
+      };
+
+      // render is where we begin to generate what is displayed to the browser. It is a useful place to add if statements that depend on the state or props of the Component.
+      render() {
+
+        // 'displayButton' will only show if the current state of "toggleButtonOn" is set to "true"
+        // That means it should show upon the page being loaded/refreshed since state is lost on refresh.
+        // When clicked it runs the function "getInfoFromApi", which changes the state of "toggleButtonOn" to false, chaning "displayButton" to "null" (it will display nothing).
+        let displayButton;
+        if (this.state.toggleButtonOn) {
+           // If this.state.toggleButtonOn is 'true'.
+          displayButton = <button onClick={this.getInfoFromApi}>Click here to get data from the backend!</button>
+        } else {
+          // If this.state.toggleButtonOn is 'false'.
+          displayButton = null;
+        }
+
+        // 'displayData' should only ever be shown AFTER the fetch request to our API is made by clicking our `displayButton`.
+        // So in this case, we only display the data when the state 'toggleButtonOn' is 'false', meaning we've already made the call to our API, received data, and saved it into our state.
+        let displayData;
+        if (!this.state.toggleButtonOn) {
+          // If this.state.toggleButtonOn is 'false'.
+          displayData = this.state.messages.map( message => {
+              return <li key={message.id}>{message.message}</li>
+            })
+        } else {
+          // If this.state.toggleButtonOn is 'true'.
+          displayData = null;
+        }
+
+        return (
+          <div>
+            <h1>This is the frontend of the App!</h1>
+            {displayButton}
+            <ul>
+              {displayData}
+            </ul>
+          </div>
+        );
+      };
+
+    };
+
+    export default App;
+    ```
+
+
+
+    =
