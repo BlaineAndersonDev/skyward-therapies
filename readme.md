@@ -264,5 +264,5 @@
   * Checking on our *Server*:
     * In your browser, navigate to [localhost:3001/api/messages](http://localhost:3001/api/messages)
     * Here you should see some basic data displayed, like so:
-    * ![003](client/public/images/003_server_homepage.png?raw=true)
+    * ![003](client/public/images/003_server.png?raw=true)
     * Great work! Both your *Server* & *Client* are working perfectly:
