@@ -7,9 +7,9 @@
 > This instructional tutorial assumes you have a minimal understanding of Javascript, React JSX, Express Routing & Heroku. If not, then let's try anyway! Coding is all about learning!
 
 
-  | Technology | Description | CRAE + Heroku | CRAE + DB | CRAE + Dotenv |
-  | --- | --- | --- | --- | --- |
-  | --- | --- | [Github]() | [Github]() | [Github]() |
+  | Technology | Description | CRAE + Heroku | CRAE + Nav + Foot | CRAE + Axios | CRAE + Db | CRAE + Dotenv | CRAE + Cloudinary | CRAE + Auth0 |
+  | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+  | --- | --- | [Github]() | Github | Github | Github | Github | Github | Github |
   | [Homebrew](https://brew.sh/) | "The missing package manager for macOS (or Linux)" | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Atom](https://atom.io/) | Coding Text Editor | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Node](https://nodejs.org/en/) | JS Command Line Interface | :white_check_mark: | :white_check_mark: | :white_check_mark: |
