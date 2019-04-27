@@ -303,6 +303,9 @@
     * Here you should see some basic data displayed, like so:
     * ![003](client/public/images/003_server.png?raw=true)
     * Great work! Both your *Server* & *Client* are working perfectly!
+  * Make sure you push your code up to Github!
+    * Navigate to your *Server* directory in your terminal & use:
+    * `git push origin master`
 
 
 ## **Step 4:** Client Updates
@@ -515,6 +518,9 @@
     * ![005](client/public/images/005_frontend_yes_messages.png?raw=true)
     * If thats the case, then EXCELLENT WORK! :exclamation: :cake:
     * That means both your *Server* & *Client* are working perfectly and better yet, communicating properly!
+  * Make sure you push your code up to Github!
+    * Navigate to your *Server* directory in your terminal & use:
+    * `git push origin master`
 
 ## **Step 5:** Deployment to Heroku.
   * Now that the base App is working & communicating properly, we can send it on up to Heroku and get it on the real interwebs! :computer:
