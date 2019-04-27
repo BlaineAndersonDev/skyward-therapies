@@ -480,7 +480,10 @@
     * If thats the case, then EXCELLENT WORK! :exclamation: :cake:
     * That means both your *Server* & *Client* are working perfectly and better yet, communicating properly!
 
-## **Step 4:** Deployment to Heroku.
+## **Step 4:** Getting your local repository onto Github
+
+
+## **Step 5:** Deployment to Heroku.
   * Now that the base App is working & communicating properly, we can send it on up to Heroku and get it on the real interwebs! :computer:
   * To deploy our App to heroku we will need to:
     * Have Heroku's CLI installed (Command Line Interface).
@@ -489,23 +492,68 @@
     * Watch as the App is created remotely with Heroku Logs.
     * Load our awesome App and test it on the internets!
 
-### SubHeader
-### **_>>> Step 4: Check your progress <<<_**
+### Installing HerokuCLI
+  * There are a number of options for installing the Heroku CLI, though the most common ones would be via an installer (MacOS or Windows) or using Brew (Mac Only).
+  * I recommend using the installer, but you can read more about installation options [here](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
+  * After installing the HerokuCLI you'll need to login via your terminal using it.
+  * Logging in is very straightforward and I recommend following the instructions given by Heroku themselves [here](https://devcenter.heroku.com/articles/heroku-cli#getting-started).
 
+### Creating a Heroku Dyno (App)
+  * Now that the HerokuCLI is installed, we can use commands for it
+  * Navigate to your *Server* directory and use this command:
+    * `heroku create <Optional_Dyno_Name>`
+    * I.E. `heroku create crae-heroku`
 
-## **Step 5:** Celebration!
+### Pushing our App to Heroku
+  * Now that the Heroku Dyno is created, all we need to do is push our App to it
+  * Navigate to your *Server* directory and use this command:
+    * `git push heroku master`
+  * This will send our App to the associated Heroku Dyno.
+
+### Checking on our App's progress with Heroku Logs
+  * In another terminal window or tab, navigate to your *Server* directory and use this command:
+    * `heroku logs --tail`
+  * This will load the current directories heroku logs, which is displayed in real time for you to look over. Usually this is used to find errors, but it's good to watch and see exactly what happens the first few times so you understand it better.
+
+### Understanding how Heroku builds your App
+  * When we push our App up, Heroku does a couple things:
+    * Heroku checks for the script "heroku-postbuild". Once our App's information is fully pushed up, and Heroku has installed yarn on the remote server (Which it does automatically) it will look for that *specific* script and execute it.
+    * In this "heroku-postbuild" script, we tell Heroku to go one directory deeper and install yarn there too. Once thats done we also tell it to run the *client*'s "build" script (Which allows our *server* to display those static files from the 'client/build' directory).
+    * This likely sounds quite confusing. Believe me, I understand.
+    * All you really need to know is not to change the *Server*'s "start" & "heroku-postbuild" scripts, as well as the *Client*'s "start" or "build" scripts.
+    * Lastly, one line **must** stay in server.js, otherwise these scripts won't work properly:
+      * `app.use(express.static(path.join(__dirname, 'client/build')));`
+    * Basically, Commit and push often so you don't get stuck with an error you can't figure out! :scream:
+
+### **_>>> Step 5: Check your progress <<<_**
+  * Once the App is fully loaded on Heroku, you should see something like this in the heroku logs:
+  * ![006](client/public/images/006_heroku_logs.png?raw=true)
+  * You should now be able to load the webpage where it's located.
+    * If your not sure where that is, you can look at the Dyno on Heroku itself & check the settings for that specific Dyno. There will be a link to you page there.
+  * Another option is looking in your terminal where you pushed your App to Heroku.
+    * There should be the actual link to your live site in the terminal, just copy and paste it out. It would look something like this:
+    * ![007](client/public/images/007_heroku_link.png?raw=true)
+  * You can find the live version of this app at [https://crae-heroku.herokuapp.com/](https://crae-heroku.herokuapp.com/).
+
+## **Step 6:** Celebration!
   * For updates to the *client* we will need to:
     * Add a proxy.
     * Install dependencies.
     * Update *package.json*, .*index.js*, *App.js*, *App.css*.
     * Remove *serviceWorker.js* & the *Client*'s *.gitignore*'.
 ### SubHeader
-### **_>>> Step 5: Check your progress <<<_**
+### **_>>> Step 6: Check your progress <<<_**
 
 
 
 
 
+
+### ===> You've Competed The App! <====
+  * At this point, you've created a fully functional **CRAE** stack Application! Congrats!
+  * You can begin adding your own content to the current setup
+  * **or**
+  * You can continue adding additional packages from this tutorial for a more robust App (More to come soon).
 
 
 
