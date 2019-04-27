@@ -31,21 +31,66 @@
 
 # CRAE + Nav + Foot
   * **Step 1:** Build File Structure
+  * **Step 2:** Setup Home
   * **Step 2:** Setup Navigation
   * **Step 3:** Setup Footer
+  * **Step 2:** Re-Configure App.js
   * **Step 4:** Finishing Touches
   * **Step 5:** Celebration
   * **Step 6:** _______
 
 ## **Step 1:** Build File Structure
-  * First off, keeping your projects (regardless of language) organized will save you time now, in the future, and help anyone who looks at your code immensely.
+  * First off, keeping your projects organized (regardless of language) will save you time now, in the future, and help anyone who looks at your code immensely.
   * **Do not underestimate the importance of organization!**
-  * We are going to structure our App very simply based off an [Article](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1) by Alexis Mangin. It won't be nearly as in depth, but an App should be organized, regardless of size.
-### Layout:
+  * We are going to re-structure our App very simply based off an [Article](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1) by Alexis Mangin. It won't be nearly as in depth as the article, but an App should be organized, regardless of size.
+
+### Organized Layout Explained:
   * The app should look something along these lines when we finish:
+  * ![011](client/public/images/011.png?raw=true)
+  * To understand this organization, we'll go directory by directory.
+    * The src directory holds our index.js, which is how the entire App iteslf it loaded.
+    * The app directory holds our App.js, & App.css which will allow us to navigate throughout the app using react-router-dom.
+    * The pages directory holds all the top-level Components we will use on every page. I.E. Nav.js & Footer.js. It also contains Home.js since that is our 'Root' Component.
+    * The message directory is a specific directory that will only ever contain components for our /messages route. This means any smaller components loaded through Messages.js would also be located in this folder.
+    * Keep in mind, this layout is a preference, and there is no wrong or right way to do it. Just make sure you keep it organized!
+      * *Note: The .css files can all be housed in a directory located near their Component for further organization. Alternatively you can have one GIANT .css file, but I like them next to the required Component.*
+
+### Creating Files & Directories
+  * Make sure you're paying attention to where your located in terminal!
+  * Lets start by navigating to your *Client* directory and removing some clutter:
+    * 'rm -rf README.md'
+  * Then lets navigate to your *Client/src* directory.
+  * Create a new directory called 'app', then move all three 'app' files to that directory:
+    * `mkdir app`
+    * `mv App.js app`
+    * `mv App.css app`
+    * `mv App.test.js app`
+  * In the same directory, let's remove some unused files to remove clutter:
+    * 'rm -rf logo.svg'
+    * 'rm -rf index.css'
+  * Now move into the *Client/src/app* directory and create the 'pages' directory:
+    * `mkdir pages`
+    * This directoy is used as the starting directory for ALL other components (other than App.js & index.js).
+  * Now move into the *Client/src/app/pages* directory.
+  * Create all the files we will be using:
+    * `touch Nav.js`
+    * `touch Nav.css`
+    * `touch Footer.js`
+    * `touch Footer.css`
+    * `touch Home.js`
+    * `touch Home.css`
+  * Create you last directory to contain all the 'message' Components:
+    * `mkdir message`
+    * *Note: I try to keep everything singular when creating Components and directories deeper than 'pages'. It helps me keep naming conventions straight.*
+  * Create the last required files:
+    * `touch Message.js`
+    * `touch Message.css`
+  * **Whew!** That was a lot of changes, but don't worry! Everything will get explained along the way.
+
 ### Implementing Organization:
   * Let start by navigating to your *Client* directory.
   * Now we going to
+
 ### **_>>> Step _______: Check your progress <<<_**
   *
 
