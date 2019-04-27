@@ -20,6 +20,7 @@
   | [Nodemon](https://nodemon.io/) | Automatic Server Restart | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [React-Router-Dom](https://github.com/ReactTraining/react-router#readme) | Front-End 'Router' | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Babel 7](https://babeljs.io/) | ES6 Conversion to ES5 for Browser Compatibly | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [HerokuCLI](https://devcenter.heroku.com/articles/heroku-cli) | Allows you to create & manage Heroku Apps via terminal | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [PostgreSQL](https://www.postgresql.org/) | SQL Database | | :white_check_mark: | :white_check_mark: |
   | [Knex](https://knexjs.org/) | SQL Query Builder | | :white_check_mark: | :white_check_mark: |
   | [Dotenv](https://github.com/motdotla/dotenv#readme) | Allows Use of Environment Variable | | | :white_check_mark: |
@@ -28,10 +29,11 @@
   * **Step 1:** Basic Installations & Directory Setup.
   * **Step 2:** Server (Root Directory) Updates.
   * **Step 3:** Client (Create-React-App) Updates.
-  * **Step 4:** Deployment to Heroku.
-  * **Step 5:** Celebration.
+  * **Step 4:** Upload to Github.
+  * **Step 5:** Deployment to Heroku.
+  * **Step 6:** Celebration.
 
-  > *This tutorial focues on building a basic CRAE App & deploying it to Heroku. If you are looking for my related tutorials [CRAE + DB](), [CRAE + Dotenv]() or another tutorial please check [here]().*
+  > *This tutorial focuses on building a basic CRAE App & deploying it to Heroku. If you are looking for my related tutorials [CRAE + DB](), [CRAE + Dotenv]() or another tutorial please check [here]().*
 
 ## **Step 1:** Basic Installations & Directory Setup
 ### Basic Installations:
@@ -535,32 +537,23 @@
     * ![007](client/public/images/007_heroku_link.png?raw=true)
   * You can find the live version of this app at [https://crae-heroku.herokuapp.com/](https://crae-heroku.herokuapp.com/).
 
-## **Step 6:** Celebration!
-  * For updates to the *client* we will need to:
-    * Add a proxy.
-    * Install dependencies.
-    * Update *package.json*, .*index.js*, *App.js*, *App.css*.
-    * Remove *serviceWorker.js* & the *Client*'s *.gitignore*'.
-### SubHeader
-### **_>>> Step 6: Check your progress <<<_**
+## **Step 6:** Celebration! :clap:
+  * **===> You've Competed The App! <====**
+  * At this point, you've created a fully functional **CRAE** stack Application **AND** Deployed it to Heroku! Congrats!
+  * Now you can begin adding your own content to the current setup if you want.
+  * I hope you enjoyed what has been a hell of a journey for me (which really means I did SO MUCH READING)!
+  * Also consider checking out some of my other guides if your interested, otherwise I wish you a great day! :wave:
 
 
+## Planned Tutorial Series:
+  > *Note: Each guide presumes you've completed the one above it. I.E. you should have completed CRAE+Heroku before beginning CRAE+DB.*
 
-
-
-
-### ===> You've Competed The App! <====
-  * At this point, you've created a fully functional **CRAE** stack Application! Congrats!
-  * You can begin adding your own content to the current setup
-  * **or**
-  * You can continue adding additional packages from this tutorial for a more robust App (More to come soon).
-
-
-
-
-
-
-
-
-
-    =
+  | Guide | Description |
+  | --- | --- |
+  | [CRAE+Heroku](https://github.com/BlaineAndersonDev/crae-heroku#crae--heroku) | A detailed guide to building a basic [Create-React-App](https://github.com/facebook/create-react-app) + [Express](https://expressjs.com/) App and deploy it to [Heroku](https://www.heroku.com/). The First Guide In The Series. |
+  | CRAE+Nav+Foot | This guide focuses on creating a persistent Top level Navigation bar & a footer that stays grounded. ([Example](________)) |
+  | CRAE+Axios | A guide aimed to implement the [Axios](https://github.com/axios/axios) routing library for simple but powerful HTTP requests. |
+  | CRAE+DB | A continuation guide to incorporate a fully fleshed [PostgreSQL](https://www.postgresql.org/) Database & [Knex](https://knexjs.org/) SQL Query Builder into your App. |
+  | CRAE+Dotenv | A guide to implementing [Dotenv](https://github.com/motdotla/dotenv#readme) into your App. |
+  | CRAE+Cloudinary | This guide allows you to store images in a third party app called [Cloudinary](https://cloudinary.com/). |
+  | CRAE+Auth0 | A guide to help implement secure sessions, logins and user information retrieval using [Auth0](https://auth0.com/). |
