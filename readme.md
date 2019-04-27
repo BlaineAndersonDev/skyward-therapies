@@ -12,6 +12,7 @@
   | [Homebrew](https://brew.sh/) | "The missing package manager for macOS (or Linux)" | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Atom](https://atom.io/) | Coding Text Editor | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Node](https://nodejs.org/en/) | JS Command Line Interface | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+  | [Git](https://git-scm.com/) | Project version control | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Yarn](https://github.com/yarnpkg/yarn) | Alternative Package Manager (Replaces NPM) | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [ReactJS](https://reactjs.org/) | Dynamic Front-End View | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Create-React-App](https://github.com/facebook/create-react-app) | "Zero" Configuration ReactJS Setup | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
@@ -29,9 +30,9 @@
 
 # CRAE + Heroku
   * **Step 1:** Basic Installations & Directory Setup.
-  * **Step 2:** Server (Root Directory) Updates.
-  * **Step 3:** Client (Create-React-App) Updates.
-  * **Step 4:** Upload to Github.
+  * **Step 2:** Upload to Github.
+  * **Step 3:** Server (Root Directory) Updates.
+  * **Step 4:** Client (Create-React-App) Updates.
   * **Step 5:** Deployment to Heroku.
   * **Step 6:** Celebration.
 
@@ -44,6 +45,8 @@
     * [Homebrew](https://brew.sh/)
       * (See site for installation instructions)
     * [Node](https://nodejs.org/en/)
+      * (See site for installation instructions)
+    * [Git](https://git-scm.com/)
       * (See site for installation instructions)
     * [Atom](https://atom.io/)
       * *(Or any [coding text editor](https://www.elegantthemes.com/blog/resources/best-code-editors) instead)*
@@ -107,7 +110,36 @@
   * Now that you've finished, your directories should look similar to this:
   * ![001](client/public/images/001_directory_setup.png?raw=true)
 
-## **Step 2:** Server Updates
+
+## **Step 2:** Getting your local repository onto Github
+  * Since we've got a bit of work done now, we should store it properly... in [Github](https://github.com)!
+  * Navigate to your *Server* and lets 'save' everything we've done so far:
+    * `git add .`
+    * This tells 'git' to 'add' (prepare to save) '.' (everything) you've done in both your *Server* & *Client* directories, minus any specific files or directories in your .gitignore.
+  * Now lets 'commit' (save) our code as a version:
+    * `git commit -m "<Insert Message Here>"`
+    * You should always be adding a commit message with a small summery of what you've done up to this point.
+    * I.E. `git commit -m "Initial Commit. Setup File Structure."`
+  * The files are now committed (saved) locally as a version. Now we need to setup our remote github repository.
+    * In your Browser, navigate to your github and create a new repository:
+      * ![008](client/public/images/008.png?raw=true)
+    * Give your new repository a good name. You may also add a description if you wish. Leave everything else alone for now.
+      * ![009](client/public/images/009.png?raw=true)
+    * Now make sure you have 'HTTPS' selected and copy the provided link (Click the nifty copy button on the right).
+      * ![010](client/public/images/010.png?raw=true)
+    * Head on back to your terminal and navigate to the *Server* directory.
+    * Use the following command:
+      * `git remote add origin <Link>`
+      * I.E. `git remote add origin https://github.com/BlaineAndersonDev/crae-example.git`
+      * This links a remote repository to your local one, allowing you to send you code to the cloud with a 'push'.
+    * Let's do that push to the cloud now. In terminal, use the command:
+      * `git push origin master`
+      * This pushes the code to the remote 'origin' that we just setup, and we want our git branch 'master' to be sent up to the cloud.
+
+### **_>>> Step 2: Check your progress <<<_**
+  * You should see some flashy code running and once thats completed, go refresh your github repository. You should now see it filled with your code!
+
+## **Step 3:** Server Updates
   * For updates to the *server* we will need to:
     * Install dependencies.
     * Update *package.json*, .*babelrc*, *server.js*.
@@ -259,7 +291,7 @@
   * Every line in this code has a comment about it for posterity. Make sure to take some time and read over them to understand more about what your doing.
   * Want a file with no comments? Too bad! Remove them manually! :smiling_imp:
 
-### **_>>> Step 2: Check your progress <<<_**
+### **_>>> Step 3: Check your progress <<<_**
   * Let go ahead and start both our *server* & our *client* using a single command:
   * Navigate to your *Server* directory in your terminal & use:
     * `yarn dev`
@@ -273,7 +305,7 @@
     * Great work! Both your *Server* & *Client* are working perfectly!
 
 
-## **Step 3:** Client Updates
+## **Step 4:** Client Updates
   * For updates to the *client* we will need to:
     * Add a proxy.
     * Install dependencies.
@@ -470,7 +502,7 @@
   * Use the following command to remove the file:
     * `rm -rf .gitignore`
 
-### **_>>> Step 3: Check your progress <<<_**
+### **_>>> Step 4: Check your progress <<<_**
   * Let go ahead and start both our *server* & our *client* gain using a single command:
   * Navigate to your *Server* directory in your terminal & use:
     * `yarn dev`
@@ -483,9 +515,6 @@
     * ![005](client/public/images/005_frontend_yes_messages.png?raw=true)
     * If thats the case, then EXCELLENT WORK! :exclamation: :cake:
     * That means both your *Server* & *Client* are working perfectly and better yet, communicating properly!
-
-## **Step 4:** Getting your local repository onto Github
-
 
 ## **Step 5:** Deployment to Heroku.
   * Now that the base App is working & communicating properly, we can send it on up to Heroku and get it on the real interwebs! :computer:
