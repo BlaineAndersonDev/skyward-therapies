@@ -30,16 +30,22 @@
   | [Auth0](https://auth0.com/) | Secure sessions & user information | | | | | | | :white_check_mark: |
 
 # CRAE + Nav + Foot
-  * **Step 1:** _______
-  * **Step 2:** _______
-  * **Step 3:** _______
-  * **Step 4:** _______
-  * **Step 5:** _______
+  * **Step 1:** Build File Structure
+  * **Step 2:** Setup Navigation
+  * **Step 3:** Setup Footer
+  * **Step 4:** Finishing Touches
+  * **Step 5:** Celebration
   * **Step 6:** _______
 
-## **Step _______:**
-### _______:
-  *
+## **Step 1:** Build File Structure
+  * First off, keeping your projects (regardless of language) organized will save you time now, in the future, and help anyone who looks at your code immensely.
+  * **Do not underestimate the importance of organization!**
+  * We are going to structure our App very simply based off an [Article](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1) by Alexis Mangin. It won't be nearly as in depth, but an App should be organized, regardless of size.
+### Layout:
+  * The app should look something along these lines when we finish:
+### Implementing Organization:
+  * Let start by navigating to your *Client* directory.
+  * Now we going to
 ### **_>>> Step _______: Check your progress <<<_**
   *
 
