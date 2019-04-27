@@ -99,9 +99,9 @@
   * Now that we've laid the groundwork for our Project, we will need to make some changes & add some new files to the "Root" (*server*) & *client* directories.
   * From here on, we will refer to our "Root" directory as our "*Server*".
 
-  * **_>>> Check your progress <<<_**
-    * Now that you've finished, your directories should look similar to this:
-    * ![001](client/public/images/001_directory_setup.png?raw=true)
+### **_>>> Step 1: Check your progress <<<_**
+  * Now that you've finished, your directories should look similar to this:
+  * ![001](client/public/images/001_directory_setup.png?raw=true)
 
 ## **Step 2:** Server Updates
   * For updates to the *server* we will need to:
@@ -255,10 +255,10 @@
   * Every line in this code has a comment about it for posterity. Make sure to take some time and read over them to understand more about what your doing.
   * Want a file with no comments? Too bad! Remove them manually! :smiling_imp:
 
-  * **_>>> Check your progress <<<_**
-    * Let go ahead and start both our *server* & our *client* using a single command:
-    * Navigate to your *Server* directory in your terminal & use:
-      * `yarn dev`
+### **_>>> Step 2: Check your progress <<<_**
+  * Let go ahead and start both our *server* & our *client* using a single command:
+  * Navigate to your *Server* directory in your terminal & use:
+    * `yarn dev`
   * Checking on our *Client*:
     * This should automatically load your React *client*, which will navigate you to the standardly generated React page, located at [localhost:3000](http://localhost:3000/).
     * ![002](client/public/images/002_react_homepage.png?raw=true)
@@ -274,166 +274,244 @@
     * Add a proxy.
     * Install dependencies.
     * Update *package.json*, .*index.js*, *App.js*, *App.css*.
+    * Remove *serviceWorker.js* & the *Client*'s *.gitignore*'.
 
 ### Install dependencies:
+  * Navigate to your *Client* directory in your terminal
+  * Add our single dependency:
+    * `yarn add react-router-dom`
+      * React-Router-Dom:
 
-
-
-
-
-
-
-### Client Updates:
-  * For updates to the *client* we will need to: remove git, add a front-end router, update our index.js file & add a proxy.
-
-  * ###### Client - Removing Git:
-    * For our project, git will be hosted in our *project root* so we will need to remove the automatically generated repository from our *client*:
-    * Navigate to your *client* directory in your terminal and enter:
-      * `rm -rf .git`
-      * *Note: `rm -rf` is a dangerous command to use without understanding its consequences. In this example, we are removing the automatically created git directory that is installed (called .git) so we can initialize git in another directory.*
-
-  * ###### Client - Adding a front-end router:
-    * First we will need to add a basic [react-router-dom](https://reacttraining.com/react-router/) (router) to the frontend, allowing us to effectively navigate through all the [React Components](https://reactjs.org/docs/react-component.html) we might need.
-      * Navigate to your *client* directory in your terminal.
-      * Install react-router-dom using yarn:
-        * `yarn add react-router-dom`
-    * Once the installation is finished, we will update index.js.
-
-  * ###### Client - Updating index.js in *client*:
-    * Navigate to your *client* directory in your terminal & open index.js with Atom.
-      * `atom index.js`
-    * Paste in the following code over the original code:
-    ```
-    // We import React here in order to use it.
-    import React from 'react';
-    // This allows us to render and alter content dynamically on the DOM (https://reactjs.org/docs/react-dom.html)
-    import { render } from 'react-dom';
-    // This allows us to create a front-end 'Router', to allow the user to navigate throughout our components without having to reload the page each time (https://reacttraining.com/react-router/web/api/BrowserRouter)
-    import { BrowserRouter } from 'react-router-dom';
-    // This imports our actual App in order to display it to our browser.
-    import App from './App.js';
-
-    // 'render' is what allows the App to be displayed. It's held inside of a 'Router' (BrowserRouter) so in the future we can implement additional route options. The entire thing is rendered at the element 'id' via HTML.
-    render((
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
-    ), document.getElementById('root'));
-    ```
-
-  * ###### Client - Adding a proxy:
-    * A proxy allows our frontend to communicate with our backend in order to retrieve data & information.
-    * Navigate to your *client* directory in your terminal & open package.json with Atom.
-    * Add the line `"proxy": "http://localhost:3001"` or copy and paste in the code below:
-    ```
-    {
-      "name": "client",
-      "version": "0.1.0",
-      "private": true,
-      "dependencies": {
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
-        "react-scripts": "2.1.8"
-      },
-      "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-      },
-      "proxy": "http://localhost:3001",
-      "browserslist": [
+### Add a Proxy to package.json:
+  * Open the *Server*'s package.json with Atom
+  * Add a single line:
+    * `"proxy": "http://localhost:3001"`
+  * Having installed our dependency and added our Proxy, your *client*/package.json should look similar to this:
+  ```
+  {
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6",
+      "react-router-dom": "^5.0.0",
+      "react-scripts": "3.0.0"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
         ">0.2%",
         "not dead",
-        "not ie <= 11",
         "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
       ]
-    }
-    ```
-    * *My example code removes the `eslintConfig` section of `package.json`.*
-    * *Note: While the port does not have to be 3001, it's conventional that the client runs on port 3000 and the server on port 3001. Do not change the port from 3001 unless you understand what your doing.*
+    },
+    "proxy": "http://localhost:3001"
+  }
+  ```
 
-  * ###### Client - Updating App.js:
-    * Now we will update our App.js with code that allows communication between frontend and backend.
-    * Navigate to your *client* directory in your terminal & open App.js with Atom.
-      * `atom App.js`
-    * Paste in the following code (overwriting is fine):
-    ```
-    // Import React and allow it to extend Components.
-    import React, { Component } from 'react';
-    // Import the css file.
-    import './App.css';
 
-    // Create the Class 'App' and allow it to be called as a component from other parts of the client. I.E. index.js.
-    class App extends Component {
-      // State maintains variables until the browser is refreshed
-      state = {
-        messages: [],
-        toggleButtonOn: true
-      }
+### Update index.js:
+  * Open the *Client*'s index.js with Atom
+  * Copy & paste in this code:
+  ```
+  // We import React here in order to use it.
+  import React from 'react';
+  // This allows us to render and alter content dynamically on the DOM (https://reactjs.org/docs/react-dom.html)
+  import { render } from 'react-dom';
+  // This allows us to create a front-end 'Router', to allow the user to navigate throughout our components without having to reload the page each time (https://reacttraining.com/react-router/web/api/BrowserRouter)
+  import { BrowserRouter } from 'react-router-dom';
+  // This imports our actual App in order to display it to our browser.
+  import App from './App.js';
 
-      // componentDidMount runs functions or HTTP calls prior to the page loading in the browser.
-      async componentDidMount() {
+  // 'render' is what allows the App to be displayed. It's held inside of a 'Router' (BrowserRouter) so in the future we can implement additional route options. The entire thing is rendered at the element 'id' via HTML.
+  render((
+      <BrowserRouter>
+          <App/>
+      </BrowserRouter>
+  ), document.getElementById('root'));
+  ```
+  * All lines have comments for educational purposes. Same as before.
+
+### Update App.js:
+  * Open the *Client*'s App.js with Atom
+  * Copy & paste in this code:
+  ```
+  // Import React & 'Component' which allows us to create Components as well as render JSX.
+  import React, { Component } from 'react';
+  // Import our CSS file for styling.
+  import './App.css';
+
+  class App extends Component {
+    // Initialize props & state
+    constructor(props){
+      super(props);
+      this.state = {
+        messages: []
       };
-
-      // This function is created using ES6 syntax and uses async/await functionality.
-      // getInfoFromApi makes a fetch request to `https://localhost:3001/example`, and receieves a "rawResponse" (Stringified JSON).
-      getInfoFromApi = async () => {
-        // The "rawResponse" is returned to the variable "convertedResponse" after the JSON is converted back into an object.
-        const convertedResponse = await fetch('/example')
-        .then(rawResponse => {
-            return rawResponse.json()
-        });
-        // convertedResponse is then set as the current 'state' of 'messages' for use elsewhere in our App. We are also setting another state to false to indicate that a specific button was pressed.
-        await this.setState({
-          messages: convertedResponse,
-          toggleButtonOn: false
-        })
-      };
-
-      // render is where we begin to generate what is displayed to the browser. It is a useful place to add if statements that depend on the state or props of the Component.
-      render() {
-
-        // 'displayButton' will only show if the current state of "toggleButtonOn" is set to "true"
-        // That means it should show upon the page being loaded/refreshed since state is lost on refresh.
-        // When clicked it runs the function "getInfoFromApi", which changes the state of "toggleButtonOn" to false, chaning "displayButton" to "null" (it will display nothing).
-        let displayButton;
-        if (this.state.toggleButtonOn) {
-           // If this.state.toggleButtonOn is 'true'.
-          displayButton = <button onClick={this.getInfoFromApi}>Click here to get data from the backend!</button>
-        } else {
-          // If this.state.toggleButtonOn is 'false'.
-          displayButton = null;
-        }
-
-        // 'displayData' should only ever be shown AFTER the fetch request to our API is made by clicking our `displayButton`.
-        // So in this case, we only display the data when the state 'toggleButtonOn' is 'false', meaning we've already made the call to our API, received data, and saved it into our state.
-        let displayData;
-        if (!this.state.toggleButtonOn) {
-          // If this.state.toggleButtonOn is 'false'.
-          displayData = this.state.messages.map( message => {
-              return <li key={message.id}>{message.message}</li>
-            })
-        } else {
-          // If this.state.toggleButtonOn is 'true'.
-          displayData = null;
-        }
-
-        return (
-          <div>
-            <h1>This is the frontend of the App!</h1>
-            {displayButton}
-            <ul>
-              {displayData}
-            </ul>
-          </div>
-        );
-      };
-
     };
 
-    export default App;
-    ```
+    // componentDidMount will run immidiately after the page is called, usually prior to a user seeing anything.
+    componentDidMount() {
+    }
+
+    // getMessages is written in ES6 syntax. It makes a call to our API using 'fetch' and sets the information into state for us to use.
+    getMessages = () => {
+      // Get the messages from the specified route.
+      fetch('/api/messages')
+        // Convert the response into JSON.
+        .then(res => res.json())
+        // Set the (now JSON) response into state to be used later.
+        .then(messages => this.setState({ messages }));
+    }
+
+    render() {
+
+      return (
+        <div className="App">
+          {/* Check our state for messages. */}
+          {this.state.messages.length ? (
+            // If we have messages in state then render them.
+            <div>
+              <h1>4 Messages!</h1>
+              <ul className="messages">
+                {this.state.messages.map((message, index) =>
+                  <li key={message.id}>
+                    {message.message}
+                  </li>
+                )}
+              </ul>
+            </div>
+          ) : (
+            // Otherwise render a button to call our API for messages.
+            <div>
+              <h1>No messages :(</h1>
+              <button
+                className="more"
+                onClick={this.getMessages}>
+                Get Messages From API?
+              </button>
+            </div>
+          )}
+        </div>
+      );
+    }
+  }
+
+  export default App;
+  ```
+  * All lines have comments for educational purposes. Same as before.
+
+### Update App.css (Optional):
+  * While this is optional, I don't see why you would skip it :smirk:
+  * Open the *Client*'s App.css with Atom
+  * Copy & paste in this code:
+  ```
+  .App {
+    text-align: center;
+    font-family: "Courier New", monospace;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 42px;
+  }
+
+  .messages {
+    list-style: none;
+    padding: 0;
+    font-size: 32px;
+    margin-bottom: 2em;
+  }
+
+  .more {
+    font-size: 32px;
+    font-family: "Courier New", monospace;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 10px 25px;
+  }
+  .more:hover {
+    background-color: #FDD836;
+  }
+  .more:active {
+    background-color: #FFEFA9;
+  }
+  ```
+  * All lines have comments for educational purposes. Same as before.
+
+### Remove serviceWorker.js (Optional):
+  * This step is REALLY optional. I've no idea what this does, and most guides seem to just remove it or never use it.
+  * Navigate to the *Client* with your terminal
+  * Use the following command to remove the file:
+    * `rm -rf serviceWorker.js`
+
+### Remove the *Client*'s .gitignore (Optional):
+  * We don't need two .gitignore files. This won't hurt to leave in, but just adds clutter.
+  * To remove it, navigate to the *Client* with your terminal
+  * Use the following command to remove the file:
+    * `rm -rf .gitignore`
+
+### **_>>> Step 3: Check your progress <<<_**
+  * Let go ahead and start both our *server* & our *client* gain using a single command:
+  * Navigate to your *Server* directory in your terminal & use:
+    * `yarn dev`
+  * Checking on our *Client*:
+    * This should automatically load your React *client*, but this time it will load the wonderfully styled page similar to the image below, and will still be located at [localhost:3000](http://localhost:3000/).
+    * ![004](client/public/images/004_frontend_no_messages.png?raw=true)
+  * Checking on the connection from our *Server* to our *Client*:
+    * In your browser, click that giant button that says "Get Messages From API?"
+    * You should see the button disappear and the data from the object in our *server* being displayed, like so:
+    * ![005](client/public/images/005_frontend_yes_messages.png?raw=true)
+    * If thats the case, then EXCELLENT WORK! :exclamation: :cake:
+    * That means both your *Server* & *Client* are working perfectly and better yet, communicating properly!
+
+## **Step 4:** Deployment to Heroku.
+  * Now that the base App is working & communicating properly, we can send it on up to Heroku and get it on the real interwebs! :computer:
+  * To deploy our App to heroku we will need to:
+    * Have Heroku's CLI installed (Command Line Interface).
+    * Create a Heroku Dyno.
+    * Push our App to the newly created Heroku Dyno.
+    * Watch as the App is created remotely with Heroku Logs.
+    * Load our awesome App and test it on the internets!
+
+### SubHeader
+### **_>>> Step 4: Check your progress <<<_**
+
+
+## **Step 5:** Celebration!
+  * For updates to the *client* we will need to:
+    * Add a proxy.
+    * Install dependencies.
+    * Update *package.json*, .*index.js*, *App.js*, *App.css*.
+    * Remove *serviceWorker.js* & the *Client*'s *.gitignore*'.
+### SubHeader
+### **_>>> Step 5: Check your progress <<<_**
+
+
+
+
+
+
+
+
+
+
+
 
 
 
