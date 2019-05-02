@@ -3,12 +3,12 @@
   * [Live Site Example](https://crae-nav-foot.herokuapp.com/)
   * This guide was built in April 2019 by [Blaine Anderson](https://github.com/BlaineAndersonDev).
   * *This Guide is the __2nd__ in a series. Please make sure you're using the App previously built in this guide:*
-    * Guide 1: [crae-heroku](https://github.com/BlaineAndersonDev/crae-heroku#crae--heroku)
+    * Guide 1: [crae-heroku](https://github.com/BlaineAndersonDev/crae-001-heroku)
   <!-- * Blaine Anderson's [Portfolio](http://www.blaineandersondev.com/) -->
 
   | Technology | Description | CRAE + Heroku | CRAE + Nav + Foot | CRAE + Axios | CRAE + Db | CRAE + Dotenv | CRAE + Cloudinary | CRAE + Auth0 |
   | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-  | --- | --- | [Github](https://github.com/BlaineAndersonDev/crae-heroku#crae--heroku) | [Github](https://github.com/BlaineAndersonDev/crae-002-nav-foot) | Github | Github | Github | Github | Github |
+  | --- | --- | [Github](https://github.com/BlaineAndersonDev/crae-001-heroku) | [Github](https://github.com/BlaineAndersonDev/crae-002-nav-foot) | [Github](https://github.com/BlaineAndersonDev/crae-003-axios.git) | Github | Github | Github | Github |
   | --- | --- | [Live Example](https://crae-heroku.herokuapp.com/) | [Live Example](https://crae-nav-foot.herokuapp.com/) | Live Example | Live Example | Live Example | Live Example | Live Example |
   | [Homebrew](https://brew.sh/) | "The missing package manager for macOS (or Linux)" | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Atom](https://atom.io/) | Coding Text Editor | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
@@ -541,7 +541,7 @@
   <!--
   | Guide | Description |
   | --- | --- |
-  | [CRAE+Heroku](https://github.com/BlaineAndersonDev/crae-heroku#crae--heroku) | A detailed guide to building a basic [Create-React-App](https://github.com/facebook/create-react-app) + [Express](https://expressjs.com/) App and deploy it to [Heroku](https://www.heroku.com/). The First Guide In The Series. |
+  | [CRAE+Heroku](https://github.com/BlaineAndersonDev/crae-001-heroku) | A detailed guide to building a basic [Create-React-App](https://github.com/facebook/create-react-app) + [Express](https://expressjs.com/) App and deploy it to [Heroku](https://www.heroku.com/). The First Guide In The Series. |
   | CRAE+Nav+Foot | This guide focuses on creating a persistent Top level Navigation bar & a footer that stays grounded. ([Example](________)) |
   | CRAE+Axios | A guide aimed to implement the [Axios](https://github.com/axios/axios) routing library for simple but powerful HTTP requests. |
   | CRAE+DB | A continuation guide to incorporate a fully fleshed [PostgreSQL](https://www.postgresql.org/) Database & [Knex](https://knexjs.org/) SQL Query Builder into your App. |
