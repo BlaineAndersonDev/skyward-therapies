@@ -8,7 +8,7 @@
 
   | Technology | Description | CRAE + Heroku | CRAE + Nav + Foot | CRAE + Axios | CRAE + Db | CRAE + Dotenv | CRAE + Cloudinary | CRAE + Auth0 |
   | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-  | --- | --- | [Github](https://github.com/BlaineAndersonDev/crae-heroku#crae--heroku) | [Github](https://github.com/BlaineAndersonDev/crae-nav-foot) | Github | Github | Github | Github | Github |
+  | --- | --- | [Github](https://github.com/BlaineAndersonDev/crae-heroku#crae--heroku) | [Github](https://github.com/BlaineAndersonDev/crae-002-nav-foot) | Github | Github | Github | Github | Github |
   | --- | --- | [Live Example](https://crae-heroku.herokuapp.com/) | [Live Example](https://crae-nav-foot.herokuapp.com/) | Live Example | Live Example | Live Example | Live Example | Live Example |
   | [Homebrew](https://brew.sh/) | "The missing package manager for macOS (or Linux)" | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
   | [Atom](https://atom.io/) | Coding Text Editor | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
