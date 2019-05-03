@@ -503,9 +503,9 @@
   * Navigate to the *Server* directory start up the Development App:
     * `yarn dev`
   * You should see a small addition below the messages once they have been pulled from the API (which should have been done automatically):
-  * ![3-001](client/public/images/3-001.png?raw=true)
+  ![3-001](client/public/images/3-001.png?raw=true)
   * And if you add a message here and click submit, you should see the the new addition appear instantly!
-  * ![3-002](client/public/images/3-002.png?raw=true)
+  ![3-002](client/public/images/3-002.png?raw=true)
 
 ## **Step ______:** _______
   *
