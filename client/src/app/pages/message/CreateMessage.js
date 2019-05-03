@@ -54,9 +54,9 @@ class CreateMessage extends Component {
       <div id="createMessageContainer">
         <form className="formFieldContainer" onSubmit={this.handleEmptyFields}>
           <div className="formField formTitle"> New Message: </div>
-          <textarea className="formField formTextarea" type="textarea" value={this.state.newMessage} onChange={this.handleMessageChange} />
+          <input className="formField formTextarea" type="text" value={this.state.newMessage} onChange={this.handleMessageChange} />
           <div className="formField">
-            <input className="formButton" type="submit" value="Submit" />
+          <input className="formButton" type="submit" value="Submit" />
           </div>
         </form>
       </div>
