@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Message.css';
 import axios from 'axios';
+import CreateMessage from './CreateMessage.js';
 
 class Message extends Component {
   constructor(props){
@@ -56,6 +57,8 @@ class Message extends Component {
               </li>
             )}
           </ul>
+          {/* Here we display the 'CreateMessage' Component, and send our 'getMessages' function as a prop. */}
+          <CreateMessage getMessages={this.getMessages}/>
           <button
             className="messageButton"
             onClick={this.removeMessagesFromState}>

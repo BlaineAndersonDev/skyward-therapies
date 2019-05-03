@@ -1,5 +1,5 @@
 # CRAE + Axios (*Guide #3*)
-  * **Create-React-App + Axios: Simple But Powerful HTTP Requests**
+  * **Create-React-App + Axios: A Complete CRUD App Using Simple But Powerful HTTP Requests**
   * [Live Site Example](https://crae-003-axios.herokuapp.com/)
   * This guide was built in April 2019 by [Blaine Anderson](https://github.com/BlaineAndersonDev).
   * *This Guide is the __3rd__ in a series. Please make sure you're using the App previously built in these guides:*
@@ -31,15 +31,15 @@
   | [Auth0](https://auth0.com/) | Secure sessions & user information | | | | | | | :white_check_mark: |
 
 # CRAE + Axios
-  * Forewarning: We will be adding in each type of functionality a single piece at a time. This means we will be revisiting the same files multiple times. Make sure to double check what file to add code, and where exactly to add the code.
+  * Upon finishing this guide, you'll have a fully functional CRUD App (Create-Read-Update-Delete).
+  * Forewarning: We will be adding in each type of CRUD functionality a single piece at a time. This means we will be revisiting the same files multiple times. Make sure to double check what file to add code, and where exactly to add the code.
   * *Optionally, you may skip to step ______ to get the completed code all at once, paste it in, then follow along the tutorial to understand whats going on.*
-  * **Step 1:** Setup Router(s) & Assorted Updates
-  * **Step 2:** Re-Setup GET (Read)
-  * **Step 3:** Setup POST (Create)
-  * **Step 4:** Setup PUT (Update)
-  * **Step 5:** Setup DELETE (Delete)
+  * **Step 1:** Setup Router(s) & Re-Setup GET (Read)
+  * **Step 2:** Setup POST (Create)
+  * **Step 3:** Setup PUT (Update)
+  * **Step 4:** Setup DELETE (Delete)
+  * **Step 5:** _______
   * **Step 6:** _______
-  * **Step 7:** _______
 
 ## **Step 1:** Setup Router(s) & Assorted Updates
 ### Updating server.js:
@@ -226,11 +226,286 @@
 
 
 
-## **Step ______:** _______
-  *
-### _______:
-  *
-### **_>>> Step ______: Check your progress <<<_**
+## **Step 2:** Setup POST (Create)
+  * Now that we have established our previous code using Axios, our new Router & our new Controller, let's look into getting our CRUD App realized by setting up our POST (Create) route.
+### Updating messageController.js:
+  * Navigate on over to our *Server/controllers* directory, open messageController.js & overwrite the code with:
+  ```
+  import express from 'express';
+  // This 'router' is created and maintained by express. It will contain all of our routes listed below in a single, easily accessible object.
+  const router = require('express').Router();
+
+  // The object we will be manipulating (instead of using a DB).
+  const helloWorld = [
+    {id: 1, message: 'Hello World!'},
+    {id: 2, message: 'This is pretty cool.'},
+    {id: 3, message: 'You got this working!'},
+    {id: 4, message: 'Amazing job!'}
+  ]
+
+  router.get('/', async (req, res) => {
+    console.log(' >>> Entered Route GET(Read) `/api/messages/`')
+    // Set 'readResults' as the object 'helloWorld'.
+    const readResults = helloWorld
+    // We return 'readResults' in JSON to the 'Message.js'.
+    res.json(readResults)
+  });
+
+  router.post('/create', async (req, res) => {
+    console.log(' >>> Entered Route POST(Create) `/api/messages/create`')
+
+    // First we want to get all the id's from the objects in 'helloWorld' array in order to make a new object to add to it.
+    let listOfIds = [];
+    helloWorld.map(i => listOfIds.push(i.id))
+
+    // Now we want to make our 'id' 1 highers than the highest number in the array.
+    // (Note: We dont care if we reuse numbers since the App won't remember anything upon restart anyway).
+    const currentHighestNumber = Math.max(...listOfIds)
+
+    // Now that we have the currentHighestNumber & our message, we can create an Object.
+    const createResults = {id: (currentHighestNumber + 1), message: req.query.message }
+
+    // Here we push the new object into the 'helloWorld' array.
+    helloWorld.push(createResults)
+
+    // Currently, we only want to return a HTTP StatusCode & a message as the messageDisplay list will automatically be updated by the frontend.
+    res.status(200).send('Message Created.');
+  });
+
+  // Here we export the 'router', which contains all of our routes listed, to our server.js file for use.
+  module.exports = router
+  ```
+  * This adds a new API route under `/api/messages/create`. Make sure to check the comments!
+
+### Updating Message.js:
+  * Navigate to the *Client/src/app/pages/message* directory, open Message.js & overwrite the code:
+  ```
+  import React, { Component } from 'react';
+  import './Message.css';
+  import axios from 'axios';
+  import CreateMessage from './CreateMessage.js';
+
+  class Message extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        messages: []
+      };
+    };
+
+    // Async/Await Function: Runs upon Component load. It runs our 'getMessages' function to display all the current messages.
+    async componentDidMount() {
+      try {
+        await this.getMessages();
+      } catch (error) {
+        console.log(error)
+      }
+    };
+
+    // Async/Await Function: Removes all messages from state.
+    removeMessagesFromState = async () => {
+      await this.setState({
+        messages: []
+      })
+    }
+
+    // Async/Await Function: Retreives all 'messages' from our API.
+    getMessages = async () => {
+      await axios.get(`/api/messages`)
+      .catch(error => {
+        console.warn(error);
+      })
+      .then(response => {
+        this.setState({
+          messages: response.data
+        })
+      })
+    };
+
+    render() {
+      // During the render, we check if this.state.messages has any objects.
+      let messageDisplay;
+      if (this.state.messages.length >= 1) {
+        // If yes, we display those objects as well as:
+          // The 'removeMessagesFromState' option to remove objects from state,
+          // The '<CreateMessage />' Component to allow users to create their own messages,
+        messageDisplay = (
+          <div className="messageDisplay">
+            <h1 className="messageHeader">{this.state.messages.length} Messages!</h1>
+            <ul className="messageTextContainer">
+              {this.state.messages.map((message, index) =>
+                <li key={message.id} className="messageText">
+                  {message.message}
+                </li>
+              )}
+            </ul>
+            {/* Here we display the 'CreateMessage' Component, and send our 'getMessages' function as a prop. */}
+            <CreateMessage getMessages={this.getMessages}/>
+            <button
+              className="messageButton"
+              onClick={this.removeMessagesFromState}>
+              Remove Messages From State?
+            </button>
+          </div>
+        )
+      } else {
+        // If no, then we display the option to 'getMessages' from the API.
+        messageDisplay = (
+          <div className="messageDisplay">
+            <h1 className="messageHeader">No messages :(</h1>
+            <button
+              className="messageButton"
+              onClick={this.getMessages}>
+              Get Messages From API?
+            </button>
+          </div>
+        )
+      };
+
+      return (
+        <div className="messageContainer">
+          {messageDisplay}
+        </div>
+      );
+    }
+  }
+
+  export default Message;
+  ```
+  * This imports a new Component called 'CreateMessage' (Which hasn't been created yet) & adds it into the flow.
+
+### Create the CreateMessage Component:
+  * Now let's make that Component.
+  * Navigate to the *Client/src/app/pages/message* directory & create CreateMessage.js:
+    * `touch CreateMessage.js`
+  * Then create CreateMessage.css in the same directory:
+    * `touch CreateMessage.css`
+  * Open CreateMessage.js and paste in the following code:
+  ```
+  import React, { Component } from 'react';
+  import './CreateMessage.css';
+  import axios from 'axios';
+
+  class CreateMessage extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        newMessage: ''
+      };
+    }
+
+    // Prevent Message Creation if any field is empty.
+    handleEmptyFields = async (event) => {
+      // 'event.preventDefault()' Stops the page from reloading on every change to the message.
+      event.preventDefault()
+      if (!this.state.newMessage) { // State "newMessage" is empty
+        alert("The Field 'Message' is empty! Cannot create Message.")
+      } else { // All fields hold values
+        await this.handleSubmit()
+      }
+    };
+
+    handleMessageChange = async (event) => {
+      await this.setState({newMessage: event.target.value})
+    }
+
+    handleSubmit = async (event) => {
+      await this.handleCreateMessage(this.state.newMessage)
+    }
+
+    // Axios call to API to create the new Message in our backend 'helloWorld' object.
+    handleCreateMessage = (message) => {
+      axios.post(`/api/messages/create`, null, {
+        params: {
+          message: message
+        }
+      })
+      .catch(err => {
+        console.warn(err);
+      })
+      .then(res => {
+        // Change state to blank for additional messages.
+        this.setState({
+          newMessage: ''
+        })
+        // Refresh messageDisplay.
+        this.props.getMessages();
+      });
+    }
+
+    render() {
+      return (
+        <div id="createMessageContainer">
+          <form className="formFieldContainer" onSubmit={this.handleEmptyFields}>
+            <div className="formField formTitle"> New Message: </div>
+            <textarea className="formField formTextarea" type="textarea" value={this.state.newMessage} onChange={this.handleMessageChange} />
+            <div className="formField">
+              <input className="formButton" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      );
+    }
+  }
+
+  export default CreateMessage;
+  ```
+  * Open CreateMessage.css and paste in the following styles:
+  ```
+  #createMessageContainer {
+    height: auto;
+    width: 100%;
+  }
+  .formFieldContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .formField {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+  }
+  .formTitle{
+    font-size: 1.5em;
+    border-bottom: var(--dev-borders) 1px solid;
+  }
+  .formTextarea{
+    font-size: 1em;
+  }
+  .formButton{
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--dev-text);
+    background: var(--dev-background);
+    border: var(--dev-background) 1px solid;
+    padding: 7px;
+    magin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s linear;
+  }
+  .formButton:hover{
+    background: var(--dev-highlight);
+    color: var(--dev-highlight-text);
+    border: var(--dev-borders) 1px solid;
+  }
+  ```
+
+### **_>>> Step 2: Check your progress <<<_**
+  * Now that you've added this new component, you should be able to add new messages & update the Dom (site) dynamically! Let's try it:
+  * Navigate to the *Server* directory start up the Development App:
+    * `yarn dev`
+  * You should see a small addition below the messages once they have been pulled from the API (which should have been done automatically):
+  * ![3-001](client/public/images/3-001.png?raw=true)
+  * And if you add a message here and click submit, you should see the the new addition appear instantly!
+  * ![3-002](client/public/images/3-002.png?raw=true)
 
 ## **Step ______:** _______
   *
