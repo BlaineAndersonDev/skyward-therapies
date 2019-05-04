@@ -7,7 +7,7 @@
     * Guide 2: [crae-nav-foot](https://github.com/BlaineAndersonDev/crae-002-nav-foot)
   <!-- * Blaine Anderson's [Portfolio](http://www.blaineandersondev.com/) -->
 
-  | Technology | Description | CRAE + Heroku | CRAE + Nav + Foot | CRAE + Axios | CRAE + Db | CRAE + Dotenv | CRAE + Cloudinary | CRAE + Auth0 |
+  | Technology | Description | CRAE + Heroku | CRAE + Nav + Foot | CRAE + Axios | CRAE + PostgreSQL | CRAE + Dotenv | CRAE + Cloudinary | CRAE + Auth0 |
   | --- | --- | --- | --- | --- | --- | --- | --- | --- |
   | --- | --- | [Github](https://github.com/BlaineAndersonDev/crae-001-heroku) | [Github](https://github.com/BlaineAndersonDev/crae-002-nav-foot) | [Github](https://github.com/BlaineAndersonDev/crae-003-axios.git) | Github | Github | Github | Github |
   | --- | --- | [Live Example](https://crae-001-heroku.herokuapp.com/) | [Live Example](https://crae-002-nav-foot.herokuapp.com/) | [Live Example](https://crae-003-axios.herokuapp.com/) | Live Example | Live Example | Live Example | Live Example |
@@ -32,8 +32,7 @@
 
 # CRAE + Axios
   * Upon finishing this guide, you'll have a fully functional CRUD App (Create-Read-Update-Delete).
-  * Forewarning: We will be adding in each type of CRUD functionality a single piece at a time. This means we will be revisiting the same files multiple times. Make sure to double check what file to add code, and where exactly to add the code.
-  * *Optionally, you may skip to step ______ to get the completed code all at once, paste it in, then follow along the tutorial to understand whats going on.*
+  * Forewarning: We will be adding in each type of CRUD functionality a single piece at a time. This means we will be revisiting the same files multiple times. Make sure to double check what file to add code, and where exactly to add the code. It is not recommended to skip any steps!
   * **Step 1:** Setup Router(s) & Re-Setup GET (Read)
   * **Step 2:** Setup POST (Create)
   * **Step 3:** Setup PUT (Update)
@@ -1510,11 +1509,11 @@
   * It should look similar to this:
   ![3-005](client/public/images/3-005.png?raw=true)
 
-<!--
+
 ## **Step 5:** Celebration :clap:
   * **===> You've Competed This Tutorial! <====**
-  * Now you've not only conquered Create-React-App + Express + Heroku but you've also implemented frontend routing *In Style*!
-  * Take some time and enjoy your accomplishment, it was hard work!
+  * You've reached a CRUD level Application! Excellent work!
+  * Go get Coffee or Tea as a reward! If you don't drink those then... Water? Do people still drink water?
 
 ## Credits!
   * A compiled list of Github Markdown safe Emoji's (Copy and Paste even!) :smile:
@@ -1522,9 +1521,8 @@
 
 ## :floppy_disk: ---===> Continue Learning? <===--- :floppy_disk:
   * If you're interested in continuing to make this App even better, why not check out the next Guide in the series?
-    * *The next guide aims to implement the [Axios](https://github.com/axios/axios) routing library for simple but powerful HTTP requests to our backend API!*
-    * [CRAE+Axios]( )
- -->
+    * *The next guide focuses on adding Database functionality to your CRUD App by incorporating a [PostgreSQL](https://www.postgresql.org/) Database & [Knex](https://knexjs.org/) a SQL Query Builder into your App.*
+    * [CRAE+PostgreSQL]( )
 
   <!--
   | Guide | Description |
@@ -1532,7 +1530,8 @@
   | [CRAE+Heroku](https://github.com/BlaineAndersonDev/crae-001-heroku) | A detailed guide to building a basic [Create-React-App](https://github.com/facebook/create-react-app) + [Express](https://expressjs.com/) App and deploy it to [Heroku](https://www.heroku.com/). The First Guide In The Series. |
   | CRAE+Nav+Foot | This guide focuses on creating a persistent Top level Navigation bar & a footer that stays grounded. ([Example](________)) |
   | CRAE+Axios | A guide aimed to implement the [Axios](https://github.com/axios/axios) routing library for simple but powerful HTTP requests. |
-  | CRAE+DB | A continuation guide to incorporate a fully fleshed [PostgreSQL](https://www.postgresql.org/) Database & [Knex](https://knexjs.org/) SQL Query Builder into your App. |
+  | CRAE+PostgreSQL | A continuation guide to incorporate a fully fleshed [PostgreSQL](https://www.postgresql.org/) Database & [Knex](https://knexjs.org/) SQL Query Builder into your App. |
   | CRAE+Dotenv | A guide to implementing [Dotenv](https://github.com/motdotla/dotenv#readme) into your App. |
   | CRAE+Cloudinary | This guide allows you to store images in a third party app called [Cloudinary](https://cloudinary.com/). |
-  | CRAE+Auth0 | A guide to help implement secure sessions, logins and user information retrieval using [Auth0](https://auth0.com/). | -->
+  | CRAE+Auth0 | A guide to help implement secure sessions, logins and user information retrieval using [Auth0](https://auth0.com/). |
+  -->
