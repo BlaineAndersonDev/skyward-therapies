@@ -38,8 +38,7 @@
   * **Step 2:** Setup POST (Create)
   * **Step 3:** Setup PUT (Update)
   * **Step 4:** Setup DELETE (Delete)
-  * **Step 5:** _______
-  * **Step 6:** _______
+  * **Step 5:** Celebration!
 
 ## **Step 1:** Setup Router(s) & Assorted Updates
 ### Updating server.js:
@@ -339,7 +338,6 @@
                 </li>
               )}
             </ul>
-            {/* Here we display the 'CreateMessage' Component, and send our 'getMessages' function as a prop. */}
             <CreateMessage getMessages={this.getMessages}/>
             <button
               className="messageButton"
@@ -507,33 +505,1013 @@
   * And if you add a message here and click submit, you should see the the new addition appear instantly!
   ![3-002](client/public/images/3-002.png?raw=true)
 
-## **Step ______:** _______
-  *
-### _______:
-  *
-### **_>>> Step ______: Check your progress <<<_**
+## **Step 3:** Setup PUT (Update)
+  * Congratulations! You're halfway to a full CRUD App!
+  * In this step, we're going to restructure our Message.js to allow each 'Message' to have it's own Component (plus some other stuff)!
 
-## **Step ______:** _______
-  *
-### _______:
-  *
-### **_>>> Step ______: Check your progress <<<_**
+### Restructuring Message.js & .css:
+  * Navigate to the *Client/src/app/pages/message* directory & overwrite Message.js with the following code:
+  ```
+  import React, { Component } from 'react';
+  import './Message.css';
+  import axios from 'axios';
+  import IndividualMessage from './IndividualMessage.js';
+  import CreateMessage from './CreateMessage.js';
 
-## **Step ______:** _______
-  *
-### _______:
-  *
-### **_>>> Step ______: Check your progress <<<_**
+  class Message extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        messages: [],
+      };
+    };
 
-## **Step ______:** _______
-  *
-### _______:
-  *
-### **_>>> Step ______: Check your progress <<<_**
-  *
+    // Async/Await Function: Runs upon Component load. It runs our 'getMessages' function to display all the current messages.
+    async componentDidMount() {
+      try {
+        this.timer = setTimeout(() => {}, 1000);
+        await this.getMessages();
+      } catch (error) {
+        console.log(error)
+      }
+    };
+
+    // Async/Await Function: Removes all messages from state.
+    removeMessagesFromState = async () => {
+      await this.setState({
+        messages: []
+      })
+    }
+
+    // Async/Await Function: Retreives all 'messages' from our API.
+    getMessages = async () => {
+      await axios.get(`/api/messages`)
+      .catch(error => {
+        console.warn(error);
+      })
+      .then(response => {
+        this.setState({
+          messages: response.data
+        })
+      })
+    };
+
+    render() {
+      // During the render, we check if this.state.messages has any objects.
+      let messageDisplay;
+      if (this.state.messages.length >= 1) {
+        // If yes, we display those objects as well as:
+          // The 'removeMessagesFromState' option to remove objects from state,
+          // The '<CreateMessage />' Component to allow users to create their own messages,
+        messageDisplay = (
+          <div className="messageDisplay">
+            <h1 className="messageHeader">{this.state.messages.length} Messages!</h1>
+            <div className="messageTextContainer">
+              {this.state.messages.map((message, index) =>
+                <IndividualMessage
+                  key={message.id}
+                  message={message}
+                  getMessages={this.getMessages}
+                />
+              )}
+            </div>
+            <CreateMessage getMessages={this.getMessages}/>
+            <button
+              className="messageButton"
+              onClick={this.removeMessagesFromState}>
+              Remove Messages From State?
+            </button>
+          </div>
+        )
+      } else {
+        // If no, then we display the option to 'getMessages' from the API.
+        messageDisplay = (
+          <div className="messageDisplay">
+            <h1 className="messageHeader">No messages :(</h1>
+            <button
+              className="messageButton"
+              onClick={this.getMessages}>
+              Get Messages From API?
+            </button>
+          </div>
+        )
+      };
+
+      return (
+        <div className="messageContainer">
+          {messageDisplay}
+        </div>
+      );
+    }
+  }
+
+  export default Message;
+  ```
+  * Update Message.css as well:
+  ```
+  #messageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .messageDisplay {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    max-width: 1000px;
+  }
+  .messageButton{
+    flex: 1;
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--dev-text);
+    background: var(--dev-background);
+    border: var(--dev-background) 2px solid;
+    padding: 20px;
+    magin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s linear;
+  }
+  .messageButton:hover{
+    background: var(--dev-highlight);
+    color: var(--dev-highlight-text);
+    border: var(--dev-borders) 2px solid;
+  }
+  .messageHeader{
+    flex: 1;
+    font-size: 4em;
+    margin: 30px;
+    border-bottom: var(--dev-borders) 3px solid;
+  }
+  .messageText{
+    margin: 8px;
+    font-size: 2em;
+    list-style-type: none;
+  }
+  .messageTextContainer{
+    width: 70%;
+    margin-bottom: 50px;
+  }
+  ```
+  * These changes will break our App, but only until we add the next files!
+
+### Create IndividualMessage.js & .css:
+  * Navigate to the *Client/src/app/pages/message* directory & create IndividualMessage.js & IndividualMessage.css:
+    * `touch IndividualMessage.js`
+    * `touch IndividualMessage.css`
+  * Paste in the following Code to IndividualMessage.js:
+  ```
+  import React, { Component } from 'react';
+  import EditMessage from './EditMessage.js';
+  import './IndividualMessage.css';
+  import axios from 'axios';
+
+  class IndividualMessage extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        toggleEditMenu: false
+      };
+    }
+
+    onEditMenuClick = () => {
+      this.setState({toggleEditMenu: true})
+    }
+
+    handleCancelEditMessage = () => {
+      this.setState({toggleEditMenu: false})
+    }
+
+    handleUpdateMessage = (messageId, messageText) => {
+      axios.put(`/api/messages/update/${messageId}`, null, {
+        params: {
+          messageText: messageText
+        }
+      })
+      .catch(err => {
+        console.warn(err);
+      })
+      .then(res => {
+        this.setState({toggleEditMenu: false})
+        this.props.getMessages();
+      });
+    }
+
+    render() {
+      let editButtonDisplay = null;
+      if (this.state.toggleEditMenu) { // If this.state.toggleEditMenu = true
+        editButtonDisplay = (
+          <button onClick={this.onEditMenuClick} className="editMessageButton">Edit</button>
+        );
+      } else {  // If this.state.toggleEditMenu = false
+        editButtonDisplay = (
+          <button onClick={this.onEditMenuClick} className="editMessageButton">Edit</button>
+        );
+      }
+
+      let editDisplay = null;
+      if (this.state.toggleEditMenu) { // If this.state.toggleEditMenu = true
+        editDisplay = (
+          <EditMessage
+            key={this.props.message.id}
+            message={this.props.message}
+            handleUpdateMessage={this.handleUpdateMessage}
+            getMessages={this.props.getMessages}
+          />
+        )
+      } else {  // If this.state.toggleEditMenu = false
+        editDisplay = (
+          <div></div>
+        );
+      }
+
+
+      return (
+        <div className="individualMessageContainer">
+
+          <div className="messageDisplayWrapper">
+            <div className="idContainer">
+              <p className="individualMessageId">{this.props.message.id}</p>
+            </div>
+
+            <div className="messageContainer">
+              <p className="individualMessageMessage">{this.props.message.message}</p>
+            </div>
+
+            <div className="buttonContainer">
+              <p className="individualMessageEdit">{editButtonDisplay}</p>
+            </div>
+          </div>
+
+          <div className="messageEditWrapper">
+            {editDisplay}
+          </div>
+
+        </div>
+      );
+    }
+  }
+
+  export default IndividualMessage;
+  ```
+  * Paste in the following Code to IndividualMessage.css:
+  ```
+  .individualMessageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border: 1px var(--dev-borders) solid;
+    box-shadow: 1px 1px 1px var(--dev-borders);
+    margin: 10px;
+  }
+    .messageDisplayWrapper{
+      flex: 1 0 0;
+      display: flex;
+      flex-direction: row nowrap;
+      justify-content: center;
+      align-items: center;
+      min-width: 100%;
+    }
+      .idContainer{
+        display: flex;
+        flex-direction: row nowrap;
+        padding: 10px;
+        margin: 10px;
+      }
+      .individualMessageId {
+      }
+
+      .messageContainer {
+        display: flex;
+        flex-direction: row nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+      }
+      .individualMessageMessage {
+      }
+
+      .buttonContainer{
+        display: flex;
+        flex-direction: row nowrap;
+      }
+      .individualMessageEdit {
+        padding: 5px;
+        margin: 5px;
+      }
+      .editMessageButton{
+        font-size: 1em;
+        text-decoration: none;
+        color: var(--dev-text);
+        background: var(--dev-background);
+        border: var(--dev-background) 1px solid;
+        padding: 5px;
+        magin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.25s linear;
+      }
+      .editMessageButton:hover{
+        background: var(--dev-highlight);
+        color: var(--dev-highlight-text);
+        border: var(--dev-borders) 1px solid;
+      }
+
+    .messageEditWrapper {
+      width: 100%;
+    }
+  ```
+  * Now that our restructuring is done, we can add the EditMessage Component!
+
+### Create EditMessage.js & .css:
+  * Navigate to the *Client/src/app/pages/message* directory & create EditMessage.js & EditMessage.css:
+    * `touch EditMessage.js`
+    * `touch EditMessage.css`
+  * Paste in the following Code to EditMessage.js:
+  ```
+  import React, { Component } from 'react';
+  import './EditMessage.css';
+  import axios from 'axios';
+
+  class EditMessage extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        editedMessage: ''
+      };
+    }
+
+    componentDidMount() {
+      this.setState({editedMessage: this.props.message.message})
+    }
+
+    handleMessageChange = (event) => {
+      this.setState({editedMessage: event.target.value})
+    }
+
+    // Prevent Message creation if any field is empty.
+    handleEmptyFields = (event) => {
+      event.preventDefault()
+      if (!this.state.editedMessage) { // State "editedMessage" is empty
+        alert("The Field 'Message' is empty! Cannot create Message.")
+      }
+      else { // All fields hold values
+        this.handleSubmit()
+      }
+    }
+
+    handleSubmit = (event) => {
+      this.props.handleUpdateMessage(this.props.message.id, this.state.editedMessage)
+    }
+
+    handleCancel = (event) => {
+      event.preventDefault();
+      this.props.handleCancelEditMessage();
+    }
+
+    render() {
+      return (
+        <div id="editMessageContainer">
+          <form className="formFieldEditContainer" onSubmit={this.handleEmptyFields}>
+            <div className="formFieldEdit formEditTitle"> Edit Message: </div>
+            <input className="formFieldEdit formEditTextarea" type="text" value={this.state.editedMessage} onChange={this.handleMessageChange} />
+            <div className="formFieldEdit">
+              <input className="formEditButton" type="submit" value="Submit" />
+              <button onClick={this.handleCancelEditMessage} className="cancelEditButton">Cancel</button>
+            </div>
+          </form>
+        </div>
+      );
+    }
+  }
+
+  export default EditMessage;
+  ```
+  * Paste in the following Code to EditMessage.css:
+  ```
+  #editMessageContainer {
+    height: auto;
+    width: 100%;
+  }
+  .formFieldEditContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formFieldEdit {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .formEditTitle{
+    font-size: 1em;
+  }
+  .formEditTextarea{
+    flex-grow: 3;
+    font-size: 1em;
+  }
+  .formEditButton, .cancelEditButton{
+    flex: 1;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--dev-text);
+    background: var(--dev-background);
+    border: var(--dev-background) 1px solid;
+    padding: 7px;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s linear;
+  }
+  .formEditButton:hover, .cancelEditButton:hover {
+    background: var(--dev-highlight);
+    color: var(--dev-highlight-text);
+    border: var(--dev-borders) 1px solid;
+  }
+
+  ```
+
+### Updating MessageController.js:
+  * Now that we have the *Edit* option available on each of our Messages, let's make it work!
+  * Navigate to our *server/controllers* directory & open MessageController.js.
+  * Pop this new route right in under our *Create* route but above the `module.export = router` line:
+  ```
+  router.put('/update/:id', async (req, res) => {
+    console.log(' >>> Entered Route PUT(Update) `/api/messages/update/:id`')
+
+    // First let's identify the exact 'id' so we know what message to update.
+    // We also need to convert it to an integer (because its currently a string).
+    const messageId = Number(req.params.id);
+
+    // Let's also identify the 'message' so we can apply it later.
+    const messageText = req.query.messageText;
+
+    // Now we will iterate over the 'helloWorld' array until we find the provided 'messageId'.
+    for (let i in helloWorld) {
+      if (helloWorld[i].id == messageId) {
+        helloWorld[i]['message'] = messageText
+      }
+    }
+
+    // Currently, we only want to return a HTTP StatusCode & a message as the messageDisplay list will automatically be updated by the frontend.
+    res.status(200).send('Message Updated.');
+  });
+  ```
+  * This route takes a *Param* or *Parameter* in the call (Where it says `:id`). The *Param* allows us to find the exact Message to alter using the `messageText` we sent in our *Query*.
+  * *Make sure you read over all the comments in our new Route so you understand how it functions!*
+
+### **_>>> Step 3: Check your progress <<<_**
+  * So now the App should function as per normal, but it should also have a snazzy new look!
+  ![3-003](client/public/images/3-003.png?raw=true)
+  * Those 'Edit' buttons will open up a new dialogue that's hidden from view, which will allow us (as the user) to change messages on the fly!
+  ![3-004](client/public/images/3-004.png?raw=true)
+  * Give it a try, you should be able to edit any of the Messages (even new ones!) and the changes will be kept in our 'helloWorld' Object in our MessageController.js! (At least until the App is restarted.)
+
+## **Step 4:** Setup DELETE (Delete)
+  * Finally, the last major step for our CRUD App!
+  * Since we've already restructured everything we only need to add a new .js, .css & route in our MessageController.js, as well as a few edge case error catchers scattered in a couple places!
+
+### Create DeleteMessage.js & .css:
+  * First, navigate to the *Client/src/app/pages/message* directory & create DeleteMessage.js & DeleteMessage.css:
+    * `touch DeleteMessage.js`
+    * `touch DeleteMessage.css`
+  * Paste in the following Code to DeleteMessage.js:
+  ```
+  import React, { Component } from 'react';
+  import './DeleteMessage.css';
+
+  class DeleteMessage extends Component {
+    // Normally you would create a contstructor here like in our other components, but since this Component does not store any information and only uses Props, it is unnecessary.
+
+    handleConfirm = () => {
+      this.props.handleDeleteMessage(this.props.message)
+    }
+
+    handleDeny = (event) => {
+      this.props.handleDenyDeleteMessage()
+    }
+
+    render() {
+      return (
+        <div id="deleteMessageContainer">
+          <h3 className="deleteTitle">Are you sure you wish to delete this joke?</h3>
+          <div className="deleteButtonWrapper">
+            <button onClick={this.handleConfirm} className="deleteButton">Yes</button>
+            <button onClick={this.handleDeny} className="deleteButton">No</button>
+          </div>
+        </div>
+      );
+    }
+  }
+
+  export default DeleteMessage;
+  ```
+  * Paste in the following Code to DeleteMessage.css:
+  ```
+  #deleteMessageContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .deleteTitle {
+    font-size: 1em;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-top: 1px black solid;
+  }
+  .deleteButtonWrapper {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .deleteButton {
+    flex: 1;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--dev-text);
+    background: var(--dev-background);
+    border: var(--dev-background) 1px solid;
+    padding: 7px;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s linear;
+  }
+  .deleteButton:hover {
+    background: var(--dev-highlight);
+    color: var(--dev-highlight-text);
+    border: var(--dev-borders) 1px solid;
+  }
+  ```
+
+### Another update to IndividualMessage.js & .css:
+  * While we're only updating a couple small functions I added comments to sort out the different sets of functions.
+  * Navigate to the *Client/src/app/pages/message* directory
+  * Overwrite IndividualMessage.js with this code:
+  ```
+  import React, { Component } from 'react';
+  import EditMessage from './EditMessage.js';
+  import DeleteMessage from './DeleteMessage.js';
+  import './IndividualMessage.css';
+  import axios from 'axios';
+
+  class IndividualMessage extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        toggleEditMenu: false,
+        toggleDeleteMenu: false
+      };
+    }
+
+  // ===========================
+  // Edit Functions ============
+  // ===========================
+    onEditMenuClick = () => {
+      this.setState({toggleEditMenu: true})
+    }
+
+    handleCancelEditMessage = () => {
+      this.setState({toggleEditMenu: false})
+    }
+
+    handleUpdateMessage = (messageId, messageText) => {
+      axios.put(`/api/messages/update/${messageId}`, null, {
+        params: {
+          messageText: messageText
+        }
+      })
+      .catch(err => {
+        console.warn(err);
+      })
+      .then(res => {
+        this.setState({toggleEditMenu: false})
+        this.props.getMessages();
+      });
+    }
+
+  // ===========================
+  // Delete Functions ==========
+  // ===========================
+    onDeleteMenuClick = () => {
+      this.setState({toggleDeleteMenu: true})
+    }
+
+    handleDenyDeleteMessage = () => {
+      this.setState({toggleDeleteMenu: false})
+    }
+
+    handleDeleteMessage = (message) => {
+      const id = message.id;
+      axios.delete(`/api/messages/delete/${id}`, null)
+      .catch(err => {
+        console.warn(err);
+      })
+      .then(res => {
+        this.setState({toggleDeleteMenu: false})
+        this.props.getMessages();
+      });
+    }
+
+    render() {
+      // ========== Render Edit Displays ==========
+      let editButtonDisplay = null;
+      if (this.state.toggleEditMenu) { // If this.state.toggleEditMenu = true
+        editButtonDisplay = (
+          <div></div>
+        );
+      } else {  // If this.state.toggleEditMenu = false
+        editButtonDisplay = (
+          <button onClick={this.onEditMenuClick} className="alterMessageButton">Edit</button>
+        );
+      }
+
+      let editDisplay = null;
+      if (this.state.toggleEditMenu) { // If this.state.toggleEditMenu = true
+        editDisplay = (
+          <EditMessage
+            key={this.props.message.id}
+            message={this.props.message}
+            handleUpdateMessage={this.handleUpdateMessage}
+            getMessages={this.props.getMessages}
+          />
+        )
+      } else {  // If this.state.toggleEditMenu = false
+        editDisplay = (
+          <div></div>
+        );
+      }
+
+      // ========== Render Delete Displays ==========
+      let deleteButtonDisplay = null;
+      if (this.state.toggleDeleteMenu) { // If this.state.toggleDeleteMenu = true
+        deleteButtonDisplay = (
+          <div></div>
+        );
+      } else {  // If this.state.toggleDeleteMenu = false
+        deleteButtonDisplay = (
+          <button onClick={this.onDeleteMenuClick} className="alterMessageButton">Delete</button>
+        );
+      }
+
+      let deleteDisplay = null;
+      if (this.state.toggleDeleteMenu) { // If this.state.toggleDeleteMenu = true
+        deleteDisplay = (
+          <DeleteMessage
+            key={this.props.message.id}
+            message={this.props.message}
+            handleDeleteMessage={this.handleDeleteMessage}
+            handleDenyDeleteMessage={this.handleDenyDeleteMessage}
+          />
+        )
+      } else {  // If this.state.toggleDeleteMenu = false
+        deleteDisplay = (
+          <div></div>
+        );
+      }
+
+      return (
+        <div className="individualMessageContainer">
+
+          <div className="messageDisplayWrapper">
+            <div className="idContainer">
+              <p className="individualMessageId">{this.props.message.id}</p>
+            </div>
+
+            <div className="messageContainer">
+              <p className="individualMessageMessage">{this.props.message.message}</p>
+            </div>
+
+            <div className="buttonContainer">
+              <p className="individualMessageAlter">{editButtonDisplay}</p>
+              <p className="individualMessageAlter">{deleteButtonDisplay}</p>
+            </div>
+          </div>
+
+          <div className="messageEditWrapper">
+            {editDisplay}
+          </div>
+
+          <div className="messageDeleteWrapper">
+            {deleteDisplay}
+          </div>
+
+        </div>
+      );
+    }
+  }
+
+  export default IndividualMessage;
+  ```
+  * Let's make sure to update the styles in IndividualMessage.css as well:
+  ```
+  .individualMessageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border: 1px var(--dev-borders) solid;
+    box-shadow: 1px 1px 1px var(--dev-borders);
+    margin: 10px;
+  }
+    .messageDisplayWrapper{
+      flex: 1 0 0;
+      display: flex;
+      flex-direction: row nowrap;
+      justify-content: center;
+      align-items: center;
+      min-width: 100%;
+    }
+      .idContainer{
+        display: flex;
+        flex-direction: row nowrap;
+        padding: 10px;
+        margin: 10px;
+      }
+      .individualMessageId {
+      }
+
+      .messageContainer {
+        display: flex;
+        flex-direction: row nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+      }
+      .individualMessageMessage {
+      }
+
+      .buttonContainer{
+        display: flex;
+        flex-direction: row nowrap;
+      }
+      .individualMessageAlter {
+        padding: 5px;
+        margin: 5px;
+      }
+      .alterMessageButton{
+        font-size: 1em;
+        text-decoration: none;
+        color: var(--dev-text);
+        background: var(--dev-background);
+        border: var(--dev-background) 1px solid;
+        padding: 5px;
+        magin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.25s linear;
+      }
+      .alterMessageButton:hover{
+        background: var(--dev-highlight);
+        color: var(--dev-highlight-text);
+        border: var(--dev-borders) 1px solid;
+      }
+
+    .messageEditWrapper {
+      width: 100%;
+    }
+
+    .messageDeleteWrapper {
+      width: 100%;
+    }
+  ```
+
+### Update MessageController.js:
+  * We also need to add in our Delete route, but since we're adding the delete route, we will also need to change our create route a bit to catch an edge case (What if we delete ALL messages?!?).
+  * Navigate over to *Server/controllers* and open our messageController.js.
+  * Overwrite it with the following code:
+  ```
+  import express from 'express';
+  const router = require('express').Router();
+
+  // The object we will be manipulating (instead of using a DB).
+  const helloWorld = [
+    {id: 1, message: 'Hello World!'},
+    {id: 2, message: 'This is pretty cool.'},
+    {id: 3, message: 'You got this working!'},
+    {id: 4, message: 'Amazing job!'}
+  ]
+
+  router.get('/', async (req, res) => {
+    console.log(' >>> Entered Route GET(Read) `/api/messages/`')
+    // Set 'readResults' as the object 'helloWorld'.
+    const readResults = helloWorld
+    // We return 'readResults' in JSON to the 'Message.js'.
+    res.json(readResults)
+  });
+
+  router.post('/create', async (req, res) => {
+    console.log(' >>> Entered Route POST(Create) `/api/messages/create`')
+
+    // First we want to get all the id's from the objects in 'helloWorld' array in order to make a new object to add to it.
+    let listOfIds = [];
+    helloWorld.map(i => listOfIds.push(i.id))
+
+    // Now that 'Delete' is in play we need to make sure we check the edge case "If the user deleted ALL messages".
+    let currentHighestNumber;
+    if (listOfIds.length <= 0) {
+      currentHighestNumber = 0
+    } else {
+      // Now we make our 'id' 1 highers than the highest number in the array.
+      // (Note: We dont care if we reuse numbers since the App won't remember anything upon restart anyway).
+      currentHighestNumber = Math.max(...listOfIds)
+    }
+
+    // Now that we have the currentHighestNumber & our message, we can create an Object.
+    const createResults = {id: (currentHighestNumber + 1), message: req.query.message }
+
+    // Here we push the new object into the 'helloWorld' array.
+    helloWorld.push(createResults)
+
+    // Currently, we only want to return a HTTP StatusCode & a message as the messageDisplay list will automatically be updated by the frontend.
+    res.status(200).send('Message Created.');
+  });
+
+  router.put('/update/:id', async (req, res) => {
+    console.log(' >>> Entered Route PUT(Update) `/api/messages/update/:id`')
+
+    // First let's identify the exact 'id' so we know what message to update.
+    // We also need to convert it to an integer (because its currently a string).
+    const messageId = Number(req.params.id);
+
+    // Let's also identify the 'message' so we can apply it later.
+    const messageText = req.query.messageText;
+
+    // Now we will iterate over the 'helloWorld' array until we find the provided 'messageId'.
+    for (let i in helloWorld) {
+      if (helloWorld[i].id == messageId) {
+        helloWorld[i]['message'] = messageText
+      }
+    }
+
+    // Currently, we only want to return a HTTP StatusCode & a message as the messageDisplay list will automatically be updated by the frontend.
+    res.status(200).send('Message Updated.');
+  });
+
+  router.delete('/delete/:id', async (req, res) => {
+    console.log(' >>> Entered Route DELETE(Delete) `/api/messages/delete`')
+
+    // First let's identify the exact 'id' so we know what message to delete.
+    // We also need to convert it to an integer (because its currently a string).
+    const messageId = Number(req.params.id);
+
+    // Now we will iterate over the 'helloWorld' array until we find the provided 'messageId'.
+    for (let i in helloWorld) {
+      if (helloWorld[i].id == messageId) {
+        // When we find the correct 'id', we will then remove it.
+        helloWorld.splice(i, 1);
+      }
+    }
+
+    // Currently, we only want to return a HTTP StatusCode & a message as the messageDisplay list will automatically be updated by the frontend.
+    res.status(200).send('Message Deleted.');
+  });
+  ```
+
+### Update Message.js:
+  * Our last update will be to Message.js. We need to add a way to create messages even if we have none.
+  * Navigate to the *Client/src/app/pages/message* directory & open Message.js.
+  * Overwrite it with the following code: (It adds 1 whole line lol)
+  ```
+  import React, { Component } from 'react';
+  import './Message.css';
+  import axios from 'axios';
+  import IndividualMessage from './IndividualMessage.js';
+  import CreateMessage from './CreateMessage.js';
+
+  class Message extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        messages: [],
+      };
+    };
+
+    // Async/Await Function: Runs upon Component load. It runs our 'getMessages' function to display all the current messages.
+    async componentDidMount() {
+      try {
+        this.timer = setTimeout(() => {}, 1000);
+        await this.getMessages();
+      } catch (error) {
+        console.log(error)
+      }
+    };
+
+    // Async/Await Function: Removes all messages from state.
+    removeMessagesFromState = async () => {
+      await this.setState({
+        messages: []
+      })
+    }
+
+    // Async/Await Function: Retreives all 'messages' from our API.
+    getMessages = async () => {
+      await axios.get(`/api/messages`)
+      .catch(error => {
+        console.warn(error);
+      })
+      .then(response => {
+        this.setState({
+          messages: response.data
+        })
+      })
+    };
+
+    render() {
+      // During the render, we check if this.state.messages has any objects.
+      let messageDisplay;
+      if (this.state.messages.length >= 1) {
+        // If yes, we display those objects as well as:
+          // The 'removeMessagesFromState' option to remove objects from state,
+          // The '<CreateMessage />' Component to allow users to create their own messages,
+        messageDisplay = (
+          <div className="messageDisplay">
+            <h1 className="messageHeader">{this.state.messages.length} Messages!</h1>
+            <div className="messageTextContainer">
+              {this.state.messages.map((message, index) =>
+                <IndividualMessage
+                  key={message.id}
+                  message={message}
+                  getMessages={this.getMessages}
+                />
+              )}
+            </div>
+            <CreateMessage getMessages={this.getMessages}/>
+            <button
+              className="messageButton"
+              onClick={this.removeMessagesFromState}>
+              Remove Messages From State?
+            </button>
+          </div>
+        )
+      } else {
+        // If no, then we display the option to 'getMessages' from the API.
+        messageDisplay = (
+          <div className="messageDisplay">
+            <h1 className="messageHeader">No messages :(</h1>
+            <CreateMessage getMessages={this.getMessages}/>
+            <button
+              className="messageButton"
+              onClick={this.getMessages}>
+              Get Messages From API?
+            </button>
+          </div>
+        )
+      };
+
+      return (
+        <div className="messageContainer">
+          {messageDisplay}
+        </div>
+      );
+    }
+  }
+
+  export default Message;
+  ```
+
+### **_>>> Step 4: Check your progress <<<_**
+  * With that all being implemented, you should be able to use all of our CRUD App's features!
+  * Boot up your App and try it all out!
+  * It should look similar to this:
+  ![3-005](client/public/images/3-005.png?raw=true)
 
 <!--
-## **Step 7:** Celebration :clap:
+## **Step 5:** Celebration :clap:
   * **===> You've Competed This Tutorial! <====**
   * Now you've not only conquered Create-React-App + Express + Heroku but you've also implemented frontend routing *In Style*!
   * Take some time and enjoy your accomplishment, it was hard work!

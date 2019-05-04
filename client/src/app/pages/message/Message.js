@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import './Message.css';
 import axios from 'axios';
+import IndividualMessage from './IndividualMessage.js';
 import CreateMessage from './CreateMessage.js';
 
 class Message extends Component {
   constructor(props){
     super(props);
     this.state = {
-      messages: []
+      messages: [],
     };
   };
 
   // Async/Await Function: Runs upon Component load. It runs our 'getMessages' function to display all the current messages.
   async componentDidMount() {
     try {
+      this.timer = setTimeout(() => {}, 1000);
       await this.getMessages();
     } catch (error) {
       console.log(error)
@@ -50,14 +52,15 @@ class Message extends Component {
       messageDisplay = (
         <div className="messageDisplay">
           <h1 className="messageHeader">{this.state.messages.length} Messages!</h1>
-          <ul className="messageTextContainer">
+          <div className="messageTextContainer">
             {this.state.messages.map((message, index) =>
-              <li key={message.id} className="messageText">
-                {message.message}
-              </li>
+              <IndividualMessage
+                key={message.id}
+                message={message}
+                getMessages={this.getMessages}
+              />
             )}
-          </ul>
-          {/* Here we display the 'CreateMessage' Component, and send our 'getMessages' function as a prop. */}
+          </div>
           <CreateMessage getMessages={this.getMessages}/>
           <button
             className="messageButton"
