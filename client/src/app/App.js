@@ -21,10 +21,6 @@ class App extends Component {
             <Route path='/about' component={About}/>
           </div>
 
-          <div id="appFooter">
-            <Footer />
-          </div>
-
         </div>
       </Router>
 

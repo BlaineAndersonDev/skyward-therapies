@@ -4,7 +4,7 @@
     --dev-text:#301F1C;
     --dev-highlight-text:#CA4923;
     --dev-borders:#EFCA72; */
-    
+
     --dev-highlight:#B2B15D;
     --dev-background:#8FA855;
     --dev-text:#301F1C;
@@ -28,8 +28,29 @@ html, body{
   Display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 100%;
 }
 #appFooter{
   height: 150px;
   flex: 1;
+}
+/* Most Smartphones Mobiles (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
+/* Low Resolution Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+/* Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+/* Laptops, Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+/* Large Desktops */
+@media (min-width: 1281px) {
+
 }
