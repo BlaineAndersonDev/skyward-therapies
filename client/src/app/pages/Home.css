@@ -1,48 +1,61 @@
+/* Tiny reset thingy */
+body,html{margin:0;padding:0;}
+
 #homeContainer {
-  min-width: 100%;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
 }
-.staticHomeBox {
+
+.betweenSection {
   position: relative;
-  height: 50vh;
+  height: 80vh;
   opacity: 1;
-  /* For text formatting. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
 }
-.imageHomeBox {
+
+.imageSection {
   position: relative;
   height: 100vh;
-  /* For text formatting. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
 }
-.static {
-  background: gray;
-}
+
 .parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
   transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
   background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
   z-index: -1;
 }
 
 /* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
+.bgImg1::after {
+  background-image: url('/images/skyward_tree_003.jpg');
+  background-color: black; /* Backup color if image fails to load. */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgImg2::after {
+  background-image: url('/images/skyward_assorted_005.jpg');
+  background-color: black; /* Backup color if image fails to load. */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgImg3::after {
   background-image: url('/images/skyward_tree_001.jpg');
   background-color: black; /* Backup color if image fails to load. */
   background-position: top;
@@ -50,18 +63,130 @@
   background-size: cover;
 }
 
-.bg2::after {
-  background-image: url('/images/skyward_tree_002.jpg');
-  background-color: black; /* Backup color if image fails to load. */
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+:root {
+    --1:#537A5A;
+    --2:#9BC53D;
+    --3:#C9E3AC;
+    --4:#EAEFBD;
+    --5:#9CAFB7;
+    --6:#14281D;
+    --7:#48A59E;
+    --8:#F8FFF4;
+    --9:#000000;
+}
+/* Content */
+#homeImageText{
+  color: var(--8);
+  font-family: 'Kaushan Script', cursive, Arial;
+  text-shadow: 2px 2px 4px var(--9);
+  font-size: 4.5em;
 }
 
-.bg3::after {
-  background-image: url('/images/skyward_tree_003.jpg');
-  background-color: black; /* Backup color if image fails to load. */
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* Non Image homeboxes */
+  .homeBoxGradientOne{
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #abbaab, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #abbaab, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .homeBoxGradientTwo{
+    background: #83a4d4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .homeBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--9) 3px solid;
+    border-bottom: var(--9) 3px solid;
+    color: black;
+  }
+  .homeServiceTitleText{
+    min-width: 100%;
+    border: black 2px solid;
+    font-family: 'Kaushan Script', cursive, Arial;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeServiceSection{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 15px;
+    /* border: black 3px solid; */
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+    .homeServiceSubTitleText{
+      flex: 1 1;
+      max-width: 50%;
+      margin-top: 10px;
+      border-bottom: 2px black solid;
+      font-family: 'Kaushan Script', cursive, Arial;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    .homeServiceDescText{
+      flex: 1 1;
+      min-width: 100%;
+      font-family: 'Kaushan Script', Arial;
+      font-size: 1em;
+    }
+
+/* Image homeBoxes */
+  .homeBoxImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--9) 3px solid;
+    border-bottom: var(--9) 3px solid;
+    color: white;
+  }
+  .homeServiceImgTitleText{
+    min-width: 100%;
+    border: white 2px solid;
+    font-family: 'Kaushan Script', cursive, Arial;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.45);
+  }
+  .homeServiceImgSection{
+    padding: 15px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 25px;
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+    .homeServiceImgSubTitleText{
+      flex: 1 1;
+      max-width: 50%;
+      margin-top: 10px;
+      border-bottom: 2px white solid;
+      font-family: 'Kaushan Script', cursive, Arial;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    .homeServiceImgDescText{
+      flex: 1 1;
+      min-width: 100%;
+      font-family: 'Kaushan Script', Arial;
+      font-size: 1em;
+    }
