@@ -12,13 +12,12 @@ class App extends Component {
       <Router>
         <div id="appContainer">
 
-          <div id="appNavigation">
-            <Nav />
-          </div>
-
           <div id="appBody">
             <Route exact path='/' component={Home}/>
-            <Route path='/about' component={About}/>
+            <Route
+              path="/about"
+              render={(props) => <About {...props} Nav={Nav} Footer={Footer}/>}
+            />
           </div>
 
         </div>

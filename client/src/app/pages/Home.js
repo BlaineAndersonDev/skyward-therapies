@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './Home.css';
+import Navigation from './Navigation.js'
 
 class Home extends Component {
   render() {
     return (
       <div id="homeContainer">
+        <Navigation />
 
         <div className="imageSection parallax bgImg1 homeBoxImg">
           <h1 id="homeImageText">Skyward Therapies</h1>
