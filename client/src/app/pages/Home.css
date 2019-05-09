@@ -1,3 +1,16 @@
+:root {
+    --1:#537A5A;
+    --2:#9BC53D;
+    --3:#C9E3AC;
+    --4:#EAEFBD;
+    --5:#9CAFB7;
+    --6:#14281D;
+    --7:#48A59E;
+    --8:#F8FFF4;
+    --9:#000000;
+    --10:#A0DE21;
+}
+
 /* Tiny reset thingy */
 body,html{margin:0;padding:0;}
 
@@ -6,6 +19,7 @@ body,html{margin:0;padding:0;}
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
+  position: relative;
 }
 
 .betweenSection {
@@ -63,21 +77,10 @@ body,html{margin:0;padding:0;}
   background-size: cover;
 }
 
-:root {
-    --1:#537A5A;
-    --2:#9BC53D;
-    --3:#C9E3AC;
-    --4:#EAEFBD;
-    --5:#9CAFB7;
-    --6:#14281D;
-    --7:#48A59E;
-    --8:#F8FFF4;
-    --9:#000000;
-}
 /* Content */
 #homeImageText{
   color: var(--8);
-  font-family: 'Kaushan Script', cursive, Arial;
+  font-family: 'Kaushan Script', cursive, Verdana;
   text-shadow: 2px 2px 4px var(--9);
   font-size: 4.5em;
 }
@@ -105,7 +108,7 @@ body,html{margin:0;padding:0;}
   .homeServiceTitleText{
     min-width: 100%;
     border: black 2px solid;
-    font-family: 'Kaushan Script', cursive, Arial;
+    font-family: 'Kaushan Script', cursive, Verdana;
     font-size: 2em;
     display: flex;
     justify-content: center;
@@ -128,14 +131,14 @@ body,html{margin:0;padding:0;}
       max-width: 50%;
       margin-top: 10px;
       border-bottom: 2px black solid;
-      font-family: 'Kaushan Script', cursive, Arial;
+      font-family: 'Kaushan Script', cursive, Verdana;
       font-size: 1.5em;
       margin-bottom: 15px;
     }
     .homeServiceDescText{
       flex: 1 1;
       min-width: 100%;
-      font-family: 'Kaushan Script', Arial;
+      font-family: 'Kaushan Script', Verdana;
       font-size: 1em;
     }
 
@@ -145,14 +148,12 @@ body,html{margin:0;padding:0;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: var(--9) 3px solid;
-    border-bottom: var(--9) 3px solid;
     color: white;
   }
   .homeServiceImgTitleText{
     min-width: 100%;
     border: white 2px solid;
-    font-family: 'Kaushan Script', cursive, Arial;
+    font-family: 'Kaushan Script', cursive, Verdana;
     font-size: 2em;
     display: flex;
     justify-content: center;
@@ -180,13 +181,13 @@ body,html{margin:0;padding:0;}
       max-width: 50%;
       margin-top: 10px;
       border-bottom: 2px white solid;
-      font-family: 'Kaushan Script', cursive, Arial;
+      font-family: 'Kaushan Script', cursive, Verdana;
       font-size: 1.5em;
       margin-bottom: 15px;
     }
     .homeServiceImgDescText{
       flex: 1 1;
       min-width: 100%;
-      font-family: 'Kaushan Script', Arial;
+      font-family: 'Kaushan Script', Verdana;
       font-size: 1em;
     }

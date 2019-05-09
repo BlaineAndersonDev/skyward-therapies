@@ -1,26 +1,328 @@
 #naviContainer{
-  background: rgba(26, 56, 139, 0.6);
-  height: 60px;
+  /* background: var(--8); */
+  position: absolute;
+  min-width: 100%;
+  background: rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  z-index: 5;
 }
-
+/* Leaf Display */
+.naviLeafContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  transform: translateX(0);
+  transition: transform 400ms ease-in;
+}
+.naviLeafContainer.slideInFromRight {
+  transform: translateX(0);
+}
+.naviLeafContainer.slideOutToRight {
+  transform: translateX(300px);
+}
+.leaf {
+  width: 100px;
+  height: 100px;
+  background-color: var(--10);
+  -moz-border-radius: 100px 0px;
+  -webkit-border-radius: 100px 0px;
+  border-radius: 100px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: wiggleLong;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+.leaf:hover {
+  animation-name: wiggleQuick;
+  animation-duration: 0.25s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+@keyframes wiggleLong {
+  0% { transform: skewX(9deg); }
+  1% { transform: skewX(-8deg); }
+  2% { transform: skewX(7deg); }
+  3% { transform: skewX(-6deg); }
+  4% { transform: skewX(5deg); }
+  5% { transform: skewX(-4deg); }
+  6% { transform: skewX(3deg); }
+  7% { transform: skewX(-2deg); }
+  8% { transform: skewX(1deg); }
+  9% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }
+}
+@keyframes wiggleQuick {
+    0% { transform: rotate(0deg); }
+   25% { transform: rotate(0deg); }
+   50% { transform: rotate(5deg); }
+   75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
 .hamburger {
     position: relative;
     display: inline-block;
     width: 1.25em;
     height: 0.8em;
     margin-right: 0.3em;
-    border-top: 0.2em solid #fff;
-    border-bottom: 0.2em solid #fff;
+    border-top: 0.2em solid var(--6);
+    border-bottom: 0.2em solid var(--6);
 }
-
 .hamburger:before {
     content: "";
     position: absolute;
     top: 0.3em;
     left: 0px;
     width: 100%;
-    border-top: 0.2em solid #fff;
+    border-top: 0.2em solid var(--6);
+}
+
+/* Bar Display */
+
+/* UNUSED Side slide Navbar */
+/* .naviDisplayContainer{
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100vh;
+  background-color: lightblue;
+  transform: translateX(300px);
+  transition: transform 400ms ease-in;
+}
+.naviDisplayContainer.slideInFromRight {
+  transform: translateX(0);
+}
+.naviDisplayContainer.slideOutToRight {
+  transform: translateX(300px);
+} */
+
+/* Bar Display */
+.naviDisplayContainer{
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 80px;
+  /* background-color: var(--3);
+  background-color: var(--5);
+  background-color: var(--7);
+  background-color: var(--1);
+  background-color: var(--2);
+  border-bottom: var(--8) 2px solid; */
+  transform: translateY(-150px);
+  transition: transform 400ms ease-in;
+  background-color: rgba(0, 0, 0, 0.40);
+  border: 1px rgba(0, 0, 0, 0) solid; /* Required for seamless highlighting */
+}
+.naviDisplayContainer.slideInFromTop {
+  transform: translateY(0);
+}
+.naviDisplayContainer.slideOutToTop {
+  transform: translateY(-150px);
+}
+.naviLink{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% / 3) / 6);
+  height: 80px;
+  margin: 10px;
+  transition: all 0.35s ease-in-out;
+  border: 1px rgba(0, 0, 0, 0) solid; /* Required for seamless highlighting */
+  text-decoration: none;
+}
+.naviLinkHighlightBlue:hover, .naviLinkHighlightBlue:focus{
+  border: 1px Blue solid;
+}
+.naviLinkHighlightGreen:hover, .naviLinkHighlightGreen:focus{
+  border: 1px Green solid;
+}
+.naviLinkHighlightYellow:hover, .naviLinkHighlightYellow:focus{
+  border: 1px Gold solid;
+}
+.naviLinkHighlightRed:hover, .naviLinkHighlightRed:focus{
+  border: 1px Red solid;
+}
+.naviLinkHighlightPurple:hover, .naviLinkHighlightPurple:focus{
+  border: 1px Purple solid;
+}
+.naviLinkHighlightBrown:hover, .naviLinkHighlightBrown:focus{
+  border: 1px SaddleBrown solid;
+}
+.naviLinkHighlightWhite:hover, .naviLinkHighlightWhite:focus{
+  border: 1px White solid;
+}
+
+.naviLinkText{
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: 'Kaushan Script', cursive, Verdana;
+  width: 60%;
+  height: 40%;
+  color: var(--8);
+}
+.borderBlue{
+  border-top: 3px Blue solid;
+}
+.borderGreen{
+  border-top: 3px Green solid;
+}
+.borderYellow{
+  border-top: 3px Gold solid;
+}
+.borderRed{
+  border-top: 3px Red solid;
+}
+.borderPurple{
+  border-top: 3px Purple solid;
+}
+.borderBrown{
+  border-top: 3px SaddleBrown solid;
+}
+.naviArrow{
+  border: solid var(--8);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(-135deg);
+}
+
+
+.naviLink2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(((100% / 3) / 6));
+  border: 1px rgba(0, 0, 0, 0) solid; /* Required for seamless animations */
+  text-decoration: none;
+  height: 100%;
+  transform: translate(0%,0%);
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.naviLinkText2{
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: 'Kaushan Script', cursive, Verdana;
+  width: 60%;
+  height: 40%;
+  color: var(--8);
+  z-index: 1;
+}
+.naviLinkText2:hover, .naviLinkText2:focus{
+  color: var(--6);
+}
+.naviLink2:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  border-top: 4px solid transparent;
+  border-right: 2px solid transparent;
+}
+.naviLink2:hover:before{
+  animation: animate 0.25s linear forwards;
+}
+@keyframes animate{
+  0%{
+    width: 0;
+    height: 0;
+    border-top-color: var(--10);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    background-color: rgba(255, 255, 255, 0.0);
+  }
+  50%{
+    width: 100%;
+    height: 0;
+    border-top-color: var(--10);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: var(--10);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+    border-top-color: var(--10);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: var(--10);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.naviLink2:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+.naviLink2:hover:after{
+  animation: animate2 0.25s linear forwards;
+  animation-delay: 0.25s;
+}
+@keyframes animate2{
+  0%{
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: var(--8);
+    border-right-color: transparent;
+  }
+  50%{
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-bottom-color: var(--8);
+    border-left-color: var(--8);
+    border-right-color: transparent;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-bottom-color: var(--8);
+    border-left-color: var(--8);
+    border-right-color: transparent;
+  }
 }

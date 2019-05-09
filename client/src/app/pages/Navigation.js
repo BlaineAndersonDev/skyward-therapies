@@ -2,56 +2,75 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 
-class Nav extends Component {
+class Navigation extends Component {
   constructor(props){
     super(props);
     this.state = {
-      toggled: false
+      showMenu: true
     };
   }
 
-  toggle = async () => {
-    // Set the state of 'toggled' to false IF it is currently TRUE.
-    if (this.state.toggled) {
-      this.setState({ toggled: false })
+  toggleShowMenu = async () => {
+    // Set the state of 'showMenu' to false IF it is currently TRUE.
+    if (this.state.showMenu) {
+      this.setState({ showMenu: false })
     } else {
-      // Set the state of 'toggled' to true IF it is currently FALSE.
-      this.setState({ toggled: true })
+      // Set the state of 'showMenu' to true IF it is currently FALSE.
+      this.setState({ showMenu: true })
     }
   }
 
-
   render() {
-    let navigationDisplay = ( <div></div> );
-    if (this.state.toggled) {
-      navigationDisplay = (
-        <div>
-          <div className="naviBox"></div>
-
-          <div className="naviBox">
-            <Link to={'./'} className="naviLink">
-              Home
-            </Link>
-            <Link to={'./about'} className="naviLink">
-              About
-            </Link>
-          </div>
-
-          <div className="naviBox"></div>
-        </div>
-      )
-    } else {
-      navigationDisplay = (
-        <div class="hamburger" onClick={this.toggle}></div>
-      )
-    }
 
     return (
     <div id="naviContainer">
-      {navigationDisplay}
+
+      <div className={`naviLeafContainer ${this.state.showMenu ? "slideOutToRight" : "slideInFromRight"}`}>
+        <div className="leaf">
+          <div class="hamburger" onClick={this.toggleShowMenu}></div>
+        </div>
+      </div>
+
+      <div className={`naviDisplayContainer ${this.state.showMenu ? "slideInFromTop" : "slideOutToTop"}`} >
+
+        <Link to={'./'} className="naviLink2">
+          <div className="naviLinkText2 borderBlue">
+            Home
+          </div>
+        </Link>
+        <Link to={'./'} className="naviLink2">
+          <div className="naviLinkText2 borderBlue">
+            Home
+          </div>
+        </Link>
+        <Link to={'./'} className="naviLink2">
+          <div className="naviLinkText2 borderBlue">
+            Home
+          </div>
+        </Link>
+        <Link to={'./'} className="naviLink2">
+          <div className="naviLinkText2 borderBlue">
+            Home
+          </div>
+        </Link>
+        <Link to={'./'} className="naviLink2">
+          <div className="naviLinkText2 borderBlue">
+            Home
+          </div>
+        </Link>
+
+
+
+          <div className="naviLink naviLinkHighlightWhite" onClick={this.toggleShowMenu}>
+            <div className="naviArrow borderWhite"></div>
+          </div>
+
+
+      </div>
+
     </div>
     );
   }
 }
 
-export default Nav;
+export default Navigation;

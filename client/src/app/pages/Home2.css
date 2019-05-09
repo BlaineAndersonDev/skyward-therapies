@@ -53,7 +53,7 @@
       bottom:0;
       color:#fff;
       height:100px;
-      font-family: 'Kaushan Script', cursive, Arial;
+      font-family: 'Kaushan Script', cursive, Verdana;
       text-shadow: 2px 2px 4px black;
       font-size: 3.5em;
     }
@@ -74,7 +74,7 @@
       background-color: rgba(74, 157, 68, 1);
       min-width: 100%;
       border: black 2px solid;
-      font-family: 'Kaushan Script', cursive, Arial;
+      font-family: 'Kaushan Script', cursive, Verdana;
       font-size: 2em;
     }
     .homeServiceSection{
@@ -96,7 +96,7 @@
         max-width: 50%;
         color: black;
         border-bottom: 2px black solid;
-        font-family: 'Kaushan Script', cursive, Arial;
+        font-family: 'Kaushan Script', cursive, Verdana;
         font-size: 1.5em;
         margin-bottom: 15px;
       }
@@ -104,7 +104,7 @@
         flex: 1 1;
         min-width: 100%;
         color: black;
-        font-family: 'Kaushan Script', Arial;
+        font-family: 'Kaushan Script', Verdana;
         font-size: 1em;
       }
 

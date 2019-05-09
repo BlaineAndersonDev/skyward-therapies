@@ -12,6 +12,7 @@ class Home extends Component {
           <h1 id="homeImageText">Skyward Therapies</h1>
         </div>
 
+
         <div className="betweenSection homeBoxGradientOne homeBox">
           <h1 className="homeServiceTitleText">Mission Statement?</h1>
           <div className="homeServiceSection">

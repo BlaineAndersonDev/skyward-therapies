@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from "react-router-dom";
+import Construction from './pages/construction/Construction.js';
 import Home from './pages/Home.js';
 import About from './pages/about/About.js';
 import Nav from './pages/Nav.js';
@@ -13,7 +14,8 @@ class App extends Component {
         <div id="appContainer">
 
           <div id="appBody">
-            <Route exact path='/' component={Home}/>
+            <Route exact path='/' component={Construction}/>
+            <Route exact path='/home' component={Home}/>
             <Route
               path="/about"
               render={(props) => <About {...props} Nav={Nav} Footer={Footer}/>}
