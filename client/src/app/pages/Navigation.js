@@ -16,38 +16,33 @@ class Navigation extends Component {
     <div id="naviContainer">
 
       <Link to={'./'} className="naviLink naviLinkHighlightBlue">
-        <div className="naviLinkText borderBlue">
+        <div className="naviLinkText">
           Home
         </div>
       </Link>
-      <Link to={'./'} className="naviLink naviLinkHighlightGreen">
-        <div className="naviLinkText borderGreen">
-          Home
+      <Link to={'./'} className="naviLink naviLinkHighlightBlue">
+        <div className="naviLinkText">
+          Massage
         </div>
       </Link>
-      <Link to={'./'} className="naviLink naviLinkHighlightYellow">
-        <div className="naviLinkText borderYellow">
-          Home
+      <Link to={'./'} className="naviLink naviLinkHighlightBlue">
+        <div className="naviLinkText">
+          Contact
         </div>
       </Link>
-      <Link to={'./'} className="naviLink naviLinkHighlightRed">
-        <div className="naviLinkText borderRed">
-          Home
+      <Link to={'./'} className="naviLink naviLinkHighlightBlue">
+        <div className="naviLinkText">
+          About
         </div>
       </Link>
-      <Link to={'./'} className="naviLink naviLinkHighlightPurple">
-        <div className="naviLinkText borderPurple">
-          Home
+      <Link to={'./'} className="naviLink naviLinkHighlightBlue">
+        <div className="naviLinkText">
+          Blog
         </div>
       </Link>
-      <Link to={'./'} className="naviLink naviLinkHighlightBrown">
-        <div className="naviLinkText borderBrown">
-          Home
-        </div>
-      </Link>
-      <Link to={'./'} className="naviLink naviLinkHighlightWhite">
-        <div className="naviLinkText borderWhite">
-          Home
+      <Link to={'./'} className="naviLink naviLinkHighlightBlue">
+        <div className="naviLinkText">
+          Photos
         </div>
       </Link>
 
