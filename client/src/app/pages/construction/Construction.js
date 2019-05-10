@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import './Construction.css';
 
 class Construction extends Component {
@@ -17,8 +16,8 @@ class Construction extends Component {
         </div>
 
         <div className="conBox">
-          <a href="https://www.facebook.com/skywardtherapies" target="_blank" className="conLink">Facebook</a>
-          <a href="https://www.instagram.com/skywardtherapiesllc" target="_blank" className="conLink">Instagram</a>
+          <a href="https://www.facebook.com/skywardtherapies" target="_blank" className="conLink" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/skywardtherapiesllc" target="_blank" className="conLink" rel="noopener noreferrer">Instagram</a>
         </div>
 
       </div>
