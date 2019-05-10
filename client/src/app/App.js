@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import Construction from './pages/construction/Construction.js';
-import Home from './pages/Home.js';
+import Home from './pages/home/Home.js';
 import About from './pages/about/About.js';
-import Nav from './pages/Nav.js';
 import Footer from './pages/Footer.js';
 import './App.css';
 
@@ -18,7 +17,7 @@ class App extends Component {
             <Route path='/home' component={Home}/>
             <Route
               path="/about"
-              render={(props) => <About {...props} Nav={Nav} Footer={Footer}/>}
+              render={(props) => <About {...props} />}
             />
           </div>
 
