@@ -15,7 +15,7 @@ class App extends Component {
 
           <div id="appBody">
             <Route exact path='/' component={Construction}/>
-            <Route exact path='/home' component={Home}/>
+            <Route path='/home' component={Home}/>
             <Route
               path="/about"
               render={(props) => <About {...props} Nav={Nav} Footer={Footer}/>}
