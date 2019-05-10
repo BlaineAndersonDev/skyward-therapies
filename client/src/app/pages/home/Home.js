@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './Home.css';
 import Navigation from '../Navigation.js'
+import Mission from './mission/Mission.js'
 import Massage from './massage/Massage.js'
+import Modalities from './modalities/Modalities.js'
 import Contact from './contact/Contact.js'
 import Instruction from './instruction/Instruction.js'
 import About from './about/About.js'
@@ -17,24 +19,31 @@ class Home extends Component {
           <h1 id="homeImageText">Skyward Therapies</h1>
         </div>
 
+        <div id="heightMission" className="betweenSection homeBoxGradientOne homeBox">
+          <Mission />
+        </div>
 
-        <div className="betweenSection homeBoxGradientOne homeBox">
+        <div id="heightMassage" className="imageSection parallax bgImg2 homeBoxImg">
           <Massage />
         </div>
 
-        <div className="imageSection parallax bgImg2 homeBoxImg">
+        <div id="heightModalities" className="betweenSection homeBoxGradientOne homeBox">
+          <Modalities />
+        </div>
+
+        <div id="heightContact" className="imageSection parallax bgImg3 homeBoxImg">
           <Contact />
         </div>
 
-        <div className="betweenSection homeBox homeBoxGradientTwo">
+        <div id="heightInstruction" className="betweenSection homeBox homeBoxGradientTwo">
           <Instruction />
         </div>
 
-        <div className="imageSection parallax bgImg3 homeBoxImg">
+        <div id="heightAbout" className="imageSection parallax bgImg4 homeBoxImg">
           <About />
         </div>
 
-        <div className="betweenSection homeBox homeBoxGradientOne">
+        <div id="heightFooter" className="betweenSection homeBox homeBoxGradientOne">
           <Footer />
         </div>
 

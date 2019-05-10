@@ -33,6 +33,15 @@ body,html{margin:0;padding:0;}
   height: 100vh;
 }
 
+/* Specific Height per Section: */
+#heightMission{ height: 50vh }
+#heightMassage{ height: 100vh } /* Image - Do not lower */
+#heightModalities{ height:60vh }
+#heightContact{ height: 100vh } /* Image - Do not lower */
+#heightInstruction{ height:60vh }
+#heightAbout{ height: 100vh } /* Image - Do not lower */
+#heightFooter{ height: 30vh }
+
 .parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
@@ -70,6 +79,14 @@ body,html{margin:0;padding:0;}
 }
 
 .bgImg3::after {
+  background-image: url('/images/skyward_assorted_001.jpg');
+  background-color: black; /* Backup color if image fails to load. */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgImg4::after {
   background-image: url('/images/skyward_tree_001.jpg');
   background-color: black; /* Backup color if image fails to load. */
   background-position: top;
