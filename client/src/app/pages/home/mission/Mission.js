@@ -16,7 +16,7 @@ class Mission extends Component {
         </p>
         <div className="missionQuoteBox">
           <p className="missionQuote">
-            Striking out on my own to help people, in the best way I can has been my dream for so long, and seeing it come to fruition is one of the proudest moments of my life. My tagline is “Back to Balance,” and that exactly what I hope to help anyone I encounter with.
+            Striking out on my own to help people, in the best way I can has been my dream for so long, and seeing it come to fruition is one of the proudest moments of my life. My tagline is “Back to Balance” and that exactly what I hope to help anyone I encounter with.
           </p>
           <p className="missionQuote">
             - Skyward Therapies Founder Kelli Anderson, LMT, NDTR
