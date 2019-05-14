@@ -26,7 +26,7 @@ class Footer extends Component {
 
 
         <div className="footBox">
-          <h1 className="footTextTitle">Follow us on Facebook</h1>
+          <h1 className="footTextTitle">Like us on Facebook</h1>
           <a href="https://www.facebook.com/skywardtherapies" target="_blank" rel="noopener noreferrer">
             <img src="/images/skyward_photo_002.jpg" alt="massage_table" id="skywardMassageTable" />
           </a>
