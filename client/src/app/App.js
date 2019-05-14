@@ -6,6 +6,13 @@ import './App.css';
 
 class App extends Component {
   render() {
+    let pathStart;
+    if (process.env.NODE_ENV === 'production') {
+      pathStart = 'https://skywardtherapies.com'
+    } else {
+      pathStart = 'https://localhost:3000'
+    }
+
     return (
       <Router>
         <div id="appContainer">

@@ -1,84 +1,93 @@
 #footContainer{
   background: var(--dev-background);
-  height: 150px;
+  width: 100%;
+  max-width: 1000px;
+  border-top: var(--dev-borders) 3px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+/* Upper section of Footer */
+.footAboveBox{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  border-top: var(--dev-borders) 3px solid;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
 }
 .footBox{
-  flex-grow: 1;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footTextTitle{
+  font-size: 1.25em;
+  text-decoration: none;
+  color: var(--9);
+  border-bottom: var(--9) 2px solid;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .footText{
-  max-height:100px;
-  max-width:100px;
-  font-size: 2em;
+  font-size: 1em;
   text-decoration: none;
   color: var(--dev-text);
   background: var(--dev-background);
   border: var(--dev-background) 2px solid;
   border-bottom: none;
-  padding: 20px;
   display: flex; /* Centers Text */
   justify-content: center;/* Centers Text */
   align-items: center;/* Centers Text */
+  margin-bottom: 3px;
 }
-#missionContainer{
-  min-width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.footLink{
+  font-size: 1em;
   color: black;
+  text-decoration: none;
+  padding: 15px;
+  margin: 15px;
+  border: 3px var(--9) solid;
+  transition: all 0.25s ease-in-out;
 }
-#missionSectionTitle{
+.footLink:hover, .footLink:focus{
+  border: 3px var(--8) solid;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: var(--8);
+}
+.footRightAboveBox{
+  border: 3px solid transparent; /* Just to even out the Above Layer */
+}
+
+/* Facebook Section */
+#skywardMassageTable{
+  width: 250px;
+  height: 150px;
+  padding: 5px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+#skywardMassageTable:hover{
+  filter: contrast(200%);
+  border: 3px solid var(--9);
+}
+
+/* Lower section of Footer */
+.footBelowBox{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-width: 100%;
-  border: black 2px solid;
-  font-family: 'Kaushan Script', cursive, Verdana;
-  font-size: 1.5em;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: var(--9) 2px solid;
 }
-#missionSectionSubTitle{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 60%;
-  margin-top: 20px;
-  border-top: black 2px solid;
-  border-bottom: black 2px solid;
-  font-family: 'Kaushan Script', cursive, Verdana;
-  font-size: 1.5em;
-}
-.missionSubSection{
-  /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  max-width: 60%;
-}
-  .missionSubSectionTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1;
-    font-family: 'Kaushan Script', cursive, Verdana;
-    font-size: 1.15em;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    border-bottom: black 2px solid;
-  }
-  .missionText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1;
-    font-family: 'Kaushan Script', Verdana;
-    font-size: 1em;
-  }
