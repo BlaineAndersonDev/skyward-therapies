@@ -38,7 +38,7 @@ body,html{margin:0;padding:0;}
 #heightMassage{ height: 100vh } /* Image - Do not lower */
 #heightModalities{ height:60vh }
 #heightContact{ height: 100vh } /* Image - Do not lower */
-#heightInstruction{ height:60vh }
+#heightInstruction{ height:70vh }
 #heightAbout{ height: 100vh } /* Image - Do not lower */
 #heightFooter{ height: 30vh }
 
@@ -95,11 +95,19 @@ body,html{margin:0;padding:0;}
 }
 
 /* Content */
-#homeImageText{
+#homeImageTextTitle{
   color: var(--8);
   font-family: 'Kaushan Script', cursive, Verdana;
   text-shadow: 2px 2px 4px var(--9);
   font-size: 4.5em;
+  margin-top: -100px;
+}
+#homeImageText{
+  color: var(--8);
+  font-family: 'Kaushan Script', cursive, Verdana;
+  text-shadow: 2px 2px 4px var(--9);
+  font-size: 2.5em;
+  margin-top: -20px;
 }
 
 /* Non Image homeboxes */

@@ -11,7 +11,7 @@ class Contact extends Component {
       <div className="contactTextContainer">
 
         <div className="contactSubSection">
-          <p className="contactSubSectionTitle">Schedule an appointment or ask us a question</p>
+          <p className="contactSubSectionTitle">Schedule an appointment or ask a question</p>
         </div>
 
         <div className="contactSubSection">

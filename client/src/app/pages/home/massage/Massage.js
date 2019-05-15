@@ -27,7 +27,7 @@ class Massage extends Component {
 
         <div className="massageSubSection">
           <h3 className="massageSubSectionTitle">Prenatal</h3>
-          <p className="massageText">Moms to be need special care and specific techniques. Primarily this type of massage is performed in the 2nd and 3rd trimesters when ligaments are stretching and more discomfort is overcoming the body.</p>
+          <p className="massageText">Moms-to-be need special care and specific techniques. Primarily this type of massage is performed in the 2nd and 3rd trimesters when ligaments are stretching and more discomfort is overcoming the body.</p>
         </div>
 
         <div className="massageSubSection">

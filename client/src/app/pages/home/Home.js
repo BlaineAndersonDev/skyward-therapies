@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
-import Navigation from '../Navigation.js'
+// import Navigation from '../Navigation.js'
 import Mission from './mission/Mission.js'
 import Massage from './massage/Massage.js'
 import Modalities from './modalities/Modalities.js'
@@ -15,7 +15,8 @@ class Home extends Component {
       <div id="homeContainer">
 
         <div className="imageSection parallax bgImg1 homeBoxImg">
-          <h1 id="homeImageText">Skyward Therapies</h1>
+          <h1 id="homeImageTextTitle">Skyward Therapies LLC</h1>
+          <h1 id="homeImageText">Back to Balance</h1>
         </div>
 
         <div id="heightMission" className="betweenSection homeBoxGradientOne homeBox">
