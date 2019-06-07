@@ -1,29 +1,31 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route} from "react-router-dom";
-// import Construction from './pages/construction/Construction.js';
-import Home from './pages/home/Home.js';
+import { Route, Router } from 'react-router-dom';
 import './App.css';
+import history from './pages/auth/History.js';
+// === Component Imports ===
+import Home from './pages/Home.js';
 
 class App extends Component {
+
+  goTo = async (route) => {
+    this.props.history.replace(`/${route}`)
+  }
+
   render() {
-    // let pathStart;
-    // if (process.env.NODE_ENV === 'production') {
-    //   pathStart = 'https://skywardtherapies.com'
-    // } else {
-    //   pathStart = 'https://localhost:3000'
-    // }
 
     return (
-      <Router>
-        <div id="appContainer">
+      <Router history={history}>
+        <div id="routesContainer">
 
-          <div id="appBody">
-            <Route exact path='/' component={Home}/>
-          </div>
+           <Route exact path="/" render={(props) =>
+             <Home
+               {...props}
+             />}
+           />
+
 
         </div>
       </Router>
-
     );
   }
 }

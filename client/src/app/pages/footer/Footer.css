@@ -1,0 +1,93 @@
+#footContainer{
+  background: var(--dev-background);
+  width: 100%;
+  max-width: 1000px;
+  border-top: var(--dev-borders) 3px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+/* Upper section of Footer */
+.footAboveBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+.footBox{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footTextTitle{
+  font-size: 1.25em;
+  text-decoration: none;
+  color: var(--9);
+  border-bottom: var(--9) 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footText{
+  font-size: 1em;
+  text-decoration: none;
+  color: var(--dev-text);
+  background: var(--dev-background);
+  border: var(--dev-background) 2px solid;
+  border-bottom: none;
+  display: flex; /* Centers Text */
+  justify-content: center;/* Centers Text */
+  align-items: center;/* Centers Text */
+  margin-bottom: 3px;
+}
+
+.footLink{
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  margin: 15px;
+  border: 3px var(--9) solid;
+  transition: all 0.25s ease-in-out;
+}
+.footLink:hover, .footLink:focus{
+  border: 3px var(--8) solid;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: var(--8);
+}
+.footRightAboveBox{
+  border: 3px solid transparent; /* Just to even out the Above Layer */
+}
+
+/* Facebook Section */
+#skywardMassageTable{
+  width: 250px;
+  height: 150px;
+  padding: 5px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+#skywardMassageTable:hover{
+  filter: contrast(200%);
+  border: 3px solid var(--9);
+}
+
+/* Lower section of Footer */
+.footBelowBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: var(--9) 2px solid;
+}
