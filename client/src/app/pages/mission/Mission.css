@@ -1,2 +1,6 @@
 #missionContainer {
+  background-color: var(--sky-3rd-9);
+}
+#missionSectiontitle{
+  background-color: var(--sky-3rd-6);
 }

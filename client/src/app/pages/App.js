@@ -4,8 +4,10 @@ import './App.css';
 import Landing from './landing/Landing.js'
 import Mission from './mission/Mission.js'
 import Massage from './massage/Massage.js'
+import Modalities from './modalities/Modalities.js'
+import Pricing from './pricing/Pricing.js'
 import Contact from './contact/Contact.js'
-import About from './about/About.js'
+// import About from './about/About.js'
 
 class App extends Component {
   render() {
@@ -14,8 +16,9 @@ class App extends Component {
       <Landing />
       <Mission />
       <Massage />
+      <Modalities />
+      <Pricing />
       <Contact />
-      <About />
     </div>
     );
   }

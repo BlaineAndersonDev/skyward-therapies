@@ -1,2 +1,6 @@
 #contactContainer {
+  background-color: var(--sky-3rd-9);
+}
+#contactSectiontitle{
+  background-color: var(--sky-3rd-6);
 }

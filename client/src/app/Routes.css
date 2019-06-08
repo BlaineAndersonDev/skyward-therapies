@@ -1,26 +1,34 @@
 :root {
     /* Color Scheme: Skyward */
-    --sky-primary-0 { color: rgba( 47,139,111,1) }	/* Main Primary color */
-    --sky-primary-1 { color: rgba(124,195,174,1) }
-    --sky-primary-2 { color: rgba( 76,162,136,1) }
-    --sky-primary-3 { color: rgba( 25,119, 91,1) }
-    --sky-primary-4 { color: rgba(  8, 95, 68,1) }
+    --sky-1st-9: rgba( 47,139,111,0.10);
+    --sky-1st-0: rgba( 47,139,111,0.25);
+    --sky-1st-1: rgba( 47,139,111,0.50);
+    --sky-1st-2: rgba( 47,139,111,0.75);
+    --sky-1st-3: rgba(124,195,174,1);
+    --sky-1st-4: rgba( 76,162,136,1);
+    --sky-1st-5: rgba( 25,119, 91,1);
+    --sky-1st-6: rgba(  8, 95, 68,1);
 
-    --sky-secondary-1-0 { color: rgba( 54, 93,138,1) }	/* Main Secondary color (1) */
-    --sky-secondary-1-1 { color: rgba(129,159,193,1) }
-    --sky-secondary-1-2 { color: rgba( 82,119,160,1) }
-    --sky-secondary-1-3 { color: rgba( 32, 73,118,1) }
-    --sky-secondary-1-4 { color: rgba( 15, 52, 93,1) }
+    --sky-2nd-9: rgba( 54, 93,138,0.10);
+    --sky-2nd-1: rgba( 54, 93,138,0.25);
+    --sky-2nd-2: rgba( 54, 93,138,0.50);
+    --sky-2nd-3: rgba( 54, 93,138,0.75);
+    --sky-2nd-4: rgba(129,159,193,1);
+    --sky-2nd-5: rgba( 82,119,160,1);
+    --sky-2nd-6: rgba( 32, 73,118,1);
+    --sky-2nd-7: rgba( 15, 52, 93,1);
 
-    --sky-secondary-2-0 { color: rgba(104,183, 62,1) }	/* Main Secondary color (2) */
-    --sky-secondary-2-1 { color: rgba(177,232,148,1) }
-    --sky-secondary-2-2 { color: rgba(140,213,100,1) }
-    --sky-secondary-2-3 { color: rgba( 77,157, 33,1) }
-    --sky-secondary-2-4 { color: rgba( 51,125, 11,1) }
+    --sky-3rd-9: rgba(104,183, 62,0.10);
+    --sky-3rd-1: rgba(104,183, 62,0.25);
+    --sky-3rd-2: rgba(104,183, 62,0.50);
+    --sky-3rd-3: rgba(104,183, 62,0.75);
+    --sky-3rd-4: rgba(177,232,148,1);
+    --sky-3rd-5: rgba(140,213,100,1);
+    --sky-3rd-6: rgba( 77,157, 33,1);
+    --sky-3rd-7: rgba( 51,125, 11,1);
 
-    --sky-transparancy-0 { color: rgba(0, 0, 0, 0.45) }
+    --sky-transparancy-0: rgba(0, 0, 0, 0.5);
 
-    --sky-font-0 { font-family: 'Muli', sans-serif }
 }
 /*
 Fonts (In order of use):
@@ -47,6 +55,7 @@ html, body{
   flex-direction: column;
   min-height: 100vh;
   min-width: 100%;
+  background-color: whitesmoke;
 }
 #routesFooter{
   height: 150px;
@@ -84,17 +93,29 @@ html, body{
     flex-direction: column;
     min-width: 100%;
     padding-top: 50px;
+    padding-bottom: 25px;
   }
   .comSectiontitle{
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    border: black 2px solid;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-family: 'Kaushan Script', cursive, Verdana;
-    font-size: 1.5em;
+    font-size: 2.0em;
     margin-bottom: 30px;
-    background-color: var(--1);
+  }
+  .comSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 80%;
   }
   .comSubSectionContainer{
     /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
@@ -103,38 +124,27 @@ html, body{
     justify-content: center;
     align-items: center;
     z-index: 1;
-    max-width: 70%;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .comSubSectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-bottom: black 2px solid;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 1.5em;
+    color: black;
   }
   .comSubSectionText{
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1 1;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Verdana';
     font-size: 1em;
-    margin: 10px;
-  }
-  .comQuoteContainer{
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    margin-top: 20px;
-    margin-left: 15%;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 15px;
-    background-color: lightgray;
-  }
-  .comQuoteText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1;
-    font-family: 'Muli', sans-serif;
-    font-size: 0.85em;
+    margin: 15px;
   }
 }
 
