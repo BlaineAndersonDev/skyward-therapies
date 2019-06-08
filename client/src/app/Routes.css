@@ -43,6 +43,10 @@ html, body{
   height: 150px;
   flex: 1;
 }
+
+
+/* App Wide Styles - com<name> - referring to Component */
+
 /* Most Smartphones Mobiles (Portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
   #routesBody{ background-color: red; }
@@ -55,29 +59,29 @@ html, body{
 @media (min-width: 768px) and (max-width: 1024px) {
   #routesBody{ background-color: green; }
 }
+
+
+
+/* =========================== */
+/* Laptops & Desktops ======== */
+/* 1025px To 1280px ========== */
+/* =========================== */
 /* Laptops, Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
-  #routesBody{ background-color: orange; }
+  .comContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100%;
+    position: relative;
+  }
 }
+
 /* Large Desktops */
 @media (min-width: 1281px) {
   #routesBody{ background-color: purple; }
 }
-
-/* App Wide Styles - comp<name> - referring to Component */
-.compContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-width: 100%;
-  position: relative;
-}
-
-
-
-
-
 
 
 

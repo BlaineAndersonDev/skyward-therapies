@@ -4,7 +4,7 @@ import './Landing.css';
 class Landing extends Component {
   render() {
     return (
-      <div id="landingImageContainer">
+      <div id="landingContainer" className="comContainer">
         <h1 id='landingImageTitle' className='landingImageTexts'>Skyward Therapies</h1>
         <h3 id='landingImageSlogan' className='landingImageTexts'>~ Back to Balance ~</h3>
       </div>
