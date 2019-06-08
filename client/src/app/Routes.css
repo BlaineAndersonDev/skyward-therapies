@@ -185,6 +185,8 @@ html, body{
     align-items: baseline;
     min-height: 300px;
     max-height: 300px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
   }
   .comSubSectionBoxTitle{
     display: flex;
@@ -194,6 +196,7 @@ html, body{
     border-bottom: black 2px solid;
     font-family: 'Kaushan Script', cursive, Verdana;
     font-size: 1.5em;
+    border-radius: 10px 10px 0 0;
   }
 
   /* Background Images */
