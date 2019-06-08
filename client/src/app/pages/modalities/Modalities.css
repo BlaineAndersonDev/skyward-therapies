@@ -1,9 +1,16 @@
 #modalitiesContainer {
   background-color: var(--sky-white-0);
+  background-image: url('/images/skyward_assorted_005.jpg');
 }
 #modalitiesSectiontitle{
-  background-color: var(--sky-2nd-4);
+  background-color: var(--sky-2nd-5);
+}
+.modalitiesSubSectionContainer{
+  border-left: black solid 2px;
+  border-right: black solid 2px;
+  border-bottom: black solid 2px;
+  background-color: var(--sky-white-3);
 }
 .modalitiesSubSectionTitle{
-  background-color: var(--sky-2nd-1);
+  background-color: var(--sky-2nd-4);
 }

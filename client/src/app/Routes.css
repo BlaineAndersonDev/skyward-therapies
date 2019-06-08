@@ -27,8 +27,15 @@
     --sky-3rd-6: rgba( 77,157, 33,1);
     --sky-3rd-7: rgba( 51,125, 11,1);
 
-    --sky-transparancy-0: rgba(0, 0, 0, 0.5);
-    --sky-white-0: rgba(245,245,245, 0.5);
+    --sky-transparancy-0: rgba(0, 0, 0, 0.10);
+    --sky-transparancy-1: rgba(0, 0, 0, 0.25);
+    --sky-transparancy-2: rgba(0, 0, 0, 0.50);
+    --sky-transparancy-3: rgba(0, 0, 0, 0.75);
+    --sky-white-0: rgba(245,245,245, 0.10);
+    --sky-white-1: rgba(245,245,245, 0.25);
+    --sky-white-2: rgba(245,245,245, 0.50);
+    --sky-white-3: rgba(245,245,245, 0.75);
+    --sky-white-4: rgba(245,245,245, 1.0);
 
 }
 /*
@@ -93,8 +100,7 @@ html, body{
     align-items: center;
     flex-direction: column;
     min-width: 100%;
-    padding-top: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
   }
   .comSectiontitle{
     display: flex;
@@ -190,6 +196,41 @@ html, body{
     font-size: 1.5em;
   }
 
+  /* Background Images */
+  .comImgContainer {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 600px;
+    background-color: black; /* Backup color if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .comImageTexts{
+    color:#fff;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    text-shadow: 2px 2px 4px black;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -200px;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  #comImageTitle{
+    font-size: 3.5em;
+    top: -200px;
+  }
+  #comImageSlogan{
+    font-size: 2em;
+    top: -80px;
+  }
 
 }
 
