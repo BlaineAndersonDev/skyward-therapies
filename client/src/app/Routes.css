@@ -19,7 +19,16 @@
     --sky-secondary-2-4 { color: rgba( 51,125, 11,1) }
 
     --sky-transparancy-0 { color: rgba(0, 0, 0, 0.45) }
+
+    --sky-font-0 { font-family: 'Muli', sans-serif }
 }
+/*
+Fonts (In order of use):
+'Kaushan Script', cursive, Verdana
+'Kaushan Script', Verdana
+'Muli', sans-serif
+
+ */
 
 *{
   margin:0;
@@ -74,7 +83,58 @@ html, body{
     align-items: center;
     flex-direction: column;
     min-width: 100%;
-    position: relative;
+    padding-top: 50px;
+  }
+  .comSectiontitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border: black 2px solid;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    background-color: var(--1);
+  }
+  .comSubSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 70%;
+  }
+  .comSubSectionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    font-family: 'Muli', sans-serif;
+    font-size: 1em;
+    margin: 10px;
+  }
+  .comQuoteContainer{
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 15%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: lightgray;
+  }
+  .comQuoteText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    font-family: 'Muli', sans-serif;
+    font-size: 0.85em;
   }
 }
 

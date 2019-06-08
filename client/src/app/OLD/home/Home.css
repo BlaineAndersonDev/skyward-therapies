@@ -1,15 +1,4 @@
-:root {
-    --1:#537A5A;
-    --2:#9BC53D;
-    --3:#C9E3AC;
-    --4:#EAEFBD;
-    --5:#9CAFB7;
-    --6:#14281D;
-    --7:#48A59E;
-    --8:#F8FFF4;
-    --9:#000000;
-    --10:#A0DE21;
-}
+
 
 /* Tiny reset thingy */
 body,html{margin:0;padding:0;}
