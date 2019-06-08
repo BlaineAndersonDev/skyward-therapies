@@ -1,6 +1,9 @@
 #modalitiesContainer {
-  background-color: var(--sky-2nd-9);
+  background-color: var(--sky-white-0);
 }
 #modalitiesSectiontitle{
   background-color: var(--sky-2nd-4);
+}
+.modalitiesSubSectionTitle{
+  background-color: var(--sky-2nd-1);
 }
