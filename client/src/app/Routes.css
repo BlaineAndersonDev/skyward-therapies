@@ -146,6 +146,50 @@ html, body{
     font-size: 1em;
     margin: 15px;
   }
+  .comTextUnderline{
+    text-decoration: underline;
+  }
+  .comVerticalDivider{
+    min-height: 100%;
+    min-width: 0;
+    border-left: 1px black solid;
+    height: 175px;
+  }
+  .comRows{
+    flex-direction: row;
+  }
+
+  /* Box Designs */
+  .comSubSectionBoxContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .comSubSectionBox{
+    margin: 15px;
+    flex: 1 0 calc(30% - 15px);
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .comSubSectionBoxTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-bottom: black 2px solid;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 1.5em;
+  }
+
+
 }
 
 /* Large Desktops */
