@@ -2,5 +2,136 @@
   background-color: var(--sky-1st-9);
 }
 #pricingSectiontitle{
-  background-color: var(--sky-1st-4);
+  background-color: var(--sky-3rd-5);
+}
+
+/* Box Designs */
+.pricingBoxContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  min-width: 100%;
+}
+.pricingBox{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+  /* border: 2px black solid; */
+  /* box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7); */
+  border-radius: 10px;
+}
+.pricingBoxTitleContainer{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  /* border: 2px black solid; */
+  /* box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7); */
+  border-radius: 10px;
+}
+#pricingBoxColor1{
+  background-color: #9A75B6;
+}
+#pricingBoxColor2{
+  background-color: var(--sky-2nd-4);
+}
+#pricingBoxColor3{
+  background-color: var(--sky-1st-3);
+}
+#pricingBoxColor4{
+  background-color: var(--sky-3rd-5);
+}
+.pricingBoxTitlePrice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1;
+  font-family: 'Verdana';
+  font-size: 1.25em;
+  color: var(--sky-white-4);
+  text-shadow: 2px 2px 4px black;
+}
+.pricingBoxTitleNumber{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  font-family: 'Kaushan Script', cursive, Verdana;
+  font-size: 5em;
+  color: var(--sky-white-4);
+  text-shadow: 2px 2px 4px black;
+}
+.pricingBoxTitleText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  font-family: 'Kaushan Script', cursive, Verdana;
+  font-size: 1.5em;
+  border-radius: 10px 10px 0 0;
+  color: var(--sky-white-4);
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: -20px;
+}
+.pricingBoxText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1;
+  font-family: 'Verdana';
+  font-size: 1em;
+  margin: 15px;
+}
+.pricingIncludedContainer{
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 100%;
+}
+.pricingIncludedTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kaushan Script', cursive, Verdana;
+  font-size: 1.15em;
+  color: black;
+  text-decoration: underline;
+}
+.pricingIncludedItem{
+  text-decoration: none;
+  list-style-type: circle;
+}
+.pricingTextColor1{
+  color: #9A75B6;
+}
+.pricingTextColor2{
+  color: var(--sky-2nd-5);
+}
+.pricingTextColor3{
+  color: var(--sky-1st-4);
+}
+.pricingTextColor4{
+  color: var(--sky-3rd-6);
+}
+.pricingIconContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+.pricingIcon{
+  max-height: 100px;
+  max-width: 100px;
 }
