@@ -1,7 +1,7 @@
 #pricingContainer {
   background-color: var(--sky-1st-9);
 }
-#pricingSectiontitle{
+.pricingTitleColor{
   background-color: var(--sky-3rd-5);
 }
 
@@ -60,6 +60,7 @@
   font-size: 1.25em;
   color: var(--sky-white-4);
   text-shadow: 2px 2px 4px black;
+  margin-top: 20px;
 }
 .pricingBoxTitleNumber{
   display: flex;
@@ -70,6 +71,8 @@
   font-size: 5em;
   color: var(--sky-white-4);
   text-shadow: 2px 2px 4px black;
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 .pricingBoxTitleText{
   display: flex;

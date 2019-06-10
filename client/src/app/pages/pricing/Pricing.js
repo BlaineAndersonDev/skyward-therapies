@@ -5,7 +5,11 @@ class Pricing extends Component {
   render() {
     return (
     <div id="pricingContainer" className="comContainer">
-      <h1 id="pricingSectiontitle" className="comSectiontitle">Pricing</h1>
+      <div className="comTitleContainer">
+        <div className="comOverTitle pricingTitleColor"></div>
+        <h1 className="comTitle">Pricing</h1>
+        <div className="comUnderTitle"></div>
+      </div>
       <div className="pricingBoxContainer">
 
         <div className="pricingBox">

@@ -1,12 +1,92 @@
 #massageContainer {
   background-color: var(--sky-1st-9);
 }
-#massageSectiontitle{
-  background-color: var(--sky-3rd-6);
+.massageTitleColor{
+  background-color: var(--sky-3rd-5);
 }
 .massageSubSectionBoxTitle{
   background-color: var(--sky-3rd-4);
 }
 .massageSubSectionBox{
   background-color: whitesmoke;
+}
+
+
+
+.massageAllStylesContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.massageIndividualStyle{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 300px;
+  flex: 1 0 calc(27% - 10px);
+  padding: 15px;
+  margin: 15px;
+  border: 3px black solid;
+  background-color: black; /* Backup color if image fails to load. */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.massageImg1{
+  background-image: url('/images/skyward_styles_hot_stone.jpg');
+}
+.massageImg2{
+  background-image: url('/images/skyward_styles_prenatal.jpg');
+}
+.massageImg3{
+  background-image: url('/images/skyward_styles_trigger_point.jpg');
+}
+.massageImg4{
+  background-image: url('/images/skyward_styles_swedish.jpg');
+}
+.massageImg5{
+  background-image: url('/images/skyward_styles_deep_tissue.jpg');
+}
+.massageStyleTextContainer{
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+  width: 250px;
+  padding: 15px;
+  background-color: var(--sky-white-2);
+  background-color: var(--sky-transparancy-1);
+  z-index: 1;
+  box-shadow: 2px 2px 2px var(--sky-transparancy-1);
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+.massageStyleTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90%;
+  border-top: white 2px solid;
+  border-bottom: white 2px solid;
+  font-family: 'Kaushan Script', cursive, Verdana;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.massageStyleText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Verdana';
+  font-size: 0.9em;
 }

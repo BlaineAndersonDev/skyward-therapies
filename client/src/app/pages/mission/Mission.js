@@ -5,9 +5,11 @@ class Mission extends Component {
   render() {
     return (
     <div id="missionContainer" className="comContainer">
-      <h1 id="missionSectiontitle" className="comSectiontitle">
-        ~We Support <br /> <span className="comTextUnderline">You</span>~
-      </h1>
+      <div className="comTitleContainer">
+        <div className="comOverTitle missionTitleColor"></div>
+        <h1 className="comTitle">~We Support <br /> <span className="comTextUnderline">You</span>~</h1>
+        <div className="comUnderTitle"></div>
+      </div>
 
       <div className="comSectionContainer comRows">
         <p className="comSubSectionText">
