@@ -1,18 +1,22 @@
 #massageContainer {
-  background-color: var(--sky-1st-9);
+  background-color: var(--sky-white-4);
+  position: relative;
+  z-index: 1;
 }
 .massageTitleColor{
-  background-color: var(--sky-3rd-5);
+  /* background-color: var(--sky-3rd-5); */
 }
-.massageSubSectionBoxTitle{
-  background-color: var(--sky-3rd-4);
+#massageHeader{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 0 100px 0;
+  background-color: var(--sky-3rd-2);
+  clip-path: polygon(0 0, 100% 0, 0% 100%);
+  z-index: -1;
 }
-.massageSubSectionBox{
-  background-color: whitesmoke;
-}
-
-
-
 .massageAllStylesContainer{
   display: flex;
   justify-content: center;

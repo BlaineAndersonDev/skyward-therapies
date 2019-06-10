@@ -1,10 +1,21 @@
 #pricingContainer {
-  background-color: var(--sky-1st-9);
+  background-color: var(--sky-white-4);
+  position: relative;
+  z-index: 0;
 }
 .pricingTitleColor{
-  background-color: var(--sky-3rd-5);
+  /* background-color: var(--sky-3rd-5); */
 }
-
+#pricingHeader{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--sky-2nd-4);
+  z-index: -1;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
 /* Box Designs */
 .pricingBoxContainer{
   display: flex;
@@ -35,15 +46,15 @@
   max-height: 200px;
   min-width: 200px;
   max-width: 200px;
-  /* border: 2px black solid; */
-  /* box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7); */
+  border: 2px var(--sky-transparancy-1) solid;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
 }
 #pricingBoxColor1{
-  background-color: #9A75B6;
+  background-color: var(--sky-2nd-4);
 }
 #pricingBoxColor2{
-  background-color: var(--sky-2nd-4);
+  background-color: var(--sky-4th-4);
 }
 #pricingBoxColor3{
   background-color: var(--sky-1st-3);
@@ -132,9 +143,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100%;
+  width: 100%;
 }
 .pricingIcon{
   max-height: 100px;
   max-width: 100px;
+  border-radius: 15px;
 }

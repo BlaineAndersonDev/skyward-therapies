@@ -9,6 +9,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .landingImageTexts{
   color:#fff;

@@ -5,6 +5,7 @@ class Pricing extends Component {
   render() {
     return (
     <div id="pricingContainer" className="comContainer">
+      <div id="pricingHeader"></div>
       <div className="comTitleContainer">
         <div className="comOverTitle pricingTitleColor"></div>
         <h1 className="comTitle">Pricing</h1>
@@ -13,13 +14,13 @@ class Pricing extends Component {
       <div className="pricingBoxContainer">
 
         <div className="pricingBox">
-          <div className="pricingIconContainer">
-            <img src="images/skyward_tree_cycle_01.png" alt="tree_cycle_01" className="pricingIcon" />
-          </div>
           <div id="pricingBoxColor1" className="pricingBoxTitleContainer">
             <p className="pricingBoxTitlePrice">$35</p>
             <h1 className="pricingBoxTitleNumber">30</h1>
             <h1 className="pricingBoxTitleText">Minutes</h1>
+          </div>
+          <div className="pricingIconContainer">
+            <img src="images/skyward_tree_cycle_01.png" alt="tree_cycle_01" className="pricingIcon" />
           </div>
           <ul className="pricingIncludedContainer">
             <li className="pricingIncludedTitle">Includes:</li>
@@ -31,13 +32,13 @@ class Pricing extends Component {
         </div>
 
         <div className="pricingBox">
-          <div className="pricingIconContainer">
-            <img src="images/skyward_tree_cycle_02.png" alt="tree_cycle_02" className="pricingIcon" />
-          </div>
           <div id="pricingBoxColor2" className="pricingBoxTitleContainer">
             <p className="pricingBoxTitlePrice">$65</p>
             <h1 className="pricingBoxTitleNumber">60</h1>
             <h1 className="pricingBoxTitleText">Minutes</h1>
+          </div>
+          <div className="pricingIconContainer">
+            <img src="images/skyward_tree_cycle_02.png" alt="tree_cycle_02" className="pricingIcon" />
           </div>
           <ul className="pricingIncludedContainer">
             <li className="pricingIncludedTitle">Includes:</li>
@@ -49,13 +50,13 @@ class Pricing extends Component {
         </div>
 
         <div className="pricingBox">
-          <div className="pricingIconContainer">
-            <img src="images/skyward_tree_cycle_03.png" alt="tree_cycle_03" className="pricingIcon" />
-          </div>
           <div id="pricingBoxColor3" className="pricingBoxTitleContainer">
             <p className="pricingBoxTitlePrice">$100</p>
             <h1 className="pricingBoxTitleNumber">90</h1>
             <h1 className="pricingBoxTitleText">Minutes</h1>
+          </div>
+          <div className="pricingIconContainer">
+            <img src="images/skyward_tree_cycle_03.png" alt="tree_cycle_03" className="pricingIcon" />
           </div>
           <ul className="pricingIncludedContainer">
             <li className="pricingIncludedTitle">Includes:</li>
@@ -67,13 +68,13 @@ class Pricing extends Component {
         </div>
 
         <div className="pricingBox">
-          <div className="pricingIconContainer">
-            <img src="images/skyward_tree_cycle_04.png" alt="tree_cycle_04" className="pricingIcon" />
-          </div>
           <div id="pricingBoxColor4" className="pricingBoxTitleContainer">
             <p className="pricingBoxTitlePrice">$130</p>
             <h1 className="pricingBoxTitleNumber">120</h1>
             <h1 className="pricingBoxTitleText">Minutes</h1>
+          </div>
+          <div className="pricingIconContainer">
+            <img src="images/skyward_tree_cycle_04.png" alt="tree_cycle_04" className="pricingIcon" />
           </div>
           <ul className="pricingIncludedContainer">
             <li className="pricingIncludedTitle">Includes:</li>
