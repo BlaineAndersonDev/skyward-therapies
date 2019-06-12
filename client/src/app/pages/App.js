@@ -7,7 +7,7 @@ import Massage from './massage/Massage.js'
 import Modalities from './modalities/Modalities.js'
 import Pricing from './pricing/Pricing.js'
 import Contact from './contact/Contact.js'
-// import About from './about/About.js'
+import About from './about/About.js'
 
 class App extends Component {
   render() {
@@ -19,6 +19,7 @@ class App extends Component {
       <Modalities />
       <Pricing />
       <Contact />
+      <About />
     </div>
     );
   }
