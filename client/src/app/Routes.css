@@ -88,8 +88,8 @@ html, body{
     background-color: whitesmoke;
   }
   #routesFooter{
-    height: 150px;
     min-width: 100%;
+    max-width: 100%;
   }
 
 

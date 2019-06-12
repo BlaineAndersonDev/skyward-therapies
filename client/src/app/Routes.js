@@ -18,6 +18,11 @@ class Routes extends Component {
     return (
       <Router history={history}>
         <div id="routesContainer">
+
+          <div id="routesNavigation">
+            <Navigation />
+          </div>
+
           <div id="routesBody">
            <Route path="/" render={(props) =>
              <App
@@ -25,6 +30,10 @@ class Routes extends Component {
              />}
            />
          </div>
+
+                  <div id="routesFooter">
+                    <Footer />
+                  </div>
 
         </div>
       </Router>
