@@ -15,19 +15,19 @@ class Navigation extends Component {
 
     return (
     <div id="naviContainer">
-      <NavLink smooth to="/#landingContainer" className="naviLink naviLinkHighlightBlue">
+      <NavLink smooth to="/#landing" className="naviLink naviLinkHighlightBlue">
         <div className="naviLinkText"> Home </div>
       </NavLink>
-      <NavLink smooth to="/#missionContainer" className="naviLink naviLinkHighlightBlue">
-        <div className="naviLinkText"> Mission </div>
-      </NavLink>
-      <NavLink smooth to="/#massageContainer" className="naviLink naviLinkHighlightBlue">
+      <NavLink smooth to="/#massage" className="naviLink naviLinkHighlightBlue">
         <div className="naviLinkText"> Massage </div>
       </NavLink>
-      <NavLink smooth to="/#contactContainer" className="naviLink naviLinkHighlightBlue">
+      <NavLink smooth to="/#pricing" className="naviLink naviLinkHighlightBlue">
+        <div className="naviLinkText"> Pricing </div>
+      </NavLink>
+      <NavLink smooth to="/#contact" className="naviLink naviLinkHighlightBlue">
         <div className="naviLinkText"> Contact </div>
       </NavLink>
-      <NavLink smooth to="/#aboutContainer" className="naviLink naviLinkHighlightBlue">
+      <NavLink smooth to="/#about" className="naviLink naviLinkHighlightBlue">
         <div className="naviLinkText"> About </div>
       </NavLink>
 

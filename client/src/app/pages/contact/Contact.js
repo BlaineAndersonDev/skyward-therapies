@@ -4,7 +4,7 @@ import './Contact.css';
 class Contact extends Component {
   render() {
     return (
-    <div id="contactContainer" className="comContainer">
+    <div id="contact" className="comContainer">
       <div id="contactHeader"></div>
       <div className="comTitleContainer">
         <div className="comOverTitle pricingTitleColor"></div>

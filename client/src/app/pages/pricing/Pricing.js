@@ -4,7 +4,7 @@ import './Pricing.css';
 class Pricing extends Component {
   render() {
     return (
-    <div id="pricingContainer" className="comContainer">
+    <div id="pricing" className="comContainer">
       <div id="pricingHeader"></div>
       <div className="comTitleContainer">
         <div className="comOverTitle pricingTitleColor"></div>

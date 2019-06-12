@@ -4,7 +4,7 @@ import './Massage.css';
 class Massage extends Component {
   render() {
     return (
-    <div id="massageContainer" className="comContainer">
+    <div id="massage" className="comContainer">
       <div id="massageHeader"></div>
       <div className="comTitleContainer">
         <div className="comOverTitle massageTitleColor"></div>

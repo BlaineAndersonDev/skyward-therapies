@@ -4,8 +4,9 @@ import './About.css';
 class About extends Component {
   render() {
     return (
-    <div id="aboutContainer">
+    <div id="about">
       <div className="aboutContainerOverlay"></div>
+      <div className="aboutContainerShape"></div>
       <div className="aboutBioContainer">
 
         <div className="aboutBioTextContainer">
