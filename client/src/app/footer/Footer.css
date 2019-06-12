@@ -5,5 +5,33 @@
   align-items: center;
   min-width: 100%;
   max-width: 100%;
-  border-top: var(--dev-borders) 3px solid;
+  border-top: var(--sky-transparancy-3) 3px solid;
+  background-color: var(--sky-5th-6);
+}
+#footTopWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  max-width: 100%;
+  background-color: var(--sky-5th-4);
+}
+#footCenterWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 100%;
+  max-width: 100%;
+}
+#footBottomWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  max-width: 100%;
+  background-color: var(--sky-5th-4);
 }

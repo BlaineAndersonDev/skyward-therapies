@@ -10,21 +10,6 @@ import Contact from './contact/Contact.js'
 import About from './about/About.js'
 
 class App extends Component {
-
-  holdingFunction = () => {
-    return (
-      <div id="appContainer">
-        <Landing />
-        <Mission />
-        <Massage />
-        <Modalities />
-        <Pricing />
-        <Contact />
-        <About />
-      </div>
-    )
-  }
-
   render() {
     return (
     <div id="appContainer">

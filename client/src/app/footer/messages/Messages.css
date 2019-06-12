@@ -1,0 +1,10 @@
+#footMessageContainer{
+  background-color: var(--sky-5th-6);
+  flex: 1 0 calc(45% - 10px);
+  min-height: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

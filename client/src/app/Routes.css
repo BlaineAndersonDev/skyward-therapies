@@ -35,6 +35,15 @@
     --sky-4th-5: rgba(124, 79,159,1);
     --sky-4th-6: rgba( 71, 20,111,1);
 
+    --sky-5th-9: rgba(105, 71, 31, 0.10);
+    --sky-5th-1: rgba(105, 71, 31, 0.25);
+    --sky-5th-2: rgba(105, 71, 31, 0.50);
+    --sky-5th-3: rgba(105, 71, 31, 0.75);
+    --sky-5th-4: rgba(173,130, 80,1);
+    --sky-5th-5: rgba(134, 96, 52,1);
+    --sky-5th-6: rgba( 74, 47, 15,1);
+    --sky-5th-7: rgba( 46, 27,  4,1);
+
     --sky-transparancy-0: rgba(0, 0, 0, 0.10);
     --sky-transparancy-1: rgba(0, 0, 0, 0.25);
     --sky-transparancy-2: rgba(0, 0, 0, 0.50);
