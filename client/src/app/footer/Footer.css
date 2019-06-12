@@ -23,15 +23,17 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  min-height: 300px;
   min-width: 100%;
   max-width: 100%;
 }
 #footBottomWrapper{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   min-width: 100%;
   max-width: 100%;
-  background-color: var(--sky-5th-4);
+  background-color: var(--sky-5th-6);
+  color: var(--sky-white-3);
 }

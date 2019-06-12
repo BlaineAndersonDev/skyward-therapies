@@ -1,10 +1,53 @@
 #footMessageContainer{
   background-color: var(--sky-5th-6);
   flex: 1 0 calc(45% - 10px);
-  min-height: 300px;
-  min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#footMessageFormContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: red solid 1px; */
+  min-width: 100%;
+}
+.footMessageInputContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 100%;
+  /* border: green solid 1px; */
+  min-height: 40px;
+  color: var(--sky-white-3);
+}
+.footMessageInputBox{
+  color: var(--sky-transparancy-3);
+  background-color: var(--sky-5th-4);
+  box-shadow: none;
+  border: none;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  border: 2px solid var(--sky-transparancy-2);
+  border-bottom: 5px solid var(--sky-transparancy-3);
+  border-style: none;
+  font-size: 1em;
+}
+.footMessageInputBox:focus{
+  outline: none;
+}
+#footMessageNameContainer{
+}
+#footMessageEmailContainer{
+}
+#footMessageTextContainer{
+}
+.footMessageInput{
+  min-width: 100%;
 }
