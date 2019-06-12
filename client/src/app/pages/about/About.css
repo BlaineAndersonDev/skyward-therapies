@@ -1,6 +1,5 @@
 #about {
-  width: 100%;
-  max-width: 100%;
+  min-width: 100%;
   min-height: 700px;
   max-height: 700px;
   background-image: url('/images/about/sky_about_003.jpg');
@@ -15,7 +14,6 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 50px;
   z-index: 0;
 }
 .aboutContainerOverlay{

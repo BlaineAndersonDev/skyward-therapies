@@ -1,7 +1,7 @@
 #footContainer{
   background: var(--dev-background);
-  width: 100%;
-  max-width: 1000px;
+  min-width: 100%;
+  max-width: 100%;
   border-top: var(--dev-borders) 3px solid;
   display: flex;
   flex-direction: column;
@@ -55,6 +55,7 @@
   margin: 15px;
   border: 3px var(--9) solid;
   transition: all 0.25s ease-in-out;
+  min-width: 100%;
 }
 .footLink:hover, .footLink:focus{
   border: 3px var(--8) solid;

@@ -1,7 +1,9 @@
 #pricing {
   background-color: var(--sky-white-4);
   position: relative;
-  z-index: 0;
+  z-index: 0; 
+  min-width: 100%;
+
 }
 .pricingTitleColor{
   /* background-color: var(--sky-3rd-5); */

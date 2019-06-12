@@ -2,6 +2,7 @@
   background-color: var(--sky-white-4);
   position: relative;
   z-index: 1;
+  min-width: 100%;
 }
 .massageTitleColor{
   /* background-color: var(--sky-3rd-5); */

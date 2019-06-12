@@ -3,6 +3,12 @@
   /* background-image: url('/images/skyward_assorted_005.jpg'); */
   position: relative;
   z-index: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .modalitiesTitleColor{
 }
@@ -10,11 +16,14 @@
   position: absolute;
   bottom:0;
   left:0;
+  right: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   background-color: var(--sky-2nd-4);
   z-index: -1;
   clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  min-width: 100%;
 }
 .modalitiesAllStyleContainer{
   display: flex;

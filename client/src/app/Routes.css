@@ -60,23 +60,30 @@ Fonts (In order of use):
 }
 html, body{
   height:100%;
-}
-#routesBody{
-  min-height:100%;
-}
-#routesNavigation{
-}
-#routesBody{
-  Display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   min-width: 100%;
-  background-color: whitesmoke;
+  max-width: 100%;
+  background-color: red;
 }
-#routesFooter{
-  height: 150px;
-  flex: 1;
+#routesContainer{
+  min-width: 100%;
+  max-width: 100%;
 }
+  #routesNavigation{
+    min-width: 100%;
+    max-width: 100%;
+  }
+  #routesBody{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: whitesmoke;
+  }
+  #routesFooter{
+    height: 150px;
+    min-width: 100%;
+  }
 
 
 /* App Wide Styles - com<name> - referring to Component */
@@ -101,15 +108,15 @@ html, body{
 /* 1025px To 1280px ========== */
 /* =========================== */
 /* Laptops, Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .comContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-width: 100%;
     padding-bottom: 40px;
     padding-top: 60px;
+    min-width: 100%;
   }
   .comSectiontitle{
     display: flex;
@@ -152,7 +159,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 50%;;
+    min-width: 50%;
 	  box-shadow:
 		  0 -1px 0 rgba(0,0,0,0.1),
 		  0 1px 0 rgba(255,255,255,0.6);

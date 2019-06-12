@@ -10,6 +10,15 @@ class Navigation extends Component {
     };
   }
 
+  holdingFunction = () => {
+    return (
+      <Link to={'./'} className="naviLink naviLinkHighlightBlue">
+        <div className="naviLinkText">
+          Photos
+        </div>
+      </Link>
+    )
+  }
 
   render() {
 
@@ -30,13 +39,6 @@ class Navigation extends Component {
       <NavLink smooth to="/#about" className="naviLink naviLinkHighlightBlue">
         <div className="naviLinkText"> About </div>
       </NavLink>
-
-      <Link to={'./'} className="naviLink naviLinkHighlightBlue">
-        <div className="naviLinkText">
-          Photos
-        </div>
-      </Link>
-
     </div>
     );
   }
