@@ -7,7 +7,6 @@ class Contact extends Component {
     <div id="contact" className="comContainer">
       <div id="contactHeader"></div>
       <div className="comTitleContainer">
-        <div className="comOverTitle pricingTitleColor"></div>
         <h1 className="comTitle">Schedule a Massage</h1>
         <div className="comUnderTitle"></div>
       </div>

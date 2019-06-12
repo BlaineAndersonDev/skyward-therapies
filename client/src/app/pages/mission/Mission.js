@@ -7,7 +7,6 @@ class Mission extends Component {
     <div id="missionContainer" className="comContainer">
       <div id="missionHeader"></div>
       <div className="comTitleContainer">
-        <div className="comOverTitle missionTitleColor"></div>
         <h1 className="comTitle">~It's All About <br /> <span className="comTextUnderline">You</span>~</h1>
         <div className="comUnderTitle"></div>
       </div>

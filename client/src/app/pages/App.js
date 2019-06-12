@@ -30,6 +30,11 @@ class App extends Component {
     <div id="appContainer">
       <Landing />
       <Mission />
+      <Massage />
+      <Modalities />
+      <Pricing />
+      <Contact />
+      <About />
     </div>
     );
   }

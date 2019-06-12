@@ -7,7 +7,6 @@ class Massage extends Component {
     <div id="massage" className="comContainer">
       <div id="massageHeader"></div>
       <div className="comTitleContainer">
-        <div className="comOverTitle massageTitleColor"></div>
         <h1 className="comTitle">Massage Styles</h1>
         <div className="comUnderTitle"></div>
       </div>

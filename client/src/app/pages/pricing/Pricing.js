@@ -7,7 +7,6 @@ class Pricing extends Component {
     <div id="pricing" className="comContainer">
       <div id="pricingHeader"></div>
       <div className="comTitleContainer">
-        <div className="comOverTitle pricingTitleColor"></div>
         <h1 className="comTitle">Pricing</h1>
         <div className="comUnderTitle"></div>
       </div>

@@ -7,7 +7,6 @@ class Modalities extends Component {
     <div id="modalitiesContainer" className="comContainer">
       <div id="modalitiesHeader"></div>
       <div className="comTitleContainer">
-        <div className="comOverTitle modalitiesTitleColor"></div>
         <h1 className="comTitle">Special Modalities</h1>
         <div className="comUnderTitle"></div>
       </div>
