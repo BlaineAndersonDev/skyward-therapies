@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { HashLink as NavLink } from 'react-router-hash-link';
 import './Links.css';
+// === Component Imports ===
+import Social from './social/Social.js';
 
 class Links extends Component {
 
@@ -8,6 +10,7 @@ class Links extends Component {
     return (
     <div id="footLinksContainer">
 
+    <div id="footLinksContainerTop">
       <div className="footLinksSide">
         <div className="footLinksSection">
           <h3 className="footLinksTitle">Information:</h3>
@@ -41,7 +44,15 @@ class Links extends Component {
           <p className="footLinksText">6239 E Brown Rd Suite 112,</p>
           <p className="footLinksText">Mesa, AZ 85205</p>
         </div>
+        <div className="footLinksMapWrapper">
+          MAP
+        </div>
       </div>
+    </div>
+
+    <div id="footLinksContainerBottom">
+      <Social />
+    </div>
 
     </div>
     );

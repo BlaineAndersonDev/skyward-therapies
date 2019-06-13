@@ -205,6 +205,10 @@ class Messages extends Component {
 
     return (
     <div id="footMessageContainer">
+      <div id="footMessageTitleContainer">
+        <h3 className="footMessageTitle">Have a Question we didn't cover?</h3>
+        <h3 className="footMessageTitle">Let us know!</h3>
+      </div>
       <form id="footMessageFormContainer" onSubmit={this.handleSubmit}>
 
         <div id="footMessageNameContainer" className="footMessageInputContainer">
@@ -219,6 +223,7 @@ class Messages extends Component {
         <div id="footMessageEmailContainer" className="footMessageInputContainer">
           {emailTitleDisplay}
           <input
+            className="footMessageInputItem footMessageInputBox"
             type="text"
             value={this.state.email}
             onChange={this.handleEmailChange} />
@@ -227,12 +232,15 @@ class Messages extends Component {
         <div id="footMessageTextContainer" className="footMessageInputContainer">
           {messageTitleDisplay}
           <textarea
+            className="footMessageInputItem footMessageInputBox footMessageTextareaBox"
             type="text"
             value={this.state.message}
             onChange={this.handleMessageChange} />
         </div>
 
-        <input type="submit" value="Submit" />
+        <div className="footMessageSubmitButtonContainer">
+          <input type="submit" value="Submit" className="footMessageSubmitButton" />
+        </div>
 
       </form>
     </div>

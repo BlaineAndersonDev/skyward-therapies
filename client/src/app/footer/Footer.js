@@ -10,7 +10,6 @@ class Footer extends Component {
     <div id="footContainer">
 
       <div id="footTopWrapper">
-        footTopWrapper
       </div>
 
       <div id="footCenterWrapper">

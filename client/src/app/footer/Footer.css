@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   min-width: 100%;
   max-width: 100%;
   border-top: var(--sky-transparancy-3) 3px solid;
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   min-width: 100%;
   max-width: 100%;
   background-color: var(--sky-5th-4);
@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: nowrap;
   min-height: 300px;
   min-width: 100%;
@@ -31,9 +31,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  min-width: 100%;
-  max-width: 100%;
+  align-items: baseline;
+  width: 80%;
   background-color: var(--sky-5th-6);
   color: var(--sky-white-3);
+  border-top: var(--sky-transparancy-1) 3px solid;
+  margin-top: 20px;
+}
+.footCopyrightText{
+  margin: 15px;
 }

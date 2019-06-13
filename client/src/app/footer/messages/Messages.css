@@ -5,6 +5,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 15px;
+}
+#footMessageTitleContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footMessageTitle{
+  color: var(--sky-white-3);
+  font-size: 1em;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px var(--sky-transparancy-2);
+  font-family: Verdana;
 }
 #footMessageFormContainer{
   display: flex;
@@ -24,11 +38,12 @@
   /* border: green solid 1px; */
   min-height: 40px;
   color: var(--sky-white-3);
+  margin-top: 10px;
 }
 .footMessageInputBox{
   color: var(--sky-transparancy-3);
   background-color: var(--sky-5th-4);
-  box-shadow: none;
+  box-shadow: 2px 2px 3px var(--sky-transparancy-2);
   border: none;
   padding-top: 5px;
   padding-left: 10px;
@@ -38,16 +53,46 @@
   border-bottom: 5px solid var(--sky-transparancy-3);
   border-style: none;
   font-size: 1em;
+  width: 80%;
+}
+.footMessageTextareaBox{
+  min-width: 80%;
+  min-height: 100px;
 }
 .footMessageInputBox:focus{
   outline: none;
 }
-#footMessageNameContainer{
-}
-#footMessageEmailContainer{
-}
-#footMessageTextContainer{
-}
 .footMessageInput{
   min-width: 100%;
+}
+.footMessageInputItem{
+  text-shadow: 1px 1px 2px var(--sky-transparancy-2);
+}
+/* Submit Button */
+.footMessageSubmitButtonContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 80%;
+  margin-top: 20px;
+}
+.footMessageSubmitButton{
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border: 2px solid var(--sky-5th-4);
+  background-color: var(--sky-5th-6);
+  color: var(--sky-white-4);
+}
+.footMessageSubmitButton:hover {
+  border: 2px solid var(--sky-white-4);
+  background-color: var(--sky-5th-4);
+  color: var(--sky-white-4);
+}
+.footMessageSubmitButton:focus{
+  outline: none;
 }
