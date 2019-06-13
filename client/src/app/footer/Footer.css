@@ -6,7 +6,7 @@
   min-width: 100%;
   max-width: 100%;
   border-top: var(--sky-transparancy-3) 3px solid;
-  background-color: var(--sky-5th-6);
+  background-color: var(--sky-black-1);
 }
 #footTopWrapper{
   display: flex;
@@ -31,11 +31,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: baseline;
-  width: 80%;
-  background-color: var(--sky-5th-6);
+  align-items: center;
+  width: 100%;
+  background-color: var(--sky-black-1);
   color: var(--sky-white-3);
-  border-top: var(--sky-transparancy-1) 3px solid;
   margin-top: 20px;
 }
 .footCopyrightText{
