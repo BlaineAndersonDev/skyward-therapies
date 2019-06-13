@@ -24,16 +24,16 @@ class Routes extends Component {
           </div>
 
           <div id="routesBody">
-           <Route path="/" render={(props) =>
-             <App
-               {...props}
-             />}
-           />
-         </div>
+            <Route path="/" render={(props) =>
+              <App
+                {...props}
+              />}
+            />
+          </div>
 
-                  <div id="routesFooter">
-                    <Footer />
-                  </div>
+          <div id="routesFooter">
+            <Footer />
+          </div>
 
         </div>
       </Router>
