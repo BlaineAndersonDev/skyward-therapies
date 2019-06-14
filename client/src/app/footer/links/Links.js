@@ -3,6 +3,7 @@ import { HashLink as NavLink } from 'react-router-hash-link';
 import './Links.css';
 // === Component Imports ===
 import Social from './social/Social.js';
+import Googlemaps from '../../googlemaps/Googlemaps.js';
 
 class Links extends Component {
 
@@ -45,7 +46,7 @@ class Links extends Component {
           <p className="footLinksText">Mesa, AZ 85205</p>
         </div>
         <div className="footLinksMapWrapper">
-          MAP
+          <Googlemaps />
         </div>
       </div>
     </div>
