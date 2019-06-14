@@ -32,7 +32,7 @@ class Routes extends Component {
           </div>
 
           <div id="routesFooter">
-            <Footer />
+          <Footer />
           </div>
 
         </div>
