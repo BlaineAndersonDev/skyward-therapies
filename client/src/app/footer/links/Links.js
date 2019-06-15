@@ -3,7 +3,6 @@ import { HashLink as NavLink } from 'react-router-hash-link';
 import './Links.css';
 // === Component Imports ===
 import Social from './social/Social.js';
-import Googlemaps from '../../googlemaps/Googlemaps.js';
 
 class Links extends Component {
 
