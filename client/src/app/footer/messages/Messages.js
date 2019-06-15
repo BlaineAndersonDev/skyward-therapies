@@ -112,13 +112,6 @@ class Messages extends Component {
         messageValid: false
       })
     }
-    // Error if Message has illegal characters.
-    else if (this.errorCheckStringNormalCharacters(newMessage)) {
-      this.setState({
-        messageError: 'Message may only contain letters, numbers & underscores.',
-        messageValid: false
-      })
-    }
     // Validate that Message is good to use.
     else {
       this.setState({
@@ -148,12 +141,29 @@ class Messages extends Component {
 
   sendQuestion = () => {
     console.log('Enter sendQuestion')
-    const questionToSend = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message
-    }
-    // SEND MESSAGE AT THIS POINT
+    axios.post(`/api/messages/email`, null, {
+      params: {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message
+      }
+    })
+    .catch(err => {
+      console.warn(err);
+    })
+    .then(res => {
+      this.setState({
+        name: '',
+        email: '',
+        message: '',
+        nameError: '',
+        emailError: '',
+        messageError: '',
+        nameValid: false,
+        emailValid: false,
+        messageValid: false,
+      });
+    });
   }
 
   render() {
