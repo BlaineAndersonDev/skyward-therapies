@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import './Social.css';
 
 class Social extends Component {
-  render() {
-    return (
-    <div id="footSocialContainer">
 
+  render() {
+    const facebookIcon = (
       <a href="https://www.facebook.com/SkywardTherapies/" target="_blank" rel="noopener noreferrer" className="socialIconContainer">
         <img
           src="images/social_icons/sky_social_icon_white_facebook.png"
@@ -13,7 +12,8 @@ class Social extends Component {
           className="socialIcon socialIconFacebook"
         />
       </a>
-
+    )
+    const instagramIcon = (
       <a href="https://www.instagram.com/skywardtherapiesllc/" target="_blank" rel="noopener noreferrer" className="socialIconContainer">
         <img
           src="images/social_icons/sky_social_icon_white_instagram.png"
@@ -21,7 +21,8 @@ class Social extends Component {
           className="socialIcon socialIconInstagram"
         />
       </a>
-
+    )
+    const snapchatIcon = (
       <a href="" target="_blank" rel="noopener noreferrer" className="socialIconContainer">
         <img
           src="images/social_icons/sky_social_icon_white_snapchat.png"
@@ -29,7 +30,8 @@ class Social extends Component {
           className="socialIcon socialIconSnapchat"
         />
       </a>
-
+    )
+    const twitterIcon = (
       <a href="" target="_blank" rel="noopener noreferrer" className="socialIconContainer">
         <img
           src="images/social_icons/sky_social_icon_white_twitter.png"
@@ -37,7 +39,8 @@ class Social extends Component {
           className="socialIcon socialIconTwitter"
         />
       </a>
-
+    )
+    const linkedinIcon = (
       <a href="" target="_blank" rel="noopener noreferrer" className="socialIconContainer">
         <img
           src="images/social_icons/sky_social_icon_white_linkedin.png"
@@ -45,7 +48,14 @@ class Social extends Component {
           className="socialIcon socialIconLinkedin"
         />
       </a>
+    )
 
+
+
+    return (
+    <div id="footSocialContainer">
+      {facebookIcon}
+      {instagramIcon}
     </div>
     );
   }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Contact.css';
+// === Component Imports ===
+import Googlemaps from '../../googlemaps/Googlemaps.js';
 
 class Contact extends Component {
   render() {
@@ -65,7 +67,7 @@ class Contact extends Component {
 
         <div className="contactBottomBox contactMap">
           <div className="contactRightBottomBox">
-            <h3 className="contactBoxTitle">MAP</h3>
+            <Googlemaps />
           </div>
         </div>
 

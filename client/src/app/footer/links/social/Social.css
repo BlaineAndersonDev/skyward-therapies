@@ -6,7 +6,6 @@
   flex-wrap: nowrap;
   width: 90%;
   color: white;
-  margin-top: 50px;
 }
 
 .socialIconContainer{
@@ -16,6 +15,8 @@
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .socialIcon{
   max-height: 50px;

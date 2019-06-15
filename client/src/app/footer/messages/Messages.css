@@ -5,7 +5,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #footMessageTitleContainer{
   display: flex;
@@ -54,7 +56,7 @@
 }
 .footMessageTextareaBox{
   min-width: 80%;
-  min-height: 100px;
+  min-height: 60px;
 }
 .footMessageInputBox:focus{
   outline: none;

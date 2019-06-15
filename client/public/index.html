@@ -10,37 +10,36 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuS8rnGhZC5VZBBVAp2pkNhHmkB6RTGs8&libraries=places&callback=initMapTimed"></script>
     <script type="text/javascript">
     // Hacky but functional: using a timer to make sure the app has rendered the needed divs before generating the maps.
-    function initMapTimed() {setTimeout(initMap, 1000)};
+    function initMapTimed() {setTimeout(initMap, 500)};
 
-          function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat: -33.866, lng: 151.196},
-              zoom: 15
-            });
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 33.436451, lng: -111.696099},
+        zoom: 14
+      });
 
-            var request = {
-              placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4',
-              fields: ['name', 'formatted_address', 'place_id', 'geometry']
-            };
+      var request = {
+        placeId: 'ChIJte95vHelK4cRab7A74iRROo',
+        fields: ['name', 'formatted_address', 'place_id', 'geometry']
+      };
 
-            var infowindow = new google.maps.InfoWindow();
-            var service = new google.maps.places.PlacesService(map);
+      var infowindow = new google.maps.InfoWindow();
+      var service = new google.maps.places.PlacesService(map);
 
-            service.getDetails(request, function(place, status) {
-              if (status === google.maps.places.PlacesServiceStatus.OK) {
-                var marker = new google.maps.Marker({
-                  map: map,
-                  position: place.geometry.location
-                });
-                google.maps.event.addListener(marker, 'click', function() {
-                  infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-                    'Place ID: ' + place.place_id + '<br>' +
-                    place.formatted_address + '</div>');
-                  infowindow.open(map, this);
-                });
-              }
-            });
-          }
+      service.getDetails(request, function(place, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + place.formatted_address + '<br>' +
+              "<a target='_blank' rel='noopener noreferrer' href='https://goo.gl/maps/is74TL9zXkbgAbb99'>" + 'Get Directions' + '</a>' + '</div>');
+            infowindow.open(map, this);
+          });
+        }
+      });
+    }
     </script>
 
 

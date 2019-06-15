@@ -3,21 +3,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
 }
 #footLinksContainerTop{
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
 }
 #footLinksContainerBottom{
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
 }
 .footLinksSide{
   display: flex;
@@ -31,6 +32,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.footLinksAddressSection{
+  padding-top: 20px;
 }
 .footLinksNavLink{
   display: flex;
