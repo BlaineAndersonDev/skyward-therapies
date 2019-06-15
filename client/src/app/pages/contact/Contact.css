@@ -130,7 +130,10 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  border: black 3px solid;
+  border: black 2px solid;
+  color: var(--sky-transparancy-3);
+  background-color: var(--sky-black-2);
+  box-shadow: 5px 5px 5px var(--sky-transparancy-2);
   min-height: 300px;
   min-width: 500px;
 }
@@ -141,4 +144,7 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+}
+.contactMap{
+  padding-top: 20px;
 }
