@@ -170,7 +170,10 @@ class Messages extends Component {
     let nameTitleDisplay;
     if (this.state.nameError === '') { // If nameError is empty
       nameTitleDisplay = (
-        <label className="footMessageInputItem"> Name: </label>
+        <label className="footMessageInputItem">
+          <span className="footMessageInputItem" style={{color: "red"}}>
+          </span>
+        </label>
       )
     } else { // If nameError is NOT empty
       nameTitleDisplay = (
@@ -185,7 +188,10 @@ class Messages extends Component {
     let emailTitleDisplay;
     if (this.state.emailError === '') { // If emailError is empty
       emailTitleDisplay = (
-        <label className="footMessageInputItem"> Email: </label>
+        <label className="footMessageInputItem">
+          <span className="footMessageInputItem" style={{color: "red"}}>
+          </span>
+        </label>
       )
     } else { // If emailError is NOT empty
       emailTitleDisplay = (
@@ -200,7 +206,10 @@ class Messages extends Component {
     let messageTitleDisplay;
     if (this.state.messageError === '') { // If messageError is empty
       messageTitleDisplay = (
-        <label className="footMessageInputItem"> Message: </label>
+        <label className="footMessageInputItem">
+          <span className="footMessageInputItem" style={{color: "red"}}>
+          </span>
+        </label>
       )
     } else { // If messageError is NOT empty
       messageTitleDisplay = (
@@ -222,6 +231,7 @@ class Messages extends Component {
       <form id="footMessageFormContainer" onSubmit={this.handleSubmit}>
 
         <div id="footMessageNameContainer" className="footMessageInputContainer">
+          <label className="footMessageInputItem"> Name: </label>
           {nameTitleDisplay}
           <input
             className="footMessageInputItem footMessageInputBox"
@@ -231,6 +241,7 @@ class Messages extends Component {
         </div>
 
         <div id="footMessageEmailContainer" className="footMessageInputContainer">
+          <label className="footMessageInputItem"> Email: </label>
           {emailTitleDisplay}
           <input
             className="footMessageInputItem footMessageInputBox"
@@ -240,6 +251,7 @@ class Messages extends Component {
         </div>
 
         <div id="footMessageTextContainer" className="footMessageInputContainer">
+          <label className="footMessageInputItem"> Message: </label>
           {messageTitleDisplay}
           <textarea
             className="footMessageInputItem footMessageInputBox footMessageTextareaBox"
