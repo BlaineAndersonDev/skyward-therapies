@@ -52,7 +52,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 2em;
     border-bottom: black 2px solid;
     margin-bottom: 20px;
@@ -152,7 +152,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 2em;
     border-bottom: black 2px solid;
     margin-bottom: 20px;
@@ -270,7 +270,7 @@
     align-items: center;
     min-width: 60%;
     max-width: 60%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 2em;
     border-bottom: black 2px solid;
     margin-bottom: 20px;

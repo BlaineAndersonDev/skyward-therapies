@@ -61,7 +61,7 @@
     justify-content: center;
     align-items: center;
     border-bottom: var(--sky-white-3) 2px solid;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.5em;
     margin-bottom: 5px;
     color: var(--sky-white-3);
@@ -149,7 +149,7 @@
     justify-content: center;
     align-items: center;
     border-bottom: var(--sky-white-3) 2px solid;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.5em;
     margin-bottom: 5px;
     color: var(--sky-white-3);

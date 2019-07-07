@@ -71,7 +71,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 5em;
     color: var(--sky-white-4);
     text-shadow: 2px 2px 4px black;
@@ -83,7 +83,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.5em;
     border-radius: 10px 10px 0 0;
     color: var(--sky-white-4);
@@ -111,7 +111,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.15em;
     color: black;
     text-decoration: underline;
@@ -219,7 +219,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 5em;
     color: var(--sky-white-4);
     text-shadow: 2px 2px 4px black;
@@ -231,7 +231,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.5em;
     border-radius: 10px 10px 0 0;
     color: var(--sky-white-4);
@@ -259,7 +259,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.15em;
     color: black;
     text-decoration: underline;
@@ -409,7 +409,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 5em;
     color: var(--sky-white-4);
     text-shadow: 2px 2px 4px black;
@@ -421,7 +421,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.5em;
     border-radius: 10px 10px 0 0;
     color: var(--sky-white-4);
@@ -449,7 +449,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.15em;
     color: black;
     text-decoration: underline;
@@ -569,7 +569,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 5em;
     color: var(--sky-white-4);
     text-shadow: 2px 2px 4px black;
@@ -581,7 +581,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.5em;
     border-radius: 10px 10px 0 0;
     color: var(--sky-white-4);
@@ -609,7 +609,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Kaushan Script', cursive, Palatino Linotype;
+    font-family: Palatino Linotype;
     font-size: 1.15em;
     color: black;
     text-decoration: underline;
