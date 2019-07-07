@@ -17,7 +17,7 @@
   .landingImageTexts{
     width: 90%;
     color:#fff;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     text-shadow: 2px 2px 4px black;
     font-size: 2em;
     display: flex;
@@ -57,7 +57,8 @@
   .landingImageTexts{
     width: 90%;
     color:#fff;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    /* font-family: 'Kaushan Script', cursive, Palatino Linotype; */
+    font-family: ;
     text-shadow: 2px 2px 4px black;
     font-size: 4.5em;
     display: flex;

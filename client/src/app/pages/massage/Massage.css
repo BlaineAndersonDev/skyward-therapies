@@ -76,7 +76,7 @@
     min-width: 90%;
     border-top: white 2px solid;
     border-bottom: white 2px solid;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 1.5em;
     margin-bottom: 5px;
   }
@@ -84,7 +84,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 0.9em;
   }
 }
@@ -176,7 +176,7 @@
     min-width: 90%;
     border-top: white 2px solid;
     border-bottom: white 2px solid;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 1.5em;
     margin-bottom: 5px;
   }
@@ -184,7 +184,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 0.9em;
   }
 }
@@ -267,7 +267,7 @@
     min-width: 90%;
     border-top: white 2px solid;
     border-bottom: white 2px solid;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 1.5em;
     margin-bottom: 5px;
   }
@@ -275,7 +275,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 0.9em;
   }
 }
@@ -398,7 +398,7 @@
     min-width: 90%;
     border-top: white 2px solid;
     border-bottom: white 2px solid;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 1.5em;
     margin-bottom: 5px;
   }
@@ -406,7 +406,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 0.9em;
   }
 }

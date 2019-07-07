@@ -52,7 +52,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 2em;
     border-bottom: black 2px solid;
     margin-bottom: 20px;
@@ -62,7 +62,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 1em;
     width: 100%;
     color: black;
@@ -91,7 +91,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: Verdana;
+    font-family: Palatino Linotype;
     font-size: 0.65em;
     width: 90%;
     color: black;
@@ -152,7 +152,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 2em;
     border-bottom: black 2px solid;
     margin-bottom: 20px;
@@ -162,7 +162,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 1em;
     width: 100%;
     color: black;
@@ -191,7 +191,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: Verdana;
+    font-family: Palatino Linotype;
     font-size: 0.8em;
     width: 80%;
     color: black;
@@ -270,7 +270,7 @@
     align-items: center;
     min-width: 60%;
     max-width: 60%;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 2em;
     border-bottom: black 2px solid;
     margin-bottom: 20px;
@@ -280,7 +280,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 1em;
     width: 100%;
     margin-bottom: 30px;
@@ -309,7 +309,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: Verdana;
+    font-family: Palatino Linotype;
     font-size: 0.8em;
     color: black;
   }

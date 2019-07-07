@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     min-width: 60%;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 2em;
     color: var(--sky-transparancy-3);
     /* text-shadow: 1px 1px 2px black; */
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 1em;
     width: 100%;
     color: var(--sky-transparancy-3);
@@ -154,7 +154,7 @@
     justify-content: center;
     align-items: center;
     min-width: 60%;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 2em;
     color: var(--sky-transparancy-3);
     /* text-shadow: 1px 1px 2px black; */
@@ -165,7 +165,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 1em;
     width: 100%;
     color: var(--sky-transparancy-3);
@@ -343,7 +343,7 @@
     justify-content: center;
     align-items: center;
     min-width: 60%;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     font-size: 2em;
     color: var(--sky-transparancy-3);
     /* text-shadow: 1px 1px 2px black; */
@@ -354,7 +354,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Verdana';
+    font-family: 'Palatino Linotype';
     font-size: 1em;
     width: 100%;
     color: var(--sky-transparancy-3);

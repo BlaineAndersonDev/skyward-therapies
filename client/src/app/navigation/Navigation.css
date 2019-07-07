@@ -38,7 +38,7 @@
     justify-content: center;
     align-items: center;
     font-size: 0.9em;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     color: var(--8);
   }
 }
@@ -83,7 +83,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     color: var(--8);
   }
 }
@@ -128,7 +128,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
-    font-family: 'Kaushan Script', cursive, Verdana;
+    font-family: 'Kaushan Script', cursive, Palatino Linotype;
     color: var(--8);
   }
 }
