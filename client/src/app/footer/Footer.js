@@ -9,9 +9,6 @@ class Footer extends Component {
     return (
     <div id="footContainer">
 
-      <div id="footTopWrapper">
-      </div>
-
       <div id="footCenterWrapper">
         <Links />
         <Messages />

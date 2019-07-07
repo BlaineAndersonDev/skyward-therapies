@@ -68,65 +68,458 @@ Fonts (In order of use):
 *{
   margin:0;
   padding:0;
+  transition: all 0.35s ease-in-out;
 }
 html, body{
-  height:100%;
-  min-width: 100%;
-  max-width: 100%;
   background-color: whitesmoke;
-    display: flex;
 }
-#routesContainer{
-  min-width: 100%;
-  max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-  #routesNavigation{
-    min-width: 100%;
-    max-width: 100%;
-  }
-  #routesBody{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 100%;
-    max-width: 100%;
-    background-color: whitesmoke;
-  }
-  #routesFooter{
-    min-width: 100%;
-    max-width: 100%;
-  }
 
+/* ============================================ */
+/* 300 width ================================== */
+/* ============================================ */
+@media screen and (min-width: 300px) {
+  #routesContainer{
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+    #routesNavigation{
+      min-width: 100%;
+      max-width: 100%;
+    }
+    #routesBody{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      min-width: 100%;
+      max-width: 100%;
+      background-color: whitesmoke;
+    }
+    #routesFooter{
+      min-width: 100%;
+      max-width: 100%;
+    }
+}
+
+/* ============================================ */
+/* 1000 width ================================= */
+/* ============================================ */
+@media screen and (min-width: 1000px) {
+  #routesContainer{
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+    #routesNavigation{
+      min-width: 100%;
+      max-width: 100%;
+    }
+    #routesBody{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      min-width: 100%;
+      max-width: 100%;
+      background-color: whitesmoke;
+    }
+    #routesFooter{
+      min-width: 100%;
+      max-width: 100%;
+    }
+}
 
 /* App Wide Styles - com<name> - referring to Component */
 
 /* Most Smartphones Mobiles (Portrait) */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 300px) {
   #routesBody{ background-color: red; }
+  .comContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    min-width: 100%;
+  }
+  .comSectiontitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2.0em;
+    margin-bottom: 30px;
+  }
+  .comTitleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+  .comTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2em;
+  }
+  .comUnderTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+	  box-shadow:
+		  0 -1px 0 rgba(0,0,0,0.1),
+		  0 1px 0 rgba(255,255,255,0.6);
+  	content: "";
+  	height: 2px;
+  	border-radius: 2px;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2.5em;
+  }
+  .comSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 80%;
+  }
+  .comSubSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .comSubSectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border: black 2px solid;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 1.5em;
+    color: black;
+  }
+  .comSubSectionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    font-family: 'Verdana';
+    font-size: 1em;
+    margin: 15px;
+  }
+  .comTextUnderline{
+    text-decoration: underline;
+  }
+  .comVerticalDivider{
+    min-height: 100%;
+    width: 2px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	  box-shadow:
+		 -1px 0 0 rgba(0,0,0,0.1),
+		 1px 0 0 rgba(255,255,255,0.6);
+  	content: "";
+  }
+  .comRows{
+    flex-direction: row;
+  }
+
+  /* Box Designs */
+  .comSubSectionBoxContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .comSubSectionBox{
+    margin: 15px;
+    flex: 1 0 calc(30% - 15px);
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 300px;
+    max-height: 300px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+  .comSubSectionBoxTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-bottom: black 2px solid;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 1.5em;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* Background Images */
+  .comImgContainer {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 600px;
+    background-color: black; /* Backup color if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .comImageTexts{
+    color:#fff;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    text-shadow: 2px 2px 4px black;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -200px;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  #comImageTitle{
+    font-size: 3.5em;
+    top: -200px;
+  }
+  #comImageSlogan{
+    font-size: 2em;
+    top: -80px;
+  }
+
 }
-/* Low Resolution Tablets, Mobiles (Landscape) */
-@media (min-width: 481px) and (max-width: 767px) {
-  #routesBody{ background-color: blue; }
-}
-/* Tablets, Ipads (portrait) */
-@media (min-width: 768px) and (max-width: 1024px) {
+
+
+/* ============================================ */
+/* 1000 width ================================= */
+/* ============================================ */
+@media screen and (min-width: 1000px) {
   #routesBody{ background-color: green; }
+  .comContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    min-width: 100%;
+  }
+  .comSectiontitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2.0em;
+    margin-bottom: 30px;
+  }
+  .comTitleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+  .comTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 3em;
+    margin-top: 30px;
+  }
+  .comUnderTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+	  box-shadow:
+		  0 -1px 0 rgba(0,0,0,0.1),
+		  0 1px 0 rgba(255,255,255,0.6);
+  	content: "";
+  	height: 2px;
+  	border-radius: 2px;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .comSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 80%;
+  }
+  .comSubSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .comSubSectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border: black 2px solid;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 1.5em;
+    color: black;
+  }
+  .comSubSectionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 1;
+    font-family: 'Verdana';
+    font-size: 1.4em;
+    margin: 15px;
+  }
+  .comTextUnderline{
+    text-decoration: underline;
+  }
+  .comVerticalDivider{
+    min-height: 100%;
+    width: 2px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	  box-shadow:
+		 -1px 0 0 rgba(0,0,0,0.1),
+		 1px 0 0 rgba(255,255,255,0.6);
+  	content: "";
+  }
+  .comRows{
+    flex-direction: row;
+  }
+
+  /* Box Designs */
+  .comSubSectionBoxContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .comSubSectionBox{
+    margin: 15px;
+    flex: 1 0 calc(30% - 15px);
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 300px;
+    max-height: 300px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+  .comSubSectionBoxTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-bottom: black 2px solid;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 1.5em;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* Background Images */
+  .comImgContainer {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 600px;
+    background-color: black; /* Backup color if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .comImageTexts{
+    color:#fff;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    text-shadow: 2px 2px 4px black;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -200px;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  #comImageTitle{
+    font-size: 3.5em;
+    top: -200px;
+  }
+  #comImageSlogan{
+    font-size: 2em;
+    top: -80px;
+  }
 }
 
 
 
-/* =========================== */
-/* Laptops & Desktops ======== */
-/* 1025px To 1280px ========== */
-/* =========================== */
+
+
+
+/* ============================================ */
+/* Original Styles ============================ */
+/* ============================================ */
 /* Laptops, Desktops */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+@media screen and (min-width: 10000px) {
   .comContainer{
     display: flex;
     justify-content: center;
@@ -306,32 +699,4 @@ html, body{
     font-size: 2em;
     top: -80px;
   }
-
 }
-
-/* Large Desktops */
-@media (min-width: 1281px) {
-  #routesBody{ background-color: purple; }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.holder{}

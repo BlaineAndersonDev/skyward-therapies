@@ -7,7 +7,6 @@ class Contact extends Component {
   render() {
     return (
     <div id="contact" className="comContainer">
-      <div id="contactHeader"></div>
       <div className="comTitleContainer">
         <h1 className="comTitle">Schedule a Massage</h1>
         <div className="comUnderTitle"></div>

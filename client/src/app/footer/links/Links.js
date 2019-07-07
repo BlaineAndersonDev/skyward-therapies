@@ -7,36 +7,43 @@ import Social from './social/Social.js';
 class Links extends Component {
 
   render() {
+    // Check if On Mobile. If so, Remove links
+    let linkDisplay;
+    if (window.screen.width >= 600) {
+      linkDisplay = (
+        <div className="footLinksSide">
+          <div className="footLinksSection">
+            <h3 className="footLinksTitle">Information:</h3>
+            <NavLink smooth to="/#landing" className="footLinksNavLink">
+              <div className="footLinksNavLinkText"> Home </div>
+            </NavLink>
+            <NavLink smooth to="/#massage" className="footLinksNavLink">
+              <div className="footLinksNavLinkText"> Our Mission </div>
+            </NavLink>
+            <NavLink smooth to="/#massage" className="footLinksNavLink">
+              <div className="footLinksNavLinkText"> Massage Styles </div>
+            </NavLink>
+            <NavLink smooth to="/#pricing" className="footLinksNavLink">
+              <div className="footLinksNavLinkText"> Special Modalities </div>
+            </NavLink>
+            <NavLink smooth to="/#contact" className="footLinksNavLink">
+              <div className="footLinksNavLinkText"> Pricing </div>
+            </NavLink>
+            <NavLink smooth to="/#contact" className="footLinksNavLink">
+              <div className="footLinksNavLinkText"> Schedual a Massage </div>
+            </NavLink>
+            <NavLink smooth to="/#about" className="footLinksNavLink">
+              <div className="footLinksNavLinkText"> About </div>
+            </NavLink>
+          </div>
+        </div>
+      )
+    }
     return (
     <div id="footLinksContainer">
 
     <div id="footLinksContainerTop">
-      <div className="footLinksSide">
-        <div className="footLinksSection">
-          <h3 className="footLinksTitle">Information:</h3>
-          <NavLink smooth to="/#landing" className="footLinksNavLink">
-            <div className="footLinksNavLinkText"> Home </div>
-          </NavLink>
-          <NavLink smooth to="/#massage" className="footLinksNavLink">
-            <div className="footLinksNavLinkText"> Our Mission </div>
-          </NavLink>
-          <NavLink smooth to="/#massage" className="footLinksNavLink">
-            <div className="footLinksNavLinkText"> Massage Styles </div>
-          </NavLink>
-          <NavLink smooth to="/#pricing" className="footLinksNavLink">
-            <div className="footLinksNavLinkText"> Special Modalities </div>
-          </NavLink>
-          <NavLink smooth to="/#contact" className="footLinksNavLink">
-            <div className="footLinksNavLinkText"> Pricing </div>
-          </NavLink>
-          <NavLink smooth to="/#contact" className="footLinksNavLink">
-            <div className="footLinksNavLinkText"> Schedual a Massage </div>
-          </NavLink>
-          <NavLink smooth to="/#about" className="footLinksNavLink">
-            <div className="footLinksNavLinkText"> About </div>
-          </NavLink>
-        </div>
-      </div>
+      {linkDisplay}
 
       <div className="footLinksSide">
         <div className="footLinksSocialWrapper">

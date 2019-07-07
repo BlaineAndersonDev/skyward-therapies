@@ -5,7 +5,6 @@ class Modalities extends Component {
   render() {
     return (
     <div id="modalitiesContainer" className="comContainer">
-      <div id="modalitiesHeader"></div>
       <div className="comTitleContainer">
         <h1 className="comTitle">Special Modalities</h1>
         <div className="comUnderTitle"></div>

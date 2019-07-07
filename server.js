@@ -48,10 +48,6 @@ app.use(morgan(':method :url {HTTP Status: :status} {Content Length: :res[conten
 // =====================================
 // Tells the app to use files in the Client's 'build' folder when rendering static pages (production pages).
 app.use(express.static(path.join(__dirname, 'client/build')));
-// This tells the app to find all routes under '/api/messages' in the file 'messageController.js' in the new 'controllers' directory.
-app.use('/api/messages', require('./controllers/messageController.js'));
-// app.use('/api/logins', require('./controllers/loginsController.js'));
-// app.use('/api/tokens', require('./controllers/tokensController.js'));
 // This is a catchall route to prevent the user from dealing with errors from visiting routes that do not exist. It sends a 404 (Not Found) Status as well as a message.
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/client/build/index.html'));

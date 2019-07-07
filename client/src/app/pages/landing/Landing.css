@@ -1,36 +1,79 @@
-#landing {
-  height: 100vh;
-  min-width: 100%;
-  max-height: 1200px;
-  /* background-image: url('/images/skyward_tree_003.jpg'); */
-  background-image: url('/images/sky_profile_001.jpg');
-  background-color: black; /* Backup color if image fails to load. */
-  background-attachment: fixed; /* Keeps the image in place to create parallax. */
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+  #landing {
+    height: 100vh;
+    min-width: 100%;
+    /* background-image: url('/images/skyward_tree_003.jpg'); */
+    background-image: url('/images/sky_profile_001.jpg');
+    background-color: whitesmoke; /* Backup color if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .landingImageTexts{
+    width: 90%;
+    color:#fff;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    text-shadow: 2px 2px 4px black;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -20%;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  #landingImageTitle{
+  }
+  #landingImageSlogan{
+    font-size: 1.25em;
+    top: -5%;
+  }
 }
-.landingImageTexts{
-  color:#fff;
-  font-family: 'Kaushan Script', cursive, Verdana;
-  text-shadow: 2px 2px 4px black;
-  font-size: 3.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  margin: auto;
-  top: -200px;
-  left:0;
-  right:0;
-  bottom:0;
-}
-#landingImageTitle{
-  font-size: 3.5em;
-  top: -200px;
-}
-#landingImageSlogan{
-  font-size: 2em;
-  top: -80px;
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {
+  #landing {
+    height: 100vh;
+    min-width: 100%;
+    /* background-image: url('/images/skyward_tree_003.jpg'); */
+    background-image: url('/images/sky_profile_001.jpg');
+    background-color: whitesmoke; /* Backup color if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .landingImageTexts{
+    width: 90%;
+    color:#fff;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    text-shadow: 2px 2px 4px black;
+    font-size: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -20%;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  #landingImageTitle{
+  }
+  #landingImageSlogan{
+    font-size: 2.5em;
+    top: -5%;
+  }
 }

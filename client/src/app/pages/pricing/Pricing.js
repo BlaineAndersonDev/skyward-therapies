@@ -5,7 +5,6 @@ class Pricing extends Component {
   render() {
     return (
     <div id="pricing" className="comContainer">
-      <div id="pricingHeader"></div>
       <div className="comTitleContainer">
         <h1 className="comTitle">Pricing</h1>
         <div className="comUnderTitle"></div>

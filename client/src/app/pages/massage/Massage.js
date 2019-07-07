@@ -5,7 +5,6 @@ class Massage extends Component {
   render() {
     return (
     <div id="massage" className="comContainer">
-      <div id="massageHeader"></div>
       <div className="comTitleContainer">
         <h1 className="comTitle">Massage Styles</h1>
         <div className="comUnderTitle"></div>

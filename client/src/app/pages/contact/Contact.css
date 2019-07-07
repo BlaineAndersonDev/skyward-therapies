@@ -1,150 +1,475 @@
-#contact {
-  position: relative;
-  z-index: 0;
-  border-bottom: 3px black solid;
-  min-width: 100%;
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+  #contact {
+    position: relative;
+    z-index: 0;
+    border-bottom: 3px black solid;
+    min-width: 100%;
+    background-color: var(--sky-2nd-4);
+  }
+  .contactBoxTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60%;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2em;
+    color: var(--sky-transparancy-3);
+    /* text-shadow: 1px 1px 2px black; */
+    border-bottom: black 2px solid;
+    margin-bottom: 10px;
+  }
+  .contactBoxText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Verdana';
+    font-size: 1em;
+    width: 100%;
+    color: var(--sky-transparancy-3);
+    /* text-shadow: 1px 1px 3px white; */
+  }
+  /* ========================================= */
+  /* Top Section: Email / SMS / Phone ======== */
+  /* ========================================= */
+  .contactTopBoxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .contactTopBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-shadow: 2px 6px 10px black;
+    background-image: linear-gradient(var(--sky-white-1) 0%, var(--sky-white-3) 95%);
+    position: relative;
+    border-top: black 6px solid;
+    border-bottom: black 6px solid;
+    margin-bottom: 15px;
+    z-index: 0;
+    width: 80%;
+  }
+  .contactTopBoxCenter{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--sky-2nd-4) 0%, var(--sky-white-3) 95%);
+    position: absolute;
+    z-index: -1;
+  }
+  .contactTopBoxSide{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--sky-2nd-4) 0%, var(--sky-white-3) 95%);
+    position: absolute;
+    z-index: -1;
+  }
+  .contactIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contactIconBorder{
+    border: black 6px solid;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 100%;
+    background: var(--sky-white-4);
+  }
+  .contactIcon{
+    max-height: 100px;
+    max-width: 100px;
+  }
+  /* ========================================= */
+  /* Bottom Section: Address / Google Maps === */
+  /* ========================================= */
+  .contactBottomBoxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: bold;
+  }
+  .contactLeftBottomBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contactRightBottomBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: black 2px solid;
+    color: var(--sky-transparancy-3);
+    background-color: var(--sky-black-2);
+    box-shadow: 5px 5px 5px var(--sky-transparancy-2);
+    min-height: 200px;
+    min-width: 250px;
+  }
+  .contactBottomBox{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contactMap{
+    padding-top: 20px;
+  }
 }
-#contactHeader{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--sky-1st-2);
-  z-index: -3;
-  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {
+  #contact {
+    position: relative;
+    z-index: 0;
+    border-bottom: 3px black solid;
+    min-width: 100%;
+    background-color: var(--sky-2nd-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactBoxTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60%;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2em;
+    color: var(--sky-transparancy-3);
+    /* text-shadow: 1px 1px 2px black; */
+    border-bottom: black 2px solid;
+    margin-bottom: 10px;
+  }
+  .contactBoxText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Verdana';
+    font-size: 1em;
+    width: 100%;
+    color: var(--sky-transparancy-3);
+    /* text-shadow: 1px 1px 3px white; */
+  }
+  /* ========================================= */
+  /* Top Section: Email / SMS / Phone ======== */
+  /* ========================================= */
+  .contactTopBoxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .contactTopBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+    flex: 1 1 calc(35% -15px);
+    box-shadow: 2px 6px 10px black;
+    background-image: linear-gradient(var(--sky-white-1) 0%, var(--sky-white-3) 95%);
+    position: relative;
+    border-top: black 6px solid;
+    border-bottom: black 6px solid;
+    margin-bottom: 15px;
+    z-index: 0;
+  }
+  .contactTopBoxRaise{
+  }
+  .contactTopBoxCenter{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--sky-2nd-4) 0%, var(--sky-white-3) 95%);
+    position: absolute;
+    z-index: -1;
+  }
+  .contactTopBoxSide{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--sky-2nd-4) 0%, var(--sky-white-3) 95%);
+    position: absolute;
+    z-index: -1;
+  }
+  .contactIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contactIconBorder{
+    border: black 6px solid;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 100%;
+    background: var(--sky-white-4);
+  }
+  .contactIcon{
+    max-height: 100px;
+    max-width: 100px;
+  }
+  /* ========================================= */
+  /* Bottom Section: Address / Google Maps === */
+  /* ========================================= */
+  .contactBottomBoxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: bold;
+  }
+  .contactLeftBottomBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contactRightBottomBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: black 2px solid;
+    color: var(--sky-transparancy-3);
+    background-color: var(--sky-black-2);
+    box-shadow: 5px 5px 5px var(--sky-transparancy-2);
+    min-height: 300px;
+    min-width: 650px;
+  }
+  .contactBottomBox{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contactMap{
+    padding-top: 20px;
+  }
 }
-.contactBoxTitle{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 60%;
-  font-family: 'Kaushan Script', cursive, Verdana;
-  font-size: 2em;
-  color: var(--sky-transparancy-3);
-  /* text-shadow: 1px 1px 2px black; */
-  border-bottom: black 2px solid;
-  margin-bottom: 10px;
+
+/* ============================================ */
+/* 1000 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1000px) {
+  #contact {
+    background-color: var(--sky-white-4);
+  }
+  .contactTopBoxContainer{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+  }
+  .contactTopBox{
+    flex: 1 0 calc(30% - 10px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contactTopBoxRaise{
+    margin-top: 100px;
+  }
+  .contactBottomBoxContainer{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+  }
+  .contactRightBottomBox{
+    min-height: 300px;
+    min-width: 500px;
+  }
 }
-.contactBoxText{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Verdana';
-  font-size: 1em;
-  width: 100%;
-  color: var(--sky-transparancy-3);
-  /* text-shadow: 1px 1px 3px white; */
+
+/* ============================================ */
+/* 1900 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1900px) {
+  .contactRightBottomBox{
+    min-width: 800px;
+  }
 }
-/* ========================================= */
-/* Top Section: Email / SMS / Phone ======== */
-/* ========================================= */
-.contactTopBoxContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 80%;
-  margin-top: -60px;
-}
-.contactTopBox{
-  flex: 1 0 calc(30% - 10px);
-  margin-left: 15px;
-  margin-right: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 15px;
-  box-shadow: 2px 6px 10px black;
-  background-image: linear-gradient(var(--sky-white-1) 0%, var(--sky-white-3) 95%);
-  position: relative;
-  border-top: black 6px solid;
-  border-bottom: black 6px solid;
-  z-index: 0;
-}
-.contactTopBoxRaise{
-  margin-top: 100px;
-}
-.contactTopBoxCenter{
-  width: 100%;
-  height: 100%;
-  /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
-  background-color: var(--sky-4th-5);
-  position: absolute;
-  z-index: -1;
-}
-.contactTopBoxSide{
-  width: 100%;
-  height: 100%;
-  /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
-  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-  background-color: var(--sky-4th-4);
-  position: absolute;
-  z-index: -1;
-}
-.contactIconContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.contactIconBorder{
-  border: black 6px solid;
-  margin: 25px;
-  padding: 25px;
-  border-radius: 100%;
-  background: var(--sky-white-4);
-}
-.contactIcon{
-  max-height: 100px;
-  max-width: 100px;
-}
-/* ========================================= */
-/* Bottom Section: Address / Google Maps === */
-/* ========================================= */
-.contactBottomBoxContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 80%;
-  font-weight: bold;
-}
-.contactLeftBottomBox{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.contactRightBottomBox{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  border: black 2px solid;
-  color: var(--sky-transparancy-3);
-  background-color: var(--sky-black-2);
-  box-shadow: 5px 5px 5px var(--sky-transparancy-2);
-  min-height: 300px;
-  min-width: 500px;
-}
-.contactBottomBox{
-  margin: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.contactMap{
-  padding-top: 20px;
+
+/* ============================================ */
+/* Original Styles ============================ */
+/* ============================================ */
+@media all and (min-width: 10000px) {
+  #contact {
+    position: relative;
+    z-index: 0;
+    border-bottom: 3px black solid;
+    min-width: 100%;
+  }
+  #contactHeader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--sky-1st-2);
+    z-index: -3;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+  .contactBoxTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60%;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2em;
+    color: var(--sky-transparancy-3);
+    /* text-shadow: 1px 1px 2px black; */
+    border-bottom: black 2px solid;
+    margin-bottom: 10px;
+  }
+  .contactBoxText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Verdana';
+    font-size: 1em;
+    width: 100%;
+    color: var(--sky-transparancy-3);
+    /* text-shadow: 1px 1px 3px white; */
+  }
+  /* ========================================= */
+  /* Top Section: Email / SMS / Phone ======== */
+  /* ========================================= */
+  .contactTopBoxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin-top: -60px;
+  }
+  .contactTopBox{
+    flex: 1 0 calc(30% - 10px);
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+    box-shadow: 2px 6px 10px black;
+    background-image: linear-gradient(var(--sky-white-1) 0%, var(--sky-white-3) 95%);
+    position: relative;
+    border-top: black 6px solid;
+    border-bottom: black 6px solid;
+    z-index: 0;
+  }
+  .contactTopBoxRaise{
+    margin-top: 100px;
+  }
+  .contactTopBoxCenter{
+    width: 100%;
+    height: 100%;
+    /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    background-color: var(--sky-4th-5);
+    position: absolute;
+    z-index: -1;
+  }
+  .contactTopBoxSide{
+    width: 100%;
+    height: 100%;
+    /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    background-color: var(--sky-4th-4);
+    position: absolute;
+    z-index: -1;
+  }
+  .contactIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contactIconBorder{
+    border: black 6px solid;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 100%;
+    background: var(--sky-white-4);
+  }
+  .contactIcon{
+    max-height: 100px;
+    max-width: 100px;
+  }
+  /* ========================================= */
+  /* Bottom Section: Address / Google Maps === */
+  /* ========================================= */
+  .contactBottomBoxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    font-weight: bold;
+  }
+  .contactLeftBottomBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contactRightBottomBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: black 2px solid;
+    color: var(--sky-transparancy-3);
+    background-color: var(--sky-black-2);
+    box-shadow: 5px 5px 5px var(--sky-transparancy-2);
+    min-height: 300px;
+    min-width: 500px;
+  }
+  .contactBottomBox{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .contactMap{
+    padding-top: 20px;
+  }
 }

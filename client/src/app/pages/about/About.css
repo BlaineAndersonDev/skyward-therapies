@@ -1,94 +1,316 @@
-#about {
-  min-width: 100%;
-  min-height: 700px;
-  max-height: 700px;
-  background-image: url('/images/about/sky_about_003.jpg');
-  background-color: white; /* Backup co\lor if image fails to load. */
-  background-attachment: fixed; /* Keeps the image in place to create parallax. */
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  z-index: 0;
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+  #about {
+    min-width: 100%;
+    min-height: auto;
+    background-image: url('/images/about/sky_about_003.jpg');
+    background-color: white; /* Backup co\lor if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 0;
+  }
+  .aboutContainerOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sky-transparancy-2);
+    z-index: -1;
+  }
+  .aboutBioContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: var(--sky-white-1);
+    background-color: var(--sky-white-2);
+    box-shadow: 0 0 20px var(--sky-white-3);
+    position: relative;
+    min-width: 100%;
+  }
+  .aboutBioTextContainer{
+    flex: 2 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 25px;
+  }
+  .aboutBioTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2em;
+    border-bottom: black 2px solid;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .aboutBioText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Verdana';
+    font-size: 1em;
+    width: 100%;
+    color: black;
+    padding-bottom: 25px;
+  }
+  .aboutBioImgContainer{
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 25px;
+    padding-top: 0px;
+  }
+  #kelliAboutImage{
+    width: auto;
+    height: 300px;
+    border-radius: 45px;
+    margin-bottom: 20px;
+    border: 3px var(--sky-white-1) solid;
+    box-shadow: 0 0 20px var(--sky-white-3);
+  }
+  .aboutBioImgText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Verdana;
+    font-size: 0.65em;
+    width: 90%;
+    color: black;
+  }
 }
-.aboutContainerOverlay{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--sky-transparancy-2);
-  z-index: -1;
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {
+  #about {
+    min-width: 100%;
+    min-height: auto;
+    background-image: url('/images/about/sky_about_003.jpg');
+    background-color: white; /* Backup co\lor if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 0;
+  }
+  .aboutContainerOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sky-transparancy-2);
+    z-index: -1;
+  }
+  .aboutBioContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background: var(--sky-white-1);
+    background-color: var(--sky-white-2);
+    box-shadow: 0 0 20px var(--sky-white-3);
+    position: relative;
+  }
+  .aboutBioTextContainer{
+    flex: 2 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 25px;
+  }
+  .aboutBioTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2em;
+    border-bottom: black 2px solid;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .aboutBioText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Verdana';
+    font-size: 1em;
+    width: 100%;
+    color: black;
+    padding-bottom: 25px;
+  }
+  .aboutBioImgContainer{
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 25px;
+    padding-top: 0px;
+  }
+  #kelliAboutImage{
+    width: auto;
+    height: 300px;
+    border-radius: 45px;
+    margin-bottom: 20px;
+    border: 3px var(--sky-white-1) solid;
+    box-shadow: 0 0 20px var(--sky-white-3);
+  }
+  .aboutBioImgText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Verdana;
+    font-size: 0.8em;
+    width: 80%;
+    color: black;
+  }
 }
-.aboutBioContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  background: var(--sky-white-1);
-  background-color: var(--sky-white-2);
-  border-radius: 25px;
-  box-shadow: 0 0 20px var(--sky-white-3);
-  position: relative;
+
+
+/* ============================================ */
+/* 1000 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 1000px) {
+  .aboutBioContainer{
+    min-width: 80%;
+    max-width: 80%;
+  }
+  #kelliAboutImage{
+    height: 400px;
+  }
+  .aboutBioImgText{
+    width: 100%;
+  }
 }
-.aboutBioTextContainer{
-  flex: 2 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 25px;
-}
-.aboutBioTitle{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 60%;
-  max-width: 60%;
-  font-family: 'Kaushan Script', cursive, Verdana;
-  font-size: 2em;
-  border-bottom: black 2px solid;
-  margin-bottom: 20px;
-  color: black;
-}
-.aboutBioText{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Verdana';
-  font-size: 1em;
-  width: 100%;
-  margin-bottom: 30px;
-  color: black;
-}
-.aboutBioImgContainer{
-  flex: 1 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  padding: 25px;
-}
-#kelliAboutImage{
-  width: 275px;
-  height: 400px;
-  border-radius: 45px;
-  margin: 10px;
-  margin-bottom: 20px;
-  border: 3px var(--sky-white-1) solid;
-  box-shadow: 0 0 20px var(--sky-white-3);
-}
-.aboutBioImgText{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: Verdana;
-  font-size: 0.8em;
-  color: black;
+
+/* ============================================ */
+/* Original Styles ============================ */
+/* ============================================ */
+@media all and (min-width: 10000px) {
+  #about {
+    min-width: 100%;
+    min-height: 700px;
+    max-height: 700px;
+    background-image: url('/images/about/sky_about_003.jpg');
+    background-color: white; /* Backup co\lor if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 0;
+  }
+  .aboutContainerOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sky-transparancy-2);
+    z-index: -1;
+  }
+  .aboutBioContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background: var(--sky-white-1);
+    background-color: var(--sky-white-2);
+    border-radius: 25px;
+    box-shadow: 0 0 20px var(--sky-white-3);
+    position: relative;
+  }
+  .aboutBioTextContainer{
+    flex: 2 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 25px;
+  }
+  .aboutBioTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60%;
+    max-width: 60%;
+    font-family: 'Kaushan Script', cursive, Verdana;
+    font-size: 2em;
+    border-bottom: black 2px solid;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .aboutBioText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Verdana';
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 30px;
+    color: black;
+  }
+  .aboutBioImgContainer{
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 25px;
+  }
+  #kelliAboutImage{
+    width: 275px;
+    height: 400px;
+    border-radius: 45px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border: 3px var(--sky-white-1) solid;
+    box-shadow: 0 0 20px var(--sky-white-3);
+  }
+  .aboutBioImgText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Verdana;
+    font-size: 0.8em;
+    color: black;
+  }
 }
