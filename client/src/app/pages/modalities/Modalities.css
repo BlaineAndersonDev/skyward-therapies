@@ -38,7 +38,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
-    width: 225px;
     flex: 1 0 calc(100% -20px);
     padding: 15px;
     margin: 15px;
@@ -47,6 +46,7 @@
     border-left: 2px var(--sky-transparancy-0) solid;
     border-right: 2px var(--sky-transparancy-0) solid;
     position: relative;
+    max-width: 80%;
   }
   .modalitiesOverSubTitle{
     position: absolute;
