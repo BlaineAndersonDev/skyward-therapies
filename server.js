@@ -21,6 +21,9 @@ const morgan = require('morgan')
 // https://github.com/expressjs/cors
 const cors = require('cors');
 
+
+require('dotenv').config();
+
 // =====================================
 // Initial Setup =======================
 // =====================================

@@ -145,6 +145,7 @@
     border-bottom: 3px black solid;
     min-width: 100%;
     background-color: var(--sky-2nd-4);
+    background-image: linear-gradient(var(--sky-2nd-4) 0%, var(--sky-white-3) 95%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,18 +156,17 @@
     align-items: center;
     min-width: 60%;
     font-family: Palatino Linotype;
-    font-size: 2em;
+    font-size: 2.5em;
     color: var(--sky-transparancy-3);
     /* text-shadow: 1px 1px 2px black; */
     border-bottom: black 2px solid;
-    margin-bottom: 10px;
   }
   .contactBoxText{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Palatino Linotype';
-    font-size: 1em;
+    font-size: 1.5em;
     width: 100%;
     color: var(--sky-transparancy-3);
     /* text-shadow: 1px 1px 3px white; */
@@ -222,14 +222,14 @@
   }
   .contactIconBorder{
     border: black 6px solid;
-    margin: 25px;
-    padding: 25px;
+    margin: 15px;
+    padding: 15px;
     border-radius: 100%;
     background: var(--sky-white-4);
   }
   .contactIcon{
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 50px;
+    max-width: 50px;
   }
   /* ========================================= */
   /* Bottom Section: Address / Google Maps === */
@@ -302,6 +302,22 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 80%;
+  }
+  .contactBoxTitle{
+    font-size: 2.75em;
+  }
+  .contactBoxText{
+    font-size: 1.5em;
+  }
+  .contactBoxTitle2{
+    font-size: 2em;
+  }
+  .contactBoxText2{
+    font-size: 1em;
+  }
+  .contactBoxText2gap{
+    margin-bottom: 10px;
+    font-weight: lighter;
   }
   .contactRightBottomBox{
     min-height: 300px;
