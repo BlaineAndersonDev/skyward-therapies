@@ -61,13 +61,6 @@ class Messages extends Component {
         nameValid: false
       })
     }
-    // Error if Name has illegal characters.
-    else if (this.errorCheckStringNormalCharacters(newName)) {
-      this.setState({
-        nameError: 'Name may only contain letters, numbers & underscores.',
-        nameValid: false
-      })
-    }
     // Validate that Name is good to use.
     else {
       this.setState({
