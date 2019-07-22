@@ -6,7 +6,7 @@
     height: 100vh;
     min-width: 100%;
     /* background-image: url('/images/skyward_tree_003.jpg'); */
-    background-image: url('/images/kelli/k_004.jpg');
+    background-image: url('/images/kelli/k_005.jpg');
     background-color: whitesmoke; /* Backup color if image fails to load. */
     background-attachment: fixed; /* Keeps the image in place to create parallax. */
     background-position: top;
@@ -25,7 +25,7 @@
     align-items: center;
     position: absolute;
     margin: auto;
-    top: -20%;
+    top: -10%;
     left:0;
     right:0;
     bottom:0;
@@ -34,7 +34,7 @@
   }
   #landingImageSlogan{
     font-size: 1.25em;
-    top: -5%;
+    top: -1%;
   }
 }
 
