@@ -6,7 +6,7 @@ class Pricing extends Component {
     return (
     <div id="pricing" className="comContainer">
       <div className="comTitleContainer">
-        <h1 className="comTitle">Pricing</h1>
+        <h1 className="comTitle">Massage Pricing</h1>
         <div className="comUnderTitle"></div>
       </div>
       <div className="pricingBoxContainer">
