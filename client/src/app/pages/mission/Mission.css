@@ -24,10 +24,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex: 1 0 calc(45% - 10px);
     box-shadow: 2px 6px 10px black;
     margin: 10px;
     padding: 15px;
+    max-width: 400px;
     background-image: linear-gradient(var(--sky-white-1) 0%, var(--sky-white-3) 95%);
     height: auto;
     position: relative;
@@ -51,7 +51,7 @@
 @media all and (min-width: 1000px) {
   .missionBackground1{
     height: 200px;
-    max-width: 500px;
+    max-width: 800px;
   }
   .missionText{
     font-size: 1.2em;
@@ -64,7 +64,7 @@
 @media all and (min-width: 1400px) {
   .missionBackground1{
     height: 200px;
-    max-width: 600px;
+    max-width: 800px;
   }
   .missionText{
     font-size: 1.2em;
@@ -77,10 +77,10 @@
 @media all and (min-width: 1900px) {
   .missionBackground1{
     height: 125px;
-    max-width: 500px;
+    max-width: 1000px;
   }
   .missionText{
-    font-size: 1em;
+    font-size: 1.25em;
   }
 }
 
@@ -120,7 +120,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    flex: 1 0 calc(45% - 10px);
+    flex: 1 0 calc(75% - 10px);
     box-shadow: 2px 6px 10px black;
     max-width: 40%;
     margin: 10px;
