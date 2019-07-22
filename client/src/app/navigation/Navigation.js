@@ -16,7 +16,7 @@ class Navigation extends Component {
         <div className="naviLinkText"> Pricing </div>
       </NavLink>
       <NavLink smooth to="/#contact" className="naviLinkWrapper">
-        <div className="naviLinkText"> Contact </div>
+        <div className="naviLinkText"> Schedule </div>
       </NavLink>
       <NavLink smooth to="/#about" className="naviLinkWrapper">
         <div className="naviLinkText"> About </div>

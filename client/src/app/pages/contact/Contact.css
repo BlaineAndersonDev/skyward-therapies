@@ -31,9 +31,7 @@
     color: var(--sky-transparancy-3);
     /* text-shadow: 1px 1px 3px white; */
   }
-  /* ========================================= */
   /* Top Section: Email / SMS / Phone ======== */
-  /* ========================================= */
   .contactTopBoxContainer{
     display: flex;
     justify-content: center;
@@ -89,9 +87,7 @@
     max-height: 100px;
     max-width: 100px;
   }
-  /* ========================================= */
   /* Bottom Section: Address / Google Maps === */
-  /* ========================================= */
   .contactBottomBoxContainer{
     display: flex;
     justify-content: center;
@@ -120,6 +116,14 @@
     color: var(--sky-transparancy-3);
     background-color: var(--sky-black-2);
     box-shadow: 5px 5px 5px var(--sky-transparancy-2);
+    min-height: 200px;
+    min-width: 250px;
+  }
+  #googleMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
     min-height: 200px;
     min-width: 250px;
   }
@@ -171,9 +175,7 @@
     color: var(--sky-transparancy-3);
     /* text-shadow: 1px 1px 3px white; */
   }
-  /* ========================================= */
   /* Top Section: Email / SMS / Phone ======== */
-  /* ========================================= */
   .contactTopBoxContainer{
     display: flex;
     justify-content: center;
@@ -231,9 +233,7 @@
     max-height: 50px;
     max-width: 50px;
   }
-  /* ========================================= */
   /* Bottom Section: Address / Google Maps === */
-  /* ========================================= */
   .contactBottomBoxContainer{
     display: flex;
     justify-content: center;
@@ -262,6 +262,14 @@
     color: var(--sky-transparancy-3);
     background-color: var(--sky-black-2);
     box-shadow: 5px 5px 5px var(--sky-transparancy-2);
+    min-height: 300px;
+    min-width: 650px;
+  }
+  #googleMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
     min-height: 300px;
     min-width: 650px;
   }
@@ -332,6 +340,14 @@
   .contactRightBottomBox{
     min-width: 800px;
   }
+  #googleMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    min-height: 350px;
+    min-width: 800px;
+  }
 }
 
 /* ============================================ */
@@ -376,9 +392,7 @@
     color: var(--sky-transparancy-3);
     /* text-shadow: 1px 1px 3px white; */
   }
-  /* ========================================= */
   /* Top Section: Email / SMS / Phone ======== */
-  /* ========================================= */
   .contactTopBoxContainer{
     display: flex;
     justify-content: center;
@@ -443,9 +457,7 @@
     max-height: 100px;
     max-width: 100px;
   }
-  /* ========================================= */
   /* Bottom Section: Address / Google Maps === */
-  /* ========================================= */
   .contactBottomBoxContainer{
     display: flex;
     justify-content: center;
