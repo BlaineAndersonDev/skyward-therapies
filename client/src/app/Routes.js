@@ -16,8 +16,8 @@ class Routes extends Component {
   render() {
 
     return (
-      <Router history={history}>
         <div id="routesContainer">
+          <Router id="routesContainer" history={history}>
 
           <div id="routesNavigation">
             <Navigation />
@@ -35,8 +35,8 @@ class Routes extends Component {
           <Footer />
           </div>
 
+          </Router>
         </div>
-      </Router>
     );
   }
 }

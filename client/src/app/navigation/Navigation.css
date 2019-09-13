@@ -4,7 +4,7 @@
 @media all and (min-width: 300px) {
   #naviContainer{
     position: fixed;
-    min-width: 100%;
+    width: 100%;
     height: 60px;
     background-color: var(--sky-transparancy-2);
     display: flex;
@@ -20,7 +20,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin: 5px;
     transition: all 0.35s ease-in-out;
     color: var(--sky-white-4);
     text-decoration: none;
@@ -106,7 +105,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin: 15px;
+    margin: 10px;
     transition: all 0.35s ease-in-out;
     color: var(--sky-white-4);
     text-decoration: none;
@@ -131,7 +130,7 @@
 /* ============================================ */
 @media all and (min-width: 800px) {
   .naviLinkWrapper{
-    margin: 35px;
+    margin: 25px;
   }
 }
 
@@ -144,6 +143,6 @@
   }
   .naviLinkWrapper{
     font-size: 1.75em;
-    margin: 45px;
+    margin: 35px;
   }
 }
