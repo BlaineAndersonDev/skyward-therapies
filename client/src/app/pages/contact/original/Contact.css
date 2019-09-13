@@ -262,16 +262,16 @@
     color: var(--sky-transparancy-3);
     background-color: var(--sky-black-2);
     box-shadow: 5px 5px 5px var(--sky-transparancy-2);
-    min-height: 400px;
-    min-width: 500px;
+    min-height: 300px;
+    min-width: 650px;
   }
   #googleMap {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    min-height: 400px;
-    min-width: 500px;
+    min-height: 300px;
+    min-width: 650px;
   }
   .contactBottomBox{
     margin: 15px;
