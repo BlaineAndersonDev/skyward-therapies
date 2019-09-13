@@ -36,19 +36,19 @@
     position: relative;
   }
   .massageImg1{
-    background-image: url('/images/skyward_styles_hot_stone.jpg');
+    background-image: url('/images/003_Massage/skyward_styles_hot_stone.jpg');
   }
   .massageImg2{
-    background-image: url('/images/skyward_styles_prenatal.jpg');
+    background-image: url('/images/003_Massage/skyward_styles_prenatal.jpg');
   }
   .massageImg3{
-    background-image: url('/images/skyward_styles_trigger_point.jpg');
+    background-image: url('/images/003_Massage/skyward_styles_trigger_point.jpg');
   }
   .massageImg4{
-    background-image: url('/images/skyward_styles_swedish.jpg');
+    background-image: url('/images/003_Massage/skyward_styles_swedish.jpg');
   }
   .massageImg5{
-    background-image: url('/images/skyward_styles_deep_tissue.jpg');
+    background-image: url('/images/003_Massage/skyward_styles_deep_tissue.jpg');
   }
   .massageStyleTextContainer{
     position: absolute;
@@ -135,21 +135,6 @@
     background-size: cover;
     position: relative;
   }
-  .massageImg1{
-    background-image: url('/images/skyward_styles_hot_stone.jpg');
-  }
-  .massageImg2{
-    background-image: url('/images/skyward_styles_prenatal.jpg');
-  }
-  .massageImg3{
-    background-image: url('/images/skyward_styles_trigger_point.jpg');
-  }
-  .massageImg4{
-    background-image: url('/images/skyward_styles_swedish.jpg');
-  }
-  .massageImg5{
-    background-image: url('/images/skyward_styles_deep_tissue.jpg');
-  }
   .massageStyleTextContainer{
     position: absolute;
     bottom: -15px;
@@ -226,21 +211,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
-  .massageImg1{
-    background-image: url('/images/skyward_styles_hot_stone.jpg');
-  }
-  .massageImg2{
-    background-image: url('/images/skyward_styles_prenatal.jpg');
-  }
-  .massageImg3{
-    background-image: url('/images/skyward_styles_trigger_point.jpg');
-  }
-  .massageImg4{
-    background-image: url('/images/skyward_styles_swedish.jpg');
-  }
-  .massageImg5{
-    background-image: url('/images/skyward_styles_deep_tissue.jpg');
   }
   .massageStyleTextContainer{
     position: absolute;

@@ -6,7 +6,7 @@
     height: 100vh;
     min-width: 100%;
     /* background-image: url('/images/skyward_tree_003.jpg'); */
-    background-image: url('/images/kelli/k_005.jpg');
+    background-image: url('/images/001_Landing/k_005.jpg');
     background-color: whitesmoke; /* Backup color if image fails to load. */
     background-attachment: fixed; /* Keeps the image in place to create parallax. */
     background-position: top;

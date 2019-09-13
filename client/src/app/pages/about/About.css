@@ -5,7 +5,7 @@
   #about {
     min-width: 100%;
     min-height: auto;
-    background-image: url('/images/about/sky_about_003.jpg');
+    background-image: url('/images/007_About/sky_about_003.jpg');
     background-color: white; /* Backup co\lor if image fails to load. */
     background-attachment: fixed; /* Keeps the image in place to create parallax. */
     background-position: top;
@@ -105,7 +105,7 @@
   #about {
     min-width: 100%;
     min-height: auto;
-    background-image: url('/images/about/sky_about_003.jpg');
+    background-image: url('/images/007_About/sky_about_003.jpg');
     background-color: white; /* Backup co\lor if image fails to load. */
     background-attachment: fixed; /* Keeps the image in place to create parallax. */
     background-position: top;
@@ -223,7 +223,7 @@
     min-width: 100%;
     min-height: 700px;
     max-height: 700px;
-    background-image: url('/images/about/sky_about_003.jpg');
+    background-image: url('/images/007_About/sky_about_003.jpg');
     background-color: white; /* Backup co\lor if image fails to load. */
     background-attachment: fixed; /* Keeps the image in place to create parallax. */
     background-position: top;

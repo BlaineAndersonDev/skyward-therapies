@@ -20,7 +20,7 @@ class About extends Component {
         </div>
 
         <div className="aboutBioImgContainer">
-          <img src="/images/kelli_anderson_001.jpg" alt="Kelli_Anderson" id="kelliAboutImage" />
+          <img src="/images/007_About/kelli_anderson_001.jpg" alt="Kelli_Anderson" id="kelliAboutImage" />
           <div className="aboutBioImgText">
               Kelli Anderson LMT, NDTR,
           </div>
