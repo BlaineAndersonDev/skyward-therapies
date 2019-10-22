@@ -6,7 +6,8 @@ class Nutrition extends Component {
     return (
     <div id="nutrition" className="comContainer">
       <div className="comTitleContainer">
-        <h1 className="nutritionTitle">Let's talk about food</h1>
+        <h1 className="nutritionTitle">Nutrition</h1>
+        <h1 className="nutritionSubTitle">Designed for real life</h1>
         <div className="comUnderTitle"></div>
       </div>
       <div className="nutritionBoxContainer">

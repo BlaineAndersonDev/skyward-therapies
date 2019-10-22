@@ -29,6 +29,14 @@
     font-family: Palatino Linotype;
     font-size: 1.5em;
   }
+  .nutritionSubTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    font-family: Palatino Linotype;
+    font-size: 1em;
+  }
   /* Box Designs */
   .nutritionBoxContainer{
     display: flex;
@@ -137,6 +145,14 @@
     min-width: 100%;
     font-family: Palatino Linotype;
     font-size: 2em;
+  }
+  .nutritionSubTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    font-family: Palatino Linotype;
+    font-size: 1.4em;
   }
   /* Box Designs */
   .nutritionBoxContainer{
