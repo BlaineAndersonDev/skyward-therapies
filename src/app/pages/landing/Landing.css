@@ -1,0 +1,51 @@
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+  #landing {
+    height: 100vh;
+    min-width: 100%;
+    /* background-image: url('/images/skyward_tree_003.jpg'); */
+    background-image: url('/images/001_Landing/k_005.jpg');
+    background-color: whitesmoke; /* Backup color if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .landingImageTexts{
+    width: 90%;
+    color:#fff;
+    font-family: Palatino Linotype;
+    text-shadow: 2px 2px 4px black;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -10%;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  #landingImageTitle{
+  }
+  #landingImageSlogan{
+    font-size: 1.25em;
+    top: -1%;
+  }
+}
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {
+  .landingImageTexts{
+    font-size: 4.5em;
+  }
+  #landingImageSlogan{
+    font-size: 2.5em;
+  }
+}

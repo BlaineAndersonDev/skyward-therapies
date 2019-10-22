@@ -1,0 +1,701 @@
+:root {
+    /* Color Scheme: Skyward */
+    --sky-1st-9: rgba( 47,139,111,0.10);
+    --sky-1st-0: rgba( 47,139,111,0.25);
+    --sky-1st-1: rgba( 47,139,111,0.50);
+    --sky-1st-2: rgba( 47,139,111,0.75);
+    --sky-1st-3: rgba(124,195,174,1);
+    --sky-1st-4: rgba( 76,162,136,1);
+    --sky-1st-5: rgba( 25,119, 91,1);
+    --sky-1st-6: rgba(  8, 95, 68,1);
+
+    --sky-2nd-9: rgba( 54, 93,138,0.10);
+    --sky-2nd-1: rgba( 54, 93,138,0.25);
+    --sky-2nd-2: rgba( 54, 93,138,0.50);
+    --sky-2nd-3: rgba( 54, 93,138,0.75);
+    --sky-2nd-4: rgba(129,159,193,1);
+    --sky-2nd-5: rgba( 82,119,160,1);
+    --sky-2nd-6: rgba( 32, 73,118,1);
+    --sky-2nd-7: rgba( 15, 52, 93,1);
+
+    --sky-3rd-9: rgba(104,183, 62,0.10);
+    --sky-3rd-1: rgba(104,183, 62,0.25);
+    --sky-3rd-2: rgba(104,183, 62,0.50);
+    --sky-3rd-3: rgba(104,183, 62,0.75);
+    --sky-3rd-4: rgba(177,232,148,1);
+    --sky-3rd-5: rgba(140,213,100,1);
+    --sky-3rd-6: rgba( 77,157, 33,1);
+    --sky-3rd-7: rgba( 51,125, 11,1);
+
+    --sky-4th-9: rgba(103, 54,142,.10);
+    --sky-4th-1: rgba(103, 54,142,.25);
+    --sky-4th-2: rgba(103, 54,142,.50);
+    --sky-4th-3: rgba(103, 54,142,.75);
+    --sky-4th-4: rgba(154,117,182,1);
+    --sky-4th-5: rgba(124, 79,159,1);
+    --sky-4th-6: rgba( 71, 20,111,1);
+
+    --sky-5th-9: rgba(105, 71, 31, 0.10);
+    --sky-5th-1: rgba(105, 71, 31, 0.25);
+    --sky-5th-2: rgba(105, 71, 31, 0.50);
+    --sky-5th-3: rgba(105, 71, 31, 0.75);
+    --sky-5th-4: rgba(173,130, 80,1);
+    --sky-5th-5: rgba(134, 96, 52,1);
+    --sky-5th-6: rgba( 74, 47, 15,1);
+    --sky-5th-7: rgba( 46, 27,  4,1);
+
+    --sky-transparancy-0: rgba(0, 0, 0, 0.10);
+    --sky-transparancy-1: rgba(0, 0, 0, 0.25);
+    --sky-transparancy-2: rgba(0, 0, 0, 0.50);
+    --sky-transparancy-3: rgba(0, 0, 0, 0.75);
+    --sky-white-0: rgba(245,245,245, 0.10);
+    --sky-white-1: rgba(245,245,245, 0.25);
+    --sky-white-2: rgba(245,245,245, 0.50);
+    --sky-white-3: rgba(245,245,245, 0.75);
+    --sky-white-4: rgba(245,245,245, 1.0);
+    --sky-black-1: rgba(30, 40, 63, 1.0);
+    --sky-black-2: rgba(62, 71, 91, 1.0);
+
+}
+/*
+Fonts (In order of use):
+Palatino Linotype
+'Kaushan Script', Palatino Linotype
+'Muli', sans-serif
+
+ */
+
+*{
+  margin:0;
+  padding:0;
+  transition: all 0.35s ease-in-out;
+}
+html, body{
+  background-color: whitesmoke;
+}
+
+/* ============================================ */
+/* 300 width ================================== */
+/* ============================================ */
+@media screen and (min-width: 300px) {
+  #routesContainer{
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+    #routesNavigation{
+      min-width: 100%;
+      max-width: 100%;
+    }
+    #routesBody{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      min-width: 100%;
+      max-width: 100%;
+      background-color: whitesmoke;
+    }
+    #routesFooter{
+      min-width: 100%;
+      max-width: 100%;
+    }
+}
+
+/* ============================================ */
+/* 1000 width ================================= */
+/* ============================================ */
+@media screen and (min-width: 1000px) {
+  #routesContainer{
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+    #routesNavigation{
+      min-width: 100%;
+      max-width: 100%;
+    }
+    #routesBody{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      min-width: 100%;
+      max-width: 100%;
+      background-color: whitesmoke;
+    }
+    #routesFooter{
+      min-width: 100%;
+      max-width: 100%;
+    }
+}
+
+/* App Wide Styles - com<name> - referring to Component */
+
+/* Most Smartphones Mobiles (Portrait) */
+@media (min-width: 300px) {
+  #routesBody{ background-color: red; }
+  .comContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    min-width: 100%;
+  }
+  .comSectiontitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Palatino Linotype;
+    font-size: 2.0em;
+    margin-bottom: 30px;
+  }
+  .comTitleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+  .comTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    font-family: Palatino Linotype;
+    font-size: 2em;
+  }
+  .comUnderTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+	  box-shadow:
+		  0 -1px 0 rgba(0,0,0,0.1),
+		  0 1px 0 rgba(255,255,255,0.6);
+  	content: "";
+  	height: 2px;
+  	border-radius: 2px;
+    font-family: Palatino Linotype;
+    font-size: 2.5em;
+  }
+  .comSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 80%;
+  }
+  .comSubSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .comSubSectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border: black 2px solid;
+    font-family: Palatino Linotype;
+    font-size: 1.5em;
+    color: black;
+  }
+  .comSubSectionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    font-family: 'Palatino Linotype';
+    font-size: 1em;
+    margin: 15px;
+  }
+  .comTextUnderline{
+    text-decoration: underline;
+  }
+  .comVerticalDivider{
+    min-height: 100%;
+    width: 2px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	  box-shadow:
+		 -1px 0 0 rgba(0,0,0,0.1),
+		 1px 0 0 rgba(255,255,255,0.6);
+  	content: "";
+  }
+  .comRows{
+    flex-direction: row;
+  }
+
+  /* Box Designs */
+  .comSubSectionBoxContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .comSubSectionBox{
+    margin: 15px;
+    flex: 1 0 calc(30% - 15px);
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 300px;
+    max-height: 300px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+  .comSubSectionBoxTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-bottom: black 2px solid;
+    font-family: Palatino Linotype;
+    font-size: 1.5em;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* Background Images */
+  .comImgContainer {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 600px;
+    background-color: black; /* Backup color if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .comImageTexts{
+    color:#fff;
+    font-family: Palatino Linotype;
+    text-shadow: 2px 2px 4px black;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -200px;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  #comImageTitle{
+    font-size: 3.5em;
+    top: -200px;
+  }
+  #comImageSlogan{
+    font-size: 2em;
+    top: -80px;
+  }
+
+}
+
+
+/* ============================================ */
+/* 1000 width ================================= */
+/* ============================================ */
+@media screen and (min-width: 1000px) {
+  #routesBody{ background-color: green; }
+  .comContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    min-width: 100%;
+  }
+  .comSectiontitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Palatino Linotype;
+    font-size: 2.0em;
+    margin-bottom: 30px;
+  }
+  .comTitleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+  .comTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    font-family: Palatino Linotype;
+    font-size: 3em;
+  }
+  .comUnderTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+	  box-shadow:
+		  0 -1px 0 rgba(0,0,0,0.1),
+		  0 1px 0 rgba(255,255,255,0.6);
+  	content: "";
+  	height: 2px;
+  	border-radius: 2px;
+    font-family: Palatino Linotype;
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .comSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 80%;
+  }
+  .comSubSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .comSubSectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border: black 2px solid;
+    font-family: Palatino Linotype;
+    font-size: 1.5em;
+    color: black;
+  }
+  .comSubSectionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 1;
+    font-family: 'Palatino Linotype';
+    font-size: 1.4em;
+    margin: 15px;
+  }
+  .comTextUnderline{
+    text-decoration: underline;
+  }
+  .comVerticalDivider{
+    min-height: 100%;
+    width: 2px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	  box-shadow:
+		 -1px 0 0 rgba(0,0,0,0.1),
+		 1px 0 0 rgba(255,255,255,0.6);
+  	content: "";
+  }
+  .comRows{
+    flex-direction: row;
+  }
+
+  /* Box Designs */
+  .comSubSectionBoxContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .comSubSectionBox{
+    margin: 15px;
+    flex: 1 0 calc(30% - 15px);
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 300px;
+    max-height: 300px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+  .comSubSectionBoxTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-bottom: black 2px solid;
+    font-family: Palatino Linotype;
+    font-size: 1.5em;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* Background Images */
+  .comImgContainer {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 600px;
+    background-color: black; /* Backup color if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .comImageTexts{
+    color:#fff;
+    font-family: Palatino Linotype;
+    text-shadow: 2px 2px 4px black;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -200px;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  #comImageTitle{
+    font-size: 3.5em;
+    top: -200px;
+  }
+  #comImageSlogan{
+    font-size: 2em;
+    top: -80px;
+  }
+}
+
+
+
+
+
+
+/* ============================================ */
+/* Original Styles ============================ */
+/* ============================================ */
+/* Laptops, Desktops */
+@media screen and (min-width: 10000px) {
+  .comContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    min-width: 100%;
+  }
+  .comSectiontitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Palatino Linotype;
+    font-size: 2.0em;
+    margin-bottom: 30px;
+  }
+  .comTitleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+  .comTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    font-family: Palatino Linotype;
+    font-size: 3em;
+    margin-top: 30px;
+  }
+  .comUnderTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+	  box-shadow:
+		  0 -1px 0 rgba(0,0,0,0.1),
+		  0 1px 0 rgba(255,255,255,0.6);
+  	content: "";
+  	height: 2px;
+  	border-radius: 2px;
+    font-family: Palatino Linotype;
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .comSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 80%;
+  }
+  .comSubSectionContainer{
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    max-width: 100%;
+    margin: 10px;
+  }
+  .comSubSectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border: black 2px solid;
+    font-family: Palatino Linotype;
+    font-size: 1.5em;
+    color: black;
+  }
+  .comSubSectionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    font-family: 'Palatino Linotype';
+    font-size: 1em;
+    margin: 15px;
+  }
+  .comTextUnderline{
+    text-decoration: underline;
+  }
+  .comVerticalDivider{
+    min-height: 100%;
+    width: 2px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	  box-shadow:
+		 -1px 0 0 rgba(0,0,0,0.1),
+		 1px 0 0 rgba(255,255,255,0.6);
+  	content: "";
+  }
+  .comRows{
+    flex-direction: row;
+  }
+
+  /* Box Designs */
+  .comSubSectionBoxContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .comSubSectionBox{
+    margin: 15px;
+    flex: 1 0 calc(30% - 15px);
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 300px;
+    max-height: 300px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+  .comSubSectionBoxTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    border-bottom: black 2px solid;
+    font-family: Palatino Linotype;
+    font-size: 1.5em;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* Background Images */
+  .comImgContainer {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 600px;
+    background-color: black; /* Backup color if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .comImageTexts{
+    color:#fff;
+    font-family: Palatino Linotype;
+    text-shadow: 2px 2px 4px black;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -200px;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  #comImageTitle{
+    font-size: 3.5em;
+    top: -200px;
+  }
+  #comImageSlogan{
+    font-size: 2em;
+    top: -80px;
+  }
+}

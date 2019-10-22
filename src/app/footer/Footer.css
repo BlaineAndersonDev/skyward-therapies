@@ -1,0 +1,92 @@
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+  #footContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    min-width: 100%;
+    max-width: 100%;
+    border-top: var(--sky-transparancy-3) 3px solid;
+    background-color: var(--sky-black-1);
+  }
+  #footTopWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: var(--sky-5th-4);
+  }
+  #footCenterWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  #footBottomWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--sky-black-1);
+    color: var(--sky-white-3);
+    margin-top: 20px;
+  }
+  .footCopyrightText{
+    margin: 15px;
+  }
+}
+
+/* ============================================ */
+/* 1000 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 1000px) {
+  #footContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    min-width: 100%;
+    max-width: 100%;
+    border-top: var(--sky-transparancy-3) 3px solid;
+    background-color: var(--sky-black-1);
+  }
+  #footCenterWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  #footBottomWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--sky-black-1);
+    color: var(--sky-white-3);
+    margin-top: 20px;
+  }
+  .footCopyrightText{
+    margin: 15px;
+  }
+}
