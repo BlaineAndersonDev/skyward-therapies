@@ -9,8 +9,8 @@ package-lock.json
 /build
 
 # SSH Keys
-skywardTherapies
-skywardTherapies.pub
+skyward
+skyward.pub
 
 # Other
 .DS_Store
