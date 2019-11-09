@@ -5,8 +5,9 @@ class Landing extends Component {
   render() {
     return (
       <div id="landing" className="comContainer">
-        <h1 id='landingImageTitle' className='landingImageTexts'>Skyward Therapies</h1>
-        <h3 id='landingImageSlogan' className='landingImageTexts'>~ Back to Balance ~</h3>
+        <div id="landingDimmer">
+          <img src="/images/000_Navigation/newskywardLogo01.png" alt="skywardLogo01" id="skywardLogo01" />
+        </div>
       </div>
     );
   }

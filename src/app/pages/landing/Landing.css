@@ -14,6 +14,29 @@
     background-size: cover;
     position: relative;
   }
+  #landingDimmer{
+    background-color: rgba(195, 195, 195, 0.35);
+    box-shadow: 0 0 20px rgba(195, 195, 195, 0.35);
+    height: 100vh;
+    min-width: 100%;
+  }
+  #skywardLogo01{
+    width: 100%;
+    max-width: 1200px;
+    color:#fff;
+    font-family: Palatino Linotype;
+    text-shadow: 2px 2px 4px black;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: -10%;
+    left:0;
+    right:0;
+    bottom:0;
+  }
   .landingImageTexts{
     width: 90%;
     color:#fff;
