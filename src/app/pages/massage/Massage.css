@@ -3,11 +3,15 @@
 /* ============================================ */
 @media all and (min-width: 300px) {
   #massage {
-    background-color: var(--sky-2nd-4);
     color: white;
     position: relative;
     z-index: 1;
     min-width: 100%;
+    background-color: white;
+    background-image: url('/images/watercolors/42.jpg');
+    background-position: top;
+    background-size: cover;
+    background-color: whitesmoke; /* Backup color if image fails to load. */
   }
   .massageAllStylesContainer{
     display: flex;
@@ -91,7 +95,6 @@
 
 @media all and (min-width: 10000px) {
   #massage {
-    background-color: var(--sky-white-4);
     position: relative;
     z-index: 1;
     min-width: 100%;
@@ -182,8 +185,6 @@
     color: black;
     position: relative;
     z-index: 1;
-    background-color: var(--sky-2nd-4);
-    background-image: linear-gradient(var(--sky-2nd-4) 0%, var(--sky-white-3) 95%);
     max-width: 100%;
   }
   .massageAllStylesContainer{

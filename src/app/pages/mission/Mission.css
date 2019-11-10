@@ -5,9 +5,13 @@
   #missionContainer {
     z-index: 0;
     min-width: 100%;
-    background-color: white;
-    background-image: linear-gradient(var(--sky-white-3) 0%, var(--sky-2nd-4) 95%);
-    color: black;
+    background-image: url('/images/watercolors/feather-1588819_1920.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: whitesmoke; /* Backup color if image fails to load. */
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
   }
   .missionContentContainer{
     display: flex;

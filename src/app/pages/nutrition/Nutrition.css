@@ -5,7 +5,7 @@
   #nutrition {
     min-width: 100%;
     min-height: auto;
-    background-image: url('/images/006.5_Nutrition/nutrition_004.jpg');
+    background-image: url('/images/watercolors/blueGreen2.jpg');
     background-color: white; /* Backup co\lor if image fails to load. */
     background-attachment: fixed; /* Keeps the image in place to create parallax. */
     background-position: top;
@@ -55,7 +55,8 @@
     align-items: center;
     min-width: 100%;
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.51);
+    background-color: rgba(33, 70, 182, 0.51);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -144,7 +145,7 @@
     align-items: center;
     min-width: 100%;
     font-family: Palatino Linotype;
-    font-size: 2em;
+    font-size: 4em;
   }
   .nutritionSubTitle{
     display: flex;
@@ -172,7 +173,6 @@
     align-items: center;
     min-width: 100%;
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.51);
     border-radius: 15px;
     padding-left: 15px;
     padding-right: 15px;

@@ -6,7 +6,10 @@
     position: relative;
     z-index: 0;
     width: 100%;
-    background-color: var(--sky-2nd-4);
+    background-image: url('/images/watercolors/8738.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-color: whitesmoke; /* Backup color if image fails to load. */
   }
   .contactBoxTitle{
     display: flex;
@@ -146,8 +149,6 @@
     position: relative;
     z-index: 0;
     min-width: 100%;
-    background-color: var(--sky-2nd-4);
-    background-image: linear-gradient(var(--sky-2nd-4) 0%, var(--sky-white-3) 95%);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,8 +4,10 @@
 @media all and (min-width: 300px) {
   #pricing {
     background-color: white;
-    background-image: linear-gradient(var(--sky-white-3) 0%, var(--sky-2nd-4) 95%);
-    position: relative;
+    background-image: url('/images/watercolors/166.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-color: whitesmoke; /* Backup color if image fails to load. */
     z-index: 0;
     min-width: 100%;
   }
