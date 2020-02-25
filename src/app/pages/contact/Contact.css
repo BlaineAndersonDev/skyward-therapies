@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
   }
   .contactTopBox{
@@ -47,7 +47,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 15px;
     box-shadow: 2px 6px 10px black;
     background-image: linear-gradient(var(--sky-white-1) 0%, var(--sky-white-3) 95%);
@@ -105,7 +105,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .contactRightBottomBox{
     width: 100%;
@@ -113,21 +113,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border: black 2px solid;
     color: var(--sky-transparancy-3);
     background-color: var(--sky-black-2);
     box-shadow: 5px 5px 5px var(--sky-transparancy-2);
-    min-height: 200px;
-    min-width: 250px;
+    min-height: 300px;
+    min-width: 350px;
   }
   #googleMap {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    min-height: 200px;
-    min-width: 250px;
+    min-height: 300px;
+    min-width: 350px;
   }
   .contactBottomBox{
     margin: 15px;
@@ -135,7 +135,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .contactMap{
     padding-top: 20px;
@@ -180,7 +180,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
   }
   .contactTopBox{
@@ -188,7 +188,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 15px;
     flex: 1 1 calc(35% -15px);
     box-shadow: 2px 6px 10px black;
@@ -237,7 +237,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     font-weight: bold;
@@ -247,8 +247,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   .contactRightBottomBox{
     width: 100%;
@@ -256,7 +256,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border: black 2px solid;
     color: var(--sky-transparancy-3);
     background-color: var(--sky-black-2);
@@ -278,7 +278,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .contactMap{
     padding-top: 20px;
@@ -333,19 +333,39 @@
 }
 
 /* ============================================ */
-/* 1900 Width ================================= */
+/* 1400 Width ================================= */
 /* ============================================ */
-@media all and (min-width: 1900px) {
+@media all and (min-width: 1400px) {
+  .contactBottomBoxContainer{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .contactLeftBottomBox{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   .contactRightBottomBox{
-    min-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: black 2px solid;
+    color: var(--sky-transparancy-3);
+    background-color: var(--sky-black-2);
+    box-shadow: 5px 5px 5px var(--sky-transparancy-2);
+    min-height: 500px;
+    min-width: 1200px;
   }
   #googleMap {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    min-height: 350px;
-    min-width: 800px;
+    min-height: 500px;
+    min-width: 1200px;
   }
 }
 
@@ -409,7 +429,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 15px;
     box-shadow: 2px 6px 10px black;
     background-image: linear-gradient(var(--sky-white-1) 0%, var(--sky-white-3) 95%);
@@ -472,7 +492,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .contactRightBottomBox{
     width: 100%;
@@ -480,7 +500,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border: black 2px solid;
     color: var(--sky-transparancy-3);
     background-color: var(--sky-black-2);
@@ -494,7 +514,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .contactMap{
     padding-top: 20px;
