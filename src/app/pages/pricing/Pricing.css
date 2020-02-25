@@ -58,7 +58,7 @@
   #pricingBoxColor4{
     background-color: rgba(0, 134, 179, 1);
   }
-  .pricingBoxTitlePrice{
+  .pricingBoxTitleNumber{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +69,7 @@
     text-shadow: 2px 2px 4px black;
     margin-top: 20px;
   }
-  .pricingBoxTitleNumber{
+  .pricingBoxTitlePrice{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +181,7 @@
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
   }
-  .pricingBoxTitlePrice{
+  .pricingBoxTitleNumber{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +192,7 @@
     text-shadow: 2px 2px 4px black;
     margin-top: 20px;
   }
-  .pricingBoxTitleNumber{
+  .pricingBoxTitlePrice{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,7 +269,7 @@
   .pricingBox{
     flex: 1 0 calc(25% - 10px);
   }
-  .pricingBoxTitlePrice{
+  .pricingBoxTitleNumber{
     font-size: 1.5em;
   }
   .pricingIncludedTitle{
@@ -347,7 +347,7 @@
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
   }
-  .pricingBoxTitlePrice{
+  .pricingBoxTitleNumber{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,7 +358,7 @@
     text-shadow: 2px 2px 4px black;
     margin-top: 20px;
   }
-  .pricingBoxTitleNumber{
+  .pricingBoxTitlePrice{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -483,7 +483,7 @@
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
   }
-  .pricingBoxTitlePrice{
+  .pricingBoxTitleNumber{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -494,7 +494,7 @@
     text-shadow: 2px 2px 4px black;
     margin-top: 20px;
   }
-  .pricingBoxTitleNumber{
+  .pricingBoxTitlePrice{
     display: flex;
     justify-content: center;
     align-items: center;

@@ -13,33 +13,33 @@ class Pricing extends Component {
 
         <div className="pricingBox">
           <div id="pricingBoxColor1" className="pricingBoxTitleContainer">
+            <p className="pricingBoxTitleNumber">30</p>
             <p className="pricingBoxTitlePrice">$35</p>
-            <h1 className="pricingBoxTitleNumber">30</h1>
-            <h1 className="pricingBoxTitleText">Minutes</h1>
+            <p className="pricingBoxTitleText">Minutes</p>
           </div>
         </div>
 
         <div className="pricingBox">
           <div id="pricingBoxColor2" className="pricingBoxTitleContainer">
+            <p className="pricingBoxTitleNumber">60</p>
             <p className="pricingBoxTitlePrice">$65</p>
-            <h1 className="pricingBoxTitleNumber">60</h1>
-            <h1 className="pricingBoxTitleText">Minutes</h1>
+            <p className="pricingBoxTitleText">Minutes</p>
           </div>
         </div>
 
         <div className="pricingBox">
           <div id="pricingBoxColor3" className="pricingBoxTitleContainer">
+            <p className="pricingBoxTitleNumber">90</p>
             <p className="pricingBoxTitlePrice">$100</p>
-            <h1 className="pricingBoxTitleNumber">90</h1>
-            <h1 className="pricingBoxTitleText">Minutes</h1>
+            <p className="pricingBoxTitleText">Minutes</p>
           </div>
         </div>
 
         <div className="pricingBox">
           <div id="pricingBoxColor4" className="pricingBoxTitleContainer">
+            <p className="pricingBoxTitleNumber">120</p>
             <p className="pricingBoxTitlePrice">$130</p>
-            <h1 className="pricingBoxTitleNumber">120</h1>
-            <h1 className="pricingBoxTitleText">Minutes</h1>
+            <p className="pricingBoxTitleText">Minutes</p>
           </div>
         </div>
       </div>
