@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Contact.css';
-import dotenv from 'dotenv';
 
 class Contact extends Component {
   render() {
@@ -46,7 +45,7 @@ class Contact extends Component {
         <div className="contactBottomBox contactMap">
           <div className="contactRightBottomBox">
             <iframe id="googleMap" frameborder="0"
-              src={googleURL} allowfullscreen></iframe>
+              src={googleURL} title="map" allowfullscreen></iframe>
           </div>
         </div>
 
