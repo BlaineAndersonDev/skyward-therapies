@@ -28,14 +28,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 6px 10px black;
-    margin: 10px;
-    padding: 15px;
     max-width: 400px;
-    background-image: linear-gradient(var(--sky-white-1) 0%, var(--sky-white-3) 95%);
     height: auto;
     position: relative;
-    border-top: 5px solid black;
   }
   .missionText{
     display: flex;

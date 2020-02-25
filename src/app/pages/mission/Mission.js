@@ -6,7 +6,7 @@ class Mission extends Component {
     return (
     <div id="missionContainer" className="comContainer">
       <div className="comTitleContainer">
-        <h1 className="comTitle">~It's All About <br /> <span className="comTextUnderline">You</span>~</h1>
+        <h1 className="comTitle">It's All About You</h1>
         <div className="comUnderTitle"></div>
       </div>
 

@@ -13,7 +13,7 @@ class Footer extends Component {
       </div>
 
       <div id="footBottomWrapper">
-        <p className="footCopyrightText">Copyright 2019 Skyward Therapies LLC.</p>
+        <p className="footCopyrightText">Copyright 2019-2020 Skyward Therapies LLC.</p>
         <p className="footCopyrightText">All Rights Reserved.</p>
       </div>
 
