@@ -9,7 +9,7 @@ class Contact extends Component {
     return (
     <div id="contact" className="comContainer">
       <div className="comTitleContainer">
-        <h1 className="comTitle">Schedule a Session</h1>
+        <h1 className="comTitle">Contact</h1>
         <div className="comUnderTitle"></div>
       </div>
 
@@ -20,8 +20,9 @@ class Contact extends Component {
           <div className="contactBottomBox contactAddress">
             <h3 className="contactBoxTitle contactBoxTitle2">Hours</h3>
             <p className="contactBoxText contactBoxText2 contactBoxText2gap"><i>By Appointment Only</i></p>
-            <p className="contactBoxText contactBoxText2">Monday-Saturday: </p>
-            <p className="contactBoxText contactBoxText2">8am - 7pm</p>
+            <p className="contactBoxText contactBoxText2">Monday-Friday: 8am - 6pm</p>
+            <p className="contactBoxText contactBoxText2">Saturday: 8am - 4pm</p>
+            <p className="contactBoxText contactBoxText2">Sunday: Closed </p>
           </div>
 
           <div className="contactBottomBox contactAddress">

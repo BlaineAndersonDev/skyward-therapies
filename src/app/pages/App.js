@@ -20,8 +20,8 @@ class App extends Component {
       <Modalities />
       <Pricing />
       <Nutrition />
-      <Contact />
       <About />
+      <Contact />
     </div>
     );
   }
