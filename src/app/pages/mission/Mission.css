@@ -5,7 +5,10 @@
   #missionContainer {
     z-index: 0;
     min-width: 100%;
-    background-image: url('/images/watercolors/feather-1588819_1920.jpg');
+    /* background-image: url('/images/watercolors/feather-1588819_1920.jpg'); */
+    background: whitesmoke;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #db7a6f, whitesmoke);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #db7a6f, whitesmoke); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,29 +31,58 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
     height: auto;
     position: relative;
+    margin-top: 20px;
   }
   .missionText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Palatino Linotype';
     font-size: 1em;
     width: 90%;
     color: black;
-    text-shadow: 1px 1px 3px white;
+    margin-bottom: 20px;
+  }
+  .missionLink{
+    color: inherit;
+    text-decoration: underline;
+  }.missionLink:hover, .missionLink:focus{
+    color: #c13584;
+  }
+  .missionLinkBlue{
+    color: inherit;
+    text-decoration: underline;
+  }.missionLinkBlue:hover, .missionLinkBlue:focus{
+    color: #3b5998;
+  }
+  .missionLinkRed{
+    color: inherit;
+    text-decoration: underline;
+  }.missionLinkRed:hover, .missionLinkRed:focus{
+    color: darkred;
   }
 }
+
+/* ============================================ */
+/* 450 Width ================================= */
+/* ============================================ */
+@media all and (min-width: 450px) {
+  .missionBackground1{
+    height: auto;
+    width: 90%;
+  }
+  .missionText{
+    font-size: 1.2em;
+  }
+}
+
 
 /* ============================================ */
 /* 1000 Width ================================= */
 /* ============================================ */
 @media all and (min-width: 1000px) {
   .missionBackground1{
-    height: 200px;
-    max-width: 800px;
+    height: auto;
+    width: 90%;
   }
   .missionText{
     font-size: 1.2em;
@@ -62,11 +94,11 @@
 /* ============================================ */
 @media all and (min-width: 1400px) {
   .missionBackground1{
-    height: 200px;
-    max-width: 800px;
+    height: auto;
+    width: 90%;
   }
   .missionText{
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 }
 
@@ -75,8 +107,8 @@
 /* ============================================ */
 @media all and (min-width: 1900px) {
   .missionBackground1{
-    height: 125px;
-    max-width: 1000px;
+    height: auto;
+    width: 90%;
   }
   .missionText{
     font-size: 1.25em;
@@ -124,7 +156,7 @@
     max-width: 40%;
     margin: 10px;
     padding: 20px;
-    height: 150px;
+    height: auto;
     background-image: linear-gradient(var(--sky-white-1) 0%, var(--sky-white-3) 95%);
     position: relative;
     border-top: 5px solid black;

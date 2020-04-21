@@ -14,7 +14,7 @@ class Social extends Component {
       </a>
     )
     const instagramIcon = (
-      <a href="https://www.instagram.com/skywardtherapiesllc/" target="_blank" rel="noopener noreferrer" className="socialIconContainer">
+      <a href="https://www.instagram.com/skyward_therapies/" target="_blank" rel="noopener noreferrer" className="socialIconContainer">
         <img
           src="images/social_icons/sky_social_icon_white_instagram.png"
           alt="Skyward Instagram"
