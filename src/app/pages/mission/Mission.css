@@ -36,7 +36,7 @@
     margin-top: 20px;
   }
   .missionText{
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 1em;
     width: 90%;
     color: black;
@@ -185,7 +185,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 1em;
     width: 90%;
     color: black;

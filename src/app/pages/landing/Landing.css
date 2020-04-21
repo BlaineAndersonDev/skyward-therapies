@@ -24,7 +24,7 @@
     width: 100%;
     max-width: 1200px;
     color:#fff;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     text-shadow: 2px 2px 4px black;
     font-size: 2em;
     display: flex;
@@ -40,7 +40,7 @@
   .landingImageTexts{
     width: 90%;
     color:#fff;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     text-shadow: 2px 2px 4px black;
     font-size: 2em;
     display: flex;

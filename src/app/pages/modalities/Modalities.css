@@ -72,7 +72,7 @@
     align-items: center;
     /* border-top: black 2px solid; */
     border-bottom: black 2px solid;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.25em;
     margin-bottom: 5px;
   }
@@ -80,7 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 0.9em;
   }
   .modalitiesVerticalDivider{
@@ -209,7 +209,7 @@
     align-items: center;
     /* border-top: black 2px solid; */
     border-bottom: black 2px solid;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.5em;
     margin-bottom: 5px;
   }
@@ -217,7 +217,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 0.9em;
   }
   .modalitiesVerticalDivider{

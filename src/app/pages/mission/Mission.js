@@ -14,7 +14,7 @@ class Mission extends Component {
 
         <div className="missionBackground1">
           <p className="missionText">
-            Online Nutritional Consultations are available by appointment, please feel free to contact me and we will get you started. Also, please feel free to follow <a className="missionLink" href="https://www.instagram.com/skyward_therapies/">Skyward_Therapies on Instagram</a> for healthy home cooking inspiration during quarantine. 
+            Discounted Online Nutritional Consultations are available by appointment, please feel free to contact me and we will get you started. Also, please feel free to follow <a className="missionLink" href="https://www.instagram.com/skyward_therapies/">Skyward_Therapies on Instagram</a> for healthy home cooking inspiration during quarantine. 
           </p>
           <p className="missionText">
             Massage Therapy has been <a className="missionLinkRed" href="https://azgovernor.gov/governor/news/2020/04/governors-office-provides-additional-guidance-essential-services">ordered to close</a> until further notice by the State of Arizona Governing Boards. Unfortunately, the pandemic occurred right at a time when I was going to begin my search for a new location. Moving involves filing for a new City Establishment License, this sadly means that even if the restrictions are lifted, waiting for moving approval from the city may cause even more delays before I can reopen. 

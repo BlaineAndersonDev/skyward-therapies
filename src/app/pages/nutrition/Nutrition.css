@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.5em;
   }
   .nutritionSubTitle{
@@ -34,8 +34,20 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1em;
+  }
+  .nutritionAdditionalServices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    font-family: ariel;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    /* color: rgb(56, 93, 238); */
+    color: white;
+    text-decoration: underline;
   }
   /* Box Designs */
   .nutritionBoxContainer{
@@ -77,6 +89,7 @@
     font-size: 1.25em;
     text-shadow: 2px 2px 4px black;
     text-decoration: underline;
+    margin-bottom: 10px;
   }
   .nutritionBoxTitlePrice{
     display: flex;
@@ -91,7 +104,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1em;
     color: var(--sky-white-4);
     text-shadow: 1px 1px 2px black;
@@ -109,7 +122,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.15em;
     color: black;
     text-decoration: underline;
@@ -144,7 +157,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 4em;
   }
   .nutritionSubTitle{
@@ -152,7 +165,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.4em;
   }
   /* Box Designs */
@@ -207,7 +220,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.25em;
     color: var(--sky-white-4);
     text-shadow: 1px 1px 2px black;
@@ -217,7 +230,7 @@
     justify-content: center;
     align-items: center;
     flex: 1 1;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 1em;
   }
   .nutritionIncludedContainer{
@@ -232,7 +245,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.15em;
     color: black;
     text-decoration: underline;
@@ -359,7 +372,7 @@
     justify-content: center;
     align-items: center;
     flex: 1 1;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 1.25em;
     color: var(--sky-white-4);
     text-shadow: 2px 2px 4px black;
@@ -370,7 +383,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 5em;
     color: var(--sky-white-4);
     text-shadow: 2px 2px 4px black;
@@ -382,7 +395,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.5em;
     border-radius: 10px 10px 0 0;
     color: var(--sky-white-4);
@@ -394,7 +407,7 @@
     justify-content: center;
     align-items: center;
     flex: 1 1;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 1em;
     margin: 15px;
   }
@@ -410,7 +423,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.15em;
     color: black;
     text-decoration: underline;
@@ -495,7 +508,7 @@
     justify-content: center;
     align-items: center;
     flex: 1 1;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 1.25em;
     color: var(--sky-white-4);
     text-shadow: 2px 2px 4px black;
@@ -506,7 +519,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 5em;
     color: var(--sky-white-4);
     text-shadow: 2px 2px 4px black;
@@ -518,7 +531,7 @@
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.5em;
     border-radius: 10px 10px 0 0;
     color: var(--sky-white-4);
@@ -530,7 +543,7 @@
     justify-content: center;
     align-items: center;
     flex: 1 1;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 1em;
     margin: 15px;
   }
@@ -546,7 +559,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.15em;
     color: black;
     text-decoration: underline;

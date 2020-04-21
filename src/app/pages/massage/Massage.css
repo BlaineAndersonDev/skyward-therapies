@@ -80,7 +80,7 @@
     min-width: 90%;
     border-top: white 2px solid;
     border-bottom: white 2px solid;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.5em;
     margin-bottom: 5px;
   }
@@ -88,7 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 0.9em;
   }
 }
@@ -164,7 +164,7 @@
     min-width: 90%;
     border-top: white 2px solid;
     border-bottom: white 2px solid;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.5em;
     margin-bottom: 5px;
   }
@@ -172,7 +172,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 0.9em;
   }
 }
@@ -239,7 +239,7 @@
     min-width: 90%;
     border-top: white 2px solid;
     border-bottom: white 2px solid;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.5em;
     margin-bottom: 5px;
   }
@@ -247,7 +247,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 0.9em;
   }
 }
@@ -370,7 +370,7 @@
     min-width: 90%;
     border-top: white 2px solid;
     border-bottom: white 2px solid;
-    font-family: Palatino Linotype;
+    font-family: ariel;
     font-size: 1.5em;
     margin-bottom: 5px;
   }
@@ -378,7 +378,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Palatino Linotype';
+    font-family: 'ariel';
     font-size: 0.9em;
   }
 }

@@ -16,10 +16,10 @@ class App extends Component {
     <div id="appContainer">
       <Landing />
       <Mission />
+      <Nutrition />
       <Massage />
       <Modalities />
       <Pricing />
-      <Nutrition />
       <About />
       <Contact />
     </div>
