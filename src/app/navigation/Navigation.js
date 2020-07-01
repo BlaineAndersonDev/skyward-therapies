@@ -21,7 +21,7 @@ class Navigation extends Component {
       <NavLink smooth to="/#about" className="naviLinkWrapper naviTextWrapper">
       <div className="naviLinkText"> About </div>
       </NavLink>
-      <NavLink smooth to="/#contact" className="naviLinkWrapper naviTextWrapper">
+        <NavLink smooth to="/#footContainer" className="naviLinkWrapper naviTextWrapper">
         <div className="naviLinkText"> Contact </div>
       </NavLink>
     </div>

@@ -9,8 +9,8 @@
   #footLinksContainerTop{
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
   #footLinksContainerBottom{
@@ -26,6 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
   }
   .footLinksSection{
     display: flex;
@@ -83,6 +84,36 @@
     min-width: 250px;
     min-height: 150px;
   }
+  #footContactContainer{
+    color: var(--sky-white-3);
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .footContactBox{
+    color: var(--sky-white-3);
+    margin-bottom: 15px;
+  }
+  .footContactTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--sky-white-3) 2px solid;
+    font-family: ariel;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: var(--sky-white-3);
+  }
+  .footContactText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ariel';
+    font-size: 0.9em;
+    color: var(--sky-white-3);
+  }
 }
 @media all and (min-width: 600px) {
 
@@ -96,8 +127,8 @@
   #footLinksContainerTop{
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
   #footLinksContainerBottom{
@@ -171,13 +202,170 @@
     min-width: 250px;
     min-height: 150px;
   }
+  #footContactContainer{
+    color: var(--sky-white-3);
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .footContactBox{
+    color: var(--sky-white-3);
+    margin-bottom: 15px;
+  }
+  .footContactTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--sky-white-3) 2px solid;
+    font-family: ariel;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: var(--sky-white-3);
+  }
+  .footContactText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ariel';
+    font-size: 0.9em;
+    color: var(--sky-white-3);
+  }
 }
 
+/* ============================================ */
+/* 750 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 750px) {
+
+  #footLinksContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footLinksContainerTop{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #footLinksContainerBottom{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footLinksSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 calc(45% - 10px);
+  }
+  .footLinksSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footLinksAddressSection{
+    padding-top: 20px;
+  }
+  .footLinksNavLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .footLinksNavLinkText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ariel';
+    font-size: 1em;
+    color: var(--sky-white-3);
+    margin: 2px;
+  }
+  .footLinksNavLinkText:hover, .footLinksNavLinkText:focus{
+    color: var(--sky-3rd-4);
+  }
+  .footLinksTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--sky-white-3) 2px solid;
+    font-family: ariel;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: var(--sky-white-3);
+  }
+  .footLinksText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ariel';
+    font-size: 0.9em;
+    color: var(--sky-white-3);
+  }
+  .footLinksMapWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    border: white 2px solid;
+    min-width: 250px;
+    min-height: 150px;
+  }
+  #footContactContainer{
+    color: var(--sky-white-3);
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 0 10px;
+  }
+  .footContactBox{
+    color: var(--sky-white-3);
+    margin-bottom: 15px;
+  }
+  .footContactTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--sky-white-3) 2px solid;
+    font-family: ariel;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: var(--sky-white-3);
+  }
+  .footContactText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ariel';
+    font-size: 0.9em;
+    color: var(--sky-white-3);
+  }
+}
+/* ============================================ */
+/* 1000 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 1000px) {
+  #footContactContainer{
+    margin: 0 30px;
+  }
+}
 /* ============================================ */
 /* 1800 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1800px) {
-  #footLinksContainer{
-    max-width: 600px;
-  }
 }

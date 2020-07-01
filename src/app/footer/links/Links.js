@@ -45,15 +45,27 @@ class Links extends Component {
     <div id="footLinksContainerTop">
       {linkDisplay}
 
+      <div id="footContactContainer">
+        <div className="footContactBox">
+          <h3 className="footContactTitle">Hours</h3>
+          <p className="footContactText"><i>By Appointment Only</i></p>
+          <p className="footContactText">7 Days A Week: 8am - 6pm</p>
+        </div>
+
+        <div className="footContactBox">
+          <h3 className="footContactTitle">Text or Call</h3>
+          <p className="footContactText">480-258-3851</p>
+        </div>
+
+        <div className="footContactBox">
+          <h3 className="footContactTitle">Email</h3>
+          <p className="footContactText">SkywardTherapies@gmail.com</p>
+        </div>
+      </div>
+
       <div className="footLinksSide">
         <div className="footLinksSocialWrapper">
           <Social />
-        </div>
-        <div className="footLinksSection footLinksAddressSection">
-          <h3 className="footLinksTitle">Address:</h3>
-          <p className="footLinksText">6239 E Brown Rd Suite 112,</p>
-          <p className="footLinksText">Mesa, AZ 85205</p>
-          <a target='_blank' rel='noopener noreferrer' href="https://goo.gl/maps/is74TL9zXkbgAbb99" className="footLinksText footLinksLink">Get Directions</a>
         </div>
       </div>
     </div>
