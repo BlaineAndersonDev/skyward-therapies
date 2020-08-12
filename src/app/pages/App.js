@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 // === Component Imports ===
-import Landing from "./Landing/Landing.js";
+import Landing from "./landing/Landing.js";
 import Mission from './mission/Mission.js'
 import Massage from './massage/Massage.js'
 import Modalities from './modalities/Modalities.js'
