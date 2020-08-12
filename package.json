@@ -7,13 +7,15 @@
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "serve": "^11.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "local": "npm run-script build && serve -s build",
     "cloud": "pm2 kill && npm run build && pm2 serve build"
   },
   "eslintConfig": {
