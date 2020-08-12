@@ -1,5 +1,4 @@
-:root {
-    /* Color Scheme: Skyward */
+/* :root {
     --sky-1st-9: rgba( 47,139,111,0.10);
     --sky-1st-0: rgba( 47,139,111,0.25);
     --sky-1st-1: rgba( 47,139,111,0.50);
@@ -56,7 +55,7 @@
     --sky-black-1: rgba(30, 40, 63, 1.0);
     --sky-black-2: rgba(62, 71, 91, 1.0);
 
-}
+} */
 /*
 Fonts (In order of use):
 ariel
@@ -72,6 +71,8 @@ ariel
 }
 html, body{
   background-color: whitesmoke;
+  font-family: 'Handlee', cursive;
+  letter-spacing: 0.05em;
 }
 
 /* ============================================ */

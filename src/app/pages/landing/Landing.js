@@ -3,7 +3,6 @@ import "./Landing.css";
 import Title from "./Title/Title.js";
 import Navigation from "./Navigation/Navigation.js";
 import Logo from "./Logo/Logo.js";
-import Info from "./Info.js";
 
 class Landing extends Component {
   render() {
@@ -16,9 +15,6 @@ class Landing extends Component {
           </div>
           <div className="landSecondBox">
             <Logo />
-          </div>
-          <div className="landThirdBox">
-            <Info />
           </div>
         </div>
       </div>

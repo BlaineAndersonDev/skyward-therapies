@@ -2,307 +2,70 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #about {
-    min-width: 100%;
-    min-height: auto;
-    background-color: white; /* Backup co\lor if image fails to load. */
-    background-image: url('/images/watercolors/166.jpg');
-    background-attachment: fixed; /* Keeps the image in place to create parallax. */
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: stretch;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    z-index: 0;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-  }
-  .aboutContainerOverlay{
-    position: absolute;
+  #about{
+    background: #ede7e7;
     width: 100%;
-    height: 100%;
-    background-color: rgba(73, 73, 73, 0.35);
-    z-index: -1;
-  }
-  .aboutBioContainer{
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: var(--sky-white-2);
-    box-shadow: 0 0 20px var(--sky-white-3);
-    position: relative;
-    min-width: 100%;
+    justify-content: center;
   }
-  .aboutBioTextContainer{
-    flex: 2 0;
+  .aboutbox{
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
     align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 25px;
-  }
-  .aboutBioTitle{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-family: ariel;
-    font-size: 2em;
-    border-bottom: black 2px solid;
-    margin-bottom: 20px;
-    color: black;
+    padding-top: 25px;
   }
-  .aboutBioText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'ariel';
-    font-size: 1em;
-    width: 100%;
-    color: black;
-    padding-bottom: 25px;
-  }
-  .aboutBioImgContainer{
+  .aboutFirstBox{
     flex: 1 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 25px;
-    padding-top: 0px;
   }
-  #kelliAboutImage{
-    width: auto;
-    height: 300px;
-    border-radius: 45px;
-    margin-bottom: 20px;
-    border: 3px var(--sky-white-1) solid;
-    box-shadow: 0 0 20px var(--sky-white-3);
+  .aboutSecondBox{
+    flex: 2 0;
   }
-  .aboutBioImgText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: ariel;
-    font-size: 0.65em;
-    width: 90%;
-    color: black;
-  }
+}
+
+/* ============================================ */
+/* 375 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 375px) {
+}
+
+/* ============================================ */
+/* 410 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 410px) {
+}
+
+/* ============================================ */
+/* 550 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 550px) {
 }
 
 /* ============================================ */
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
-  #about {
-    min-width: 100%;
-    min-height: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    z-index: 0;
-  }
-  .aboutContainerOverlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  .aboutBioContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    box-shadow: 0 0 20px var(--sky-white-3);
-    position: relative;
-  }
-  .aboutBioTextContainer{
-    flex: 2 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 25px;
-  }
-  .aboutBioTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-family: ariel;
-    font-size: 2em;
-    border-bottom: black 2px solid;
-    margin-bottom: 20px;
-    color: black;
-  }
-  .aboutBioText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'ariel';
-    font-size: 1em;
-    width: 100%;
-    color: black;
-    padding-bottom: 25px;
-  }
-  .aboutBioImgContainer{
-    flex: 1 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 25px;
-    padding-top: 0px;
-  }
-  #kelliAboutImage{
-    width: auto;
-    height: 300px;
-    border-radius: 45px;
-    margin-bottom: 20px;
-    border: 3px var(--sky-white-1) solid;
-    box-shadow: 0 0 20px var(--sky-white-3);
-  }
-  .aboutBioImgText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: ariel;
-    font-size: 0.8em;
-    width: 80%;
-    color: black;
-  }
 }
 
-
 /* ============================================ */
-/* 1000 Width ================================= */
+/* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
-  .aboutBioContainer{
-    min-width: 80%;
-    max-width: 80%;
-  }
-  #kelliAboutImage{
-    height: 400px;
-  }
-  .aboutBioImgText{
-    width: 100%;
+  #about{
+    flex-flow: row wrap;
   }
 }
 
 /* ============================================ */
-/* 1440 Width ================================= */
+/* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
-  #about{
-    background-size: cover;
+  .aboutFirstBox{
+    padding-left: 10%;
   }
-}
-
-/* ============================================ */
-/* Original Styles ============================ */
-/* ============================================ */
-@media all and (min-width: 10000px) {
-  #about {
-    min-width: 100%;
-    min-height: 700px;
-    max-height: 700px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    z-index: 0;
-  }
-  .aboutContainerOverlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  .aboutBioContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    border-radius: 25px;
-    box-shadow: 0 0 20px var(--sky-white-3);
-    position: relative;
-  }
-  .aboutBioTextContainer{
-    flex: 2 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 25px;
-  }
-  .aboutBioTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 60%;
-    max-width: 60%;
-    font-family: ariel;
-    font-size: 2em;
-    border-bottom: black 2px solid;
-    margin-bottom: 20px;
-    color: black;
-  }
-  .aboutBioText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'ariel';
-    font-size: 1em;
-    width: 100%;
-    margin-bottom: 30px;
-    color: black;
-  }
-  .aboutBioImgContainer{
-    flex: 1 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 25px;
-  }
-  #kelliAboutImage{
-    width: 275px;
-    height: 400px;
-    border-radius: 45px;
-    margin: 10px;
-    margin-bottom: 20px;
-    border: 3px var(--sky-white-1) solid;
-    box-shadow: 0 0 20px var(--sky-white-3);
-  }
-  .aboutBioImgText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: ariel;
-    font-size: 0.8em;
-    color: black;
+  .aboutSecondBox{
+    padding-right: 10%;
   }
 }
