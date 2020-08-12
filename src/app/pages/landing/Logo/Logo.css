@@ -1,0 +1,17 @@
+  #skywardLogo{
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 0%;
+    margin: 1em auto;
+    /* box-shadow: 
+      100px 100px 100px rgba(85.1%, 85.1%, 85.1%, 0.8), 
+      -100px 100px 100px rgba(85.1%, 85.1%, 85.1%, 0.8), 
+      100px -100px 100px rgba(85.1%, 85.1%, 85.1%, 0.8), 
+      -100px -100px 100px rgba(85.1%, 85.1%, 85.1%, 0.8)
+      ; */
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }

@@ -1,0 +1,141 @@
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+  .landInfoContainer{
+    flex: 1;
+    width: 80%;
+  }
+  .landInfoBox{
+    height: 200px;
+    background: rgba(24, 24, 24, 0.4);
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+  }
+  .landInfoTitle{
+    font-size: 1.75em;
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+  }
+  .landInfoText{
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+  }
+  .landInfoText2{
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+  }
+  #landbuttons{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .landIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 20%;
+    margin: 0 20px;
+  }
+  .landIcon{
+    max-height: 25px;
+    max-width: 25px;
+    padding: 15px;
+    border: 3px solid white;
+    transition: all 0.35s ease-in-out;
+    background-color: transparent;
+    border-radius: 15px;
+  }
+  .landIconInstagram:hover, .landIconInstagram:focus{
+    background: #c13584;
+  }
+  .landIconFacebook:hover, .landIconFacebook:focus{
+    background-color: #3b5998;
+  }
+}
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {
+  .landInfoBox{
+    height: 400px;
+  }
+  .landInfoTitle{
+    font-size: 5em;
+  }
+  .landInfoText{
+    font-size: 3em;
+  }
+  .landInfoText2{
+    font-size: 2.5em;
+  }
+  .landIcon{
+    max-height: 50px;
+    max-width: 50px;
+  }
+}
+
+/* ============================================ */
+/* 1000 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 1000px) {
+  .landInfoBox{
+    height: 400px;
+  }
+  .landInfoTitle{
+    font-size: 5em;
+  }
+  .landInfoText{
+    font-size: 3em;
+  }
+  .landInfoText2{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  .landIcon{
+    padding: 25px;
+    max-height: 65px;
+    max-width: 65px;
+  }
+}
+
+/* ============================================ */
+/* 1200 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 1300px) {
+  .landInfoContainer{
+    width: 50%;
+  }
+  .landInfoBox{
+    height: 400px;
+  }
+  .landInfoTitle{
+    font-size: 5em;
+  }
+  .landInfoText{
+    font-size: 3em;
+  }
+  .landInfoText2{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  .landIcon{
+    padding: 25px;
+    max-height: 65px;
+    max-width: 65px;
+  }
+}

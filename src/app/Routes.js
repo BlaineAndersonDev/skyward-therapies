@@ -19,9 +19,6 @@ class Routes extends Component {
         <div id="routesContainer">
           <Router id="routesContainer" history={history}>
 
-          <div id="routesNavigation">
-            <Navigation />
-          </div>
 
           <div id="routesBody">
             <Route path="/" render={(props) =>
@@ -31,9 +28,6 @@ class Routes extends Component {
             />
           </div>
 
-          <div id="routesFooter">
-          <Footer />
-          </div>
 
           </Router>
         </div>
