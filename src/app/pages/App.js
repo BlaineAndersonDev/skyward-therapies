@@ -3,6 +3,7 @@ import './App.css';
 // === Component Imports ===
 import Landing from "./landing/Landing.js";
 import About from './about/About.js'
+import Gallery from './gallery/Gallery.js'
 import Mission from './mission/Mission.js'
 import Massage from './massage/Massage.js'
 import Modalities from './modalities/Modalities.js'
@@ -15,6 +16,7 @@ class App extends Component {
       <div id="appContainer">
         <Landing />
         <About />
+        <Gallery />
       </div>
     );
   }
