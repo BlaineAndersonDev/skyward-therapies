@@ -32,13 +32,20 @@ class Gallery extends Component {
           />
         </div> */}
 
-        <div className="galleryImageContainer">
-          <img
-            src="/images/pages/Gallery04.jpg"
-            alt="Filler"
-            className="galleryImage"
-            id="galleryImage04"
-          />
+        <div className="clipped-border">
+          <img src="/images/pages/Gallery01.jpg" alt="Filler" id="clipped" />
+        </div>
+
+        <div className="clipped-border">
+          <img src="/images/pages/Gallery02.jpg" alt="Filler" id="clipped" />
+        </div>
+
+        <div className="clipped-border">
+          <img src="/images/pages/Gallery03.jpg" alt="Filler" id="clipped" />
+        </div>
+
+        <div className="clipped-border">
+          <img src="/images/pages/Gallery04.jpg" alt="Filler" id="clipped" />
         </div>
       </div>
     );
