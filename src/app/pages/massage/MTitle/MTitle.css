@@ -2,8 +2,25 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #nutrition{
-    
+  #mTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .mTitleHeader{
+    font-family: 'Bad Script', cursive;
+    font-size: 2.5em;
+    position: relative;
+  }
+  .mTitleHeaderSpan{
+    padding: 25px 0;
+    margin: 25px 0;
+  }
+  #mTitleDivider{
+    width: 250px;
+    height: 50px;
   }
 }
 
