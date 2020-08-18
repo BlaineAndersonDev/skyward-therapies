@@ -3,7 +3,15 @@
 /* ============================================ */
 @media all and (min-width: 300px) {
   #mText{
-
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .mTextText{
+    font-size: 1em;
+    width: 80%;
   }
 }
 
@@ -29,6 +37,9 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .mTextText{
+    font-size: 1.2em;
+  }
 }
 
 /* ============================================ */

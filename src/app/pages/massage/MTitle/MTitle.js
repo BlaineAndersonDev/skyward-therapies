@@ -11,8 +11,6 @@ class MTitle extends Component {
           alt="Watercolor Feather"
           id="mTitleDivider"
         />
-        <p className="mTitleText">All Sessions Include:</p>
-        <p className="mTitleText">Customizable Care, Hot Towels, Aromatherapy & Hot Stones.</p>
       </div>
     );
   }

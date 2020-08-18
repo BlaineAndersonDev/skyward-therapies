@@ -14,13 +14,14 @@
     font-size: 2.5em;
     position: relative;
   }
-  .mTitleHeaderSpan{
-    padding: 25px 0;
-    margin: 25px 0;
-  }
   #mTitleDivider{
     width: 250px;
     height: 50px;
+    margin-bottom: 15px;
+  }
+  .mTitleText{
+    font-size: 1em;
+    width: 80%;
   }
 }
 
@@ -28,6 +29,12 @@
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
+  .mTitleHeader{
+    font-size: 3em;
+  }
+  .mTitleText{
+    font-size: 1em;
+  }
 }
 
 /* ============================================ */
@@ -46,6 +53,9 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .mTitleText{
+    font-size: 1.2em;
+  }
 }
 
 /* ============================================ */

@@ -3,7 +3,18 @@
 /* ============================================ */
 @media all and (min-width: 300px) {
   #mPricing{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 10px;
+  }
+  .mPricingList{
 
+  }
+  .mPricingListItem{
+    font-size: 1.1em;
   }
 }
 
@@ -11,6 +22,9 @@
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
+  .mPricingListItem{
+    font-size: 1.2em;
+  }
 }
 
 /* ============================================ */

@@ -15,8 +15,8 @@ class Massage extends Component {
         </div>
         <div className="massageSecondBox massagebox">
           <MTitle />
-          <MPricing />
           <MText />
+          <MPricing />
           <MModalities />
         </div>
       </div>

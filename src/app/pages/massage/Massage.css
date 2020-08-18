@@ -19,7 +19,6 @@
     padding-top: 25px;
   }
   .massageFirstBox{
-    flex: 1 0;
     display: none;
   }
   .massageSecondBox{
@@ -35,9 +34,6 @@
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
-  .massageFirstBox{
-    display: flex;
-  }
 }
 
 /* ============================================ */
@@ -56,6 +52,10 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .massageFirstBox{
+    /* display: flex; */
+    flex: 1 0;
+  }
 }
 
 /* ============================================ */

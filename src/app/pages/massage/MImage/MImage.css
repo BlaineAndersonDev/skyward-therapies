@@ -16,10 +16,6 @@
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
-  #mImageImage{
-    height: 480px;
-    width: auto;
-  }
 }
 
 /* ============================================ */
@@ -34,6 +30,7 @@
 @media all and (min-width: 700px) {
   #mImageImage{
     height: 600px;
+    width: auto;
   }
 }
 
