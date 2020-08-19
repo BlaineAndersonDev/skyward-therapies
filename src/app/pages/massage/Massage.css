@@ -8,7 +8,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column wrap;
+  }
+  #massageBoxContainer{
+    width: 100%;
+    display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
   }
   .massagebox{
     width: 100%;
@@ -16,13 +23,18 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 25px;
   }
   .massageFirstBox{
     display: none;
   }
   .massageSecondBox{
-    flex: 2 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .massageThirdBox{
+    min-width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -53,8 +65,7 @@
 /* ============================================ */
 @media all and (min-width: 700px) {
   .massageFirstBox{
-    /* display: flex; */
-    flex: 1 0;
+    display: flex;
   }
 }
 
@@ -62,10 +73,31 @@
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
+  .massageFirstBox{
+    margin-left: 50px;
+  }
+  .massageSecondBox{
+    margin-right: 100px;
+  }
+  .massageThirdBox{
+    margin-top: -50px;
+  }
 }
 
 /* ============================================ */
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  #massageBoxContainer{
+    max-width: 1440px;
+  }
+  .massageFirstBox{
+    margin-left: 100px;
+  }
+  .massageSecondBox{
+    margin-right: 200px;
+  }
+  .massageThirdBox{
+    margin-top: -100px;
+  }
 }

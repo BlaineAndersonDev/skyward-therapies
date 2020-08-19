@@ -4,10 +4,10 @@
 @media all and (min-width: 300px) {
   #mImage{
     width: 100%;
-    border: 1px solid red;
+
   }
   #mImageImage{
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }
@@ -29,9 +29,23 @@
 /* ============================================ */
 @media all and (min-width: 700px) {
   #mImageImage{
-    height: 600px;
-    width: auto;
+    max-height: 400px;
   }
+}
+
+/* ============================================ */
+/* 800 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 800px) {
+  #mImageImage{
+    max-height: 450px;
+  }
+}
+
+/* ============================================ */
+/* 900 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 900px) {
 }
 
 /* ============================================ */
@@ -39,7 +53,7 @@
 /* ============================================ */
 @media all and (min-width: 1000px) {
   #mImageImage{
-    height: 700px;
+    max-height: 600px;
   }
 }
 
@@ -48,6 +62,7 @@
 /* ============================================ */
 @media all and (min-width: 1440px) {
   #mImageImage{
-    height: 800px;
+    width: 500px;
+    max-height: 600px;
   }
 }

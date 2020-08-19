@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Accordian.scss";
+import "./AccordianItem.scss";
 
 class AccordionItem extends Component {
   state = {

@@ -10,13 +10,17 @@ class Massage extends Component {
   render() {
     return (
       <div id="massage">
-        <div className="massageFirstBox massagebox">
-          <MImage />
+        <div id="massageBoxContainer">
+          <div className="massageFirstBox massagebox">
+            <MImage />
+          </div>
+          <div className="massageSecondBox massagebox">
+            <MTitle />
+            <MText />
+            <MPricing />
+          </div>
         </div>
-        <div className="massageSecondBox massagebox">
-          <MTitle />
-          <MText />
-          <MPricing />
+        <div className="massageThirdBox massagebox">
           <MModalities />
         </div>
       </div>

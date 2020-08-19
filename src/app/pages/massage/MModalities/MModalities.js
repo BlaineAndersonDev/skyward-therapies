@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./MModalities.css";
-import Accordian from "./Accordian/Accordian.js";
-import AccordionItem from "./Accordian/AccordionItem.js";
+import "./AccordianItem/AccordianItem.scss";
+import AccordionItem from "./AccordianItem/AccordionItem.js";
 
 const modalities = [
   {
@@ -53,24 +53,22 @@ class MModalities extends Component {
     
     return (
       <div id="mModalities">
+        
         <div className="mModalitiesFirstBox mModalitiesBox">
           <h1 className="mModalitiesBoxHeader">Massage Modalities</h1>
-          <div {...{ className: "wrapper" }}>
-            <ul {...{ className: "accordion-list" }}>
-              {modalities.map((modalities, key) => {
-                return (
-                  <li {...{ className: "accordion-list__item", key }}>
-                    <AccordionItem {...modalities} />
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+          <ul {...{ className: "accordion-list" }}>
+            {modalities.map((modalities, key) => {
+              return (
+                <li {...{ className: "accordion-list__item", key }}>
+                  <AccordionItem {...modalities} />
+                </li>
+              );
+            })}
+          </ul>
         </div>
 
         <div className="mModalitiesSecondBox mModalitiesBox">
           <h1 className="mModalitiesBoxHeader">Massage Specialties</h1>
-          <div {...{ className: "wrapper" }}>
             <ul {...{ className: "accordion-list" }}>
               {specialties.map((specialties, key) => {
                 return (
@@ -81,7 +79,7 @@ class MModalities extends Component {
               })}
             </ul>
           </div>
-        </div>
+
       </div>
     );
   }

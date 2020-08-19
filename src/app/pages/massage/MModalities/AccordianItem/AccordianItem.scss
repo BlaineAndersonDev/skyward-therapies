@@ -1,38 +1,18 @@
-$cAccent: #3978EF;
-$cBlack: #121212;
-$cGray: #333;
-$cLightGray: rgba(#000, 0.1);
-
-html {
-  font-size: 16px;
-  height: 100%;
-}
-  
-body {
-  min-height: calc(100% - 10rem);
-  background: rgba($cAccent, 0.16);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  padding: 5rem 0;
-}
+$backgroundColor: white;
 
 .accordion-list{
   list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
+  background-color: $backgroundColor;
   max-width: 30rem;
   border-radius: 0.4rem;
   overflow: hidden;
   box-shadow:
-    0 0 0.8rem 0.1rem rgba(darken($cAccent, 20%), 0.06),
-    0 20px 30px -10px rgba(darken($cAccent, 20%), 0.2);
+    0 0 0.8rem 0.1rem rgba(darken(darkgray, 20%), 0.2),
+    0 20px 30px -10px rgba(darken(darkgray, 20%), 0.3);
   
   &__item{
     &+&{
-      border-top: 1px solid $cLightGray;
+      border-top: 1px solid rgba(82.7%, 82.7%, 82.7%, 0.5);
     }
   }
 }
@@ -60,6 +40,10 @@ body {
       transition-duration: 0.2s;
       transition-property: opacity, transform;
     }
+    
+    #{ $self }__title{
+      color: #309faf;
+    }
   }
 
   &__line{
@@ -68,16 +52,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: $backgroundColor;
     z-index: 2;
     position: relative;
   }
   
   &__title{
-    font-size: 1.6rem;
     margin: 0;
-    font-weight: 700;
-    color: $cBlack;
+    font-size: 1.1em;
   }
   
   &__icon{
@@ -113,7 +95,6 @@ body {
   &__paragraph{
     margin: 0;
     font-size: 1rem;
-    color: $cGray;
     font-weight: 300;
     line-height: 1.3;
   }
@@ -123,12 +104,26 @@ body {
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
+  .accordion-item{
+    &__title{
+      font-size: 1em;
+    }
+    &__paragraph{
+      font-size: 1em;
+      line-height: 1.3;
+    }
+  }
 }
 
 /* ============================================ */
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
+  .accordion-item{
+    &__title{
+      font-size: 1.2em;
+    }
+  }
 }
 
 /* ============================================ */
@@ -141,6 +136,15 @@ body {
 /* 550 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 550px) {
+  .accordion-item{
+    &__title{
+      font-size: 1.3em;
+    }
+    &__paragraph{
+      font-size: 1.1em;
+      letter-spacing: 0.07em;
+    }
+  }
 }
 
 /* ============================================ */
