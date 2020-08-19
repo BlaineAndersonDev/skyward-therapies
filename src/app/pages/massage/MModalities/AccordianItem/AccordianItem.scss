@@ -113,6 +113,9 @@ $backgroundColor: white;
       line-height: 1.3;
     }
   }
+  .accordion-list{
+    max-width: 90%;
+  }
 }
 
 /* ============================================ */
@@ -157,10 +160,16 @@ $backgroundColor: white;
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
+  .accordion-list{
+    max-width: 85%;
+  }
 }
 
 /* ============================================ */
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  .accordion-list{
+    max-width: 650px;
+  }
 }
