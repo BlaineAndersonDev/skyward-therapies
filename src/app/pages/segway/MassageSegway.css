@@ -2,40 +2,15 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #nutrition{
-    width: 100%;
-    background: #ede7e7;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-flow: row wrap;
-  }
-  .nutBox{
-    width: calc((100% / 3) - 15px);
-    margin: 5px;
-  }
-  .nutBoxTitle{
-
-  }
-  .nutBoxText{
-
-  }
-  .nutTitleDivider{
-    width: 100%;
-  }
-  #nutBoxFirst{
-    width: 80%;
-    padding: 20px;
-    border: 1px solid red;
-  }
-  #nutBoxSecond{
-    border: 1px solid blue;
-  }
-  #nutBoxThird{
-    border: 1px solid green;
-  }
-  #nutBoxFourth{
-    border: 1px solid gold;
+  #massageSegway{
+    min-width: 100%;
+    min-height: 50vh;
+    background-image: url('/images/pages/Gallery01.jpg');
+    background-color: ede7e7; /* Backup co\lor if image fails to load. */
+    background-attachment: fixed; /* Keeps the image in place to create parallax. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
