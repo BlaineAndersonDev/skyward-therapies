@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "./Landing.css";
-import Title from "./Title/Title.js";
 import Navigation from "./Navigation/Navigation.js";
 import Logo from "./Logo/Logo.js";
 
