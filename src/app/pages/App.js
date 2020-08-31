@@ -19,7 +19,6 @@ class App extends Component {
         <Landing />
         <About />
         <Nutrition />
-        <NutritionSegway />
         <Massage />
         <Gallery />
       </div>

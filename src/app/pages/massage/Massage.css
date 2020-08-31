@@ -13,7 +13,7 @@
   #massageBoxContainer{
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
   }
@@ -25,7 +25,6 @@
     justify-content: center;
   }
   .massageFirstBox{
-    display: none;
   }
   .massageSecondBox{
     display: flex;
@@ -64,6 +63,9 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  #massageBoxContainer{
+    flex-flow: row nowrap;
+  }
   .massageFirstBox{
     display: flex;
   }

@@ -2,37 +2,22 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #nutrition{
+  #nutTitle{
     width: 100%;
-    background: #ede7e7;
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    flex-flow: row wrap;
-    padding: 25px 0;
+    align-items: center;
+    flex-flow: column wrap;
   }
-  .nutSectionHeader{
+  .nutTitleHeader{
     font-family: 'Bad Script', cursive;
-    font-size: 1.5em;
-    margin-top: 15px;
-    width: 100%;
+    font-size: 2.5em;
+    position: relative;
   }
-  .nutBox{
-    width: 80%;
-  }
-  .nutList{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-flow: row wrap;
-  }
-  #nutBoxFirst{
-    width: 100%;
-  }
-  #nutBoxSecond{
-  }
-  #nutBoxThird{
-    display: none;
+  #nutTitleDivider{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
   }
 }
 
@@ -40,8 +25,8 @@
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
-  .nutSectionHeader{
-    font-size: 1.8em;
+  .nutTitleHeader{
+    font-size: 3em;
   }
 }
 
@@ -49,47 +34,34 @@
 /* 410 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 410px) {
-  .nutSectionHeader{
-    font-size: 2em;
-  }
 }
 
 /* ============================================ */
 /* 550 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 550px) {
-  .nutSectionHeader{
-    font-size: 2.2em;
-  }
 }
 
 /* ============================================ */
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .nutTitleHeader{
+    font-size: 3em;
+  }
 }
 
 /* ============================================ */
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
-  #nutrition{
-    align-items: center;
-    flex-flow: row nowrap;
-  }
-  #nutBoxFirst{
-    display: none;
-  }
-  #nutBoxThird{
-    display: flex;
-  }
-  .nutBox{
-    flex: 1;
-  }
 }
 
 /* ============================================ */
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  .nutTitleHeader{
+    font-size: 3.5em;
+  }
 }

@@ -3,8 +3,9 @@
 /* ============================================ */
 @media all and (min-width: 300px) {
   #nutritionSegway{
+    display: none;
     min-width: 100%;
-    min-height: 70vh;
+    min-height: 50vh;
     background-image: url('/images/unused_extras/nutrition.jpg');
     background-color: ede7e7; /* Backup co\lor if image fails to load. */
     background-attachment: fixed; /* Keeps the image in place to create parallax. */
@@ -36,6 +37,9 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  #nutritionSegway{
+    display: flex;
+  }
 }
 
 /* ============================================ */

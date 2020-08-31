@@ -2,37 +2,13 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #nutrition{
+  #nImage{
     width: 100%;
-    background: #ede7e7;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-flow: row wrap;
-    padding: 25px 0;
+
   }
-  .nutSectionHeader{
-    font-family: 'Bad Script', cursive;
-    font-size: 1.5em;
-    margin-top: 15px;
+  #nImageImage{
     width: 100%;
-  }
-  .nutBox{
-    width: 80%;
-  }
-  .nutList{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-flow: row wrap;
-  }
-  #nutBoxFirst{
-    width: 100%;
-  }
-  #nutBoxSecond{
-  }
-  #nutBoxThird{
-    display: none;
+    height: auto;
   }
 }
 
@@ -40,51 +16,46 @@
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
-  .nutSectionHeader{
-    font-size: 1.8em;
-  }
 }
 
 /* ============================================ */
 /* 410 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 410px) {
-  .nutSectionHeader{
-    font-size: 2em;
-  }
-}
-
-/* ============================================ */
-/* 550 Width ================================== */
-/* ============================================ */
-@media all and (min-width: 550px) {
-  .nutSectionHeader{
-    font-size: 2.2em;
-  }
 }
 
 /* ============================================ */
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  #nImageImage{
+    max-width: 80%;
+    max-height: 400px;
+  }
+}
+
+/* ============================================ */
+/* 800 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 800px) {
+  #nImageImage{
+    max-height: 450px;
+  }
+}
+
+/* ============================================ */
+/* 900 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 900px) {
 }
 
 /* ============================================ */
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
-  #nutrition{
-    align-items: center;
-    flex-flow: row nowrap;
-  }
-  #nutBoxFirst{
-    display: none;
-  }
-  #nutBoxThird{
-    display: flex;
-  }
-  .nutBox{
-    flex: 1;
+  #nImageImage{
+    max-width: 100%;
+    max-height: auto;
   }
 }
 
@@ -92,4 +63,8 @@
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  #nImageImage{
+    max-width: 1100px;
+    max-height: 600px;
+  }
 }
