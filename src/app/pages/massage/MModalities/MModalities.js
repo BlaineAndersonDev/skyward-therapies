@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./MModalities.css";
-import "./AccordianItem/AccordianItem.scss";
-import AccordionItem from "./AccordianItem/AccordionItem.js";
+import "./ModalitiesAccordianItem/ModalitiesAccordianItem.scss";
+import AccordionItem from "./ModalitiesAccordianItem/ModalitiesAccordianItem.js";
 
 const modalities = [
   {
@@ -56,10 +56,10 @@ class MModalities extends Component {
         
         <div className="mModalitiesFirstBox mModalitiesBox">
           <h1 className="mModalitiesBoxHeader">Massage Modalities</h1>
-          <ul {...{ className: "accordion-list" }}>
+          <ul {...{ className: "modAccordion-list" }}>
             {modalities.map((modalities, key) => {
               return (
-                <li {...{ className: "accordion-list__item", key }}>
+                <li {...{ className: "modAccordion-list__item", key }}>
                   <AccordionItem {...modalities} />
                 </li>
               );
@@ -69,10 +69,10 @@ class MModalities extends Component {
 
         <div className="mModalitiesSecondBox mModalitiesBox">
           <h1 className="mModalitiesBoxHeader">Massage Specialties</h1>
-            <ul {...{ className: "accordion-list" }}>
+            <ul {...{ className: "modAccordion-list" }}>
               {specialties.map((specialties, key) => {
                 return (
-                  <li {...{ className: "accordion-list__item", key }}>
+                  <li {...{ className: "modAccordion-list__item", key }}>
                     <AccordionItem {...specialties} />
                   </li>
                 );

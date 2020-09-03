@@ -11,6 +11,10 @@
   }
   .mModalitiesBox{
     width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
   }
   .mModalitiesFirstBox{
   }
