@@ -6,6 +6,7 @@ import About from './about/About.js'
 import Gallery from './gallery/Gallery.js'
 import Massage from "./massage/Massage.js";
 import Nutrition from './nutrition/Nutrition.js'
+import Contact from './contact/Contact.js'
 import Mission from './mission/Mission.js'
 import Pricing from './pricing/Pricing.js'
 // === Segway Component Imports ===
@@ -21,6 +22,7 @@ class App extends Component {
         <Nutrition />
         <Massage />
         <Gallery />
+        <Contact />
       </div>
     );
   }
