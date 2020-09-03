@@ -2,20 +2,22 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #contact{
+  #shareTitle{
     width: 100%;
-    background: #ede7e7;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
   }
-  .conInfoContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+  .shareTitleHeader{
+    font-family: 'Bad Script', cursive;
+    font-size: 2.5em;
+    position: relative;
+  }
+  #shareTitleDivider{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
   }
 }
 
@@ -23,6 +25,9 @@
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
+  .shareTitleHeader{
+    font-size: 3em;
+  }
 }
 
 /* ============================================ */
@@ -41,9 +46,8 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
-  .conInfoContainer{
-    flex-flow: row nowrap;
-    padding-bottom: 25px;
+  .shareTitleHeader{
+    font-size: 3em;
   }
 }
 
@@ -57,4 +61,7 @@
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  .shareTitleHeader{
+    font-size: 3.5em;
+  }
 }

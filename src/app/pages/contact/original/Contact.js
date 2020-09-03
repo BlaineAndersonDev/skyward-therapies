@@ -6,7 +6,6 @@ import Googlemaps from '../../googlemaps/Googlemaps.js';
 
 class Contact extends Component {
   render() {
-      let googleURL = `https://www.google.com/maps/embed/v1/place?q=Skyward+Therapies+LLC,+6239+E+Brown+Rd+Suite+112+Room+7,+Mesa,+AZ+85205&key=AIzaSyDaBYVeB0VRbkU13X8NPGIdlTqXCIn5Xe4`
       // let googleURL = `https://www.google.com/maps/embed/v1/place?q=Skyward+Therapies+LLC,+6239+E+Brown+Rd+Suite+112+Room+7,+Mesa,+AZ+85205&key=${process.env.GOOGLE_API_KEY}`
     return (
     <div id="contact" className="comContainer">

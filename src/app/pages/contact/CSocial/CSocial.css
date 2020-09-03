@@ -2,16 +2,9 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #contact{
+  #cSocial{
     width: 100%;
     background: #ede7e7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-  }
-  .conInfoContainer{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,10 +34,6 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
-  .conInfoContainer{
-    flex-flow: row nowrap;
-    padding-bottom: 25px;
-  }
 }
 
 /* ============================================ */

@@ -2,20 +2,23 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #contact{
+  #cMap{
     width: 100%;
+    height: 400px;
     background: #ede7e7;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    border: red solid 1px;
   }
-  .conInfoContainer{
+  .cMapMap{
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
   }
 }
 
@@ -41,10 +44,6 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
-  .conInfoContainer{
-    flex-flow: row nowrap;
-    padding-bottom: 25px;
-  }
 }
 
 /* ============================================ */
