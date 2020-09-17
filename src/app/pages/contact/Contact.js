@@ -12,7 +12,6 @@ class Contact extends Component {
       <ShareTitle title="Schedule Selfcare" />
       <div className="conInfoContainer">
         <CAddress />
-        <CSocial />
       </div>
       <div className="conInfoContainer">
         <CMap />

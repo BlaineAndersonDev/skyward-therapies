@@ -1,9 +1,0 @@
-#socialContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 100%;
-  max-width: 100%;
-  border-top: var(--dev-borders) 3px solid;
-}

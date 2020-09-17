@@ -6,9 +6,27 @@
     width: 100%;
     background: #ede7e7;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
+  }
+  .cIconContainer{
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    margin: 20px;
+    border: black solid 5px;
+    border-radius: 50%;
+  }
+  .cIcon{
+    height: inherit;
+    width: inherit;
+  }
+  .cInstagramIcon:hover, .cInstagramIcon:focus{
+    background-color: #C13584;
+  }
+  .cFacebookIcon:hover, .cFacebookIcon:focus{
+    background-color: #3b5998;
   }
 }
 
@@ -34,6 +52,12 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .cIconContainer{
+    height: 80px;
+    width: 80px;
+    padding: 30px;
+    margin: 20px;
+  }
 }
 
 /* ============================================ */
@@ -46,4 +70,18 @@
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  #cSocial{
+    max-width: 1440px;
+    background: #ede7e7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+  .cIconContainer{
+    height: 80px;
+    width: 80px;
+    padding: 30px;
+    margin: 20px;
+  }
 }
