@@ -19,6 +19,7 @@
   }
   .cAddTitle{
     text-decoration: underline;
+    font-size: 1.2em;
   }
   .cAddText{
 
@@ -47,16 +48,38 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .cAddTitle{
+    font-size: 1.3em;
+  }
 }
 
 /* ============================================ */
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
+  #cAddress{
+    flex-flow: row wrap;
+  }
+  .cAddressSection{
+    flex: 1 0 calc(45% - 15px);
+    margin: 20px 0;
+  }
+  .cAddTitle{
+    font-size: 1.4em;
+  }
+  .cAddText{
+    font-size: 1.1em;
+  }
 }
 
 /* ============================================ */
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  .cAddTitle{
+    font-size: 1.5em;
+  }
+  .cAddText{
+    font-size: 1.2em;
+  }
 }

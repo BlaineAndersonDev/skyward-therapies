@@ -7,8 +7,6 @@ import Gallery from './gallery/Gallery.js'
 import Massage from "./massage/Massage.js";
 import Nutrition from './nutrition/Nutrition.js'
 import Contact from './contact/Contact.js'
-import Mission from './mission/Mission.js'
-import Pricing from './pricing/Pricing.js'
 // === Segway Component Imports ===
 import NutritionSegway from "./segway/NutritionSegway.js";
 import MassageSegway from "./segway/MassageSegway.js";
