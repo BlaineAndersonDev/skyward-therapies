@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import './About.css';
+import './Welcome.css';
 import Profile from "./Profile/Profile.js";
 import Headshot from "./Headshot/Headshot.js";
 
-class About extends Component {
+class Welcome extends Component {
   render() {
     return (
-      <div id="about">
-        <div className="aboutFirstBox aboutbox">
+      <div id="welcome">
+        <div className="welcomeFirstBox welcomebox">
           <Headshot />
         </div>
-        <div className="aboutSecondBox aboutbox">
+        <div className="welcomeSecondBox welcomebox">
           <Profile />
         </div>
       </div>
@@ -18,4 +18,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Welcome;

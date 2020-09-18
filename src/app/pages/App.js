@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 // === Component Imports ===
 import Landing from "./landing/Landing.js";
-import About from './about/About.js'
+import Welcome from './welcome/Welcome.js'
 import Gallery from './gallery/Gallery.js'
 import Massage from "./massage/Massage.js";
 import Nutrition from './nutrition/Nutrition.js'
@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div id="appContainer">
         <Landing />
-        <About />
+        <Welcome />
         <Nutrition />
         <Massage />
         <Gallery />

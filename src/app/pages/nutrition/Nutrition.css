@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: baseline;
     flex-flow: row wrap;
-    padding: 25px 0;
+    padding: 0 0 50px 0;
   }
   .nutSectionHeader{
     font-family: 'Bad Script', cursive;
@@ -19,6 +19,7 @@
   }
   .nutBox{
     width: 80%;
+    margin: auto;
   }
   .nutList{
     display: flex;

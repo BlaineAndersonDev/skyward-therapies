@@ -5,11 +5,11 @@
   #gallery{
     width: 100%;
     background: #ede7e7;
-    padding: 25px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    padding: 0 0 50px 0;
   }
   .galleryImageContainer{
     flex: 1;

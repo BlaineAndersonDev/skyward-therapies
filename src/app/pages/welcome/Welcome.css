@@ -2,25 +2,26 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #about{
+  #welcome{
     background: #ede7e7;
     width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    padding: 0 0 50px 0;
   }
-  .aboutbox{
+  .welcomebox{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     padding-top: 25px;
   }
-  .aboutFirstBox{
+  .welcomeFirstBox{
     flex: 1 0;
   }
-  .aboutSecondBox{
+  .welcomeSecondBox{
     flex: 2 0;
   }
 }
@@ -53,7 +54,7 @@
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
-  #about{
+  #welcome{
     flex-flow: row wrap;
     padding: 25px 0;
   }
@@ -63,10 +64,10 @@
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
-  .aboutFirstBox{
+  .welcomeFirstBox{
     padding-left: 10%;
   }
-  .aboutSecondBox{
+  .welcomeSecondBox{
     padding-right: 10%;
   }
 }
