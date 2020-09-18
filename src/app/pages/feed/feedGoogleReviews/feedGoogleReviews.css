@@ -2,7 +2,7 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #feedReviews{
+  #feedGoogleReviews{
     width: 100%;
     display: flex;
     justify-content: center;
