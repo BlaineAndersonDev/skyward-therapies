@@ -5,47 +5,35 @@ import AccordionItem from "./ModalitiesAccordianItem/ModalitiesAccordianItem.js"
 
 const modalities = [
   {
-    title: "Hot Stone Massage",
+    title: "Swedish",
     paragraph:
-      "Gently heated stones are used in this massage style to increase blood circulation and calmly release tension stricken muscle fibers.",
+      "Characterized by long flowing medium/light connective strokes, this is the “original” type of massage! This will surely relax you into a nap and help you forget about whatever is worrying you.",
   },
   {
-    title: "Prenatal",
+    title: "Deep Tissue and Trigger Point Therapies",
     paragraph:
-      "Moms-to-be need special care and specific techniques. Primarily this type of massage is performed in the 2nd and 3rd trimesters when ligaments are stretching and more discomfort is overcoming the body.",
+      "As the names imply, these are the therapies that target the deeper tissues and are more focused on pinning down locked muscles and frictioning out stubborn clustered muscle tissues. A word of caution, it’s INTENSE!",
   },
   {
-    title: "Trigger Point",
+    title: "Prenatal / Postpartum Sessions",
     paragraph:
-      "A targeted therapy, similar in discomfort to deep tissue, trigger point therapy is best utilized for someone who is experiencing referring pain that is coming from another part of the body. Example: A pinched sciatic nerve causing shooting pains down the legs.",
+      "There is no more imperative time in a woman's life to receive the best care than when she is carrying and or caring for a new baby (or babies). Massages helps relieve ligament stress during pregnancy, helps increase milk supply, increases blood circulation, and helps reduce the stress hormones that can be triggered in these essential months. When in doubt, a time out for mom- never hurts!",
   },
   {
-    title: "Swedish Relaxation",
+    title: "Hot/Cold Therapies",
     paragraph:
-      "When most people think of massage, swedish massage is often times what comes to mind first. Made famous in spas, swedish is relaxing, quiet, and soothing. Usually performed over the course of an hour it utilizes long even strokes to calm the mind and gently release surface tension in muscles.",
+      "As mentioned above, hot and cold therapies are included in every session. These include hot stones, cold compresses, warm towels, and essential oils. These methods are used to assist in allowing blood flow to increase or decrease in an area. Imagine a swollen knee needing ice or tight back needing heat, and you now have a better understanding as to why these therapies drastically increase improved results by the end of your massage.",
   },
   {
-    title: "Deep Tissue",
+    title: "CranioSacral Therapy",
     paragraph:
-      "Infamously known as the “work the knots out” massage type. Many people ask for this modality, specifically seeking the release of the deeper layers of muscle that can hold the most tension. This can be an uncomfortable therapy session and typically is performed on targeted areas of the body that “pull” on one another.",
+      "A type of massage therapy intended to relieve pain and tension by gentle manipulations of the skull often regarded as harmonizing with a natural rhythm in the central nervous system. This is a meditative type of session that is very gentle, with very little manipulation and no need to undress. ",
+  },
+  {
+    title: "Sports Massage Therapy",
+    paragraph:
+      "This type of massage is typically indicative of assisted stretching, pinning of muscle tension, and brisk movements. This therapy is best performed a day before, or early in the day 2 hours before a sporting event. For recovery from an event, it is suggested to receive a deep tissue with stretching incorporated.",
   }
-];
-
-const specialties = [
-  {
-    title: "Injury and Rehabilitation",
-    paragraph:
-      "Injury and rehabilitation massage is typically requested after an auto accident or physical incident, while undergoing physical therapy, or after you have been cleared from a surgical procedure. Tissues are often still inflamed and certain areas need a gentle release that is targeted on the muscles that are in their healing stages.",
-  },
-  {
-    title: "5 Point Massage Session",
-    paragraph:
-      "Unique to Skyward Therapies LLC, the 5 point massage session is designed to address the areas that cause us the most discomfort in our daily lives, that are often ignored for other parts of the body: the feet, the hands, and the scalp/head/face. These areas are responsible for the small actions we take thousands of times a day and are most often skipped so that other areas are addressed. In this session they are made the priority and you leave feeling a type of relaxed that is remarkable!",
-  },
-  {
-    title: "Rock and Unlock Therapy",
-    paragraph: "Typically done with the clothes on, this gentle rocking method isused for people who have a hard time letting go of body holdingpatterns. A great modality if you are looking for an hour of quietmeditation but not too much physical tissue manipulation.",
-  },
 ];
 
 class MModalities extends Component {
@@ -53,8 +41,10 @@ class MModalities extends Component {
     
     return (
       <div id="mModalities">
-        
-        <div className="mModalitiesFirstBox mModalitiesBox">
+        <p className="mModalitiesText">Don’t know what to ask for at your massage session? </p>
+        <p className="mModalitiesText">Below is what is offered at Skyward Therapies:</p>
+
+        <div className="mModalitiesBox">
           <h1 className="mModalitiesBoxHeader">Massage Modalities</h1>
           <ul {...{ className: "modAccordion-list" }}>
             {modalities.map((modalities, key) => {
@@ -66,19 +56,6 @@ class MModalities extends Component {
             })}
           </ul>
         </div>
-
-        <div className="mModalitiesSecondBox mModalitiesBox">
-          <h1 className="mModalitiesBoxHeader">Massage Specialties</h1>
-            <ul {...{ className: "modAccordion-list" }}>
-              {specialties.map((specialties, key) => {
-                return (
-                  <li {...{ className: "modAccordion-list__item", key }}>
-                    <AccordionItem {...specialties} />
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
 
       </div>
     );

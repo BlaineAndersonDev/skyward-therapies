@@ -81,9 +81,6 @@
   .massageSecondBox{
     margin-right: 100px;
   }
-  .massageThirdBox{
-    margin-top: -50px;
-  }
 }
 
 /* ============================================ */
@@ -98,8 +95,5 @@
   }
   .massageSecondBox{
     margin-right: 200px;
-  }
-  .massageThirdBox{
-    margin-top: -70px;
   }
 }
