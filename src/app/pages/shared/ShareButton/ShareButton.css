@@ -1,0 +1,123 @@
+/* ============================================ */
+/* 300 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 300px) {
+  #sharedButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .sharedButtonButton {
+    font-family: 'Bad Script', cursive;
+    font-size: 1.2em;
+    width: 100%;
+    min-width: 275px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: #89c15e;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+
+  .sharedButtonButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .sharedButtonButton:active {
+    color: #000
+  }
+
+  .sharedButtonButton:active:after {
+    background: transparent;
+  }
+
+  .sharedButtonButton:hover:before {
+    opacity: 1;
+  }
+
+  .sharedButtonButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background: #89c15e;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+
+
+}
+
+/* ============================================ */
+/* 375 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 375px) {
+  .sharedButtonButton {
+    font-family: 'Bad Script', cursive;
+    font-size: 1.2em;
+    min-width: 325px;
+  }
+}
+
+/* ============================================ */
+/* 410 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 410px) {
+  .sharedButtonButton {
+    font-family: 'Bad Script', cursive;
+    font-size: 1.3em;
+    min-width: 350px;
+    max-width: 350px;
+  }
+}
+
+/* ============================================ */
+/* 550 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 550px) {
+}
+
+/* ============================================ */
+/* 700 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 700px) {
+}
+
+/* ============================================ */
+/* 1000 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 1000px) {
+}
+
+/* ============================================ */
+/* 1440 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 1440px) {
+}
