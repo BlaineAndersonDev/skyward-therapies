@@ -28,6 +28,7 @@ class Routes extends Component {
             />
           </div>
 
+          <Footer />
 
           </Router>
         </div>

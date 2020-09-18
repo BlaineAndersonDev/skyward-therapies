@@ -2,45 +2,30 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #footer{
-    width: 100%;
-    background: #b2e2d8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-  }
-  .fBoxContainer{
-    width: 90%;
-    margin: 20px 0;
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-    flex-flow: column wrap;
-  }
-  .fBox{
-    margin: 5px 0;
-    flex: 1;
-  }
-  #fLogoBox{
-    display: none;
-  }
-  .subscriptionBox{
-    min-height: 250px;
-    min-width: 250px;
-    border: blue solid 1px;
-    background: lightblue;
-  }
-  #fCopyrightBox{
+  #fSocial{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
   }
-  .fCopyrightText{
-    font-size: 0.8em;
-    /* margin: 10px 30px; */
+  .fIconContainer{
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+    margin: 10px;
+    border: black solid 5px;
+    border-radius: 50%;
+  }
+  .fIcon{
+    height: inherit;
+    width: inherit;
+  }
+  .fInstagramIcon:hover, .fInstagramIcon:focus{
+    background-color: #C13584;
+  }
+  .fFacebookIcon:hover, .fFacebookIcon:focus{
+    background-color: #3b5998;
   }
 }
 
@@ -66,6 +51,12 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .fIconContainer{
+    height: 80px;
+    width: 80px;
+    padding: 30px;
+    margin: 20px;
+  }
 }
 
 /* ============================================ */
@@ -78,4 +69,17 @@
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  #fSocial{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+  .fIconContainer{
+    height: 80px;
+    width: 80px;
+    padding: 30px;
+    margin: 20px;
+  }
 }
