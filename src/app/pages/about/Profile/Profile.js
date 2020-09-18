@@ -6,25 +6,18 @@ class Profile extends Component {
     return (
       <div id="profile">
         <div className="profileTextContainer">
-          <h1 className="profileTitle">Kelli Anderson</h1>
-          <p className="profileText">
-            Kelli Anderson has been practicing massage therapy as a licensed
-            professional since 2009 when she graduated from Apollo College. With
-            a working background in both spa therapy and physical therapy
-            clinics, she is now known for implementing the techniques of Swedish
-            Massage into her Deep Tissue Therapy Sessions. These working
-            experiences taught her to facilitate relaxation while also releasing
-            the everyday stressors that are hidden within the muscle fibers.
-          </p>
-          <p className="profileText">
-            Kelli’s sessions automatically include the implementation of hot
-            stone and aromatherapy for a truly therapeutic and rejuvenating
-            experience. She is also extensively practiced with other massage
-            modalities such as injury and rehabilitation massage, prenatal, and
-            trigger point therapies. She is intuitive and attentive by nature
-            and customizes each session to the needs of the individual that she
-            encounters.
-          </p>
+          <h1 className="profileTitle">“Time to release stress, embrace wellness, and feel restored!”</h1>
+          <p className="profileText">My name is Kelli and I am so happy you are here!</p>
+          <p className="profileText">The simple action of being on this website means you are:</p>
+          <ul className="profileListContainer">
+            <li className="profileListText">Ready to embrace your own self care,</li>
+            <li className="profileListText">Ready to invest in improving your health,</li>
+            <li className="profileListText">And most importantly,</li>
+            <li className="profileListText">Ready to make yourself a PRIORITY!</li>
+          </ul>
+          <p className="profileText">I am a Massage Therapist and a Nutrition and Dietetic Technician.</p>
+          <p className="profileText">My main goal is to help you in your journey of wellness!</p>
+          <p className="profileText">Whether you are seeking a few hours of quiet time a week on a massage table, far away from your worries, or eating advice to improve your daily health, I am here and ready to help!</p>
         </div>
       </div>
     );

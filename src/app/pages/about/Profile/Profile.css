@@ -3,17 +3,33 @@
 /* ============================================ */
 @media all and (min-width: 300px) {
   #profile{
-    width: 80%;
+    width: 90%;
   }
   .profileTitle{
     font-family: 'Bad Script', cursive;
-    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    font-size: 2em;
+    padding: 35px 0;
   }
   .profileText{
     font-family: 'Handlee', cursive;
-    letter-spacing: 0.05em;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    padding: 15px 0 0 0;
+  }
+  .profileListContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    list-style: none;
+    padding: 15px 0 35px 0;
+  }
+  .profileListText{
+    font-family: 'Handlee';
+    letter-spacing: 0.08em;
+    font-size: 1em;
     padding-top: 15px;
+    font-style: italic;
   }
 }
 
