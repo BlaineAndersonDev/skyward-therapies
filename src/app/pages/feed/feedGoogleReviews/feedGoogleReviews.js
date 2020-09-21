@@ -1,4 +1,3 @@
-// This example is live editable
 import React from 'react';
 import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
