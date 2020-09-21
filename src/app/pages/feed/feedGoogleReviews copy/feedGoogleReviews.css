@@ -17,12 +17,7 @@
   }
   .galleryItemImage{
   }
-  .acontainer {
-    border: 1px solid red;
-    position: relative;
-    overflow: hidden;
-    width: 300px;
-    height: 150px;
+  .alice-carousel__stage-item {
   }
 }
 

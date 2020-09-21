@@ -5,7 +5,7 @@ class feedInstagram extends Component {
 
   render() {
     return (
-      <div id="feedInsta">
+      <div id="feednsta">
         <h1>feedInstagram Section</h1>
       </div>
     );
