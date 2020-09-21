@@ -5,25 +5,37 @@ import Slide from 'react-reveal/Slide';
 import "./feedGoogleReviews.css";
 import hardCodedReviews from "./feedGoogleReviewsJSON.json";
 
-const CarouselUI = ({ children }) => <div className="acontainer">{children}</div>;
+const CarouselUI = ({ position, total, handleClick, children }) => (
+  <div className="fGRCarouselContainer">
+    <div className="fGRCarouselChildren">
+      {children}
+    </div>
+    <div className="fGRCarouselDots">
+      {Array(...Array(total)).map((val, index) =>
+        <div className="fGRCarouselDot" key={index} onClick={handleClick} data-position={index}>
+          {index === position ? '● ' : '○ '}
+        </div>
+      )}
+    </div>
+  </div>
+);
 const Carousel = makeCarousel(CarouselUI);
 
 class feedGoogleReviews extends React.Component {
   render() {
     return (
-      <Carousel defaultWait={2000} /*wait for 1000 milliseconds*/ >
-        {hardCodedReviews.map((review, index) => (
-          <Slide right>
-            <div key={index} className="fGRItemContainer">
-              <img src={review.profile_photo_url} className="fGRItemImage" alt="Review001" />
-              <h2>{review.rating}</h2>
-              <h2>{review.text}</h2>
-              <p>{review.author_name}</p>
-              <p>{review.author_url}</p>
-            </div>
-          </Slide>
-        ))}
-      </Carousel>
+      <div className="feedGoogleReviews">
+        <Carousel defaultWait={10000} maxTurns={10} swipe={true}>
+          {hardCodedReviews.map((review, index) => (
+            <Slide key={index} right>
+              <div className="fGRItemContainer">
+                <p className="fGRItemText">{review.text}</p>
+                <p className="fGRItemName">-{review.author_name}</p>
+              </div>
+            </Slide>
+          ))}
+        </Carousel>
+      </div>
     )
   }
 }

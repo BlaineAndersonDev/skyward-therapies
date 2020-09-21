@@ -3,26 +3,81 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  .galley{
-  }
-  .galleryItem{
+  .feedGoogleReviews{
+    width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: #ede7e7;
+    padding: 0 0 50px 0;
   }
-  .galleryItemName{
-
-  }
-  .galleryItemReview{
-
-  }
-  .galleryItemImage{
-  }
-  .acontainer {
-    border: 1px solid red;
+  .fGRCarouselContainer {
     position: relative;
+    width: 80%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
     overflow: hidden;
-    width: 300px;
-    height: 150px;
+    background: white;
+    padding: 10px;
+    border: 2px black solid;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+  }
+  .fGRCarouselChildren {
+    width: 100%;
+    position: relative;
+  }
+  .fGRCarouselArrow {
+    text-shadow: 1px 1px 1px #fff;
+    z-index: 100;
+    line-height: 500px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 10%;
+    font-size: 3em;
+    cursor: pointer;
+  }
+  .fGRCarouselArrowRight {
+    left: 105%;
+  }
+  .fGRCarouselArrowLeft {
+    right: 105%;
+  }
+  .fGRCarouselDots {
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fGRCarouselDot {
+    font-size: 1.5em;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #fff;
+    margin: 15px;
+  }
+  .fGRItemContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+  .fGRItemText{
+    font-size: 1em;
+    font-family: 'Bad Script', cursive;
+    letter-spacing: 0.02em;
+    margin: 10px 10px 0 10px;
+  }
+  .fGRItemName{
+    margin: 5% 0 0 20%;
+    font-family: 'Handlee', cursive;
   }
 }
 
@@ -30,6 +85,9 @@
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
+  .fGRCarouselContainer {
+    height: 300px;
+  }
 }
 
 /* ============================================ */
@@ -42,18 +100,38 @@
 /* 550 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 550px) {
+  .fGRCarouselContainer {
+    height: 275px;
+  }
+  .fGRItemContainer{
+    margin: 20px;
+  }
 }
 
 /* ============================================ */
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .fGRItemContainer{
+    margin: 20px;
+    font-size: 1.2em;
+  }
+  .fGRItemName{
+    margin: 2% 0 0 20%;
+  }
 }
 
 /* ============================================ */
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
+  .fGRItemContainer{
+    margin: 30px;
+    font-size: 1.3em;
+  }
+  .fGRCarouselContainer {
+    max-width: 1000px;
+  }
 }
 
 /* ============================================ */
