@@ -8,21 +8,23 @@ class Nutrition extends Component {
   render() {
     return (
       <div id="nutrition">
-        <div id="nutBoxFirst" className="nutBox">
-          <NutritionImage />
-        </div>
-
-        <div id="nutBoxSecond" className="nutBox">
-          <div className="nutList">
-            <NutritionTitle />
-            <NutritionInfo />
+        <div id="nutritionContainer">
+          <div id="nutBoxFirst" className="nutBox">
+            <NutritionImage />
           </div>
-        </div>
 
-        <div id="nutBoxThird" className="nutBox">
-          <NutritionImage />
-        </div>
+          <div id="nutBoxSecond" className="nutBox">
+            <div className="nutList">
+              <NutritionTitle />
+              <NutritionInfo />
+            </div>
+          </div>
 
+          <div id="nutBoxThird" className="nutBox">
+            <NutritionImage />
+          </div>
+
+        </div>
       </div>
     );
   }

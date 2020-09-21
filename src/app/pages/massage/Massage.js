@@ -10,7 +10,7 @@ class Massage extends Component {
   render() {
     return (
       <div id="massage">
-        <div id="massageBoxContainer">
+        <div id="massageContainer">
           <div className="massageFirstBox massagebox">
             <MImage />
           </div>

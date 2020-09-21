@@ -7,9 +7,17 @@
     background: #ede7e7;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     flex-flow: row wrap;
     padding: 0 0 50px 0;
+  }
+  #nutritionContainer{
+    width: 100%;
+    background: #ede7e7;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-flow: row wrap;
   }
   .nutSectionHeader{
     font-family: 'Bad Script', cursive;
@@ -91,4 +99,7 @@
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  #nutritionContainer{
+    max-width: 1440px;
+  }
 }

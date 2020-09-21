@@ -4,12 +4,19 @@
 /* ============================================ */
 @media all and (min-width: 300px) {
   .feedGoogleReviews{
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #ede7e7;
-    padding: 0 0 50px 0;
+    background: #b2e2d8;
+    background-image: url('/images/pages/segment.jpg');
+    background-color: ede7e7; /* Backup co\lor if image fails to load. */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 50px 0;
   }
   .fGRCarouselContainer {
     position: relative;

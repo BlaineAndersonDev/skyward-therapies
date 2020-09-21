@@ -11,7 +11,7 @@
     flex-flow: column wrap;
     padding: 0 0 50px 0;
   }
-  #massageBoxContainer{
+  #massageContainer{
     width: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -63,7 +63,7 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
-  #massageBoxContainer{
+  #massageContainer{
     flex-flow: row nowrap;
   }
   .massageFirstBox{
@@ -76,10 +76,10 @@
 /* ============================================ */
 @media all and (min-width: 1000px) {
   .massageFirstBox{
-    margin-left: 50px;
+    flex:1;
   }
   .massageSecondBox{
-    margin-right: 100px;
+    flex:1;
   }
 }
 
@@ -87,13 +87,7 @@
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
-  #massageBoxContainer{
+  #massageContainer{
     max-width: 1440px;
-  }
-  .massageFirstBox{
-    margin-left: 100px;
-  }
-  .massageSecondBox{
-    margin-right: 200px;
   }
 }
