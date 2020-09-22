@@ -4,19 +4,18 @@
 /* ============================================ */
 @media all and (min-width: 300px) {
   .feedInstagram{
-    height: 400px;
+    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ede7e7;
+    flex-flow: column wrap;
     background: #b2e2d8;
     background-image: url('/images/pages/segment2.jpg');
     background-color: ede7e7; /* Backup co\lor if image fails to load. */
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px 0 50px 0;
   }
   .fICarouselContainer {
     position: relative;
@@ -27,28 +26,12 @@
     align-items: baseline;
     overflow: hidden;
     padding: 10px;
+    padding-top: 30px;
   }
   .fICarouselChildren {
     width: 100%;
     position: relative;
     border-radius: 15px;
-  }
-  .fICarouselArrow {
-    text-shadow: 1px 1px 1px #fff;
-    z-index: 100;
-    line-height: 500px;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    width: 10%;
-    font-size: 3em;
-    cursor: pointer;
-  }
-  .fICarouselArrowRight {
-    left: 105%;
-  }
-  .fICarouselArrowLeft {
-    right: 105%;
   }
   .fICarouselDots {
     width: 100%;
@@ -66,13 +49,32 @@
     text-shadow: 1px 1px 1px #fff;
     margin: 15px;
   }
+  .fITitle{
+    border-bottom: 1px solid black;
+    font-size: 1.2em;
+  }
+  .fITitleButton{
+    text-decoration: none;
+    color: black;
+  }
+  .fITitleButton:hover, .fITitleButton:focus{
+    color: #39b8cb;
+  }
   .fIItemContainer{
-    height: 500px;
-    width: 500px;
+    width: 100%;
+    height: 100%;
   }
   .fIItem{
-    height: inherit;
-    width: inherit;
+    height: 225px;
+    width: 225px;
+    border-radius: 25px;
+    border: 2px solid black;
+    filter: saturate(100%) brightness(100%);
+    transition-property: -moz-filter, -ms-filter, -o-filter, -webkit-filter, filter;
+    transition-duration: 0.4s;
+  }
+  .fIItem:hover {
+    filter: saturate(150%) brightness(125%);
   }
 }
 
@@ -86,24 +88,57 @@
 /* 410 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 410px) {
+  .fITitle{
+    font-size: 1.5em;
+  }
+  .fIItem{
+    height: 300px;
+    width: 300px;
+  }
 }
 
 /* ============================================ */
 /* 550 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 550px) {
+  .fITitle{
+    width: 90%;
+    font-size: 1.5em;
+  }
+  .fIItem{
+    height: 300px;
+    width: 300px;
+  }
 }
 
 /* ============================================ */
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .feedInstagram{
+    height: 600px;
+  }
+  .fICarouselContainer {
+    height: 450px;
+  }
+  .fITitle{
+    width: 90%;
+    font-size: 1.5em;
+  }
+  .fIItem{
+    height: 400px;
+    width: 400px;
+  }
 }
 
 /* ============================================ */
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
+  .fITitle{
+    width: 60%;
+    font-size: 1.5em;
+  }
 }
 
 /* ============================================ */
