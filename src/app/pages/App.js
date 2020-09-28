@@ -9,10 +9,7 @@ import Nutrition from './nutrition/Nutrition.js'
 import Contact from './contact/Contact.js'
 // === Feed Component Imports ===
 import FeedGoogleReviews from "./feed/feedGoogleReviews/feedGoogleReviews.js";
-import FeedInstagram from "./feed/feedInstagram/feedInstagram.js";
-// === Segway Component Imports ===
-import NutritionSegway from "./segway/NutritionSegway.js";
-import MassageSegway from "./segway/MassageSegway.js";
+// import FeedInstagram from "./feed/feedInstagram/feedInstagram.js";
 
 class App extends Component {
   render() {
@@ -24,7 +21,6 @@ class App extends Component {
         <Nutrition />
         <Massage />
         <Gallery />
-        <FeedInstagram />
         <Contact />
       </div>
     );

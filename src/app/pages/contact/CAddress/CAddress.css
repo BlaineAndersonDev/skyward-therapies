@@ -21,6 +21,13 @@
     text-decoration: underline;
     font-size: 1.2em;
   }
+  .cAddLink {
+    color: black;
+    text-decoration: none;
+  }
+  .cAddLink:hover, .cAddLink:focus{
+    color: #39b8cb;
+  }
 }
 
 /* ============================================ */

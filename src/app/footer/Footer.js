@@ -3,7 +3,7 @@ import './Footer.css';
 // === Component Imports ===
 import FSocial from './FSocial/FSocial.js';
 import FLogo from './FLogo/FLogo.js';
-import FSubscription from './FSubscription/FSubscription.js';
+// import FSubscription from './FSubscription/FSubscription.js';
 
 class Footer extends Component {
   render() {
@@ -24,7 +24,7 @@ class Footer extends Component {
         <div id="fCopyrightBox">
           <p className="fCopyrightText">Copyright 2019-2020 Skyward Therapies LLC.</p>
           <p className="fCopyrightText">All Rights Reserved.</p>
-          <p className="fCopyrightText">Built by B/A Solutions</p>
+          <a href="https://blaineandersondev.com/" className="fCopyrightText fCopyrightLink" target="_blank" rel="noopener noreferrer">Built by B/A Solutions </a>
         </div>
 
       </div>

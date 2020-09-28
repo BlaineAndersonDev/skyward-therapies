@@ -42,6 +42,13 @@
     font-size: 0.8em;
     /* margin: 10px 30px; */
   }
+  .fCopyrightLink {
+    color: black;
+    text-decoration: none;
+  }
+  .fCopyrightLink:hover, .fCopyrightLink:focus{
+    color: #39b8cb;
+  }
 }
 
 /* ============================================ */

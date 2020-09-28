@@ -20,7 +20,13 @@ class CAddress extends Component {
       </div>
       <div className="cAddressEmail cAddressSection">
         <h3 className="cAddTitle">Email</h3>
-        <p className="cAddText">SkywardTherapies@gmail.com</p>
+        <p className="cAddText"></p>
+        <a className="cAddText cAddLink"
+          href="mailto:SkywardTherapies@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          SkywardTherapies@Gmail.com
+      </a>
       </div>
     </div>
     );
