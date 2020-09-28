@@ -10,10 +10,10 @@
     justify-content: center;
     align-items: center;
     background: #ffffff;
-    background: #b2e2d8;
-    background-image: url('/images/pages/segment.jpg');
-    background-color: ffffff; /* Backup co\lor if image fails to load. */
-    background-position: top;
+    background-image: url('/images/pages/landing.jpg');
+    background-color: whitesmoke; /* Backup color if image fails to load. */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 0 50px 0;

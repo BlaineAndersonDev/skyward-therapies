@@ -10,6 +10,9 @@ import Contact from './contact/Contact.js'
 // === Feed Component Imports ===
 import FeedGoogleReviews from "./feed/feedGoogleReviews/feedGoogleReviews.js";
 // import FeedInstagram from "./feed/feedInstagram/feedInstagram.js";
+// === Segway Divider ===
+import ShareParallaxDivider from "./shared/ShareParallaxDivider/ShareParallaxDivider.js";
+// import FeedInstagram from "./feed/feedInstagram/feedInstagram.js";
 
 class App extends Component {
   render() {
@@ -19,6 +22,7 @@ class App extends Component {
         <Welcome />
         <FeedGoogleReviews />
         <Nutrition />
+        <ShareParallaxDivider />
         <Massage />
         <Gallery />
         <Contact />
