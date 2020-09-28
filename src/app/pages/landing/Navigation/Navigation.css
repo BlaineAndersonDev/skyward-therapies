@@ -13,6 +13,22 @@
     font-family: 'Handlee', cursive;
     letter-spacing: 0.05em;
   }
+  #backToTopButton{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border: 2px black solid;
+    border-radius: 50%;
+    margin: 15px;
+    z-index: 100;
+  }
+  #backToTopButton:hover, #backToTopButton:focus {
+    background-color: rgba(89, 221, 226, 0.5);
+  }
+  #backToTopIcon{
+    height: 65px;
+    width: 65px;
+  }
   .navLink{
     font-size: 1em;
     text-decoration: none;

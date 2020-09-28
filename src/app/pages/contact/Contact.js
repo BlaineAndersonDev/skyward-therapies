@@ -8,7 +8,7 @@ class Contact extends Component {
   render() {
     return (
     <div id="contact">
-      <ShareTitle title="Schedule Selfcare" />
+      <ShareTitle title="Schedule Your Session" />
       <div className="conInfoContainer">
         <CAddress />
       </div>

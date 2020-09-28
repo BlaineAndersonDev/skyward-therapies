@@ -10,6 +10,14 @@ class Navigation extends Component {
         <NavLink smooth to="/#nutrition" className="navLink"> Nutrition </NavLink>
         <NavLink smooth to="/#massage" className="navLink"> Massage </NavLink>
         <NavLink smooth to="/#contact" className="navLink"> Contact </NavLink>
+
+        <NavLink smooth to="/#landing" id="backToTopButton" type="button">
+          <img
+            src="/images/pages/Back_To_Top_Icon.png"
+            alt="Filler"
+            id="backToTopIcon"
+          />
+        </NavLink>
       </div>
     );
   }

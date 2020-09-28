@@ -10,7 +10,7 @@ class ShareButton extends Component {
   render() {
     return (
       <div id="sharedButton">
-        <NavLink smooth to="/#contact" className="sharedButtonButton sharedNavButton" type="button">{this.props.text}</NavLink>
+        <NavLink smooth to="/#contact" id={this.props.buttonId} className="sharedButtonButton sharedNavButton" type="button">{this.props.text}</NavLink>
       </div>
     );
   }
