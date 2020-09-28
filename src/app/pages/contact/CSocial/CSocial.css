@@ -2,12 +2,33 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #fSubscription{
+  #cSocial{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row nowrap;
+  }
+  .cIconContainer{
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+    margin: 5px;
+    border: black solid 3px;
+    border-radius: 50%;
+  }
+  .cIcon{
+    height: inherit;
+    width: inherit;
+  }
+  .cInsta:hover, .cInsta:focus{
+    background-color: #C13584;
+  }
+  .cFB:hover, .cFB:focus{
+    background-color: #3b5998;
+  }
+  .cMassageBook:hover, .cMassageBook:focus{
+    background-color: #ee5b2f;
   }
 }
 
@@ -15,12 +36,25 @@
 /* 375 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 375px) {
+  .cIconContainer{
+    height: 40px;
+    width: 40px;
+  }
 }
 
 /* ============================================ */
 /* 410 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 410px) {
+  #cSocial{
+    justify-content: center;
+  }
+  .cIconContainer{
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    margin: 10px;
+  }
 }
 
 /* ============================================ */
@@ -33,6 +67,12 @@
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
+  .cIconContainer{
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+    margin: 0 20px 0 20px;
+  }
 }
 
 /* ============================================ */
@@ -45,4 +85,14 @@
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
+  #cSocial{
+    max-width: 1440px;
+    justify-content: space-around;
+  }
+  .cIconContainer{
+    height: 70px;
+    width: 70px;
+    padding: 25px;
+    margin: 0 30px 0 30px;
+  }
 }

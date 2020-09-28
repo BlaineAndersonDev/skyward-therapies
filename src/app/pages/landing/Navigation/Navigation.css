@@ -21,13 +21,15 @@
     border-radius: 50%;
     margin: 15px;
     z-index: 100;
+    display: none;
   }
   #backToTopButton:hover, #backToTopButton:focus {
     background-color: rgba(89, 221, 226, 0.5);
+    opacity: 1;
   }
   #backToTopIcon{
-    height: 65px;
-    width: 65px;
+    height: 45px;
+    width: 45px;
   }
   .navLink{
     font-size: 1em;
@@ -85,6 +87,14 @@
   .navLink{
     font-size: 2em;
     padding: 0 20px;
+  }
+  #backToTopButton{
+    display: flex;
+    opacity: 0.5;
+  }
+  #backToTopIcon{
+    height: 80px;
+    width: 80px;
   }
 }
 
