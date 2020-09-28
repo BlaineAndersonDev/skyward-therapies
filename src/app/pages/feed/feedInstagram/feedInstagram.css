@@ -12,7 +12,7 @@
     flex-flow: column wrap;
     background: #b2e2d8;
     background-image: url('/images/pages/segment2.jpg');
-    background-color: ede7e7; /* Backup co\lor if image fails to load. */
+    background-color: ffffff; /* Backup co\lor if image fails to load. */
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;

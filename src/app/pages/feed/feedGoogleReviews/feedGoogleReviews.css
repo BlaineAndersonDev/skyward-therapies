@@ -9,10 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ede7e7;
+    background: #ffffff;
     background: #b2e2d8;
     background-image: url('/images/pages/segment.jpg');
-    background-color: ede7e7; /* Backup co\lor if image fails to load. */
+    background-color: ffffff; /* Backup co\lor if image fails to load. */
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

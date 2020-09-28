@@ -4,7 +4,7 @@
 @media all and (min-width: 300px) {
   #cAddress{
     width: 100%;
-    background: #ede7e7;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;

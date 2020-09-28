@@ -3,7 +3,7 @@
 /* ============================================ */
 @media all and (min-width: 300px) {
   #welcome{
-    background: #ede7e7;
+    background: #ffffff;
     width: 100%;
     display: flex;
     flex-flow: column wrap;
