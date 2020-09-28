@@ -1,4 +1,4 @@
-$backgroundColor: white;
+$backgroundColor: rgba(255, 255, 255, 0.3);
 
 .modAccordion-list{
   list-style: none;
@@ -27,7 +27,7 @@ $backgroundColor: white;
     #{ $self }__inner{
       max-height: 100rem;
       transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
-      transition-duration: 0.5s;
+      transition-duration: 0.3s;
       transition-property: max-height;
     }
     
@@ -51,9 +51,12 @@ $backgroundColor: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $backgroundColor;
     z-index: 2;
     position: relative;
+    transition: color 0.2s ease-out 0.1s;
+  }
+  &__line:hover, &__line:focus{
+    color: #59dde2;
   }
   
   &__title{
