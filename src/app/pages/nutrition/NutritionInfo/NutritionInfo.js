@@ -15,6 +15,7 @@ class NutritionInfo extends Component {
           <p className="nInfoText nInfoEmphesis">Let’s start a conversation specific to you!</p>
           <ShareButton 
             text="Start My Nutrition Journey"
+            link="http://localhost:3000/#contact"
           />
         </div>
       </div>

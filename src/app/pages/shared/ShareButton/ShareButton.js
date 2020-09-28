@@ -1,15 +1,16 @@
 import React, { Component } from "react";
+import { HashLink as NavLink } from "react-router-hash-link";
 import "./ShareButton.css";
 
 class ShareButton extends Component {
   handleClick = () => {
-    
+
   };
 
   render() {
     return (
       <div id="sharedButton">
-        <button className="sharedButtonButton" type="button" onClick={this.handleClick}>{this.props.text}</button>
+        <NavLink smooth to="/#contact" className="sharedButtonButton sharedNavButton" type="button">{this.props.text}</NavLink>
       </div>
     );
   }

@@ -9,6 +9,14 @@
     align-items: center;
     flex-flow: row wrap;
   }
+  .sharedNavButton{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
   .sharedButtonButton {
     font-family: 'Bad Script', cursive;
     font-size: 1.2em;
