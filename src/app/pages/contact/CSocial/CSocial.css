@@ -10,12 +10,13 @@
     flex-flow: row nowrap;
   }
   .cIconContainer{
-    height: 30px;
-    width: 30px;
-    padding: 15px;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
     margin: 5px;
     border: black solid 3px;
     border-radius: 50%;
+    position: relative;
   }
   .cIcon{
     height: inherit;
@@ -30,6 +31,9 @@
   .cMassageBook:hover, .cMassageBook:focus{
     background-color: #ee5b2f;
   }
+  .tooltip .tooltiptext {
+    display: none;
+  }
 }
 
 /* ============================================ */
@@ -37,8 +41,8 @@
 /* ============================================ */
 @media all and (min-width: 375px) {
   .cIconContainer{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
   }
 }
 
@@ -50,9 +54,9 @@
     justify-content: center;
   }
   .cIconContainer{
-    height: 50px;
-    width: 50px;
-    padding: 20px;
+    height: 35px;
+    width: 35px;
+    padding: 10px;
     margin: 10px;
   }
 }
@@ -68,9 +72,9 @@
 /* ============================================ */
 @media all and (min-width: 700px) {
   .cIconContainer{
-    height: 60px;
-    width: 60px;
-    padding: 20px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
     margin: 0 20px 0 20px;
   }
 }
@@ -79,6 +83,41 @@
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
+  #cSocial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 20px 0 40px 0;
+  }
+  .cIconContainer{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin: 0 80px;
+  }
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    display: inline-block;
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    content: " ";
+    position: absolute;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+    width: 200px;
+    top: 110%;
+    left: 50%;
+    margin-left: -100px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 }
 
 /* ============================================ */
@@ -87,12 +126,12 @@
 @media all and (min-width: 1440px) {
   #cSocial{
     max-width: 1440px;
-    justify-content: space-around;
+    justify-content: center;
   }
   .cIconContainer{
-    height: 70px;
-    width: 70px;
-    padding: 25px;
-    margin: 0 30px 0 30px;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    margin: 0 80px;
   }
 }
