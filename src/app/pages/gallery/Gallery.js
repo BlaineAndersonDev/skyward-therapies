@@ -14,30 +14,12 @@ class Gallery extends Component {
           />
         </div>
 
-        {/* <div className="galleryImageContainer">
+        <div className="galleryImageContainer">
           <img
             src="/images/pages/Gallery02.jpg"
             alt="Filler"
             className="galleryImage"
             id="galleryImage02"
-          />
-        </div>
-
-        <div className="galleryImageContainer">
-          <img
-            src="/images/pages/Gallery03.jpg"
-            alt="Filler"
-            className="galleryImage"
-            id="galleryImage03"
-          />
-        </div> */}
-
-        <div className="galleryImageContainer">
-          <img
-            src="/images/pages/Gallery04.jpg"
-            alt="Filler"
-            className="galleryImage"
-            id="galleryImage04"
           />
         </div>
       </div>

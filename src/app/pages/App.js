@@ -31,7 +31,7 @@ class App extends Component {
         <ShareQuoteDivider
           quote="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           author="Blaine Anderson"
-          imageFileName="segment2.jpg"
+          imageFileName="segment.jpg"
         />
         <Contact />
       </div>
