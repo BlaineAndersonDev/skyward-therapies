@@ -11,7 +11,7 @@ import Contact from './contact/Contact.js'
 import FeedGoogleReviews from "./feed/feedGoogleReviews/feedGoogleReviews.js";
 // import FeedInstagram from "./feed/feedInstagram/feedInstagram.js";
 // === Segway Divider ===
-import ShareParallaxDivider from "./shared/ShareParallaxDivider/ShareParallaxDivider.js";
+import ShareQuoteDivider from "./shared/ShareQuoteDivider/ShareQuoteDivider.js";
 
 class App extends Component {
   render() {
@@ -21,10 +21,18 @@ class App extends Component {
         <Welcome />
         <FeedGoogleReviews />
         <Nutrition />
-        <ShareParallaxDivider />
+        <ShareQuoteDivider
+          quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          author="Blaine Anderson"
+          imageFileName="segment.jpg"
+        />
         <Massage />
         <Gallery />
-        <ShareParallaxDivider />
+        <ShareQuoteDivider
+          quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          author="Blaine Anderson"
+          imageFileName="segment2.jpg"
+        />
         <Contact />
       </div>
     );
