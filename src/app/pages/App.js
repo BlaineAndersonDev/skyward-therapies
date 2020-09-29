@@ -13,8 +13,20 @@ import FeedGoogleReviews from "./feed/feedGoogleReviews/feedGoogleReviews.js";
 // === Segway Divider ===
 import ShareQuoteDivider from "./shared/ShareQuoteDivider/ShareQuoteDivider.js";
 
+import quotes from "./Quotes.json"
+const randomlySelectedQuoteId = Number(Math.floor((Math.random() * quotes.length)));
+
 class App extends Component {
   render() {
+    let randomQuote001 = [];
+    let randomQuote002 = [];
+    if (Number(randomlySelectedQuoteId) === 8) {
+      randomQuote001 = quotes[randomlySelectedQuoteId];
+      randomQuote002 = quotes[0];
+    } else {
+      randomQuote001 = quotes[randomlySelectedQuoteId];
+      randomQuote002 = quotes[randomlySelectedQuoteId + 1];
+    }
     return (
       <div id="appContainer">
         <Landing />
@@ -22,15 +34,15 @@ class App extends Component {
         <FeedGoogleReviews />
         <Nutrition />
         <ShareQuoteDivider
-          quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          author="Blaine Anderson"
+          quote={randomQuote001.quote}
+          author={randomQuote001.author}
           imageFileName="segment.jpg"
         />
         <Massage />
         <Gallery />
         <ShareQuoteDivider
-          quote="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          author="Blaine Anderson"
+          quote={randomQuote002.quote}
+          author={randomQuote002.author}
           imageFileName="segment.jpg"
         />
         <Contact />
