@@ -7,6 +7,7 @@ import Gallery from './gallery/Gallery.js'
 import Massage from "./massage/Massage.js";
 import Nutrition from './nutrition/Nutrition.js'
 import Contact from './contact/Contact.js'
+import ShareGallery from "./shared/ShareGallery/ShareGallery.js";
 // === Feed Component Imports ===
 import FeedGoogleReviews from "./feed/feedGoogleReviews/feedGoogleReviews.js";
 // import FeedInstagram from "./feed/feedInstagram/feedInstagram.js";
@@ -39,7 +40,7 @@ class App extends Component {
           imageFileName="segment.jpg"
         />
         <Massage />
-        <Gallery />
+        <ShareGallery />
         <ShareQuoteDivider
           quote={randomQuote002.quote}
           author={randomQuote002.author}

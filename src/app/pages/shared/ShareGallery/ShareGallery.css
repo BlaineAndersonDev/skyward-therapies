@@ -2,42 +2,36 @@
 /* 300 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 300px) {
-  #massage{
+  #sGallery{
     width: 100%;
     background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    padding: 0 00px 0;
+    padding: 0 0 50px 0;
   }
-  #massageContainer{
+  .sGalleryImageContainer{
+    flex: 1;
     width: 100%;
+    height: auto;
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     justify-content: center;
-  }
-  .massagebox{
-    width: 100%;
-    display: flex;
+    align-items: center;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+    margin: 15px 0;
   }
-  .massageSecondBox{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0 10px 0;
+  .sGalleryImage{
+    box-shadow: 8px 8px 10px #aaa;
+    border: solid 1px #aaa;
+    border-radius: 15px;
+    max-width: 250px;
+    max-height: 250px;
   }
-  .massageThirdBox{
-    min-width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
+  .sGalleryImage:hover{
+    z-index: 5;
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
   }
 }
 
@@ -51,23 +45,46 @@
 /* 410 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 410px) {
+  .sGalleryImage{
+    max-width: 300px;
+    max-height: 300px;
+  }
 }
 
 /* ============================================ */
 /* 550 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 550px) {
+  .sGalleryImage{
+    max-width: 300px;
+    max-height: 300px;
+  }
 }
 
 /* ============================================ */
 /* 700 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 700px) {
-  #massageContainer{
-    flex-flow: row nowrap;
+  #sGallery{
+    flex-flow: row wrap;
   }
-  .massageFirstBox{
-    display: flex;
+  .sGalleryImageContainer{
+    flex: calc(100% / 2);
+    margin: 0 0;
+  }
+  .sGalleryImage{
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+/* ============================================ */
+/* 900 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 900px) {
+  .sGalleryImage{
+    max-width: 350px;
+    max-height: 350px;
   }
 }
 
@@ -75,19 +92,34 @@
 /* 1000 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1000px) {
-  .massageFirstBox{
-    flex:1;
+  #sGallery{
+    flex-flow: row nowrap;
   }
-  .massageSecondBox{
-    flex:1;
+  .sGalleryImageContainer{
+    flex: 1;
+    margin: 10px;
   }
+  .sGalleryImage{
+    max-width: 100%;
+    max-height: 300px;
+  }
+}
+
+/* ============================================ */
+/* 1250 Width ================================== */
+/* ============================================ */
+@media all and (min-width: 1250px) {
 }
 
 /* ============================================ */
 /* 1440 Width ================================== */
 /* ============================================ */
 @media all and (min-width: 1440px) {
-  #massageContainer{
-    max-width: 1440px;
+  .sGalleryImageContainer{
+    margin: 0;
+  }
+  .sGalleryImage{
+    max-width: 400px;
+    max-height: 400px;
   }
 }
