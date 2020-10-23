@@ -31,6 +31,9 @@
   .cMassageBook:hover, .cMassageBook:focus{
     background-color: #ee5b2f;
   }
+  .cYelp:hover, .cYelp:focus{
+    background-color: #D32323;
+  }
   .tooltip .tooltiptext {
     display: none;
   }

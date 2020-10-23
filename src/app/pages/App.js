@@ -3,7 +3,6 @@ import './App.css';
 // === Component Imports ===
 import Landing from "./landing/Landing.js";
 import Welcome from './welcome/Welcome.js'
-import Gallery from './gallery/Gallery.js'
 import Massage from "./massage/Massage.js";
 import Nutrition from './nutrition/Nutrition.js'
 import Contact from './contact/Contact.js'

@@ -21,6 +21,11 @@ class CSocial extends Component {
           <span className="tooltiptext">Follow us on Instagram</span>
         </a>
 
+        <a href="http://yelp.com/biz/skyward-therapies-mesa?utm_medium=badge_button&amp;utm_source=biz_review_badge" target="_blank" rel="noopener noreferrer" className="cIconContainer cYelp tooltip">
+          <img src="/images/pages/social_yelp.png" alt="Yelp-Icon" className="cIcon" />
+          <span className="tooltiptext">Review us on Yelp</span>
+        </a>
+
       </div>
     );
   }
