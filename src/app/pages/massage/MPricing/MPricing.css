@@ -16,6 +16,10 @@
   .mPricingListItem{
     font-size: 1.1em;
   }
+  .mGratuity{
+    font-size: 1.1em;
+    width: 100%;
+  }
 }
 
 /* ============================================ */
@@ -24,6 +28,10 @@
 @media all and (min-width: 375px) {
   .mPricingListItem{
     font-size: 1.2em;
+  }
+  .mGratuity{
+    font-size: 1.2em;
+    width: 100%;
   }
 }
 
