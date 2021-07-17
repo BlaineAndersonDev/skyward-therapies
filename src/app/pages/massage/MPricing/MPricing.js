@@ -7,9 +7,9 @@ class MPricing extends Component {
       <div id="mPricing">
         <ul className="mPricingList">
           <li className="mPricingListItem">30 Minute Massage: $45</li>
-          <li className="mPricingListItem">60 Minute Massage: $75</li>
-          <li className="mPricingListItem">90 Minute Massage: $120</li>
-          <li className="mPricingListItem">120 Minute Massage: $150</li>
+          <li className="mPricingListItem">60 Minute Massage: $85</li>
+          <li className="mPricingListItem">90 Minute Massage: $130</li>
+          <li className="mPricingListItem">120 Minute Massage: $170</li>
         </ul>
       </div>
     );

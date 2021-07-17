@@ -16,7 +16,9 @@ class CAddress extends Component {
       </div>
       <div className="cAddressPhone cAddressSection">
         <h3 className="cAddTitle">By Appointment Only</h3>
-        <p className="cAddText">Tuesday-Saturday: 8am - 5pm</p>
+        <p className="cAddText">Tuesday-Friday: 8am - 6pm</p>
+        <p className="cAddText">Saturday: 9am - 3pm</p>
+        <p className="cAddText">Sunday-Monday: Closed</p>
       </div>
       <div className="cAddressEmail cAddressSection">
         <h3 className="cAddTitle">Email</h3>
