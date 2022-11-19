@@ -1,9 +1,8 @@
 # Skyward Therapies
 > Originally Created: March 2019 by [Blaine Anderson](https://github.com/BlaineAndersonDev)
-
 > Updated: Oct 2019 by [Blaine Anderson](https://github.com/BlaineAndersonDev)
-
-> Last Updated: July 2021 by [Blaine Anderson](https://github.com/BlaineAndersonDev)
+> Updated: July 2021 by [Blaine Anderson](https://github.com/BlaineAndersonDev)
+> Last Updated: Nov 2022 by [Blaine Anderson](https://github.com/BlaineAndersonDev)
 
 #### Digital Ocean Setup:
   * Create a base droplet with minimal specs (using SSH).
