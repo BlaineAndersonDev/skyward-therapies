@@ -11,7 +11,7 @@ class CSocial extends Component {
           <span className="tooltiptext">Check us out on Facebook</span>
         </a>
 
-        <a href="https://www.massagebook.com/biz/SkywardTherapies#services" target="_blank" rel="noopener noreferrer" className="cIconContainer cMassageBook tooltip">
+        <a href="https://www.massagebook.com/therapists/SkywardTherapies/widget/services" target="_blank" rel="noopener noreferrer" className="cIconContainer cMassageBook tooltip">
           <img src="/images/pages/social_massagebook.png" alt="GMaps-Icon" className="cIcon" />
           <span className="tooltiptext">Book an appointment on Massagebook</span>
         </a>
