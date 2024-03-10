@@ -12,7 +12,7 @@ class ShareGallery extends Component {
 
           <div className="sGalleryImageContainer">
             <img
-              src="/images/pages/gallery/006.jpg"
+              src="/images/pages/gallery/010.jpg"
               alt="Filler"
               className="sGalleryImage"
               id="sGalleryImage01"
