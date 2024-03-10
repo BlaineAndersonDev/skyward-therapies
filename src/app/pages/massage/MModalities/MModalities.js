@@ -15,6 +15,11 @@ const modalities = [
       "As the names imply, these are the therapies that target the deeper tissues and are more focused on pinning down locked muscles and frictioning out stubborn clustered muscle tissues. A word of caution, it’s INTENSE!",
   },
   {
+    title: "Pre/Post Surgical Massage",
+    paragraph:
+      "This treatments focus is to help alleviate pain and expedite healing. Typically performed in tandem with your physical therapy and or chiropractic care plans. These sessions utilize light Swedish and or lymphatic techniques that help reduce swelling and fluid retention in affected areas. ",
+  },
+  {
     title: "Prenatal / Postpartum Sessions",
     paragraph:
       "There is no more imperative time in a woman's life to receive the best care than when she is carrying and or caring for a new baby (or babies). Massages helps relieve ligament stress during pregnancy, helps increase milk supply, increases blood circulation, and helps reduce the stress hormones that can be triggered in these essential months. When in doubt, a time out for mom- never hurts!",
@@ -45,7 +50,7 @@ class MModalities extends Component {
         <p className="mModalitiesText">Below is what is offered at Skyward Therapies:</p>
 
         <div className="mModalitiesBox">
-          <h1 className="mModalitiesBoxHeader">Massage Modalities</h1>
+          <h1 className="mModalitiesBoxHeader">Medical Massage Modalities</h1>
           <ul {...{ className: "modAccordion-list" }}>
             {modalities.map((modalities, key) => {
               return (
