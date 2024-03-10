@@ -6,9 +6,7 @@ class Profile extends Component {
     return (
       <div id="profile">
         <div className="profileTextContainer">
-          <h1 className="profileTitle">“Time to release stress, embrace wellness, and feel restored!”</h1>
-          <p className="profileText">My name is Kelli and I am so happy you are here!</p>
-          <p className="profileText">The simple action of being on this website means you are:</p>
+          <p className="profileText">My name is Kelli Anderson LMT, MMP, NDTR. I am so happy you are here! Simply by being on this page you are:</p>
           <ul className="profileListContainer">
             <li className="profileListText">Ready to embrace your own self care,</li>
             <li className="profileListText">Ready to invest in improving your health,</li>
