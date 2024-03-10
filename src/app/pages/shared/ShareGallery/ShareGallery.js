@@ -12,7 +12,7 @@ class ShareGallery extends Component {
 
           <div className="sGalleryImageContainer">
             <img
-              src="/images/pages/gallery/001.jpg"
+              src="/images/pages/gallery/006.jpg"
               alt="Filler"
               className="sGalleryImage"
               id="sGalleryImage01"
@@ -20,7 +20,7 @@ class ShareGallery extends Component {
           </div>
           <div className="sGalleryImageContainer">
             <img
-              src="/images/pages/gallery/002.jpg"
+              src="/images/pages/gallery/007.jpg"
               alt="Filler"
               className="sGalleryImage"
               id="sGalleryImage02"
@@ -28,7 +28,7 @@ class ShareGallery extends Component {
           </div>
           <div className="sGalleryImageContainer">
             <img
-              src="/images/pages/gallery/003.jpg"
+              src="/images/pages/gallery/008.jpg"
               alt="Filler"
               className="sGalleryImage"
               id="sGalleryImage03"
@@ -36,7 +36,7 @@ class ShareGallery extends Component {
           </div>
           <div className="sGalleryImageContainer">
             <img
-              src="/images/pages/gallery/004.jpg"
+              src="/images/pages/gallery/009.jpg"
               alt="Filler"
               className="sGalleryImage"
               id="sGalleryImage04"
