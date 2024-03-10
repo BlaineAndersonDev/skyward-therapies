@@ -7,7 +7,7 @@ class Profile extends Component {
       <div id="profile">
         <div className="profileTextContainer">
           <h1 className="profileTitle">I am so happy you are here!</h1>
-          <p className="profileText">I'm Kelli Anderson, your dedicated Licensed Massage Therapist (LMT) and Nutrition Expert.</p>
+          <p className="profileText">I'm Kelli Anderson, your Licensed Massage Therapist (LMT) and Nutrition Expert.</p>
           <p className="profileText">With professional certifications as a Medical Massage Practitioner (MMP) and a Nutrition and Dietetic Technician (NDTR), I specialize in holistic health solutions.</p>
           <p className="profileText">By visiting my site, you're taking a significant step towards embracing self-care routines, investing in your health and well-being, and prioritizing your mental and physical health.</p>
           {/* <ul className="profileListContainer">

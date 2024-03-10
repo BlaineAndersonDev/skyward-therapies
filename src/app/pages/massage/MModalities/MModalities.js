@@ -7,37 +7,37 @@ const modalities = [
   {
     title: "Swedish",
     paragraph:
-      "Characterized by long flowing medium/light connective strokes, this is the “original” type of massage! This will surely relax you into a nap and help you forget about whatever is worrying you.",
+      "Swedish Massage is renowned for its gentle, flowing strokes designed to relieve tension and enhance relaxation. Picture yourself enveloped in a calming atmosphere where each stroke helps dissolve stress, promoting a state of peaceful tranquility. This therapeutic experience is your gateway to a more relaxed, rejuvenated state of being, free from the day's anxieties.",
   },
   {
     title: "Deep Tissue and Trigger Point Therapies",
     paragraph:
-      "As the names imply, these are the therapies that target the deeper tissues and are more focused on pinning down locked muscles and frictioning out stubborn clustered muscle tissues. A word of caution, it’s INTENSE!",
+      "Deep Tissue and Trigger Point Therapies are specialized treatments aimed at relieving severe tension in the muscles and connective tissues. These techniques are perfect for individuals experiencing chronic pain, tightness, or deep-seated knots. This intense, invigorating experience is designed to liberate your body from restricted and immobile muscles, offering a path to improved mobility and comfort.",
   },
   {
     title: "Pre/Post Surgical Massage",
     paragraph:
-      "This treatments focus is to help alleviate pain and expedite healing. Typically performed in tandem with your physical therapy and or chiropractic care plans. These sessions utilize light Swedish and or lymphatic techniques that help reduce swelling and fluid retention in affected areas. ",
+      "Pre/Post Surgical Massage is tailored to assist in pain relief and accelerate healing following surgery, often complementing physical therapy or chiropractic care. This specialized treatment employs gentle Swedish and lymphatic techniques to minimize swelling and fluid retention in affected areas, facilitating a smoother and quicker recovery process. Engage in these therapeutic sessions to support your body's natural healing journey and restore your well-being",
   },
   {
     title: "Prenatal / Postpartum Sessions",
     paragraph:
-      "There is no more imperative time in a woman's life to receive the best care than when she is carrying and or caring for a new baby (or babies). Massages helps relieve ligament stress during pregnancy, helps increase milk supply, increases blood circulation, and helps reduce the stress hormones that can be triggered in these essential months. When in doubt, a time out for mom- never hurts!",
+      "Prenatal and Postpartum Massage sessions are designed to provide vital support during and after pregnancy, addressing the unique needs of mothers-to-be and new moms. These treatments help alleviate ligament stress, improve circulation, and reduce stress hormones, contributing significantly to maternal well-being. Engage in this nurturing experience to enhance your comfort during these transformative months, ensuring a time of peace and rejuvenation.",
   },
   {
     title: "Hot/Cold Therapies",
     paragraph:
-      "As mentioned above, hot and cold therapies are included in every session. These include hot stones, cold compresses, warm towels, and essential oils. These methods are used to assist in allowing blood flow to increase or decrease in an area. Imagine a swollen knee needing ice or tight back needing heat, and you now have a better understanding as to why these therapies drastically increase improved results by the end of your massage.",
+      "Hot/Cold Therapies are integrated into every session to tailor the treatment to your body's specific needs, utilizing hot stones, cold compresses, warm towels, and essential oils. These techniques regulate blood flow, addressing areas of discomfort such as a swollen knee or a tense back, enhancing the overall effectiveness of your massage experience.",
   },
   {
     title: "CranioSacral Therapy",
     paragraph:
-      "A type of massage therapy intended to relieve pain and tension by gentle manipulations of the skull often regarded as harmonizing with a natural rhythm in the central nervous system. This is a meditative type of session that is very gentle, with very little manipulation and no need to undress. ",
+      "CranioSacral Therapy is a gentle approach aimed at alleviating pain and tension through soft manipulations of the skull, synchronizing with the natural rhythms of your central nervous system. This tranquil, non-invasive session promotes deep relaxation and balance without the need for disrobing.",
   },
   {
     title: "Sports Massage Therapy",
     paragraph:
-      "This type of massage is typically indicative of assisted stretching, pinning of muscle tension, and brisk movements. This therapy is best performed a day before, or early in the day 2 hours before a sporting event. For recovery from an event, it is suggested to receive a deep tissue with stretching incorporated.",
+      "Sports Massage Therapy is designed for active individuals, focusing on assisted stretching, relieving muscle tension, and employing brisk movements. Optimal for pre-event preparation or post-event recovery, this targeted therapy helps improve performance, reduce the likelihood of injury, and aids in faster recovery, incorporating deep tissue techniques when necessary.",
   }
 ];
 

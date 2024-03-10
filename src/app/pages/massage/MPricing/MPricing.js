@@ -11,7 +11,7 @@ class MPricing extends Component {
           <li className="mPricingListItem">90 Minute Massage: $170</li>
           <li className="mPricingListItem">120 Minute Massage: $230</li>
         </ul>
-        <div className="mGratuity">~ No Gratuity Necessary ~</div>
+        <div className="mGratuity">~ No Gratuities Accepted ~</div>
         <a href="https://www.massagebook.com/therapists/SkywardTherapies/widget/services"><img src="http://www.massagebook.com/home/img/getbutton/button-booknow.png" alt="Book Now on MassageBook.com!" border="0"></img></a>
       </div>
     );
