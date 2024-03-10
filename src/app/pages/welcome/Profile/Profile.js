@@ -15,7 +15,7 @@ class Profile extends Component {
             <li className="profileListText">And most importantly,</li>
             <li className="profileListText">Ready to make yourself a PRIORITY!</li>
           </ul>
-          <p className="profileText">I am a Massage Therapist and a Nutrition and Dietetic Technician.</p>
+          <p className="profileText">I am a Licensed Medical Massage Therapist and a Nutrition and Dietetic Technician.</p>
           <p className="profileText">My main goal is to help you in your journey of wellness!</p>
           <p className="profileText">Whether you are seeking a few hours of quiet time a week on a massage table, far away from your worries, or eating advice to improve your daily health, I am here and ready to help!</p>
         </div>

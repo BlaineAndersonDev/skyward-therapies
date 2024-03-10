@@ -5,7 +5,7 @@ class MText extends Component {
   render() {
     return (
       <div id="mText">
-        <p className="mTextText">At Skyward Therapies your care is always customized to what you need, you should never have to pay more to be treated with the best techniques!</p>
+        <p className="mTextText">Skyward Therapies practices what is referred to as Medical Massage Therapy. Which is characterized by using any technique and or therapy that is needed to best help address your individual needs.</p>
         <p className="mTextText">Hotstones, Aromatherapy, and Hot/Cold therapies are always included!</p>
       </div>
     );

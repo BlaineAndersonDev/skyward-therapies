@@ -6,7 +6,7 @@ class Headshot extends Component {
     return (
       <div id="headshot">
         <img
-          src="/images/pages/kelli_headshot.png"
+          src="/images/pages/kelli_headshot_2.jpg"
           alt="Kelli_Anderson"
           id="headshotImage"
         />
