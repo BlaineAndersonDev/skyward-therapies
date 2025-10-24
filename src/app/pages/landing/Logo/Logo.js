@@ -5,7 +5,7 @@ class Logo extends Component {
   render() {
     return (
       <img
-        src="/images/pages/2025_Logo.png"
+        src="/images/pages/2025_Logo_Cloud.png"
         alt="skywardLogo"
         id="skywardLogo"
       />
