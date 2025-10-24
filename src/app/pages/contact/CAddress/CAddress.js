@@ -6,7 +6,7 @@ class CAddress extends Component {
     return (
     <div id="cAddress">
       <div className="cAddressLocation cAddressSection">
-        <h3 className="cAddTitle">Service Areas</h3>
+        <h3 className="cAddTitle">Mobile Service Areas</h3>
         <p className="cAddText">Mesa, Gilbert, Chandler,</p>
         <p className="cAddText">Queen Creek, South Scottsdale</p>
       </div>

@@ -9,7 +9,7 @@ class Contact extends Component {
   render() {
     return (
     <div id="contact">
-      <ShareTitle title="Schedule Your Session" />
+      <ShareTitle title="Schedule Your Mobile Session" />
       <div className="conInfoContainer">
         <CAddress />
       </div>

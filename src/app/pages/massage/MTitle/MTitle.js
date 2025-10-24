@@ -5,7 +5,7 @@ class MTitle extends Component {
   render() {
     return (
       <div id="mTitle">
-        <h1 className="mTitleHeader">Massage Pricing</h1>
+        <h1 className="mTitleHeader">Mobile Massage Pricing</h1>
         <img
           src="/images/pages/FancyLine.png"
           alt="Watercolor Feather"
