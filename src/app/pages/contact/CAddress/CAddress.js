@@ -6,9 +6,9 @@ class CAddress extends Component {
     return (
     <div id="cAddress">
       <div className="cAddressLocation cAddressSection">
-        <h3 className="cAddTitle">Address</h3>
-        <p className="cAddText">2150 E Brown Rd Suite 4,</p>
-        <p className="cAddText">Mesa, AZ 85205</p>
+        <h3 className="cAddTitle">Service Areas</h3>
+        <p className="cAddText">Mesa, Gilbert, Chandler,</p>
+        <p className="cAddText">Queen Creek, South Scottsdale</p>
       </div>
       <div className="cAddressHours cAddressSection">
         <h3 className="cAddTitle">Text or Call</h3>

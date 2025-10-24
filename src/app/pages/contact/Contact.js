@@ -13,9 +13,9 @@ class Contact extends Component {
       <div className="conInfoContainer">
         <CAddress />
       </div>
-      <div className="conInfoContainer">
+      {/* <div className="conInfoContainer">
         <CMap />
-      </div>
+      </div> */}
       <div className="conInfoContainer">
         <CSocial />
       </div>
