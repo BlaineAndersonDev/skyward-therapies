@@ -24,11 +24,11 @@ const modalities = [
     paragraph:
       "Prenatal and Postpartum Massage sessions are designed to provide vital support during and after pregnancy, addressing the unique needs of mothers-to-be and new moms. These treatments help alleviate ligament stress, improve circulation, and reduce stress hormones, contributing significantly to maternal well-being. Engage in this nurturing experience to enhance your comfort during these transformative months, ensuring a time of peace and rejuvenation.",
   },
-  {
-    title: "Hot/Cold Therapies",
-    paragraph:
-      "Hot/Cold Therapies are integrated into every session to tailor the treatment to your body's specific needs, utilizing hot stones, cold compresses, warm towels, and essential oils. These techniques regulate blood flow, addressing areas of discomfort such as a swollen knee or a tense back, enhancing the overall effectiveness of your massage experience.",
-  },
+  // {
+  //   title: "Hot/Cold Therapies",
+  //   paragraph:
+  //     "Hot/Cold Therapies are integrated into every session to tailor the treatment to your body's specific needs, utilizing hot stones, cold compresses, warm towels, and essential oils. These techniques regulate blood flow, addressing areas of discomfort such as a swollen knee or a tense back, enhancing the overall effectiveness of your massage experience.",
+  // },
   {
     title: "CranioSacral Therapy",
     paragraph:

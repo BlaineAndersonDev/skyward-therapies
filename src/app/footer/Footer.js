@@ -9,7 +9,7 @@ class Footer extends Component {
       <div id="footer">
 
         <div id="fCopyrightBox">
-          <p className="fCopyrightText">Copyright 2019-2020 Skyward Therapies LLC.</p>
+          <p className="fCopyrightText">Copyright 2019-2026 Skyward Therapies LLC.</p>
           <p className="fCopyrightText">All Rights Reserved.</p>
           <a href="https://blaineandersondev.com/" className="fCopyrightText fCopyrightLink" target="_blank" rel="noopener noreferrer">Built by B/A Solutions </a>
         </div>
