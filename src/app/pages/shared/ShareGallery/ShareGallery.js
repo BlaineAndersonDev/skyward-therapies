@@ -18,7 +18,7 @@ class ShareGallery extends Component {
               id="sGalleryImage01"
             />
           </div>
-          <div className="sGalleryImageContainer">
+          {/* <div className="sGalleryImageContainer">
             <img
               src="/images/pages/gallery/007.jpg"
               alt="Filler"
@@ -33,7 +33,7 @@ class ShareGallery extends Component {
               className="sGalleryImage"
               id="sGalleryImage03"
             />
-          </div>
+          </div> */}
           <div className="sGalleryImageContainer">
             <img
               src="/images/pages/gallery/009.jpg"
